@@ -1,0 +1,87 @@
+{
+  "source_workbooks": 27,
+  "source_bytes": 161779048,
+  "cache_files": 27,
+  "cache_bytes": 204319112,
+  "full_source_scan_sample": [
+    "KR7000030007_t",
+    "KR7008770000_t",
+    "KR7009150004_t"
+  ],
+  "header_scan": "all 27 workbooks",
+  "cache_scan": "all 27 top-level CSVs",
+  "common_dates": 493,
+  "splits": {
+    "train": {
+      "days": 345,
+      "date_min": "20150701",
+      "date_max": "20161123",
+      "labels": 353970,
+      "class_0": 108023,
+      "cache_missing_endpoint_labels": 28195,
+      "cache_missing_endpoint_flat_labels": 21803,
+      "cache_missing_endpoint_equal_mid_labels": 21724,
+      "invalid_or_missing_endpoint_labels": 30015,
+      "class_1": 146929,
+      "class_2": 99018
+    },
+    "validation": {
+      "days": 49,
+      "date_min": "20161124",
+      "date_max": "20170203",
+      "labels": 50274,
+      "class_2": 11936,
+      "cache_missing_endpoint_labels": 1994,
+      "cache_missing_endpoint_flat_labels": 1825,
+      "cache_missing_endpoint_equal_mid_labels": 1799,
+      "invalid_or_missing_endpoint_labels": 1994,
+      "class_1": 25906,
+      "class_0": 12432
+    },
+    "development_holdout": {
+      "days": 99,
+      "date_min": "20170206",
+      "date_max": "20170630",
+      "labels": 101574,
+      "class_2": 25309,
+      "cache_missing_endpoint_labels": 4411,
+      "cache_missing_endpoint_flat_labels": 3847,
+      "cache_missing_endpoint_equal_mid_labels": 3843,
+      "invalid_or_missing_endpoint_labels": 4418,
+      "class_0": 25800,
+      "class_1": 50465
+    }
+  },
+  "representative_checksums": [
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217/data/raw/KRXaggData/KR7000030007_t.xlsx",
+      "sha256": "44c1d756a9242e325c37e12c3be5e0571deb4ab72031ab3c6f741cb988b6fdf6"
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217/data/raw/KRXaggData/KR7008770000_t.xlsx",
+      "sha256": "d9ff14b98a42043ebb4c09a9fc83e4bf62d219693b3d041423e971c8b66f12ce"
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217/data/raw/KRXaggData/KR7009150004_t.xlsx",
+      "sha256": "fa37df2fd76f26aa4a228c797e4bbf43c332ae7a3df0188e95c57eae8af664a6"
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217/data/processed/KR7000030007_t.csv",
+      "sha256": "c7a177a704beb7573951080156c74fa9658f5cf220eeda004d973c6a7e8bdf04"
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217/data/processed/KR7008770000_t.csv",
+      "sha256": "be833461eeac62191810f301958c662c4bc94f40afd45f22fc936c2e308e410f"
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217/data/processed/KR7009150004_t.csv",
+      "sha256": "cbaf7cc80a30ee1b489873fc22e3b2ad8d50958f24829796ed16a6d27183b8bd"
+    }
+  ],
+  "provenance_warning": "Cache nonmissing means present in derived CSV; sampled workbook equality is not exchange observation provenance. No observation flags invented.",
+  "definitions": {
+    "cache_missing_endpoint_labels": "At least one current/future top bid or ask absent/nonfinite in the CSV at the imposed grid key before our in-day ffill.",
+    "cache_missing_endpoint_flat_labels": "Above condition and legacy float32 class Flat.",
+    "cache_missing_endpoint_equal_mid_labels": "Above condition and equal filled midprices; not evidence of provider imputation."
+  }
+}

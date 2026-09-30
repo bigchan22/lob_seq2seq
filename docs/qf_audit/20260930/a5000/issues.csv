@@ -1,0 +1,17 @@
+issue_id,evidence_status,method,finding,evidence
+MACHINE,contradicted,source_inspection,Machine believed A5000 actually has four RTX4090 GPUs,nvidia-smi model/VRAM query
+RELOCATION,verified,source_inspection,Six historical worktree pointers and launchers reference inaccessible earlier root; executable modes changed,repository_inventory.json; scripts/qf_*
+CODE_SYNC,verified,source_inspection,Inspected code SHA is unpublished on advertised remote refs; September candidate commit absent locally,ls-remote; cat-file; merge-base
+GIT_BULK,verified,source_inspection,Published main contains ordinary tracked workbooks CSVs and checkpoints; LFS skip does not protect ordinary blobs,git_blob_inventory.json
+PROVIDER,unknown,source_inspection,Aggregation fill observation release timing units and corporate-action conventions not documented for supplied cells,field_semantics.csv
+GRID,verified,static_code,39-point grid and 38 labels are imposed; source has other clock support,dataset.py:17; source_audit_details.json
+ENDPOINTS,verified,recomputed,34600 legacy labels involve missing cache quote endpoint; source presence is not observation provenance,source_audit_summary.json
+SESSION,verified,source_inspection,Coverage crosses August 1 2016 session extension; loader uses one fixed grid,local KRX brochure PDF pages16/30; dataset.py:17
+RUN_PROVENANCE,unknown,saved_artifact,Per-fit dirty state original host and source/cache identity incompletely recorded; Stage2 commit fields blank,run_inventory.csv
+GRU_LEADLAG,unknown,source_inspection,Later GRU and trained-lag artifacts not found in bounded local project inventory,local refs; model registry; run_inventory.csv
+COPY,verified,recomputed,F_best_UC_42_stage2 repeats F_PAIR_5_SHALLOW_INTERACTION_UC_42 rather than proving new training,equal checkpoint/history/config/manifest and decompressed predictions
+TUNING_LABELS,contradicted,static_code,LOW_DROPOUT raises .1 to .15; SHALLOW_INTERACTION repeats baseline one layer,discrimination_runner.py:20-25
+PLACEBO_SUPPORT,verified,static_code,"Placebos use common lag3 support and truncate history before model inference, resetting positions",discrimination_runner.py:69-86
+25_OF_27,verified,recomputed,Gate counts max deterioration over either primary condition and either seed,placebo_verification.json
+QFV2,unknown,static_code,No executed qf_v2 evidence; requirements and rolling/lockbox plans remain proposals,docs/protocols/qf_v2_requirements.md; experiments/registry.yaml
+ENVIRONMENT,verified,source_inspection,Copied lob interpreter permission denied; alternate installed CPU interpreters pass limited checks,cpu_checks.json

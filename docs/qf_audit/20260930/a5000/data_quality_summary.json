@@ -1,0 +1,234 @@
+{
+  "all_cache_rows": {
+    "rows": 688352,
+    "missing_top_rows": 103936,
+    "nonpositive_nonmissing_top_rows": 3338,
+    "negative_top_rows": 0,
+    "crossed_positive_top_rows": 0,
+    "locked_positive_top_rows": 10259
+  },
+  "model_common_dates_existing_grid_rows": {
+    "rows": 517285,
+    "missing_top_rows": 23554,
+    "nonpositive_nonmissing_top_rows": 1893,
+    "negative_top_rows": 0,
+    "crossed_positive_top_rows": 0,
+    "locked_positive_top_rows": 5678
+  },
+  "asset_mapping_checks": [
+    {
+      "asset_file": "KR7000030007_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7000100008_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7000120006_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7000150003_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7000270009_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7000660001_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7000720003_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7000810002_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7001040005_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7001450006_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7002380004_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7002550002_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7002790004_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7003550001_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7004020004_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7004170007_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7005300009_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7005380001_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7005440003_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7005490008_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7005830005_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7005930003_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7006400006_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7006800007_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7007070006_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7008770000_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    },
+    {
+      "asset_file": "KR7009150004_t",
+      "distinct_ISU_CD": 1,
+      "ISU_CD_matches_filename": true,
+      "distinct_TICKER": 1,
+      "missing_identifier_cells": 0
+    }
+  ],
+  "session_period_coverage": [
+    {
+      "period": "before_20160801",
+      "date_min": 20150701,
+      "date_max": 20160729,
+      "days_union": 268,
+      "rows": 371614,
+      "15_00_to_15_20_rows": 19837,
+      "clock_strings_outside_normal_intraday_format": 1
+    },
+    {
+      "period": "from_20160801",
+      "date_min": 20160801,
+      "date_max": 20170630,
+      "days_union": 226,
+      "rows": 316738,
+      "15_00_to_15_20_rows": 18306,
+      "clock_strings_outside_normal_intraday_format": 0
+    }
+  ],
+  "calendar": "No calendar engine in loader: intersect observed dates only. KRX brochure PDF page 16 documents extension effective August 1 2016; no cell-level session flags.",
+  "discarded_union_dates": [
+    20150728
+  ],
+  "present_grid_vs_constructed": "38 targets/day guaranteed downstream; zero full 39-row source days in sampled workbooks"
+}

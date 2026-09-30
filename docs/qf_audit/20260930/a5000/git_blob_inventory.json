@@ -1,0 +1,415 @@
+{
+  "large_blob_threshold": 10000000,
+  "historical_large_blobs": [
+    [
+      13138246,
+      "best_lob_mode_False_256_16_4.pth",
+      "ccb2d78ba0f9eb6e2a1529a385fad09c41ac00ad"
+    ],
+    [
+      13608262,
+      "best_lob_mode_True_256_16_4.pth",
+      "2b14077ad9a59378f872546acb976cb5c6c6379d"
+    ],
+    [
+      63053783,
+      "best_lob_model_baseline_mlp_False.pth",
+      "29dff421b26fe3b244da734111ce17564dc12f03"
+    ],
+    [
+      134496215,
+      "best_lob_model_baseline_mlp_True.pth",
+      "9a4c8a52a3ff0af483ca4a1a801897f7f925c271"
+    ],
+    [
+      12563075,
+      "references/market_data_and_krx/krx_eng_brochure_2017.pdf",
+      "86c33ed6a3bddec1e61bea0228729b78d72a8a91"
+    ]
+  ],
+  "tracked_trees": {
+    "073cd89b556224eeae22413c3c05188a947e990a": {
+      "categories": {
+        ".ipynb_checkpoints": {
+          "files": 2,
+          "bytes": 6503
+        },
+        "checkpoint": {
+          "files": 2,
+          "bytes": 7101324
+        },
+        "configs": {
+          "files": 2,
+          "bytes": 0
+        },
+        "data": {
+          "files": 6,
+          "bytes": 2328585
+        },
+        "cache_csv": {
+          "files": 28,
+          "bytes": 212226581
+        },
+        "workbooks": {
+          "files": 27,
+          "bytes": 161779048
+        },
+        "main.py": {
+          "files": 1,
+          "bytes": 4627
+        },
+        "main_mask_test.py": {
+          "files": 1,
+          "bytes": 1876
+        },
+        "requirements.txt": {
+          "files": 1,
+          "bytes": 0
+        },
+        "src": {
+          "files": 31,
+          "bytes": 35495
+        },
+        "tests": {
+          "files": 2,
+          "bytes": 1850
+        }
+      },
+      "gitattributes": [],
+      "total_bytes": 383485889
+    },
+    "74cce6b90d2b95c36d305db26a9892fedfe515e5": {
+      "categories": {
+        ".gitignore": {
+          "files": 1,
+          "bytes": 76
+        },
+        ".ipynb_checkpoints": {
+          "files": 3,
+          "bytes": 15671
+        },
+        "checkpoint": {
+          "files": 10,
+          "bytes": 249749144
+        },
+        "configs": {
+          "files": 2,
+          "bytes": 0
+        },
+        "data": {
+          "files": 6,
+          "bytes": 2328585
+        },
+        "cache_csv": {
+          "files": 28,
+          "bytes": 212226581
+        },
+        "workbooks": {
+          "files": 27,
+          "bytes": 161779048
+        },
+        "experiment_log": {
+          "files": 3,
+          "bytes": 116173
+        },
+        "main.py": {
+          "files": 1,
+          "bytes": 4833
+        },
+        "main_baseline.py": {
+          "files": 1,
+          "bytes": 8962
+        },
+        "main_classical_baselines.py": {
+          "files": 1,
+          "bytes": 9441
+        },
+        "main_mask_test.py": {
+          "files": 1,
+          "bytes": 3463
+        },
+        "main_parallel_asset_attention.py": {
+          "files": 1,
+          "bytes": 12545
+        },
+        "main_single_asset_ablation.py": {
+          "files": 1,
+          "bytes": 16650
+        },
+        "manuscript": {
+          "files": 8,
+          "bytes": 420039
+        },
+        "no_investor.out": {
+          "files": 1,
+          "bytes": 486334
+        },
+        "no_investor_lstm.out": {
+          "files": 1,
+          "bytes": 486748
+        },
+        "no_investor_mlp.out": {
+          "files": 1,
+          "bytes": 486701
+        },
+        "nohup.out": {
+          "files": 1,
+          "bytes": 4630
+        },
+        "noinvestor.out": {
+          "files": 1,
+          "bytes": 486320
+        },
+        "references": {
+          "files": 99,
+          "bytes": 73536037
+        },
+        "requirements.txt": {
+          "files": 1,
+          "bytes": 0
+        },
+        "results": {
+          "files": 79,
+          "bytes": 201283
+        },
+        "scripts": {
+          "files": 6,
+          "bytes": 7805
+        },
+        "src": {
+          "files": 32,
+          "bytes": 38304
+        },
+        "tests": {
+          "files": 2,
+          "bytes": 3943
+        },
+        "yes_investor.out": {
+          "files": 1,
+          "bytes": 486809
+        },
+        "yes_investor_lstm.out": {
+          "files": 1,
+          "bytes": 488812
+        },
+        "yes_investor_mlp.out": {
+          "files": 1,
+          "bytes": 486626
+        }
+      },
+      "gitattributes": [],
+      "total_bytes": 703891563
+    },
+    "feb10a130bb036617229d6c4c9bc4a96df3b9fe6": {
+      "categories": {
+        ".env.example": {
+          "files": 1,
+          "bytes": 59
+        },
+        ".gitignore": {
+          "files": 1,
+          "bytes": 516
+        },
+        ".ipynb_checkpoints": {
+          "files": 3,
+          "bytes": 15671
+        },
+        "Makefile": {
+          "files": 1,
+          "bytes": 113
+        },
+        "QUEUE_SETUP_REPORT.md": {
+          "files": 1,
+          "bytes": 1940
+        },
+        "README.md": {
+          "files": 1,
+          "bytes": 1268
+        },
+        "artifacts": {
+          "files": 1,
+          "bytes": 215
+        },
+        "checkpoint": {
+          "files": 10,
+          "bytes": 249749144
+        },
+        "configs": {
+          "files": 12,
+          "bytes": 3578
+        },
+        "data": {
+          "files": 6,
+          "bytes": 2328585
+        },
+        "cache_csv": {
+          "files": 28,
+          "bytes": 212226581
+        },
+        "workbooks": {
+          "files": 27,
+          "bytes": 161779048
+        },
+        "docs": {
+          "files": 8,
+          "bytes": 5860
+        },
+        "environment.txt": {
+          "files": 1,
+          "bytes": 426
+        },
+        "experiment_log": {
+          "files": 3,
+          "bytes": 116173
+        },
+        "experiments": {
+          "files": 22,
+          "bytes": 12365
+        },
+        "git_state.txt": {
+          "files": 1,
+          "bytes": 187
+        },
+        "legacy": {
+          "files": 5,
+          "bytes": 122157
+        },
+        "lob_forecasting": {
+          "files": 57,
+          "bytes": 164386
+        },
+        "main.py": {
+          "files": 1,
+          "bytes": 85
+        },
+        "main_baseline.py": {
+          "files": 1,
+          "bytes": 150
+        },
+        "main_classical_baselines.py": {
+          "files": 1,
+          "bytes": 194
+        },
+        "main_mask_test.py": {
+          "files": 1,
+          "bytes": 208
+        },
+        "main_parallel_asset_attention.py": {
+          "files": 1,
+          "bytes": 194
+        },
+        "main_single_asset_ablation.py": {
+          "files": 1,
+          "bytes": 202
+        },
+        "manuscript": {
+          "files": 8,
+          "bytes": 420039
+        },
+        "model_information_sets.csv": {
+          "files": 1,
+          "bytes": 819
+        },
+        "model_parameter_counts.csv": {
+          "files": 1,
+          "bytes": 277
+        },
+        "no_investor.out": {
+          "files": 1,
+          "bytes": 486334
+        },
+        "no_investor_lstm.out": {
+          "files": 1,
+          "bytes": 486748
+        },
+        "no_investor_mlp.out": {
+          "files": 1,
+          "bytes": 486701
+        },
+        "nohup.out": {
+          "files": 1,
+          "bytes": 4630
+        },
+        "noinvestor.out": {
+          "files": 1,
+          "bytes": 486320
+        },
+        "pyproject.toml": {
+          "files": 1,
+          "bytes": 453
+        },
+        "queue_dependencies.csv": {
+          "files": 1,
+          "bytes": 4868
+        },
+        "queue_gate_summary.csv": {
+          "files": 1,
+          "bytes": 311
+        },
+        "queue_job_counts.csv": {
+          "files": 1,
+          "bytes": 307
+        },
+        "queue_plan.csv": {
+          "files": 1,
+          "bytes": 52662
+        },
+        "references": {
+          "files": 105,
+          "bytes": 73538675
+        },
+        "requirements.txt": {
+          "files": 1,
+          "bytes": 25
+        },
+        "requirements": {
+          "files": 2,
+          "bytes": 72
+        },
+        "resource_estimate.csv": {
+          "files": 1,
+          "bytes": 894
+        },
+        "results": {
+          "files": 79,
+          "bytes": 201283
+        },
+        "scripts": {
+          "files": 21,
+          "bytes": 11599
+        },
+        "smoke_validation_report.md": {
+          "files": 1,
+          "bytes": 596
+        },
+        "src": {
+          "files": 32,
+          "bytes": 23317
+        },
+        "tests": {
+          "files": 9,
+          "bytes": 12134
+        },
+        "tools_refactor_fingerprint.py": {
+          "files": 1,
+          "bytes": 5565
+        },
+        "yes_investor.out": {
+          "files": 1,
+          "bytes": 486809
+        },
+        "yes_investor_lstm.out": {
+          "files": 1,
+          "bytes": 488812
+        },
+        "yes_investor_mlp.out": {
+          "files": 1,
+          "bytes": 486626
+        }
+      },
+      "gitattributes": [],
+      "total_bytes": 704216181
+    }
+  },
+  "lfs_warning": "No tracked .gitattributes at inspected refs. Workbooks, CSVs, and checkpoints are ordinary Git blobs; skip-smudge does not protect them. Published main already contains these blobs."
+}

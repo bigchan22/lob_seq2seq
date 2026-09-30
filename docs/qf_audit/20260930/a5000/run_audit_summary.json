@@ -1,0 +1,25 @@
+{
+  "inventory_rows": 129,
+  "status_counts": {
+    "completed": 120,
+    "unknown": 1,
+    "started": 7,
+    "failed/interrupted": 1
+  },
+  "family_kind_counts": {
+    "qf_pilot/aggregate_or_analysis": 8,
+    "qf_pilot/training_fit": 46,
+    "qf_discrimination/aggregate_or_analysis": 16,
+    "qf_discrimination/training_fit": 20,
+    "qf_discrimination/copied_artifact_reference": 1,
+    "pre_qf_legacy/legacy_invocation": 30,
+    "pre_qf_legacy/unattributed_execution_log": 8
+  },
+  "verified_prediction_splits": 136,
+  "unmatched_plan_entries": 148,
+  "historical_run_commits": [
+    "2aa4e064bf917016b1653a5344f78a08dbbb34eb"
+  ],
+  "unique_qf_fit_artifact_sets": 66,
+  "caution": "Inventory contains separately labeled aggregations, copies, smoke fits and older invocations; row count is not fresh training count."
+}

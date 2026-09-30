@@ -1,0 +1,383 @@
+{
+  "saved_placebo_support": [
+    {
+      "seed": 42,
+      "condition": "FULL_SYNCHRONIZED",
+      "split": "development_holdout",
+      "rows": 92610,
+      "days": 98,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 42,
+      "condition": "FULL_SYNCHRONIZED",
+      "split": "validation",
+      "rows": 45360,
+      "days": 48,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 42,
+      "condition": "NON_TARGET_MASKED",
+      "split": "development_holdout",
+      "rows": 92610,
+      "days": 98,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 42,
+      "condition": "NON_TARGET_MASKED",
+      "split": "validation",
+      "rows": 45360,
+      "days": 48,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 42,
+      "condition": "NON_TARGET_SLOT_PERMUTATION",
+      "split": "development_holdout",
+      "rows": 92610,
+      "days": 98,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 42,
+      "condition": "NON_TARGET_SLOT_PERMUTATION",
+      "split": "validation",
+      "rows": 45360,
+      "days": 48,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 42,
+      "condition": "OTHER_ASSETS_LAG_1",
+      "split": "development_holdout",
+      "rows": 92610,
+      "days": 98,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 42,
+      "condition": "OTHER_ASSETS_LAG_1",
+      "split": "validation",
+      "rows": 45360,
+      "days": 48,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 42,
+      "condition": "OTHER_ASSETS_LAG_2",
+      "split": "development_holdout",
+      "rows": 92610,
+      "days": 98,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 42,
+      "condition": "OTHER_ASSETS_LAG_2",
+      "split": "validation",
+      "rows": 45360,
+      "days": 48,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 42,
+      "condition": "OTHER_ASSETS_LAG_3",
+      "split": "development_holdout",
+      "rows": 92610,
+      "days": 98,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 42,
+      "condition": "OTHER_ASSETS_LAG_3",
+      "split": "validation",
+      "rows": 45360,
+      "days": 48,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 42,
+      "condition": "PRIOR_DAY_SAME_TIME",
+      "split": "development_holdout",
+      "rows": 92610,
+      "days": 98,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 42,
+      "condition": "PRIOR_DAY_SAME_TIME",
+      "split": "validation",
+      "rows": 45360,
+      "days": 48,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 7,
+      "condition": "FULL_SYNCHRONIZED",
+      "split": "development_holdout",
+      "rows": 92610,
+      "days": 98,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 7,
+      "condition": "FULL_SYNCHRONIZED",
+      "split": "validation",
+      "rows": 45360,
+      "days": 48,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 7,
+      "condition": "NON_TARGET_MASKED",
+      "split": "development_holdout",
+      "rows": 92610,
+      "days": 98,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 7,
+      "condition": "NON_TARGET_MASKED",
+      "split": "validation",
+      "rows": 45360,
+      "days": 48,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 7,
+      "condition": "NON_TARGET_SLOT_PERMUTATION",
+      "split": "development_holdout",
+      "rows": 92610,
+      "days": 98,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 7,
+      "condition": "NON_TARGET_SLOT_PERMUTATION",
+      "split": "validation",
+      "rows": 45360,
+      "days": 48,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 7,
+      "condition": "OTHER_ASSETS_LAG_1",
+      "split": "development_holdout",
+      "rows": 92610,
+      "days": 98,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 7,
+      "condition": "OTHER_ASSETS_LAG_1",
+      "split": "validation",
+      "rows": 45360,
+      "days": 48,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 7,
+      "condition": "OTHER_ASSETS_LAG_2",
+      "split": "development_holdout",
+      "rows": 92610,
+      "days": 98,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 7,
+      "condition": "OTHER_ASSETS_LAG_2",
+      "split": "validation",
+      "rows": 45360,
+      "days": 48,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 7,
+      "condition": "OTHER_ASSETS_LAG_3",
+      "split": "development_holdout",
+      "rows": 92610,
+      "days": 98,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 7,
+      "condition": "OTHER_ASSETS_LAG_3",
+      "split": "validation",
+      "rows": 45360,
+      "days": 48,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 7,
+      "condition": "PRIOR_DAY_SAME_TIME",
+      "split": "development_holdout",
+      "rows": 92610,
+      "days": 98,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    },
+    {
+      "seed": 7,
+      "condition": "PRIOR_DAY_SAME_TIME",
+      "split": "validation",
+      "rows": 45360,
+      "days": 48,
+      "assets": 27,
+      "origin_min": "09:30:00",
+      "origin_max": "15:10:00",
+      "same_keys_and_labels_as_full": true,
+      "duplicate_keys": 0
+    }
+  ],
+  "recomputed_assets_deteriorating": 25,
+  "criterion": "max deterioration per asset over two primary conditions AND both seeds, not all assets worsening under every condition/seed",
+  "saved_summary": [
+    {
+      "condition": "NON_TARGET_MASKED",
+      "mean_deterioration": 0.0262417570280743,
+      "ci_low": 0.0103970942520736,
+      "ci_high": 0.0418950016014345
+    },
+    {
+      "condition": "NON_TARGET_SLOT_PERMUTATION",
+      "mean_deterioration": 0.0040781527321233,
+      "ci_low": 0.0035524497584787,
+      "ci_high": 0.0046309469510379
+    },
+    {
+      "condition": "OTHER_ASSETS_LAG_1",
+      "mean_deterioration": -0.0087650465579921,
+      "ci_low": -0.0107095242916676,
+      "ci_high": -0.0066063332934672
+    },
+    {
+      "condition": "OTHER_ASSETS_LAG_2",
+      "mean_deterioration": -0.0257568073686326,
+      "ci_low": -0.0302398334016143,
+      "ci_high": -0.0211140384244213
+    },
+    {
+      "condition": "OTHER_ASSETS_LAG_3",
+      "mean_deterioration": -0.1109125680986377,
+      "ci_low": -0.1286940359453837,
+      "ci_high": -0.0933598498803247
+    },
+    {
+      "condition": "PRIOR_DAY_SAME_TIME",
+      "mean_deterioration": 0.0018686765739185,
+      "ci_low": -0.0099181392436142,
+      "ci_high": 0.0154013934246714
+    }
+  ],
+  "status": "verified",
+  "method": "recomputed",
+  "bootstrap": "not rerun"
+}

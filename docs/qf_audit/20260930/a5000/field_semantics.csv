@@ -1,0 +1,10 @@
+fields,name_based_interpretation_only,cell_or_schema_evidence,our_code_operation,upstream_provenance
+ISU_CD/TICKER,asset identifiers,single identifiers per cache; ISU_CD matches filename,not used as own feature directly; stem orders embeddings,provider universe selection/company mapping unknown
+ORD_DD,date field,YYYYMMDD cache values; source coverage 20150701-20170630,sorted date intersection; no exchange calendar,timezone and event-date conventions undocumented
+TIME_INTERVAL,time-like field,"source XML time fractions/strings, one elapsed duration; clocks sampled/exhaustive as labeled",string strip; left join imposed 09:00-15:20 grid,interval start/end observation and release time unknown
+ASK/BID_STEP1_BSTORD_PRC,top prices by name,finite/positive validity checked; missing and zero present,float32 mid/relative return labels and log-relative features after daily fill,snapshot vs mean/endpoint; quote observation time; currency/adjustments unknown
+ASK/BID_STEP2-5_BSTORD_PRC,deeper prices by name,missing/zero values present,loaded but not included in 13-feature primary model,depth semantics and price adjustments unknown
+ASK/BID_STEP1-5_BSTORD_RQTY,depth quantities by name,missing present; no negative cache quantities found,daily fill then log1p; UM reconstructs clipped nonnegative quantities,instantaneous state vs average/sum; quantity units unknown
+TRD_PRC,trade price by name,missing present,not in 13-feature primary model,last trade vs average vs interval endpoint unknown
+BUY/SELL_PRC11/12/21/22 and QTY11/12/21/22,investor group price/quantity by names,upstream investor group definitions and timing unavailable,excluded in main QF; old investor variants fill then optional lag shift,flow vs cumulative/snapshot; group mapping release timing unknown
+BUY/SELL_PRC2_AGG_WAVG and QTY2_AGG_SUM,names suggest weighted average/sum,not proof of provider formula or within-interval sampling,loaded raw columns; absent from primary 13-feature set,weights population units aggregation/filling unknown

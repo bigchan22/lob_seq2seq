@@ -1,0 +1,523 @@
+{
+  "server_role": "candidate_reference_server_actual_rtx4090_not_a5000",
+  "audit_timestamp": "2026-09-30T14:49:56.584078+00:00",
+  "repository_candidates": [
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor",
+      "branch": "main",
+      "full_head_sha": "74cce6b90d2b95c36d305db26a9892fedfe515e5",
+      "normal_git_access": true,
+      "metadata_recovered_via_explicit_git_dir": false,
+      "git_pointer": "directory",
+      "clean": false,
+      "working_tree_delta_summary": {
+        "tracked_modified_paths": 51,
+        "mode_or_type_changes": 47,
+        "core_code_diff_empty": true,
+        "untracked_categories": [
+          "?? UPLOAD_ME_qf_audit_20260812_131004.zip",
+          "?? audit_qf_20260812_131004/",
+          "?? results/parallel_asset_attention_investor_lag1_valtest_cuda_20260713_seed123/",
+          "?? results/parallel_asset_attention_investor_lag1_valtest_cuda_20260713_seed7/",
+          "?? results/parallel_asset_attention_no_investor_valtest_cuda_20260713_seed123/",
+          "?? results/parallel_asset_attention_no_investor_valtest_cuda_20260713_seed7/",
+          "?? results/single_asset_ablation_investor_lag1_valtest_cuda_20260713_seed123/",
+          "?? results/single_asset_ablation_investor_lag1_valtest_cuda_20260713_seed7/",
+          "?? results/single_asset_ablation_no_investor_valtest_cuda_20260713_seed123/",
+          "?? results/single_asset_ablation_no_investor_valtest_cuda_20260713_seed7/",
+          "?? scripts/run_overnight_seed_sweep_20260713.sh"
+        ]
+      },
+      "remote_identity": "git@github.com:bigchan22/lob_seq2seq.git",
+      "source_workbook_files": 27,
+      "derived_top_level_csvs": 27
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_baseline_20260812_235444",
+      "branch": "",
+      "full_head_sha": "74cce6b90d2b95c36d305db26a9892fedfe515e5",
+      "normal_git_access": false,
+      "metadata_recovered_via_explicit_git_dir": true,
+      "git_pointer": "gitdir: HISTORICAL_WORKSPACE_ROOT/lob_seq2seq_predictor/.git/worktrees/lob_seq2seq_predictor_qf_baseline_20260812_235444",
+      "clean": false,
+      "working_tree_delta_summary": {
+        "tracked_modified_paths": 47,
+        "mode_or_type_changes": 47,
+        "core_code_diff_empty": true,
+        "untracked_categories": []
+      },
+      "remote_identity": "git@github.com:bigchan22/lob_seq2seq.git",
+      "source_workbook_files": 27,
+      "derived_top_level_csvs": 27
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_clean_20260813_014759",
+      "branch": "refactor/qf-layout-clean-20260813_014759",
+      "full_head_sha": "e599b3534f115dca1fcda5c85bd00f84f6ad7094",
+      "normal_git_access": false,
+      "metadata_recovered_via_explicit_git_dir": true,
+      "git_pointer": "gitdir: HISTORICAL_WORKSPACE_ROOT/lob_seq2seq_predictor/.git/worktrees/lob_seq2seq_predictor_qf_clean_20260813_014759",
+      "clean": false,
+      "working_tree_delta_summary": {
+        "tracked_modified_paths": 48,
+        "mode_or_type_changes": 48,
+        "core_code_diff_empty": true,
+        "untracked_categories": []
+      },
+      "remote_identity": "git@github.com:bigchan22/lob_seq2seq.git",
+      "source_workbook_files": 27,
+      "derived_top_level_csvs": 27
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_clean_baseline_20260813_014759",
+      "branch": "",
+      "full_head_sha": "74cce6b90d2b95c36d305db26a9892fedfe515e5",
+      "normal_git_access": false,
+      "metadata_recovered_via_explicit_git_dir": true,
+      "git_pointer": "gitdir: HISTORICAL_WORKSPACE_ROOT/lob_seq2seq_predictor/.git/worktrees/lob_seq2seq_predictor_qf_clean_baseline_20260813_014759",
+      "clean": false,
+      "working_tree_delta_summary": {
+        "tracked_modified_paths": 47,
+        "mode_or_type_changes": 47,
+        "core_code_diff_empty": true,
+        "untracked_categories": []
+      },
+      "remote_identity": "git@github.com:bigchan22/lob_seq2seq.git",
+      "source_workbook_files": 27,
+      "derived_top_level_csvs": 27
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217",
+      "branch": "exp/qf-discrimination-20260813_115217",
+      "full_head_sha": "feb10a130bb036617229d6c4c9bc4a96df3b9fe6",
+      "normal_git_access": false,
+      "metadata_recovered_via_explicit_git_dir": true,
+      "git_pointer": "gitdir: HISTORICAL_WORKSPACE_ROOT/lob_seq2seq_predictor/.git/worktrees/lob_seq2seq_predictor_qf_discrimination_20260813_115217",
+      "clean": false,
+      "working_tree_delta_summary": {
+        "tracked_modified_paths": 62,
+        "mode_or_type_changes": 62,
+        "core_code_diff_empty": true,
+        "untracked_categories": []
+      },
+      "remote_identity": "git@github.com:bigchan22/lob_seq2seq.git",
+      "source_workbook_files": 27,
+      "derived_top_level_csvs": 27
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_queue_20260813_092802",
+      "branch": "exp/qf-core-queue-20260813_092802",
+      "full_head_sha": "7c1c84c2be4e473003addeaa31d15df4d5555a1b",
+      "normal_git_access": false,
+      "metadata_recovered_via_explicit_git_dir": true,
+      "git_pointer": "gitdir: HISTORICAL_WORKSPACE_ROOT/lob_seq2seq_predictor/.git/worktrees/lob_seq2seq_predictor_qf_queue_20260813_092802",
+      "clean": false,
+      "working_tree_delta_summary": {
+        "tracked_modified_paths": 56,
+        "mode_or_type_changes": 56,
+        "core_code_diff_empty": true,
+        "untracked_categories": []
+      },
+      "remote_identity": "git@github.com:bigchan22/lob_seq2seq.git",
+      "source_workbook_files": 27,
+      "derived_top_level_csvs": 27
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_refactor_20260812_232959",
+      "branch": "refactor/qf-layout-20260812_232959",
+      "full_head_sha": "422d08ddadefc8bd39a83a227900d86076edc344",
+      "normal_git_access": false,
+      "metadata_recovered_via_explicit_git_dir": true,
+      "git_pointer": "gitdir: HISTORICAL_WORKSPACE_ROOT/lob_seq2seq_predictor/.git/worktrees/lob_seq2seq_predictor_qf_refactor_20260812_232959",
+      "clean": false,
+      "working_tree_delta_summary": {
+        "tracked_modified_paths": 48,
+        "mode_or_type_changes": 48,
+        "core_code_diff_empty": true,
+        "untracked_categories": []
+      },
+      "remote_identity": "git@github.com:bigchan22/lob_seq2seq.git",
+      "source_workbook_files": 27,
+      "derived_top_level_csvs": 27
+    }
+  ],
+  "selected_repository_path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217",
+  "selection_evidence": "Most developed local implementation with Stage2 corrected factors, tuning and matching artifacts; pilot artifacts separately at Q. Not selected by mtime; later September candidate absent.",
+  "sanitized_remote_identity": "git@github.com:bigchan22/lob_seq2seq.git",
+  "remote_advertised_refs": {
+    "refs/heads/main": "073cd89b556224eeae22413c3c05188a947e990a"
+  },
+  "inspected_code_branch": "exp/qf-discrimination-20260813_115217",
+  "inspected_code_sha": "feb10a130bb036617229d6c4c9bc4a96df3b9fe6",
+  "inspected_code_available_on_advertised_remote": false,
+  "historical_candidate_branch": "exp/qf-leadlag-competition-20260901_102354",
+  "historical_candidate_sha": "99e305a904eaebeaa6d9bedec827426c3de9a593",
+  "historical_candidate_local_object_present": false,
+  "working_tree_clean": false,
+  "working_tree_delta_summary": "D: 47 reference symlink-to-regular-file changes plus 15 executable-mode changes; no core Python/config/test content diff. HEAD does not reproduce whole dirty filesystem. BASE has additional manuscript/log edits and untracked older result/audit paths.",
+  "historical_run_commits": [
+    {
+      "sha": "2aa4e064bf917016b1653a5344f78a08dbbb34eb",
+      "scope": "pilot run git_state.txt",
+      "dirty_state": "unknown"
+    },
+    {
+      "sha": "unknown",
+      "scope": "Stage2 per-fit provenance; local branch and saved patches do not establish exact execution SHA"
+    }
+  ],
+  "interpreter_path": "HISTORICAL_CONDA_ROOT/envs/lob/bin/python3.10",
+  "relocated_interpreter_path": "RELOCATED_CONDA_ROOT/envs/lob/bin/python",
+  "relocated_interpreter_test": "permission denied; not modified",
+  "audit_interpreters": [
+    "EXISTING_CONDA_ROOT/bin/python3",
+    "EXISTING_CONDA_ROOT/envs/mpnn/bin/python"
+  ],
+  "dependency_versions": {
+    "historical_saved_metadata": {
+      "python": "3.10.19",
+      "torch": "2.5.1",
+      "numpy": "2.0.1",
+      "pandas": "2.3.3",
+      "sklearn": "1.7.2",
+      "openpyxl": "3.1.5",
+      "PyYAML": "6.0.3"
+    },
+    "audit_base": {
+      "python": "3.13.5",
+      "torch": "2.13.0+cu130",
+      "numpy": "2.5.1",
+      "PyYAML": "6.0.2",
+      "pytest": "9.1.1"
+    },
+    "audit_mpnn": {
+      "interpreter": "EXISTING_CONDA_ROOT/envs/mpnn/bin/python",
+      "python": "3.9.16",
+      "torch": "1.12.1",
+      "cuda_build": "11.3",
+      "numpy": "1.22.3",
+      "pandas": "1.5.3",
+      "openpyxl": "3.1.5",
+      "sklearn": "1.2.2",
+      "PyYAML": "6.0",
+      "project_imports": "qf_training and discrimination_factors passed; no dataset load, training or checkpoint load"
+    }
+  },
+  "gpu_inventory": [
+    {
+      "index": 0,
+      "model": "NVIDIA GeForce RTX 4090",
+      "vram_MiB": 24564,
+      "free_MiB": 24082,
+      "driver": "595.71.05"
+    },
+    {
+      "index": 1,
+      "model": "NVIDIA GeForce RTX 4090",
+      "vram_MiB": 24564,
+      "free_MiB": 24082,
+      "driver": "595.71.05"
+    },
+    {
+      "index": 2,
+      "model": "NVIDIA GeForce RTX 4090",
+      "vram_MiB": 24564,
+      "free_MiB": 24082,
+      "driver": "595.71.05"
+    },
+    {
+      "index": 3,
+      "model": "NVIDIA GeForce RTX 4090",
+      "vram_MiB": 24564,
+      "free_MiB": 24082,
+      "driver": "595.71.05"
+    }
+  ],
+  "cpu_inventory": {
+    "model": "Intel Xeon Gold 5416S",
+    "sockets": 2,
+    "physical_cores": 32,
+    "logical_cpus": 64
+  },
+  "memory_inventory": {
+    "MemTotal_KiB": 528045436,
+    "MemAvailable_KiB": 516476984,
+    "SwapTotal_KiB": 8388604,
+    "SwapFree_KiB": 8261784
+  },
+  "disk_inventory": {
+    "path": "WORKSPACE_ROOT",
+    "total_bytes": 942860439552,
+    "free_bytes": 478204133376
+  },
+  "active_jobs_summary": {
+    "gpu_compute_jobs": [],
+    "method": "nvidia-smi selective compute-process query",
+    "scope": "initial and final snapshots; no jobs interrupted; no unrelated process arguments dumped"
+  },
+  "source_data_roots": [
+    "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217/data/raw/KRXaggData",
+    "WORKSPACE_ROOT/lob_seq2seq_predictor/data/raw/KRXaggData",
+    "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_queue_20260813_092802/data/raw/KRXaggData"
+  ],
+  "derived_data_roots": [
+    "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217/data/processed",
+    "WORKSPACE_ROOT/lob_seq2seq_predictor/data/processed",
+    "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_queue_20260813_092802/data/processed"
+  ],
+  "source_inventory_path": "AUDIT_ROOT/source_inventory.csv",
+  "representative_checksums": [
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217/data/raw/KRXaggData/KR7000030007_t.xlsx",
+      "sha256": "44c1d756a9242e325c37e12c3be5e0571deb4ab72031ab3c6f741cb988b6fdf6"
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217/data/raw/KRXaggData/KR7008770000_t.xlsx",
+      "sha256": "d9ff14b98a42043ebb4c09a9fc83e4bf62d219693b3d041423e971c8b66f12ce"
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217/data/raw/KRXaggData/KR7009150004_t.xlsx",
+      "sha256": "fa37df2fd76f26aa4a228c797e4bbf43c332ae7a3df0188e95c57eae8af664a6"
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217/data/processed/KR7000030007_t.csv",
+      "sha256": "c7a177a704beb7573951080156c74fa9658f5cf220eeda004d973c6a7e8bdf04"
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217/data/processed/KR7008770000_t.csv",
+      "sha256": "be833461eeac62191810f301958c662c4bc94f40afd45f22fc936c2e308e410f"
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217/data/processed/KR7009150004_t.csv",
+      "sha256": "cbaf7cc80a30ee1b489873fc22e3b2ad8d50958f24829796ed16a6d27183b8bd"
+    }
+  ],
+  "source_coverage": {
+    "train": {
+      "days": 345,
+      "date_min": "20150701",
+      "date_max": "20161123",
+      "labels": 353970,
+      "class_0": 108023,
+      "cache_missing_endpoint_labels": 28195,
+      "cache_missing_endpoint_flat_labels": 21803,
+      "cache_missing_endpoint_equal_mid_labels": 21724,
+      "invalid_or_missing_endpoint_labels": 30015,
+      "class_1": 146929,
+      "class_2": 99018
+    },
+    "validation": {
+      "days": 49,
+      "date_min": "20161124",
+      "date_max": "20170203",
+      "labels": 50274,
+      "class_2": 11936,
+      "cache_missing_endpoint_labels": 1994,
+      "cache_missing_endpoint_flat_labels": 1825,
+      "cache_missing_endpoint_equal_mid_labels": 1799,
+      "invalid_or_missing_endpoint_labels": 1994,
+      "class_1": 25906,
+      "class_0": 12432
+    },
+    "development_holdout": {
+      "days": 99,
+      "date_min": "20170206",
+      "date_max": "20170630",
+      "labels": 101574,
+      "class_2": 25309,
+      "cache_missing_endpoint_labels": 4411,
+      "cache_missing_endpoint_flat_labels": 3847,
+      "cache_missing_endpoint_equal_mid_labels": 3843,
+      "invalid_or_missing_endpoint_labels": 4418,
+      "class_0": 25800,
+      "class_1": 50465
+    }
+  },
+  "source_to_cache_pipeline": {
+    "conversion": "D/lob_forecasting/data/preprocess.py:30-56 read_excel first sheet -> same-stem CSV only if absent; no freshness/hash check",
+    "runtime": "qf_runner -> qf_training.load_data -> cli.parallel.bake_tensors -> LOBDataset common dates/master grid -> daily ffill/zero -> fixed transforms -> in-memory tensors -> chronological day split",
+    "cache_metadata": "no provider timing/observation flags; no historical source hash in run manifests; sampled numeric equivalence and hashes recorded now"
+  },
+  "model_entrypoints": [
+    "D/lob_forecasting/models/qf_variants.py:72",
+    "D/lob_forecasting/experiments/qf_runner.py:34",
+    "D/lob_forecasting/experiments/discrimination_runner.py:114"
+  ],
+  "configuration_paths": [
+    "D/configs/qf/models/matched_temporal_v1.yaml",
+    "D/configs/qf/protocols/qf_decomposition_dev_v1.yaml",
+    "D/configs/qf/plans/qf_queue_plan.yaml",
+    "STAGE/selected_configurations.yaml"
+  ],
+  "run_output_roots": [
+    "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_queue_20260813_092802/artifacts/runs",
+    "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217/artifacts/qf_discrimination/20260813_115217/runs",
+    "WORKSPACE_ROOT/lob_seq2seq_predictor/results"
+  ],
+  "run_inventory_path": "AUDIT_ROOT/run_inventory.csv",
+  "checks_performed": {
+    "parameter_counts": {
+      "S": 403587,
+      "U0": 403587,
+      "U1": 407043,
+      "UM": 407939,
+      "UX": 407772,
+      "UC": 605315,
+      "UA": 605315,
+      "UM_V2_LITE": 424333,
+      "UM_V2_DEPTH": 424463
+    },
+    "checks": {
+      "U0_peer_independence_maxdiff": 0.0,
+      "U1_peer_independence_maxdiff": 0.0,
+      "UC_peer_independence_maxdiff": 0.0,
+      "UA_future_perturbation_maxdiff": 0.0,
+      "UM_v2_target_exclusion_maxdiff": 4.76837158203125e-07,
+      "factor_scaler_heldout_independence": true,
+      "python39_syntax_files": 91,
+      "yaml_parsed": 5,
+      "existing_pytest": "6 passed: tests/leakage/test_causal_masks.py and tests/qf/test_queue_contract.py; bytecode and pytest cache disabled",
+      "prior_audit_probe_failure": "An initial heldout synthetic perturbation of +100 overflowed exp and triggered the factor nonfinite guard. Repeated with finite +0.5; scientific code unchanged.",
+      "scope": "CPU synthetic inputs; no checkpoint load or scientific cache writes; does not establish full pipeline readiness"
+    },
+    "torch": "2.13.0+cu130",
+    "cuda_build": "13.0",
+    "alternate_environment_imports": {
+      "interpreter": "EXISTING_CONDA_ROOT/envs/mpnn/bin/python",
+      "python": "3.9.16",
+      "torch": "1.12.1",
+      "cuda_build": "11.3",
+      "numpy": "1.22.3",
+      "pandas": "1.5.3",
+      "openpyxl": "3.1.5",
+      "sklearn": "1.2.2",
+      "PyYAML": "6.0",
+      "project_imports": "qf_training and discrimination_factors passed; no dataset load, training or checkpoint load"
+    }
+  },
+  "checks_skipped": [
+    "training/tuning/new-model/qf_v2 work",
+    "checkpoint load/replay and prediction regeneration",
+    "cache rebuilding/data transfer/package installation",
+    "bootstrap rerun",
+    "GPU compute validation",
+    "full historical environment/full test suite",
+    "24 remaining workbook full-cell scans",
+    "missing GRU comparison",
+    "untouched reserve access"
+  ],
+  "unresolved_questions": [
+    "Six historical worktree pointers and launchers reference inaccessible earlier root; executable modes changed",
+    "Inspected code SHA is unpublished on advertised remote refs; September candidate commit absent locally",
+    "Aggregation fill observation release timing units and corporate-action conventions not documented for supplied cells",
+    "Per-fit dirty state original host and source/cache identity incompletely recorded; Stage2 commit fields blank",
+    "Later GRU and trained-lag artifacts not found in bounded local project inventory",
+    "Copied lob interpreter permission denied; alternate installed CPU interpreters pass limited checks"
+  ],
+  "readiness_by_category": {
+    "source_data_present": {
+      "value": true,
+      "status": "verified",
+      "method": "source_inspection",
+      "scope": "27 workbook headers; full cells in 3 samples; all 27 cache CSVs"
+    },
+    "code_ready": {
+      "value": "partial",
+      "status": "verified",
+      "method": "static_code",
+      "limitation": "hardcoded old paths and broken worktree pointers/executable modes; code/tests audited"
+    },
+    "environment_ready": {
+      "value": "partial",
+      "status": "verified",
+      "method": "recomputed",
+      "limitation": "alternate CPU imports/checks work; historical interpreter permission denied; no pipeline replay"
+    },
+    "artifacts_available": {
+      "value": "partial",
+      "status": "verified",
+      "method": "saved_artifact",
+      "scope": "August pilot and Stage2; later A5000/GRU/trained-lag family unavailable"
+    },
+    "experiment_ready": {
+      "value": false,
+      "status": "unknown",
+      "method": "not_established",
+      "reason": "cross-server scientific version, provider provenance, environment restoration and protocol decisions unresolved"
+    },
+    "gpu_availability": {
+      "value": true,
+      "status": "verified",
+      "method": "source_inspection",
+      "scope": "four idle RTX4090 reported; no GPU computation performed"
+    }
+  },
+  "protocol_status": {
+    "legacy_implemented": {
+      "status": "verified",
+      "method": "static_code+saved_artifact",
+      "value": "daily-grid pilot and Stage2 development protocols"
+    },
+    "proposed_qf_v2": {
+      "status": "verified",
+      "method": "static_code",
+      "value": "requirements/templates/placeholder registry"
+    },
+    "executed_qf_v2": {
+      "status": "unknown",
+      "value": "no local execution evidence; not implemented in this audit"
+    }
+  },
+  "actions_performed": [
+    "read user/applicable instruction locations",
+    "bounded repository/machine/environment inventory",
+    "read-only XML workbook and CSV cache audit",
+    "saved-prediction CPU verification",
+    "bounded synthetic tests and safe imports",
+    "create new local audit outputs/helpers",
+    "verify existing remote advertised refs and published base",
+    "create isolated no-checkout audit branch; no data materialization",
+    "prepare explicit sanitized audit-only additions for review/commit/push"
+  ],
+  "audit_branch": "audit/qf-a5000-20260930-142604",
+  "publication_base_sha": "073cd89b556224eeae22413c3c05188a947e990a",
+  "publication_worktree": "AUDIT_WORKTREE",
+  "report_relative_paths": [
+    "docs/qf_audit/20260930/a5000/qf_a5000_audit.md",
+    "docs/qf_audit/20260930/a5000/qf_a5000_handoff.json",
+    "docs/qf_audit/20260930/a5000/source_inventory.csv",
+    "docs/qf_audit/20260930/a5000/run_inventory.csv"
+  ],
+  "publication_outcome": "Final commit SHA and verified push outcome are supplied outside the report; no self-referential commit hash.",
+  "git_transfer_warning": "Audit branch inherits already-published ordinary tracked data/checkpoints. Skip-smudge alone is insufficient. Use filtered no-checkout/sparse materialization. Git does not transfer untracked source workbooks/caches/run artifacts.",
+  "candidate_baseline_warning": "RTX3090 session must inventory its own state first; this handoff does not authorize overwrite of newer or dirty work.",
+  "local_audit_directory": "AUDIT_ROOT",
+  "known_worktrees_before_audit": "worktree WORKSPACE_ROOT/lob_seq2seq_predictor\nHEAD 74cce6b90d2b95c36d305db26a9892fedfe515e5\nbranch refs/heads/main\n\nworktree HISTORICAL_WORKSPACE_ROOT/lob_seq2seq_predictor_qf_baseline_20260812_235444\nHEAD 74cce6b90d2b95c36d305db26a9892fedfe515e5\ndetached\nprunable gitdir file points to non-existent location\n\nworktree HISTORICAL_WORKSPACE_ROOT/lob_seq2seq_predictor_qf_clean_20260813_014759\nHEAD e599b3534f115dca1fcda5c85bd00f84f6ad7094\nbranch refs/heads/refactor/qf-layout-clean-20260813_014759\nprunable gitdir file points to non-existent location\n\nworktree HISTORICAL_WORKSPACE_ROOT/lob_seq2seq_predictor_qf_clean_baseline_20260813_014759\nHEAD 74cce6b90d2b95c36d305db26a9892fedfe515e5\ndetached\nprunable gitdir file points to non-existent location\n\nworktree HISTORICAL_WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217\nHEAD feb10a130bb036617229d6c4c9bc4a96df3b9fe6\nbranch refs/heads/exp/qf-discrimination-20260813_115217\nprunable gitdir file points to non-existent location\n\nworktree HISTORICAL_WORKSPACE_ROOT/lob_seq2seq_predictor_qf_queue_20260813_092802\nHEAD 7c1c84c2be4e473003addeaa31d15df4d5555a1b\nbranch refs/heads/exp/qf-core-queue-20260813_092802\nprunable gitdir file points to non-existent location\n\nworktree HISTORICAL_WORKSPACE_ROOT/lob_seq2seq_predictor_qf_refactor_20260812_232959\nHEAD 422d08ddadefc8bd39a83a227900d86076edc344\nbranch refs/heads/refactor/qf-layout-20260812_232959\nprunable gitdir file points to non-existent location",
+  "relevant_refs_before_audit": "refs/heads/exp/qf-core-queue-20260813_092802 7c1c84c2be4e473003addeaa31d15df4d5555a1b\nrefs/heads/exp/qf-discrimination-20260813_115217 feb10a130bb036617229d6c4c9bc4a96df3b9fe6\nrefs/heads/main 74cce6b90d2b95c36d305db26a9892fedfe515e5\nrefs/heads/refactor/qf-layout-20260812_232959 422d08ddadefc8bd39a83a227900d86076edc344\nrefs/heads/refactor/qf-layout-clean-20260813_014759 e599b3534f115dca1fcda5c85bd00f84f6ad7094\nrefs/remotes/origin/main 073cd89b556224eeae22413c3c05188a947e990a",
+  "execution_inventory_summary": {
+    "inventory_rows": 129,
+    "status_counts": {
+      "completed": 120,
+      "unknown": 1,
+      "started": 7,
+      "failed/interrupted": 1
+    },
+    "family_kind_counts": {
+      "qf_pilot/aggregate_or_analysis": 8,
+      "qf_pilot/training_fit": 46,
+      "qf_discrimination/aggregate_or_analysis": 16,
+      "qf_discrimination/training_fit": 20,
+      "qf_discrimination/copied_artifact_reference": 1,
+      "pre_qf_legacy/legacy_invocation": 30,
+      "pre_qf_legacy/unattributed_execution_log": 8
+    },
+    "verified_prediction_splits": 136,
+    "unmatched_plan_entries": 148,
+    "historical_run_commits": [
+      "2aa4e064bf917016b1653a5344f78a08dbbb34eb"
+    ],
+    "unique_qf_fit_artifact_sets": 66,
+    "caution": "Inventory contains separately labeled aggregations, copies, smoke fits and older invocations; row count is not fresh training count."
+  },
+  "local_repository_inventory_path": "AUDIT_ROOT/repository_inventory.json"
+}

@@ -1,0 +1,40 @@
+{
+  "parameter_counts": {
+    "S": 403587,
+    "U0": 403587,
+    "U1": 407043,
+    "UM": 407939,
+    "UX": 407772,
+    "UC": 605315,
+    "UA": 605315,
+    "UM_V2_LITE": 424333,
+    "UM_V2_DEPTH": 424463
+  },
+  "checks": {
+    "U0_peer_independence_maxdiff": 0.0,
+    "U1_peer_independence_maxdiff": 0.0,
+    "UC_peer_independence_maxdiff": 0.0,
+    "UA_future_perturbation_maxdiff": 0.0,
+    "UM_v2_target_exclusion_maxdiff": 4.76837158203125e-07,
+    "factor_scaler_heldout_independence": true,
+    "python39_syntax_files": 91,
+    "yaml_parsed": 5,
+    "existing_pytest": "6 passed: tests/leakage/test_causal_masks.py and tests/qf/test_queue_contract.py; bytecode and pytest cache disabled",
+    "prior_audit_probe_failure": "An initial heldout synthetic perturbation of +100 overflowed exp and triggered the factor nonfinite guard. Repeated with finite +0.5; scientific code unchanged.",
+    "scope": "CPU synthetic inputs; no checkpoint load or scientific cache writes; does not establish full pipeline readiness"
+  },
+  "torch": "2.13.0+cu130",
+  "cuda_build": "13.0",
+  "alternate_environment_imports": {
+    "interpreter": "EXISTING_CONDA_ROOT/envs/mpnn/bin/python",
+    "python": "3.9.16",
+    "torch": "1.12.1",
+    "cuda_build": "11.3",
+    "numpy": "1.22.3",
+    "pandas": "1.5.3",
+    "openpyxl": "3.1.5",
+    "sklearn": "1.2.2",
+    "PyYAML": "6.0",
+    "project_imports": "qf_training and discrimination_factors passed; no dataset load, training or checkpoint load"
+  }
+}
