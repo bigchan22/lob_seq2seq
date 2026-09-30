@@ -1,0 +1,356 @@
+{
+  "audit_timestamp": "2026-09-30T15:08:26.367477+00:00",
+  "evidence_convention": "Local transport/tree/report parsing verified; source data, code semantics and results attributed to source audit, not re-executed here. Source REPORT SHA observed on remote, not supplied independently.",
+  "source_server_role": "candidate_reference_server_actual_rtx4090_not_a5000",
+  "source_hardware_label_correction": {
+    "requested": "A5000",
+    "source_audited": "4 RTX 4090",
+    "local_audited": "4 RTX 3090",
+    "evidence_status": "inferred",
+    "method": "source handoff/report states RTX4090; local nvidia-smi established RTX3090"
+  },
+  "verified_remote_identity": "git@github.com:bigchan22/lob_seq2seq.git",
+  "supplied_handoff_local_path": "WORKSPACE_ROOT/qf_a5000_handoff.json",
+  "supplied_handoff_sha256": "f71e1c1cc6400ad1b9d576bfdba70579f6ad0b18ea991d00306327595d8f7d47",
+  "code": {
+    "original_local_sha": null,
+    "original_local_dirty_state": "unknown_no_verified_project_checkout",
+    "source_inspected_sha": "feb10a130bb036617229d6c4c9bc4a96df3b9fe6",
+    "source_inspected_branch": "exp/qf-discrimination-20260813_115217",
+    "source_working_tree_clean": false,
+    "source_dirty_delta": "D: 47 reference symlink-to-regular-file changes plus 15 executable-mode changes; no core Python/config/test content diff. HEAD does not reproduce whole dirty filesystem. BASE has additional manuscript/log edits and untracked older result/audit paths.",
+    "source_code_available_from_remote": false,
+    "verification_method": "exact-SHA narrow blob-filtered fetch returned upload-pack: not our ref",
+    "source_reported_core_code_diff_empty": true,
+    "comparison_status": "unavailable",
+    "comparison_worktree": null,
+    "historical_september_sha": "99e305a904eaebeaa6d9bedec827426c3de9a593",
+    "historical_september_status": "not advertised at relevant ref; absent according to source; not substituted"
+  },
+  "report": {
+    "source_supplied_full_report_sha": null,
+    "remote_observed_report_sha": "0ebdb6782f2322e346dfb0c303762aab8635419c",
+    "remote_branch": "audit/qf-a5000-20260930-142604",
+    "verification": "fetched commit equals current advertised audit ref; independent supplied expected REPORT SHA missing",
+    "scientific_fields_consistent_with_supplied_handoff": {
+      "server_role": true,
+      "sanitized_remote_identity": true,
+      "inspected_code_sha": true,
+      "inspected_code_branch": true,
+      "working_tree_clean": true,
+      "working_tree_delta_summary": true,
+      "audit_branch": true,
+      "publication_base_sha": true,
+      "gpu_inventory": true
+    },
+    "parent_sha": "073cd89b556224eeae22413c3c05188a947e990a",
+    "parent_is_advertised_main": true,
+    "retrieved_files": [
+      {
+        "repository_path": "docs/qf_audit/20260930/a5000/qf_a5000_audit.md",
+        "git_blob_sha": "ae749969212c0ec40d0d41bb6627df2d2a6cf96b",
+        "bytes": 37286,
+        "sha256": "1c3afa7a6c9a13148d693dc9642922aafadb16ffd5b159528baeb9f429613b85",
+        "local_path": "RECEIVED_SOURCE_AUDIT_ROOT/0ebdb6782f2322e346dfb0c303762aab8635419c/qf_a5000_audit.md"
+      },
+      {
+        "repository_path": "docs/qf_audit/20260930/a5000/qf_a5000_handoff.json",
+        "git_blob_sha": "da2f3e84cc144112f5d93913b4f5dfcd3ed1ab31",
+        "bytes": 24050,
+        "sha256": "f55e3fc1f4f17c988490eee8032dae8d34df360d84630ac609a3bf8223b560be",
+        "local_path": "RECEIVED_SOURCE_AUDIT_ROOT/0ebdb6782f2322e346dfb0c303762aab8635419c/qf_a5000_handoff.json"
+      },
+      {
+        "repository_path": "docs/qf_audit/20260930/a5000/source_inventory.csv",
+        "git_blob_sha": "7c53d6bbae443732c23aa884853556d23e083762",
+        "bytes": 17984,
+        "sha256": "1663f9e4cc3c08de8979eaaaef39ff63ed5e5c6455b5a1cfd8429bb94cb82a5a",
+        "local_path": "RECEIVED_SOURCE_AUDIT_ROOT/0ebdb6782f2322e346dfb0c303762aab8635419c/source_inventory.csv"
+      },
+      {
+        "repository_path": "docs/qf_audit/20260930/a5000/run_inventory.csv",
+        "git_blob_sha": "09931ce07ba078e2f0729b2ccf7528215df3c95e",
+        "bytes": 305461,
+        "sha256": "0c3c758c9982e1ed205b06b25ea8250105104fdbab2bdd902f3969e8931e5afe",
+        "local_path": "RECEIVED_SOURCE_AUDIT_ROOT/0ebdb6782f2322e346dfb0c303762aab8635419c/run_inventory.csv"
+      },
+      {
+        "repository_path": "docs/qf_audit/20260930/a5000/git_blob_inventory.json",
+        "git_blob_sha": "a318f87da8d07e9c422f6c181e3d2d7eb20456c0",
+        "bytes": 9187,
+        "sha256": "d7be097f9a243a413e7d4c54c383bd639be7ff85ce5afea73f4fdf574a048af3",
+        "local_path": "RECEIVED_SOURCE_AUDIT_ROOT/0ebdb6782f2322e346dfb0c303762aab8635419c/git_blob_inventory.json"
+      },
+      {
+        "repository_path": "docs/qf_audit/20260930/a5000/source_audit_summary.json",
+        "git_blob_sha": "6eb07310a858344e786d46267e7ac71254b47f7a",
+        "bytes": 3476,
+        "sha256": "4ae35b84461d5c4efea2b0bbc6f4a409495646a60117cd720c538a2d48335924",
+        "local_path": "RECEIVED_SOURCE_AUDIT_ROOT/0ebdb6782f2322e346dfb0c303762aab8635419c/source_audit_summary.json"
+      },
+      {
+        "repository_path": "docs/qf_audit/20260930/a5000/run_audit_summary.json",
+        "git_blob_sha": "c02fce8f1ae6448dd3dc3c5bf9d66d4c8e86f6f9",
+        "bytes": 823,
+        "sha256": "402e929432c63faa2650eb19bab510b9b709dbbe1f07e63dcede5a284f1489b4",
+        "local_path": "RECEIVED_SOURCE_AUDIT_ROOT/0ebdb6782f2322e346dfb0c303762aab8635419c/run_audit_summary.json"
+      }
+    ],
+    "received_directory": "RECEIVED_SOURCE_AUDIT_ROOT/0ebdb6782f2322e346dfb0c303762aab8635419c"
+  },
+  "acquisition": {
+    "repo_path": "GIT_BRIDGE_ROOT",
+    "clone_filter": "blob:none",
+    "depth": 2,
+    "no_checkout": true,
+    "single_branch": "audit/qf-a5000-20260930-142604",
+    "submodule_initialization": false,
+    "lfs_smudge_skipped": true,
+    "server_filter_capability_confirmed": true,
+    "initial_object_counts": {
+      "commit": 2,
+      "tree": 29,
+      "blob": 0
+    },
+    "retrieved_source_audit_blob_count": 7,
+    "retrieved_source_audit_blob_bytes": 398267,
+    "scientific_blob_count_downloaded": 0,
+    "unrestricted_fallback": false
+  },
+  "tracked_content_warning": {
+    "evidence_status": "verified",
+    "published_base_tracked_data_paths": 61,
+    "published_base_total_tree_bytes_source_report": 383485889,
+    "published_base_has_ordinary_tracked_workbooks_caches_checkpoints": true,
+    "tracked_gitattributes_at_inspected_report": [],
+    "historical_max_checkpoint_blob_bytes_source_report": 134496215,
+    "history_scope": "Source report inventory; local clone deliberately shallow, not full history",
+    "method": "local path inventory and source-reported sizes; data blob sizes not remeasured locally"
+  },
+  "data": {
+    "local_presence": "No identified accessible KRX inputs in Phase A; none transferred in Phase B",
+    "source_report_counts": {
+      "supplied_aggregate_workbook": 27,
+      "derived_csv": 27
+    },
+    "source_report_bytes": {
+      "supplied_aggregate_workbook": 161779048,
+      "derived_csv": 204319112
+    },
+    "source_total_bytes": 366098160,
+    "source_total_mib": 349.13841247558594,
+    "storage_estimate_scope": "One copy of 27 supplied workbooks plus 27 top-level CSV caches. Excludes environment, temporary baking tensors, other caches/checkpoints/predictions/output reserve. No transfer authorized or performed.",
+    "source_schema": {
+      "workbooks": 27,
+      "sheets_per_workbook": 1,
+      "sheet_name": "Sheet1",
+      "columns": 45,
+      "header_coverage": "all 27",
+      "full_cell_coverage": "3 sampled workbooks",
+      "cache_scan_coverage": "27 top-level CSVs"
+    },
+    "representative_hashes_from_source": [
+      {
+        "path": "SOURCE_WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217/data/raw/KRXaggData/KR7000030007_t.xlsx",
+        "sha256": "44c1d756a9242e325c37e12c3be5e0571deb4ab72031ab3c6f741cb988b6fdf6"
+      },
+      {
+        "path": "SOURCE_WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217/data/raw/KRXaggData/KR7008770000_t.xlsx",
+        "sha256": "d9ff14b98a42043ebb4c09a9fc83e4bf62d219693b3d041423e971c8b66f12ce"
+      },
+      {
+        "path": "SOURCE_WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217/data/raw/KRXaggData/KR7009150004_t.xlsx",
+        "sha256": "fa37df2fd76f26aa4a228c797e4bbf43c332ae7a3df0188e95c57eae8af664a6"
+      },
+      {
+        "path": "SOURCE_WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217/data/processed/KR7000030007_t.csv",
+        "sha256": "c7a177a704beb7573951080156c74fa9658f5cf220eeda004d973c6a7e8bdf04"
+      },
+      {
+        "path": "SOURCE_WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217/data/processed/KR7008770000_t.csv",
+        "sha256": "be833461eeac62191810f301958c662c4bc94f40afd45f22fc936c2e308e410f"
+      },
+      {
+        "path": "SOURCE_WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217/data/processed/KR7009150004_t.csv",
+        "sha256": "cbaf7cc80a30ee1b489873fc22e3b2ad8d50958f24829796ed16a6d27183b8bd"
+      }
+    ],
+    "local_matching_hashes": [],
+    "byte_identity": "unresolved_no_local_counterparts",
+    "cache_compatibility": "unresolved_no_local_counterparts_and_source_CODE_unavailable",
+    "provider_provenance": "unknown; nonmissing/equal prices do not establish observations or fills",
+    "source_manifest_path": "RECEIVED_SOURCE_AUDIT_ROOT/0ebdb6782f2322e346dfb0c303762aab8635419c/source_inventory.csv"
+  },
+  "source_report_pipeline": {
+    "conversion": "D/lob_forecasting/data/preprocess.py:30-56 read_excel first sheet -> same-stem CSV only if absent; no freshness/hash check",
+    "runtime": "qf_runner -> qf_training.load_data -> cli.parallel.bake_tensors -> LOBDataset common dates/master grid -> daily ffill/zero -> fixed transforms -> in-memory tensors -> chronological day split",
+    "cache_metadata": "no provider timing/observation flags; no historical source hash in run manifests; sampled numeric equivalence and hashes recorded now"
+  },
+  "source_report_semantics": {
+    "features": "13 no-investor features in principal QF models; fixed log/log1p transforms; corrected UM train-only scaler",
+    "imposed_grid": "09:00–15:20 at ten nominal minutes; 39 constructed grid points / 38 labels, not observed exchange snapshots",
+    "fill": "daily per-asset forward-fill then zero-fill; no cross-day filling",
+    "labels": "float32 midpoint relative change to next imposed grid endpoint; Down=0 for r<-0.0001, Up=2 for r>0.0001, otherwise Flat=1; nonpositive current midpoint defaults Flat",
+    "splits": {
+      "train": {
+        "days": 345,
+        "date_min": "20150701",
+        "date_max": "20161123",
+        "labels": 353970,
+        "class_0": 108023,
+        "cache_missing_endpoint_labels": 28195,
+        "cache_missing_endpoint_flat_labels": 21803,
+        "cache_missing_endpoint_equal_mid_labels": 21724,
+        "invalid_or_missing_endpoint_labels": 30015,
+        "class_1": 146929,
+        "class_2": 99018
+      },
+      "validation": {
+        "days": 49,
+        "date_min": "20161124",
+        "date_max": "20170203",
+        "labels": 50274,
+        "class_2": 11936,
+        "cache_missing_endpoint_labels": 1994,
+        "cache_missing_endpoint_flat_labels": 1825,
+        "cache_missing_endpoint_equal_mid_labels": 1799,
+        "invalid_or_missing_endpoint_labels": 1994,
+        "class_1": 25906,
+        "class_0": 12432
+      },
+      "development_holdout": {
+        "days": 99,
+        "date_min": "20170206",
+        "date_max": "20170630",
+        "labels": 101574,
+        "class_2": 25309,
+        "cache_missing_endpoint_labels": 4411,
+        "cache_missing_endpoint_flat_labels": 3847,
+        "cache_missing_endpoint_equal_mid_labels": 3843,
+        "invalid_or_missing_endpoint_labels": 4418,
+        "class_0": 25800,
+        "class_1": 50465
+      }
+    },
+    "scoring": "Source reports saved softmax probabilities; Down/Flat/Up; normalized sklearn natural-log loss vs separate paired-analysis true-probability clip at 1e-12 without renormalization",
+    "provenance": "source_audit_only_not_locally_recomputed"
+  },
+  "source_run_evidence": {
+    "summary": {
+      "inventory_rows": 129,
+      "status_counts": {
+        "completed": 120,
+        "unknown": 1,
+        "started": 7,
+        "failed/interrupted": 1
+      },
+      "family_kind_counts": {
+        "qf_pilot/aggregate_or_analysis": 8,
+        "qf_pilot/training_fit": 46,
+        "qf_discrimination/aggregate_or_analysis": 16,
+        "qf_discrimination/training_fit": 20,
+        "qf_discrimination/copied_artifact_reference": 1,
+        "pre_qf_legacy/legacy_invocation": 30,
+        "pre_qf_legacy/unattributed_execution_log": 8
+      },
+      "verified_prediction_splits": 136,
+      "unmatched_plan_entries": 148,
+      "historical_run_commits": [
+        "2aa4e064bf917016b1653a5344f78a08dbbb34eb"
+      ],
+      "unique_qf_fit_artifact_sets": 66,
+      "caution": "Inventory contains separately labeled aggregations, copies, smoke fits and older invocations; row count is not fresh training count."
+    },
+    "local_scientific_run_count_identified": 0,
+    "local_inventory_zero_rows_does_not_claim_machine_wide_zero_runs": true,
+    "source_run_inventory_path": "RECEIVED_SOURCE_AUDIT_ROOT/0ebdb6782f2322e346dfb0c303762aab8635419c/run_inventory.csv",
+    "source_predicted_arrays_downloaded": false,
+    "source_checkpoint_loaded": false,
+    "local_rescoring_performed": false
+  },
+  "source_report_metrics": {
+    "evidence_type": "source_report_saved_prediction_recomputation_not_local_recomputation",
+    "stage2_seed42": {
+      "ua_validation_nll": 0.88759305,
+      "uc_validation_nll": 0.903287486,
+      "ua_minus_uc_validation": -0.015694436,
+      "ua_development_holdout_nll": 0.908952596,
+      "uc_development_holdout_nll": 0.9227558
+    },
+    "stage2_three_seed_mean_of_scores": {
+      "ua_validation_nll": 0.887126571,
+      "uc_validation_nll": 0.904152693,
+      "ua_minus_uc_validation": -0.017026122,
+      "ua_development_holdout_nll": 0.908244411,
+      "uc_development_holdout_nll": 0.922516639
+    },
+    "historical_anchor_status": "not corroborated by this source inventory; different recoverable records do not disprove results elsewhere",
+    "gru_comparison": "not found in source audit; not verified locally",
+    "qf_v2": "proposed templates/placeholders reported; no executed qf_v2 evidence"
+  },
+  "environment_comparison": {
+    "local_default_python": "3.9.13",
+    "local_candidate_mpnn": {
+      "python": "3.9.13",
+      "torch": "2.7.1+cu118",
+      "cuda_build": "11.8",
+      "numpy": "1.21.5",
+      "pandas": "1.4.4",
+      "openpyxl": "3.0.10",
+      "sklearn": "1.0.2",
+      "PyYAML": "6.0",
+      "validation": "package metadata only"
+    },
+    "source_historical": {
+      "python": "3.10.19",
+      "torch": "2.5.1",
+      "numpy": "2.0.1",
+      "pandas": "2.3.3",
+      "sklearn": "1.7.2",
+      "openpyxl": "3.1.5",
+      "PyYAML": "6.0.3"
+    },
+    "source_alternate_cpu_audit": {
+      "interpreter": "SOURCE_AUDIT_CONDA_ROOT/envs/mpnn/bin/python",
+      "python": "3.9.16",
+      "torch": "1.12.1",
+      "cuda_build": "11.3",
+      "numpy": "1.22.3",
+      "pandas": "1.5.3",
+      "openpyxl": "3.1.5",
+      "sklearn": "1.2.2",
+      "PyYAML": "6.0",
+      "project_imports": "qf_training and discrimination_factors passed; no dataset load, training or checkpoint load"
+    },
+    "source_relocated_lob_interpreter": "permission denied per source audit",
+    "local_driver": "515.57",
+    "local_cuda_toolkit": "11.7",
+    "source_driver": "595.71.05",
+    "compatibility": "not established; no installs, third-party imports or GPU checks in Phase B"
+  },
+  "readiness_checks": [
+    "Verified remote protocol filtering and advertised refs",
+    "Verified fetched REPORT commit against current remote advertisement (independent handoff REPORT SHA missing)",
+    "Verified exact CODE SHA unavailable through filtered fetch",
+    "Parsed source JSON/CSV metadata and reconciled counts/byte totals/handoff fields",
+    "Confirmed local blob store contains only selected report files before publication",
+    "Validated sparse audit worktree has no scientific files"
+  ],
+  "readiness_by_category": {
+    "code": "blocked_exact_inspected_CODE_SHA_unavailable_and_original_local_checkout_unresolved",
+    "data": "absent_in_audited_workspace_not_transferred",
+    "environment": "metadata_only_project_compatibility_untested",
+    "reports": "available_current_remote_commit_independent_expected_REPORT_SHA_pending",
+    "experiments": "not_ready_no_launch"
+  },
+  "reconciliation_recommendation": [
+    "Do not choose either machine as authoritative based on GPU, branch or timestamp",
+    "Obtain the source publication receipt/full expected REPORT SHA for independent identity confirmation",
+    "Arrange a verified code-only export/publication mapped to inspected CODE SHA and enumerate missing dirty filesystem delta, or provide safe filtered access to the exact existing commit; do not substitute old published main",
+    "Locate accessible RTX3090 scientific work if any, then compare ancestry and dirty deltas before choosing a baseline",
+    "Provision aggregate/cache inputs only in a separately authorized later phase and verify representative byte identities and generating code first",
+    "Keep August source validation/holdout records separate from unresolved September/GRU anchors and proposed qf_v2 work"
+  ],
+  "synchronization_status": "partial_audit_bridge_only_source_code_unavailable_report_identity_pending",
+  "source_path_alias_note": "WORKSPACE_ROOT in the unchanged received source report files refers to the source machine, not this RTX3090 host."
+}

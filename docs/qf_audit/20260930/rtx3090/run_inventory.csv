@@ -1,0 +1,1 @@
+run_id,execution_status,evidence_status,evidence_completeness,model,model_alias,seed,run_path,config_path,config_sha256,code_sha,dirty_delta,execution_provenance,data_identity,split_identity,support_identity,checkpoint_selection,checkpoint_path,prediction_path,scoring_path,metric_name,metric_value,metric_population,source_evidence,notes

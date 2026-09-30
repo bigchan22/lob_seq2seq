@@ -1,0 +1,895 @@
+{
+  "schema_version": 1,
+  "server_role": "rtx3090_initial_independent_auditor",
+  "audit_timestamp": "2026-09-30T15:10:19.533861+00:00",
+  "audit_date": "2026-09-30",
+  "phase_a_status": "completed_with_access_and_discovery_limitations",
+  "evidence_status_vocabulary": [
+    "verified",
+    "inferred",
+    "unknown",
+    "contradicted"
+  ],
+  "search_scope": {
+    "S1": {
+      "path": "WORKSPACE_ROOT",
+      "coverage": "exhaustive initial entry listing; empty before audit files",
+      "status": "verified"
+    },
+    "S2": {
+      "paths": [
+        "WORKSPACE_ROOT",
+        "USER_ROOT/CBO_online_opt",
+        "USER_ROOT/Ptab",
+        "USER_ROOT/countmil",
+        "USER_ROOT/Mac",
+        "USER_ROOT/mathematics_conjectures",
+        "USER_ROOT/fsconv",
+        "USER_ROOT/fsconv-dependence",
+        "USER_ROOT/BSDE"
+      ],
+      "coverage": "immediate-entry metadata; rg filenames at maximum depth 2 for qf/krx/KRX/lob/LOB/handoff/HANDOFF and KR*_t.xlsx; exact project marker paths; no unrelated data contents",
+      "status": "verified",
+      "limitation": "No matching markers. Does not establish absence at deeper paths or under different names."
+    },
+    "S3": {
+      "paths": [
+        "DATA_PATH_CANDIDATE",
+        "DATASETS_PATH_CANDIDATE",
+        "WORKSPACE_PATH_CANDIDATE",
+        "WORKSPACES_PATH_CANDIDATE",
+        "PROJECTS_PATH_CANDIDATE",
+        "USER_ROOT/lob_forecasting"
+      ],
+      "coverage": "existence checks only; all absent",
+      "status": "verified"
+    },
+    "S4": {
+      "paths": [
+        "MOUNT_ROOT",
+        "EXTERNAL_DISK_MOUNTPOINT",
+        "SERVICE_ROOT",
+        "OPTIONAL_SOFTWARE_ROOT"
+      ],
+      "coverage": "immediate-entry metadata only; EXTERNAL_DISK_MOUNTPOINT and SERVICE_ROOT empty, OPTIONAL_SOFTWARE_ROOT/containerd not entered",
+      "status": "verified"
+    },
+    "S5": {
+      "path": "PROTECTED_HOME",
+      "coverage": "directory listing and AGENTS.md read denied; no subtree search",
+      "status": "unknown",
+      "method": "PermissionError",
+      "selection_evidence": "Jupyter process owned by PROTECTED_PROCESS_OWNER; association with KRX unknown"
+    }
+  },
+  "repository_candidates": [
+    {
+      "path": "WORKSPACE_ROOT",
+      "candidate_kind": "bounded_discovery_only",
+      "git_marker_present": false,
+      "remote_project_label": null,
+      "verified_krx_project": false,
+      "matching_project_paths": [],
+      "matching_qf_leadlag_lob_krx_refs": null,
+      "selection": "not_selected",
+      "evidence_status": "verified",
+      "assessment": "initially empty",
+      "pre_sync_branch": null,
+      "pre_sync_code_sha": null,
+      "dirty_state": "not_applicable_no_repository",
+      "worktrees": "not_inspected_unverified_project"
+    },
+    {
+      "path": "USER_ROOT/CBO_online_opt",
+      "candidate_kind": "bounded_discovery_only",
+      "git_marker_present": true,
+      "remote_project_label": "CBO_online_opt",
+      "verified_krx_project": false,
+      "matching_project_paths": [],
+      "matching_qf_leadlag_lob_krx_refs": [],
+      "selection": "not_selected",
+      "evidence_status": "inferred",
+      "assessment": "No observed KRX marker; inferred unrelated within shallow scope",
+      "pre_sync_branch": null,
+      "pre_sync_code_sha": null,
+      "dirty_state": "not_inspected_unverified_project",
+      "worktrees": "not_inspected_unverified_project"
+    },
+    {
+      "path": "USER_ROOT/Ptab",
+      "candidate_kind": "bounded_discovery_only",
+      "git_marker_present": true,
+      "remote_project_label": "Ptab",
+      "verified_krx_project": false,
+      "matching_project_paths": [],
+      "matching_qf_leadlag_lob_krx_refs": [],
+      "selection": "not_selected",
+      "evidence_status": "inferred",
+      "assessment": "No observed KRX marker; inferred unrelated within shallow scope",
+      "pre_sync_branch": null,
+      "pre_sync_code_sha": null,
+      "dirty_state": "not_inspected_unverified_project",
+      "worktrees": "not_inspected_unverified_project"
+    },
+    {
+      "path": "USER_ROOT/countmil",
+      "candidate_kind": "bounded_discovery_only",
+      "git_marker_present": true,
+      "remote_project_label": "countmil",
+      "verified_krx_project": false,
+      "matching_project_paths": [],
+      "matching_qf_leadlag_lob_krx_refs": [],
+      "selection": "not_selected",
+      "evidence_status": "inferred",
+      "assessment": "No observed KRX marker; inferred unrelated within shallow scope",
+      "pre_sync_branch": null,
+      "pre_sync_code_sha": null,
+      "dirty_state": "not_inspected_unverified_project",
+      "worktrees": "not_inspected_unverified_project"
+    },
+    {
+      "path": "USER_ROOT/Mac",
+      "candidate_kind": "bounded_discovery_only",
+      "git_marker_present": true,
+      "remote_project_label": "Overleaf document project",
+      "verified_krx_project": false,
+      "matching_project_paths": [],
+      "matching_qf_leadlag_lob_krx_refs": [],
+      "selection": "not_selected",
+      "evidence_status": "inferred",
+      "assessment": "No observed KRX marker; inferred unrelated within shallow scope",
+      "pre_sync_branch": null,
+      "pre_sync_code_sha": null,
+      "dirty_state": "not_inspected_unverified_project",
+      "worktrees": "not_inspected_unverified_project"
+    },
+    {
+      "path": "USER_ROOT/mathematics_conjectures",
+      "candidate_kind": "bounded_discovery_only",
+      "git_marker_present": true,
+      "remote_project_label": "mathematics_conjectures",
+      "verified_krx_project": false,
+      "matching_project_paths": [],
+      "matching_qf_leadlag_lob_krx_refs": [],
+      "selection": "not_selected",
+      "evidence_status": "inferred",
+      "assessment": "No observed KRX marker; inferred unrelated within shallow scope",
+      "pre_sync_branch": null,
+      "pre_sync_code_sha": null,
+      "dirty_state": "not_inspected_unverified_project",
+      "worktrees": "not_inspected_unverified_project"
+    },
+    {
+      "path": "USER_ROOT/fsconv",
+      "candidate_kind": "bounded_discovery_only",
+      "git_marker_present": false,
+      "remote_project_label": null,
+      "verified_krx_project": false,
+      "matching_project_paths": [],
+      "matching_qf_leadlag_lob_krx_refs": null,
+      "selection": "not_selected",
+      "evidence_status": "verified",
+      "assessment": "initially empty",
+      "pre_sync_branch": null,
+      "pre_sync_code_sha": null,
+      "dirty_state": "not_inspected_unverified_project",
+      "worktrees": "not_inspected_unverified_project"
+    },
+    {
+      "path": "USER_ROOT/fsconv-dependence",
+      "candidate_kind": "bounded_discovery_only",
+      "git_marker_present": false,
+      "remote_project_label": null,
+      "verified_krx_project": false,
+      "matching_project_paths": [],
+      "matching_qf_leadlag_lob_krx_refs": null,
+      "selection": "not_selected",
+      "evidence_status": "inferred",
+      "assessment": "No observed KRX marker; inferred unrelated within shallow scope",
+      "pre_sync_branch": null,
+      "pre_sync_code_sha": null,
+      "dirty_state": "not_inspected_unverified_project",
+      "worktrees": "not_inspected_unverified_project"
+    },
+    {
+      "path": "USER_ROOT/BSDE",
+      "candidate_kind": "bounded_discovery_only",
+      "git_marker_present": true,
+      "remote_project_label": null,
+      "verified_krx_project": false,
+      "matching_project_paths": [],
+      "matching_qf_leadlag_lob_krx_refs": [],
+      "selection": "not_selected",
+      "evidence_status": "inferred",
+      "assessment": "No observed KRX marker; inferred unrelated within shallow scope",
+      "pre_sync_branch": null,
+      "pre_sync_code_sha": null,
+      "dirty_state": "not_inspected_unverified_project",
+      "worktrees": "not_inspected_unverified_project"
+    },
+    {
+      "path": "PROTECTED_HOME",
+      "candidate_kind": "process_owner_location_clue",
+      "verified_krx_project": false,
+      "git_marker_present": null,
+      "selection": "unresolved_permission_denied",
+      "evidence_status": "unknown",
+      "assessment": "Directory listing and process-link access denied; project association unknown"
+    },
+    {
+      "path": "GIT_BRIDGE_ROOT",
+      "candidate_kind": "new_phase_b_filtered_report_bridge",
+      "verified_project_remote": true,
+      "preexisting_local_scientific_checkout": false,
+      "selected_scientific_baseline": false,
+      "head_sha": "0ebdb6782f2322e346dfb0c303762aab8635419c",
+      "no_checkout": true,
+      "scientific_blobs_downloaded": 0
+    }
+  ],
+  "selected_repository_path": null,
+  "selection_evidence": {
+    "status": "unknown",
+    "detail": "No pre-existing local scientific checkout verified. New isolated Git bridge contains published report/base metadata only; it is not a selected science baseline."
+  },
+  "sanitized_remote_identity": "git@github.com:bigchan22/lob_seq2seq.git",
+  "pre_sync_branch": null,
+  "pre_sync_code_sha": null,
+  "dirty_state": {
+    "status": "unknown",
+    "detail": "No verified KRX checkout; do not interpret null branch/SHA or unknown dirty state as clean"
+  },
+  "historical_search_clues": {
+    "branch": "exp/qf-leadlag-competition-20260901_102354",
+    "commit": "99e305a904eaebeaa6d9bedec827426c3de9a593",
+    "verification_status": "unknown",
+    "selected_as_baseline": false
+  },
+  "unique_local_work_summary": {
+    "status": "unknown",
+    "detail": "No attributable KRX code/results identified. Unique scientific work may exist in undiscovered/inaccessible locations. Local audit hardware/environment/access evidence is preserved."
+  },
+  "interpreter_path": "CONDA_ROOT/bin/python",
+  "project_interpreter_path": null,
+  "dependency_versions": {
+    "default_python": "3.9.13",
+    "git": "2.34.1",
+    "system_cuda_toolkit": "11.7",
+    "nvcc_build": "V11.7.64",
+    "driver": "515.57",
+    "environments": [
+      {
+        "name": "base",
+        "interpreter_path": "CONDA_ROOT/bin/python",
+        "python": "3.9.13",
+        "selected_package_metadata": {
+          "torch": null,
+          "numpy": "1.21.5",
+          "pandas": "1.4.4",
+          "scipy": "1.9.1",
+          "scikit-learn": "1.0.2",
+          "openpyxl": "3.0.10",
+          "pyyaml": "6.0",
+          "pyarrow": null,
+          "polars": null,
+          "lightning": null,
+          "pytorch-lightning": null,
+          "einops": null,
+          "tqdm": "4.64.1"
+        },
+        "torch_build_cuda": null,
+        "method": "isolated stdlib importlib.metadata at sysconfig purelib; AST literal inspection of torch/version.py if present",
+        "evidence_status": "verified",
+        "third_party_import_tested": false,
+        "project_compatibility": "unknown",
+        "project_environment_selected": false,
+        "note": "null denotes no package metadata in this inspected environment"
+      },
+      {
+        "name": "mpnn",
+        "interpreter_path": "CONDA_ROOT/envs/mpnn/bin/python",
+        "python": "3.9.13",
+        "selected_package_metadata": {
+          "torch": "2.7.1+cu118",
+          "numpy": "1.21.5",
+          "pandas": "1.4.4",
+          "scipy": "1.9.1",
+          "scikit-learn": "1.0.2",
+          "openpyxl": "3.0.10",
+          "pyyaml": "6.0",
+          "pyarrow": null,
+          "polars": null,
+          "lightning": null,
+          "pytorch-lightning": null,
+          "einops": null,
+          "tqdm": "4.64.1"
+        },
+        "torch_build_cuda": "11.8",
+        "method": "isolated stdlib importlib.metadata at sysconfig purelib; AST literal inspection of torch/version.py if present",
+        "evidence_status": "verified",
+        "third_party_import_tested": false,
+        "project_compatibility": "unknown",
+        "project_environment_selected": false,
+        "note": "null denotes no package metadata in this inspected environment"
+      },
+      {
+        "name": "tf_env",
+        "interpreter_path": "CONDA_ROOT/envs/tf_env/bin/python",
+        "python": "3.11.9",
+        "selected_package_metadata": {
+          "torch": null,
+          "numpy": "1.26.4",
+          "pandas": "2.2.2",
+          "scipy": "1.13.1",
+          "scikit-learn": null,
+          "openpyxl": null,
+          "pyyaml": "6.0.1",
+          "pyarrow": null,
+          "polars": null,
+          "lightning": null,
+          "pytorch-lightning": null,
+          "einops": null,
+          "tqdm": null
+        },
+        "torch_build_cuda": null,
+        "method": "isolated stdlib importlib.metadata at sysconfig purelib; AST literal inspection of torch/version.py if present",
+        "evidence_status": "verified",
+        "third_party_import_tested": false,
+        "project_compatibility": "unknown",
+        "project_environment_selected": false,
+        "note": "null denotes no package metadata in this inspected environment"
+      },
+      {
+        "name": "bsde",
+        "interpreter_path": "CONDA_ROOT/envs/bsde/bin/python",
+        "python": "3.9.18",
+        "selected_package_metadata": {
+          "torch": null,
+          "numpy": "1.22.3",
+          "pandas": null,
+          "scipy": "1.7.3",
+          "scikit-learn": null,
+          "openpyxl": null,
+          "pyyaml": "6.0.1",
+          "pyarrow": null,
+          "polars": null,
+          "lightning": null,
+          "pytorch-lightning": null,
+          "einops": null,
+          "tqdm": null
+        },
+        "torch_build_cuda": null,
+        "method": "isolated stdlib importlib.metadata at sysconfig purelib; AST literal inspection of torch/version.py if present",
+        "evidence_status": "verified",
+        "third_party_import_tested": false,
+        "project_compatibility": "unknown",
+        "project_environment_selected": false,
+        "note": "null denotes no package metadata in this inspected environment"
+      }
+    ],
+    "project_lockfiles": "not_located",
+    "runtime_test": "isolated_stdlib_only"
+  },
+  "gpu_inventory": [
+    {
+      "index": 0,
+      "model": "NVIDIA GeForce RTX 3090",
+      "memory_total_mib": 24576,
+      "memory_used_mib": 0,
+      "memory_free_mib": 24268,
+      "driver": "515.57",
+      "gpu_utilization_percent": 0,
+      "memory_utilization_percent": 0,
+      "temperature_c": 29,
+      "evidence_status": "verified",
+      "observed_at_utc_approx": "2026-09-30T14:28:34Z"
+    },
+    {
+      "index": 1,
+      "model": "NVIDIA GeForce RTX 3090",
+      "memory_total_mib": 24576,
+      "memory_used_mib": 0,
+      "memory_free_mib": 24268,
+      "driver": "515.57",
+      "gpu_utilization_percent": 0,
+      "memory_utilization_percent": 0,
+      "temperature_c": 28,
+      "evidence_status": "verified",
+      "observed_at_utc_approx": "2026-09-30T14:28:34Z"
+    },
+    {
+      "index": 2,
+      "model": "NVIDIA GeForce RTX 3090",
+      "memory_total_mib": 24576,
+      "memory_used_mib": 0,
+      "memory_free_mib": 24268,
+      "driver": "515.57",
+      "gpu_utilization_percent": 0,
+      "memory_utilization_percent": 0,
+      "temperature_c": 31,
+      "evidence_status": "verified",
+      "observed_at_utc_approx": "2026-09-30T14:28:34Z"
+    },
+    {
+      "index": 3,
+      "model": "NVIDIA GeForce RTX 3090",
+      "memory_total_mib": 24576,
+      "memory_used_mib": 0,
+      "memory_free_mib": 24268,
+      "driver": "515.57",
+      "gpu_utilization_percent": 0,
+      "memory_utilization_percent": 0,
+      "temperature_c": 28,
+      "evidence_status": "verified",
+      "observed_at_utc_approx": "2026-09-30T14:28:34Z"
+    }
+  ],
+  "host_inventory": {
+    "os": "Ubuntu 22.04 Jammy",
+    "cpu_model": "Intel Xeon Gold 5317",
+    "sockets": 2,
+    "physical_cores": 24,
+    "logical_cpus": 48,
+    "ram_total_bytes": 270084370432,
+    "ram_available_bytes": 259920805888,
+    "storage": {
+      "path": "WORKSPACE_ROOT",
+      "filesystem": "ext4",
+      "total_bytes": 982240026624,
+      "available_bytes": 497442263040,
+      "observed_at": "2026-09-30T14:30:34Z"
+    },
+    "storage_required_for_project_bytes": null
+  },
+  "active_jobs_summary": {
+    "evidence_status": "verified",
+    "gpu_compute_processes": [],
+    "observed_at_utc_approx": "2026-09-30T14:29:20Z",
+    "argument_or_environment_contents_read": false,
+    "jobs": [
+      {
+        "pid": 452183,
+        "owner": "PROTECTED_PROCESS_OWNER",
+        "command_name": "jupyter-noteboo",
+        "ppid": 1,
+        "cpu_percent": 0.0,
+        "cwd": null,
+        "executable": null,
+        "outputs": null,
+        "access_status": "PermissionError for cwd/exe/fd1/fd2",
+        "krx_association": "unknown"
+      },
+      {
+        "pid": 1357281,
+        "owner": "AUDIT_USER",
+        "command_name": "jupyter-noteboo",
+        "ppid": 1,
+        "cpu_percent": 0.0,
+        "cwd": "USER_ROOT",
+        "executable": "CONDA_ROOT/envs/mpnn/bin/python3.9",
+        "outputs": [
+          "USER_ROOT/nohup.out"
+        ],
+        "krx_association": "unknown"
+      },
+      {
+        "pid": 1510530,
+        "owner": "AUDIT_USER",
+        "command_name": "python",
+        "ppid": 1357281,
+        "cpu_percent": 0.0,
+        "cwd": "USER_ROOT/Mac/lr_beta_predictor",
+        "executable": "CONDA_ROOT/envs/mpnn/bin/python3.9",
+        "outputs": [
+          "pipe",
+          "pipe"
+        ],
+        "krx_association": "not_established"
+      },
+      {
+        "pid": 1635170,
+        "owner": "AUDIT_USER",
+        "command_name": "python",
+        "ppid": 1357281,
+        "cpu_percent": 0.0,
+        "cwd": "USER_ROOT/Mac/lr_beta_predictor",
+        "executable": "CONDA_ROOT/envs/mpnn/bin/python3.9",
+        "outputs": [
+          "pipe",
+          "pipe"
+        ],
+        "krx_association": "not_established"
+      }
+    ]
+  },
+  "data_roots": [],
+  "cache_roots": [],
+  "representative_checksums": [],
+  "representative_checksums_status": "unavailable_no_accessible_project_files_or_manifests; audit-only SHA-256 manifest is separate",
+  "source_to_cache_pipeline": {
+    "evidence_status": "unknown",
+    "source_aggregate_schema": null,
+    "source_coverage": null,
+    "loader": null,
+    "cache_builder": null,
+    "cache_format": null,
+    "preprocessing_fit_population": null,
+    "code_fills": null,
+    "provider_aggregation_or_fills": null
+  },
+  "model_entrypoints": [],
+  "model_aliases": {
+    "evidence_status": "unknown",
+    "note": "All supplied legacy names and qf_v2/rolling/shared-query/TLOB claims remain unverified; no completed experiments inferred"
+  },
+  "run_output_roots": [],
+  "run_inventory_summary": {
+    "identified_run_rows": 0,
+    "scope": "No verified project checkout/artifact root found",
+    "machine_wide_zero_runs_claim": false,
+    "local_training_vs_copied_or_resumed": "unknown"
+  },
+  "prediction_check": {
+    "status": "skipped",
+    "reason": "No attributable prediction files located",
+    "row_keys": null,
+    "class_mapping": null,
+    "original_support": null,
+    "probability_or_logit_encoding": null,
+    "normalization": null,
+    "log_base": null,
+    "clipping": null,
+    "weighting": null,
+    "seed_probability_averaging_performed": false,
+    "original_support_scores": null,
+    "intersection_scores": null
+  },
+  "inventory_paths": {
+    "report": "WORKSPACE_ROOT/qf_rtx3090_audit.md",
+    "handoff": "WORKSPACE_ROOT/qf_rtx3090_handoff.json",
+    "source_inventory": "WORKSPACE_ROOT/source_inventory.csv",
+    "run_inventory": "WORKSPACE_ROOT/run_inventory.csv",
+    "audit_checksum_manifest": "WORKSPACE_ROOT/audit_files.sha256",
+    "sanitized_payload_directory": "AUDIT_PAYLOAD",
+    "phase_a_archive": "PHASE_A_ARCHIVE",
+    "cross_server_comparison": "WORKSPACE_ROOT/cross_server_comparison.json",
+    "source_received_report": "RECEIVED_SOURCE_AUDIT_ROOT/0ebdb6782f2322e346dfb0c303762aab8635419c/qf_a5000_audit.md",
+    "publication_receipt": "WORKSPACE_ROOT/publication_receipt.json"
+  },
+  "checks_performed": [
+    {
+      "id": "A01",
+      "check": "Applicable ancestor AGENTS.md files and empty workspace",
+      "status": "verified",
+      "method": "file existence/read attempts; initial ls and rg",
+      "result": "No accessible applicable instructions found; protected possible location cannot be inspected"
+    },
+    {
+      "id": "A02",
+      "check": "Bounded local project discovery",
+      "status": "verified",
+      "method": "scandir metadata; rg --files --hidden --max-depth 2; exact project-path checks",
+      "result": "No verified KRX checkout; see search_scope"
+    },
+    {
+      "id": "A03",
+      "check": "Local repository relevance",
+      "status": "verified",
+      "method": "git config --local remote URL keys parsed to sanitized identities; git for-each-ref with qf/leadlag/lob/krx name filter; GIT_OPTIONAL_LOCKS=0",
+      "result": "Six adjacent Git markers; no matching project paths or refs; no remote contacted"
+    },
+    {
+      "id": "A04",
+      "check": "Workspace repository identity",
+      "status": "verified",
+      "method": "git -C WORKSPACE_ROOT rev-parse --show-toplevel",
+      "result": "Exit 128: not a git repository"
+    },
+    {
+      "id": "A05",
+      "check": "Hardware and storage",
+      "status": "verified",
+      "method": "nvidia-smi query-gpu/query-compute-apps; lscpu; free -b; df -hT; findmnt; statvfs; selected os-release fields",
+      "result": "Four idle RTX 3090s; root storage and RAM measured"
+    },
+    {
+      "id": "A06",
+      "check": "Active jobs",
+      "status": "verified",
+      "method": "ps owner/PID/CPU/comm without arguments; accessible cwd/exe/fd1/fd2 symlink metadata for relevant interpreters",
+      "result": "Notebook processes observed; PROTECTED_PROCESS_OWNER links inaccessible; no GPU compute process rows"
+    },
+    {
+      "id": "A07",
+      "check": "Environment versions",
+      "status": "verified",
+      "method": "command -v; python --version; nvcc --version; isolated selected-package metadata; torch version.py AST only",
+      "result": "Base has no torch metadata; mpnn has torch 2.7.1+cu118; no project compatibility or runtime established"
+    },
+    {
+      "id": "A08",
+      "check": "Audit serialization and publication-payload review",
+      "status": "verified",
+      "method": "JSON/CSV parse and schema assertions; explicit audit-only file list; root-alias replacement; automated forbidden-content checks; SHA-256 audit-file manifests",
+      "result": "Exact outputs and portable sanitized counterparts saved; not staged, committed, or pushed"
+    },
+    {
+      "id": "B01",
+      "check": "Source handoff and remote identity",
+      "status": "verified",
+      "method": "Parsed supplied JSON; strict noninteractive SSH ls-remote and protocol-v2 capability trace",
+      "result": "Project remote reachable; blob filter advertised; expected source REPORT SHA absent"
+    },
+    {
+      "id": "B02",
+      "check": "Narrow report acquisition",
+      "status": "verified",
+      "method": "blob:none, no-checkout, single audit branch, depth 2, no-tags, no-submodules, skip-smudge",
+      "result": "Initially 2 commits/29 trees/0 blobs; 7 explicit audit blobs (398267 bytes) read later; no scientific blobs"
+    },
+    {
+      "id": "B03",
+      "check": "Exact source CODE availability",
+      "status": "verified",
+      "method": "blob-filtered depth-1 fetch of supplied full CODE SHA",
+      "result": "upload-pack: not our ref; no substitution or comparison checkout"
+    },
+    {
+      "id": "B04",
+      "check": "Source audit comparison",
+      "status": "verified",
+      "method": "Parsed JSON/CSV summaries, reconciled supplied vs remote scientific identity fields, file totals and metadata hashes",
+      "result": "27 source workbooks + 27 caches, 366098160 bytes; 129 mixed execution inventory rows; source findings only"
+    },
+    {
+      "id": "B05",
+      "check": "Publication isolation",
+      "status": "verified",
+      "method": "Reverified advertised main base; no-checkout worktree; explicit sparse audit path; read-tree metadata initialization",
+      "result": "New worktree initially clean with only .git; no scientific files materialized"
+    },
+    {
+      "id": "B06",
+      "check": "Scientific readiness",
+      "status": "unknown",
+      "method": "Compare source historical/current metadata with local Phase A metadata",
+      "result": "No exact code, inputs or validated paper runtime locally; no project import/test or predictions recomputation justified"
+    }
+  ],
+  "checks_skipped": [
+    {
+      "check": "Independent expected source REPORT SHA verification",
+      "reason": "Supplied handoff omits full REPORT SHA; requested receipt/SHA; current remote report is identified separately"
+    },
+    {
+      "check": "Scientific ancestry and exact comparison worktree",
+      "reason": "No original local science SHA; exact supplied source CODE unavailable remotely"
+    },
+    {
+      "check": "Source dirty-delta reconstruction",
+      "reason": "Only summary supplied; no reconstruction from prose"
+    },
+    {
+      "check": "Local workbook/cache identity/schema checks and saved-prediction rescoring",
+      "reason": "No local corresponding data/artifacts; no transfer or regeneration"
+    },
+    {
+      "check": "Project import/full CPU readiness tests",
+      "reason": "Inspected source code cannot be obtained; published legacy main not substituted"
+    },
+    {
+      "check": "Training/tuning/installs/data transfers/cache rebuilds/checkpoint loads",
+      "reason": "Outside initial audit scope; not performed"
+    }
+  ],
+  "unresolved_questions": [
+    "Obtain independent source expected REPORT SHA/publication receipt; current remote report is 0ebdb6782f2322e346dfb0c303762aab8635419c",
+    "Provide safe access to exact source CODE feb10a130bb036617229d6c4c9bc4a96df3b9fe6 or a verified code-only export mapped to it; no substitute selected",
+    "Locate any accessible pre-existing RTX3090 KRX checkout/data; PROTECTED_HOME remains inaccessible",
+    "Enumerate source dirty filesystem delta separately from HEAD; source launch paths and relocated environment remain unreproduced",
+    "After selecting a baseline, establish local source/cache bytes and generating-code compatibility before separately authorized provisioning",
+    "Resolve provider aggregation/filling/release provenance and historical September/GRU anchor provenance; source report supports a distinct August development study"
+  ],
+  "readiness_by_category": {
+    "hardware": {
+      "state": "inventory_verified",
+      "evidence_status": "verified",
+      "detail": "4 RTX 3090s, each 24576 MiB; CPU/RAM/disk recorded"
+    },
+    "gpu_availability": {
+      "state": "idle_at_snapshot_not_reserved",
+      "evidence_status": "verified",
+      "detail": "0% utilization; no GPU compute processes at approximately 14:28 UTC"
+    },
+    "code": {
+      "state": "blocked_inspected_source_CODE_unavailable",
+      "evidence_status": "unknown",
+      "detail": "No original local scientific checkout identified; exact source CODE unavailable remotely; new bridge is audit/base metadata only"
+    },
+    "environment": {
+      "state": "candidate_installation_metadata_only",
+      "evidence_status": "verified",
+      "detail": "mpnn torch metadata present; project interpreter, compatibility and runtime usability unknown"
+    },
+    "data": {
+      "state": "no_local_KRX_inputs_transferred",
+      "evidence_status": "unknown",
+      "detail": "Source reports 27 workbooks and 27 caches; local byte identities and compatibility cannot be checked"
+    },
+    "artifacts": {
+      "state": "source_audit_metadata_available_only",
+      "evidence_status": "unknown",
+      "detail": "129 source inventory records parsed; no source predictions/checkpoints transferred or local rescoring performed"
+    },
+    "experiments": {
+      "state": "readiness_not_established",
+      "evidence_status": "unknown",
+      "detail": "Requires verified code, source/cache/support identity, requirements, and runtime checks; none launched"
+    },
+    "publication": {
+      "state": "isolated_audit_branch_prepared_pending_commit_push",
+      "evidence_status": "verified",
+      "detail": "Verified supplied project remote; sparse worktree based on already-published main; result will be in separate receipt"
+    },
+    "source_report_identity": {
+      "state": "independent_expected_REPORT_SHA_pending",
+      "evidence_status": "unknown",
+      "detail": "Current remote audit ref fetched and read; supplied handoff lacks expected REPORT SHA; requested from user"
+    }
+  },
+  "actions_performed": [
+    "Read-only bounded discovery and metadata checks before synchronization",
+    "No-argument process metadata inspection; no job interference",
+    "Isolated selected-package and toolkit version queries",
+    "Wrote exact local report, JSON handoff and two CSV inventories",
+    "Prepared sanitized audit-only copies with root/owner aliases and audit-file integrity manifests",
+    "Archived original Phase A report/handoff/inventories with original checksums",
+    "Read supplied source handoff and verified existing project remote identity/reachability",
+    "Created new filtered no-checkout shallow Git bridge from advertised source audit branch",
+    "Fetched seven selected audit records only and verified local blob inventory excludes scientific blobs",
+    "Attempted exact inspected source CODE fetch; recorded unavailable commit without substitution",
+    "Compared source audit metadata, data/storage footprint, dirty caveat, environments and result provenance",
+    "Created isolated sparse audit publication branch from already-published remote main",
+    "Updated local and sanitized audit records with scientific synchronization blockers"
+  ],
+  "actions_not_performed": [
+    "scientific_checkout_or_baseline_selection",
+    "source_dirty_delta_reconstruction",
+    "unrestricted_clone_fetch",
+    "submodule_initialization",
+    "lfs_pull",
+    "scientific_data_or_checkpoint_download",
+    "third_party_import_or_GPU_test",
+    "checkpoint_load",
+    "prediction_regeneration_or_rescoring",
+    "training_tuning",
+    "dependency_install_upgrade",
+    "raw_event_acquisition",
+    "cache_rebuild",
+    "job_stop_or_attach",
+    "existing_scientific_checkout_modification",
+    "merge_rebase_reset_clean_stash",
+    "remote_visibility_authentication_or_access_policy_change"
+  ],
+  "synchronization_status": "partial_audit_bridge_only_source_code_unavailable_report_identity_pending",
+  "a5000_code_sha": "feb10a130bb036617229d6c4c9bc4a96df3b9fe6",
+  "a5000_report_sha": "0ebdb6782f2322e346dfb0c303762aab8635419c",
+  "a5000_dirty_state": {
+    "clean": false,
+    "source_reported_delta": "D: 47 reference symlink-to-regular-file changes plus 15 executable-mode changes; no core Python/config/test content diff. HEAD does not reproduce whole dirty filesystem. BASE has additional manuscript/log edits and untracked older result/audit paths.",
+    "delta_materialized_locally": false
+  },
+  "fetched_refs": [
+    {
+      "ref": "refs/heads/audit/qf-a5000-20260930-142604",
+      "remote_tracking_ref": "refs/remotes/origin/audit/qf-a5000-20260930-142604",
+      "sha": "0ebdb6782f2322e346dfb0c303762aab8635419c",
+      "filter": "blob:none",
+      "depth": 2,
+      "source": "verified supplied remote"
+    },
+    {
+      "ref": "refs/heads/main",
+      "sha": "073cd89b556224eeae22413c3c05188a947e990a",
+      "method": "acquired as source report parent; independently ls-remote verified; no science baseline selection"
+    }
+  ],
+  "comparison_worktree": {
+    "status": "not_created_source_CODE_SHA_unavailable",
+    "path": null
+  },
+  "ancestry_comparison": "unavailable_for_scientific_CODE: no original local SHA and source CODE fetch rejected; published main verified as direct source REPORT parent",
+  "data_compatibility": "unresolved: source report inventories available; no local source/cache counterparts; scientific data not transferred",
+  "audit_branch": "audit/qf-rtx3090-20260930-1506",
+  "report_sha": null,
+  "publication": {
+    "status": "prepared_for_review_commit_push",
+    "remote_identity": "git@github.com:bigchan22/lob_seq2seq.git",
+    "remote_reachability_checked": true,
+    "already_published_base_commit": "073cd89b556224eeae22413c3c05188a947e990a",
+    "branch": "audit/qf-rtx3090-20260930-1506",
+    "worktree": "AUDIT_PUBLICATION_WORKTREE",
+    "sparse_audit_only": true,
+    "sanitized_payload_prepared": true,
+    "push_attempted": false,
+    "report_sha": null,
+    "receipt_path": "WORKSPACE_ROOT/publication_receipt.json",
+    "note": "Committed audit snapshot cannot embed its own SHA. Exact local handoff/receipt may record the final SHA once after verified publication, without amending the commit."
+  },
+  "phase_b_resume_requirements": [
+    "Independent source expected REPORT SHA or publication receipt",
+    "Safe availability of exact inspected source CODE or verified code-only export/provenance mapping",
+    "Accessible local scientific location if one exists",
+    "Coordinator selection of baseline only after evidence reconciliation; data provisioning and experiments remain separate"
+  ],
+  "phase_a_audit_timestamp": "2026-09-30T14:36:29.457589+00:00",
+  "phase_b_status": "completed_permitted_checks_with_scientific_sync_blockers",
+  "phase_a_archive_path": "PHASE_A_ARCHIVE",
+  "supplied_source_handoff_path": "WORKSPACE_ROOT/qf_a5000_handoff.json",
+  "supplied_source_handoff_sha256": "f71e1c1cc6400ad1b9d576bfdba70579f6ad0b18ea991d00306327595d8f7d47",
+  "git_bridge_repository_path": "GIT_BRIDGE_ROOT",
+  "a5000_report_sha_verification": "observed_advertised_and_fetched; independent expected SHA absent from supplied handoff",
+  "a5000_report_sha_supplied": null,
+  "a5000_actual_gpu_model": "NVIDIA GeForce RTX 4090",
+  "source_inspected_code_availability": {
+    "state": "unavailable",
+    "evidence_status": "verified",
+    "method": "exact-SHA blob-filtered depth-1 fetch rejected with upload-pack: not our ref",
+    "code_sha": "feb10a130bb036617229d6c4c9bc4a96df3b9fe6"
+  },
+  "cross_server_comparison_path": "WORKSPACE_ROOT/cross_server_comparison.json",
+  "source_audit_received_directory": "RECEIVED_SOURCE_AUDIT_ROOT/0ebdb6782f2322e346dfb0c303762aab8635419c",
+  "source_reported_inventory": {
+    "workbooks": 27,
+    "workbook_bytes": 161779048,
+    "top_level_csv_caches": 27,
+    "cache_bytes": 204319112,
+    "one_copy_total_bytes": 366098160,
+    "representative_hashes": "See cross_server_comparison.json; source-origin only",
+    "run_inventory_rows": 129,
+    "run_rows_are_not_fresh_fit_count": true,
+    "local_rescoring_performed": false
+  },
+  "checks_skipped_phase_a": [
+    {
+      "check": "Full scientific branch/HEAD/dirty/worktree/unpublished commit and tracked-data/LFS/history inventory",
+      "reason": "No checkout could be verified as this KRX project"
+    },
+    {
+      "check": "Workbook schema, coverage, aggregate values, provider/fill semantics, and representative scientific hashes",
+      "reason": "No attributable accessible aggregate files found; protected candidate location unresolved"
+    },
+    {
+      "check": "Source/cache/checkpoint/prediction/metric manifests",
+      "reason": "No attributable project artifacts found in scope"
+    },
+    {
+      "check": "Launcher/config/loader/model/checkpoint/scoring pipeline and split-support inspection",
+      "reason": "No project source, configs, or launch logs located"
+    },
+    {
+      "check": "Third-party import, torch CPU/GPU operations, and project readiness checks",
+      "reason": "Project entrypoints/dependencies unavailable; metadata-only environment assessment selected"
+    },
+    {
+      "check": "UA/UC or GRU saved-prediction CPU comparison",
+      "reason": "No relevant predictions or class/support/scoring metadata located; nothing regenerated"
+    },
+    {
+      "check": "Remote advertisement/reachability and audit publication",
+      "reason": "No verified project remote; unrelated remotes were not contacted"
+    },
+    {
+      "check": "Phase B fetch/clone/comparison worktree/ancestry/data compatibility",
+      "reason": "A5000 SERVER_HANDOFF absent"
+    },
+    {
+      "check": "Storage requirement estimate for missing aggregates/caches",
+      "reason": "No verified manifest, file sizes, or actual data universe"
+    },
+    {
+      "check": "Training, tuning, new models/qf_v2, raw-event acquisition, installs, transfers, cache/prediction regeneration, destructive Git actions",
+      "reason": "Outside authorized initial audit; not attempted"
+    }
+  ]
+}
