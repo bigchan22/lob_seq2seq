@@ -1,0 +1,164 @@
+{
+  "verified_comparisons": [
+    {
+      "model": "UA",
+      "seed": 42,
+      "split": "validation",
+      "rows": 50274,
+      "days": 49,
+      "assets": 27,
+      "date_min": 20161124,
+      "date_max": 20170203,
+      "class_order": "0 Down,1 Flat,2 Up",
+      "class_counts": [
+        12432,
+        25906,
+        11936
+      ],
+      "nll": 0.8875930497053438,
+      "selected_epoch": 178,
+      "duplicate_keys": 0,
+      "finite_probabilities": true,
+      "max_probability_sum_error": 1.4000000003733248e-07,
+      "key_label_sha256": "2851682abc10173eb0430f5f3b1862f7437974bec888e2b2a1a3fdafbab3536f",
+      "recorded_protocol": "qf_discrimination_dev_v1",
+      "feature_set": "no_investor",
+      "endpoint": "origin+10 minutes same day inferred from legacy source; not explicit saved column",
+      "status": "verified",
+      "method": "recomputed"
+    },
+    {
+      "model": "UC",
+      "seed": 42,
+      "split": "validation",
+      "rows": 50274,
+      "days": 49,
+      "assets": 27,
+      "date_min": 20161124,
+      "date_max": 20170203,
+      "class_order": "0 Down,1 Flat,2 Up",
+      "class_counts": [
+        12432,
+        25906,
+        11936
+      ],
+      "nll": 0.9032874857103932,
+      "selected_epoch": 151,
+      "duplicate_keys": 0,
+      "finite_probabilities": true,
+      "max_probability_sum_error": 1.300000000981072e-07,
+      "key_label_sha256": "2851682abc10173eb0430f5f3b1862f7437974bec888e2b2a1a3fdafbab3536f",
+      "recorded_protocol": "qf_discrimination_dev_v1",
+      "feature_set": "no_investor",
+      "endpoint": "origin+10 minutes same day inferred from legacy source; not explicit saved column",
+      "status": "verified",
+      "method": "recomputed"
+    },
+    {
+      "model": "UA-UC",
+      "seed": 42,
+      "split": "validation",
+      "rows": 50274,
+      "nll": -0.015694436005049384,
+      "status": "verified",
+      "method": "recomputed",
+      "support": "exact matching historical keys/labels; no intersection or seed ensemble"
+    },
+    {
+      "model": "UA",
+      "seed": 42,
+      "split": "development_holdout",
+      "rows": 101574,
+      "days": 99,
+      "assets": 27,
+      "date_min": 20170206,
+      "date_max": 20170630,
+      "class_order": "0 Down,1 Flat,2 Up",
+      "class_counts": [
+        25800,
+        50465,
+        25309
+      ],
+      "nll": 0.908952595581859,
+      "selected_epoch": 178,
+      "duplicate_keys": 0,
+      "finite_probabilities": true,
+      "max_probability_sum_error": 1.300000000981072e-07,
+      "key_label_sha256": "43146b5e2f8b9727fe3181da15baf3bca09ee8c0d1829032f1fb9459b7e4e9f1",
+      "recorded_protocol": "qf_discrimination_dev_v1",
+      "feature_set": "no_investor",
+      "endpoint": "origin+10 minutes same day inferred from legacy source; not explicit saved column",
+      "status": "verified",
+      "method": "recomputed"
+    },
+    {
+      "model": "UC",
+      "seed": 42,
+      "split": "development_holdout",
+      "rows": 101574,
+      "days": 99,
+      "assets": 27,
+      "date_min": 20170206,
+      "date_max": 20170630,
+      "class_order": "0 Down,1 Flat,2 Up",
+      "class_counts": [
+        25800,
+        50465,
+        25309
+      ],
+      "nll": 0.9227557997184821,
+      "selected_epoch": 151,
+      "duplicate_keys": 0,
+      "finite_probabilities": true,
+      "max_probability_sum_error": 1.300000000981072e-07,
+      "key_label_sha256": "43146b5e2f8b9727fe3181da15baf3bca09ee8c0d1829032f1fb9459b7e4e9f1",
+      "recorded_protocol": "qf_discrimination_dev_v1",
+      "feature_set": "no_investor",
+      "endpoint": "origin+10 minutes same day inferred from legacy source; not explicit saved column",
+      "status": "verified",
+      "method": "recomputed"
+    },
+    {
+      "model": "UA-UC",
+      "seed": 42,
+      "split": "development_holdout",
+      "rows": 101574,
+      "nll": -0.01380320413662306,
+      "status": "verified",
+      "method": "recomputed",
+      "support": "exact matching historical keys/labels; no intersection or seed ensemble"
+    }
+  ],
+  "splits_recovered_from_materialized_caches": {
+    "train": {
+      "first": 20150701,
+      "last": 20161123,
+      "days": 345,
+      "labels": 353970
+    },
+    "validation": {
+      "first": 20161124,
+      "last": 20170203,
+      "days": 49,
+      "labels": 50274
+    },
+    "development_holdout": {
+      "first": 20170206,
+      "last": 20170630,
+      "days": 99,
+      "labels": 101574
+    }
+  },
+  "label_specification": {
+    "threshold": 0.0001,
+    "comparison": "strict > +epsilon up; strict < -epsilon down; equality/inside flat; nonpositive current midpoint defaults flat",
+    "numeric_path": "float32 current/future top bid+ask midpoint after same-day imposed-grid ffill and zero fill",
+    "class_order": [
+      "Down",
+      "Flat",
+      "Up"
+    ],
+    "provider_quote_provenance": "unknown"
+  },
+  "method": "read-only CSV probability rescoring and date intersection; no training or checkpoint load; equal row weights; natural log; normalize then float64 epsilon clip"
+}

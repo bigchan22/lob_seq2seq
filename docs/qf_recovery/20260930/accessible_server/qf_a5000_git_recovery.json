@@ -1,0 +1,756 @@
+{
+  "server_role": "accessible candidate recovery host; actual GPUs contradict A5000 label",
+  "audit_timestamp": "2026-09-30T22:22:41.563734+00:00",
+  "user": "chanhomin",
+  "workspace": "WORKSPACE_ROOT",
+  "hardware": {
+    "gpus": [
+      {
+        "index": "0",
+        "model": "NVIDIA GeForce RTX 4090",
+        "memory": "24564 MiB",
+        "driver": "595.71.05"
+      },
+      {
+        "index": "1",
+        "model": "NVIDIA GeForce RTX 4090",
+        "memory": "24564 MiB",
+        "driver": "595.71.05"
+      },
+      {
+        "index": "2",
+        "model": "NVIDIA GeForce RTX 4090",
+        "memory": "24564 MiB",
+        "driver": "595.71.05"
+      },
+      {
+        "index": "3",
+        "model": "NVIDIA GeForce RTX 4090",
+        "memory": "24564 MiB",
+        "driver": "595.71.05"
+      }
+    ],
+    "cpu_model": "Intel Xeon Gold 5416S",
+    "logical_cpus": 64,
+    "sockets": 2,
+    "memory": {
+      "MemTotal": "528045436 kB",
+      "MemAvailable": "516446680 kB"
+    },
+    "disk_free_bytes": 477723918336,
+    "active_gpu_compute_jobs": []
+  },
+  "hardware_evidence": {
+    "status": "verified",
+    "method": "source_inspection",
+    "tools": "fresh nvidia-smi, lscpu, /proc/meminfo, disk usage"
+  },
+  "repository_candidates": [
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor",
+      "branch": "main",
+      "head": "74cce6b90d2b95c36d305db26a9892fedfe515e5",
+      "working_tree_clean": false,
+      "dirty_path_count": 62,
+      "delta_categories": {
+        "tracked": 51,
+        "untracked": 11
+      },
+      "shallow": false,
+      "git_metadata": "WORKSPACE_ROOT/lob_seq2seq_predictor/.git",
+      "copied_worktree_pointer_broken": false,
+      "preservation_check": "HEAD and porcelain state unchanged from task-start snapshot"
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_baseline_20260812_235444",
+      "branch": "detached",
+      "head": "74cce6b90d2b95c36d305db26a9892fedfe515e5",
+      "working_tree_clean": false,
+      "dirty_path_count": 47,
+      "delta_categories": {
+        "tracked": 47
+      },
+      "shallow": false,
+      "git_metadata": "WORKSPACE_ROOT/lob_seq2seq_predictor/.git/worktrees/lob_seq2seq_predictor_qf_baseline_20260812_235444",
+      "copied_worktree_pointer_broken": true,
+      "preservation_check": "HEAD and porcelain state unchanged from task-start snapshot"
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_clean_20260813_014759",
+      "branch": "refactor/qf-layout-clean-20260813_014759",
+      "head": "e599b3534f115dca1fcda5c85bd00f84f6ad7094",
+      "working_tree_clean": false,
+      "dirty_path_count": 48,
+      "delta_categories": {
+        "tracked": 48
+      },
+      "shallow": false,
+      "git_metadata": "WORKSPACE_ROOT/lob_seq2seq_predictor/.git/worktrees/lob_seq2seq_predictor_qf_clean_20260813_014759",
+      "copied_worktree_pointer_broken": true,
+      "preservation_check": "HEAD and porcelain state unchanged from task-start snapshot"
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_clean_baseline_20260813_014759",
+      "branch": "detached",
+      "head": "74cce6b90d2b95c36d305db26a9892fedfe515e5",
+      "working_tree_clean": false,
+      "dirty_path_count": 47,
+      "delta_categories": {
+        "tracked": 47
+      },
+      "shallow": false,
+      "git_metadata": "WORKSPACE_ROOT/lob_seq2seq_predictor/.git/worktrees/lob_seq2seq_predictor_qf_clean_baseline_20260813_014759",
+      "copied_worktree_pointer_broken": true,
+      "preservation_check": "HEAD and porcelain state unchanged from task-start snapshot"
+    },
+    {
+      "path": "PROJECT_DISCRIMINATION_ROOT",
+      "branch": "exp/qf-discrimination-20260813_115217",
+      "head": "feb10a130bb036617229d6c4c9bc4a96df3b9fe6",
+      "working_tree_clean": false,
+      "dirty_path_count": 62,
+      "delta_categories": {
+        "tracked": 62
+      },
+      "shallow": false,
+      "git_metadata": "WORKSPACE_ROOT/lob_seq2seq_predictor/.git/worktrees/lob_seq2seq_predictor_qf_discrimination_20260813_115217",
+      "copied_worktree_pointer_broken": true,
+      "preservation_check": "HEAD and porcelain state unchanged from task-start snapshot"
+    },
+    {
+      "path": "PROJECT_QUEUE_ROOT",
+      "branch": "exp/qf-core-queue-20260813_092802",
+      "head": "7c1c84c2be4e473003addeaa31d15df4d5555a1b",
+      "working_tree_clean": false,
+      "dirty_path_count": 56,
+      "delta_categories": {
+        "tracked": 56
+      },
+      "shallow": false,
+      "git_metadata": "WORKSPACE_ROOT/lob_seq2seq_predictor/.git/worktrees/lob_seq2seq_predictor_qf_queue_20260813_092802",
+      "copied_worktree_pointer_broken": true,
+      "preservation_check": "HEAD and porcelain state unchanged from task-start snapshot"
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_refactor_20260812_232959",
+      "branch": "refactor/qf-layout-20260812_232959",
+      "head": "422d08ddadefc8bd39a83a227900d86076edc344",
+      "working_tree_clean": false,
+      "dirty_path_count": 48,
+      "delta_categories": {
+        "tracked": 48
+      },
+      "shallow": false,
+      "git_metadata": "WORKSPACE_ROOT/lob_seq2seq_predictor/.git/worktrees/lob_seq2seq_predictor_qf_refactor_20260812_232959",
+      "copied_worktree_pointer_broken": true,
+      "preservation_check": "HEAD and porcelain state unchanged from task-start snapshot"
+    }
+  ],
+  "selected_repository_path": "PROJECT_DISCRIMINATION_ROOT",
+  "selection_evidence": "August discrimination models and compact run/prediction evidence are present; no September markers recovered. Selection is scientific evidence, not mtime.",
+  "sanitized_remote_identity": "git@github.com:bigchan22/lob_seq2seq.git",
+  "inspected_code_branch": "exp/qf-discrimination-20260813_115217",
+  "inspected_code_sha": "feb10a130bb036617229d6c4c9bc4a96df3b9fe6",
+  "working_tree_clean": false,
+  "working_tree_delta_summary": "62 paths: 47 reference symlink materializations and 15 executable-mode changes. Approved exported source/config/test/dependency contents match committed blobs. Dirty unrelated content excluded.",
+  "repository_metadata": {
+    "initial_shallow": false,
+    "initial_partial_clone": false,
+    "post_fetch_promisor": true,
+    "local_refs_after_fetch": [
+      "refs/heads/audit/qf-a5000-20260930-142604 0ebdb6782f2322e346dfb0c303762aab8635419c",
+      "refs/heads/exp/qf-core-queue-20260813_092802 7c1c84c2be4e473003addeaa31d15df4d5555a1b",
+      "refs/heads/exp/qf-discrimination-20260813_115217 feb10a130bb036617229d6c4c9bc4a96df3b9fe6",
+      "refs/heads/main 74cce6b90d2b95c36d305db26a9892fedfe515e5",
+      "refs/heads/refactor/qf-layout-20260812_232959 422d08ddadefc8bd39a83a227900d86076edc344",
+      "refs/heads/refactor/qf-layout-clean-20260813_014759 e599b3534f115dca1fcda5c85bd00f84f6ad7094",
+      "refs/remotes/origin/audit/qf-a5000-20260930-142604 0ebdb6782f2322e346dfb0c303762aab8635419c",
+      "refs/remotes/origin/audit/qf-rtx3090-20260930-1506 119bd79600d2f53a10fb7be3d9ab39ec62f23678",
+      "refs/remotes/origin/main 073cd89b556224eeae22413c3c05188a947e990a"
+    ],
+    "tags": [],
+    "copied_worktree_pointers": "old inaccessible path; read-only explicit --git-dir/--work-tree used; not repaired"
+  },
+  "remote_before_recovery": {
+    "refs/heads/main": "073cd89b556224eeae22413c3c05188a947e990a",
+    "refs/heads/audit/qf-a5000-20260930-142604": "0ebdb6782f2322e346dfb0c303762aab8635419c",
+    "refs/heads/audit/qf-rtx3090-20260930-1506": "119bd79600d2f53a10fb7be3d9ab39ec62f23678",
+    "tags": [],
+    "pull_request_heads": [],
+    "protocol_v2_filter_capability": true
+  },
+  "missing_september": {
+    "candidate_sha": "99e305a904eaebeaa6d9bedec827426c3de9a593",
+    "candidate_branch": "exp/qf-leadlag-competition-20260901_102354",
+    "local_exact_commit_present": false,
+    "advertised_ref_present": false,
+    "filtered_exact_sha_fetch": "not our ref",
+    "conclusion": "unavailable in inspected accessible sources; existence elsewhere not disproved",
+    "status": "unknown",
+    "search_record": "RECOVERY_ROOT/local_object_and_archive_search.json"
+  },
+  "local_object_inventory": {
+    "local_objects": 881,
+    "local_commits": 37,
+    "unreferenced_commits": [],
+    "archive_name_inventory": [
+      {
+        "archive": "WORKSPACE_ROOT/UPLOAD_ME_qf_discrimination_predictions_20260813_115217.zip",
+        "members": 3,
+        "september_filename_hits": []
+      },
+      {
+        "archive": "WORKSPACE_ROOT/UPLOAD_ME_qf_discrimination_results_20260813_115217.zip",
+        "members": 73,
+        "september_filename_hits": []
+      },
+      {
+        "archive": "WORKSPACE_ROOT/UPLOAD_ME_qf_queue_setup_20260813_092802.zip",
+        "members": 65,
+        "september_filename_hits": []
+      },
+      {
+        "archive": "WORKSPACE_ROOT/UPLOAD_ME_qf_refactor_20260812_232959.zip",
+        "members": 136,
+        "september_filename_hits": []
+      },
+      {
+        "archive": "WORKSPACE_ROOT/UPLOAD_ME_qf_refactor_clean_20260813_014759.zip",
+        "members": 141,
+        "september_filename_hits": []
+      },
+      {
+        "archive": "WORKSPACE_ROOT/UPLOAD_ME_qf_refactor_validated_20260812_235444.zip",
+        "members": 95,
+        "september_filename_hits": []
+      }
+    ],
+    "september_exact_sha_present": false
+  },
+  "publication": {
+    "kind": "reviewed code-only root snapshot",
+    "remote": "git@github.com:bigchan22/lob_seq2seq.git",
+    "code_ref": "recovery/qf-august-code-20260930-220020",
+    "export_sha": "200e5758de0f5cb545322f5b5ab522ad645f9209",
+    "source_code_sha": "feb10a130bb036617229d6c4c9bc4a96df3b9fe6",
+    "parents": [],
+    "source_files": 128,
+    "new_recovery_files": 6,
+    "staged_bytes": 256150,
+    "source_mapping": "recovery/code_manifest.csv",
+    "input_mapping": "recovery/input_manifest.csv",
+    "export_metadata": "recovery/export_manifest.json",
+    "source_scientific_ancestry_pushed": false,
+    "new_data_published": false,
+    "code_push_verified": true,
+    "report_ref": "recovery/qf-git-handoff-20260930-220020",
+    "report_paths": [
+      "docs/qf_recovery/20260930/accessible_server/qf_a5000_git_recovery.md",
+      "docs/qf_recovery/20260930/accessible_server/qf_a5000_git_recovery.json"
+    ],
+    "report_sha_receipt": "outside this report, in final handoff/publication_receipt.json"
+  },
+  "recovered_paths": {
+    "source_commit": "feb10a130bb036617229d6c4c9bc4a96df3b9fe6",
+    "published_input_commit": "073cd89b556224eeae22413c3c05188a947e990a",
+    "approved_source_files": 128,
+    "code_bytes": 198543,
+    "input_files": 54,
+    "input_bytes": 366098160,
+    "input_tree_identity": "all 54 input blob IDs agree between published main and inspected August source SHA",
+    "excluded": "datasets/artifacts/results/checkpoints/environments/credentials/bytecode/notebook checkpoints/references/manuscript/unrelated dirty files",
+    "required_dirty_code_delta": "none identified for approved source/config/test/dependency paths; original committed executable modes preserved only in new destinations",
+    "hardcoded_historical_path_files": [
+      "experiments/legacy/scripts/run_overnight_seed_sweep_20260713.sh",
+      "lob_forecasting/experiments/discrimination_finalize.py",
+      "lob_forecasting/experiments/discrimination_plan.py",
+      "lob_forecasting/experiments/discrimination_runner.py",
+      "lob_forecasting/experiments/qf_plan.py",
+      "scripts/qf_discrimination/launch_workers.sh",
+      "scripts/qf_discrimination/package_results.sh",
+      "scripts/qf_discrimination/pause.sh",
+      "scripts/qf_discrimination/resume.sh",
+      "scripts/qf_discrimination/status.sh",
+      "scripts/qf_queue/launch_workers.sh",
+      "scripts/qf_queue/package_pilot_bundle.sh",
+      "scripts/qf_queue/package_setup_bundle.sh",
+      "scripts/qf_queue/pause.sh",
+      "scripts/qf_queue/resume.sh",
+      "scripts/qf_queue/status.sh",
+      "scripts/run_classical_baselines_20260713.sh",
+      "scripts/run_investor_lag1_ablation_queue_20260713.sh",
+      "scripts/run_no_investor_ablation_queue_20260713.sh",
+      "scripts/run_parallel_valtest_20260713.sh",
+      "scripts/run_single_valtest_20260713.sh"
+    ],
+    "code_worktree": "RECOVERY_ROOT/committed-source",
+    "code_export_directory": "RECOVERY_ROOT/code-export",
+    "input_directory": "RECOVERY_ROOT/inputs"
+  },
+  "source_data_roots": [
+    "RECOVERY_ROOT/inputs/data/raw/KRXaggData"
+  ],
+  "derived_data_roots": [
+    "RECOVERY_ROOT/inputs/data/processed"
+  ],
+  "input_recovery": {
+    "status": "verified",
+    "method": "recomputed",
+    "remote": "git@github.com:bigchan22/lob_seq2seq.git",
+    "ref": "refs/heads/main",
+    "commit": "073cd89b556224eeae22413c3c05188a947e990a",
+    "source_workbooks": 27,
+    "source_bytes": 161779048,
+    "runtime_csvs": 27,
+    "cache_bytes": 204319112,
+    "total_bytes": 366098160,
+    "ordinary_git_blobs": true,
+    "same_blobs_at_source_sha": true,
+    "all_file_sha256_checked": true,
+    "network_blob_download_for_local_recovery": false,
+    "source_inventory_path": "RECOVERY_ROOT/input_manifest.csv",
+    "helper": "recovery/materialize_inputs.py",
+    "new_destination_required": true,
+    "provider_semantics": "unknown; source-cell presence, code-derived modifications, and upstream observation/release semantics remain separate"
+  },
+  "artifact_recovery": {
+    "availability": "local only for inspected QF scientific run predictions/checkpoints; not in selected source tree",
+    "copied_selected_files": 11,
+    "copied_selected_bytes": 6256259,
+    "checkpoints_copied_or_loaded": 0,
+    "root": "RECOVERY_ROOT/recovered-artifacts",
+    "manifest": "RECOVERY_ROOT/artifact_manifest.csv",
+    "receiver_requirement": "owner-controlled copy of identified local artifacts if exact saved-result replay is needed; no invented SSH destination and no new data publication"
+  },
+  "study_version": {
+    "legacy_implemented": "August development decomposition/discrimination",
+    "proposed_qf_v2": "not implemented by recovery; rolling/lockbox templates do not establish execution",
+    "executed_qf_v2": "no recovered execution evidence",
+    "september_or_later": "unresolved"
+  },
+  "program_trace": [
+    {
+      "path": "lob_forecasting/experiments/qf_runner.py",
+      "lines": "34-48",
+      "finding": "queue job/config dispatch"
+    },
+    {
+      "path": "lob_forecasting/experiments/qf_training.py",
+      "lines": "84-85",
+      "finding": "load_data uses existing CSVs, no investor features, epsilon 1e-4"
+    },
+    {
+      "path": "lob_forecasting/cli/parallel.py",
+      "lines": "78-129",
+      "finding": "common-date intersection; imposed-grid daily join, forward fill and zero fill; target construction"
+    },
+    {
+      "path": "lob_forecasting/data/dataset.py",
+      "lines": "17-25",
+      "finding": "39-point 09:00-15:20 grid, not proof of 39 source observations"
+    },
+    {
+      "path": "lob_forecasting/data/preprocess.py",
+      "lines": "30-56",
+      "finding": "separate XLSX-to-CSV converter skips existing outputs; not executed during recovery"
+    },
+    {
+      "path": "lob_forecasting/experiments/qf_training.py",
+      "lines": "40-57",
+      "finding": "day split 70/10/20; validation NLL selection with min_delta; resume supported"
+    },
+    {
+      "path": "lob_forecasting/experiments/qf_training.py",
+      "lines": "58-82",
+      "finding": "saved class probabilities and unavailable provenance flags; S has separate per-asset fits whose rows are pooled"
+    },
+    {
+      "path": "lob_forecasting/experiments/discrimination_runner.py",
+      "lines": "18-62",
+      "finding": "Stage-2 config overrides and training loop; historical data path hardcoded"
+    },
+    {
+      "path": "lob_forecasting/experiments/discrimination_finalize.py",
+      "lines": "16-18",
+      "finding": "selected UA/UC run paths"
+    }
+  ],
+  "model_entrypoints": [
+    "lob_forecasting.models.qf_variants.build_qf_model",
+    "lob_forecasting.experiments.qf_runner.main",
+    "lob_forecasting.experiments.discrimination_runner"
+  ],
+  "configuration_paths": [
+    "configs/qf/models/matched_temporal_v1.yaml",
+    "configs/qf/protocols/qf_decomposition_dev_v1.yaml",
+    "configs/qf/plans/qf_queue_plan.yaml",
+    "experiments/registry.yaml",
+    "RECOVERY_ROOT/recovered-artifacts/selected_configurations.yaml"
+  ],
+  "models_recovered": [
+    "S",
+    "U0",
+    "U1",
+    "UM",
+    "UX",
+    "UC",
+    "UA",
+    "UM_V2_LITE",
+    "UM_V2_DEPTH"
+  ],
+  "markers_not_recovered": [
+    "UA_SYNC",
+    "GRU_U1",
+    "UX_BASELINE",
+    "trained lag-aware UA"
+  ],
+  "run_output_roots": [
+    "PROJECT_QUEUE_ROOT/artifacts/runs",
+    "LOCAL_STAGE2"
+  ],
+  "run_inventory_path": "RECOVERY_ROOT/run_inventory.csv",
+  "completed_coverage": {
+    "august_discrimination": {
+      "fit_artifact_directories": 21,
+      "full_fit_evidence_count": 18,
+      "smoke_fit_count": 2,
+      "copied_selected_count": 1,
+      "model_seed_full_fit_counts": {
+        "UM_V2_DEPTH:seed42": 1,
+        "UM_V2_LITE:seed42": 1,
+        "UM_V2_DEPTH:seed123": 1,
+        "UM_V2_DEPTH:seed7": 1,
+        "UA:seed42": 5,
+        "UC:seed42": 5,
+        "UA:seed123": 1,
+        "UA:seed7": 1,
+        "UC:seed123": 1,
+        "UC:seed7": 1
+      },
+      "recorded_code_shas": [
+        "unknown"
+      ]
+    },
+    "august_pilot": {
+      "fit_artifact_directories": 46,
+      "full_fit_evidence_count": 38,
+      "smoke_fit_count": 8,
+      "copied_selected_count": 0,
+      "model_seed_full_fit_counts": {
+        "S:seed42": 27,
+        "U0:seed42": 1,
+        "U1:seed42": 1,
+        "UA:seed42": 1,
+        "UC:seed42": 1,
+        "UM:seed42": 1,
+        "UX:seed42": 1,
+        "U1:seed7": 1,
+        "UA:seed7": 1,
+        "UC:seed7": 1,
+        "UM:seed7": 1,
+        "UX:seed7": 1
+      },
+      "recorded_code_shas": [
+        "2aa4e064bf917016b1653a5344f78a08dbbb34eb"
+      ]
+    }
+  },
+  "execution_limitations": "Run records establish completed artifact sets, not fresh/resumed process counts or original host identity. Selected UC seed42 directory is copied, not a new fit. Stage-2 per-run code SHA and dirty evidence are absent.",
+  "result_verification": {
+    "verified_comparisons": [
+      {
+        "model": "UA",
+        "seed": 42,
+        "split": "validation",
+        "rows": 50274,
+        "days": 49,
+        "assets": 27,
+        "date_min": 20161124,
+        "date_max": 20170203,
+        "class_order": "0 Down,1 Flat,2 Up",
+        "class_counts": [
+          12432,
+          25906,
+          11936
+        ],
+        "nll": 0.8875930497053438,
+        "selected_epoch": 178,
+        "duplicate_keys": 0,
+        "finite_probabilities": true,
+        "max_probability_sum_error": 1.4000000003733248e-07,
+        "key_label_sha256": "2851682abc10173eb0430f5f3b1862f7437974bec888e2b2a1a3fdafbab3536f",
+        "recorded_protocol": "qf_discrimination_dev_v1",
+        "feature_set": "no_investor",
+        "endpoint": "origin+10 minutes same day inferred from legacy source; not explicit saved column",
+        "status": "verified",
+        "method": "recomputed"
+      },
+      {
+        "model": "UC",
+        "seed": 42,
+        "split": "validation",
+        "rows": 50274,
+        "days": 49,
+        "assets": 27,
+        "date_min": 20161124,
+        "date_max": 20170203,
+        "class_order": "0 Down,1 Flat,2 Up",
+        "class_counts": [
+          12432,
+          25906,
+          11936
+        ],
+        "nll": 0.9032874857103932,
+        "selected_epoch": 151,
+        "duplicate_keys": 0,
+        "finite_probabilities": true,
+        "max_probability_sum_error": 1.300000000981072e-07,
+        "key_label_sha256": "2851682abc10173eb0430f5f3b1862f7437974bec888e2b2a1a3fdafbab3536f",
+        "recorded_protocol": "qf_discrimination_dev_v1",
+        "feature_set": "no_investor",
+        "endpoint": "origin+10 minutes same day inferred from legacy source; not explicit saved column",
+        "status": "verified",
+        "method": "recomputed"
+      },
+      {
+        "model": "UA-UC",
+        "seed": 42,
+        "split": "validation",
+        "rows": 50274,
+        "nll": -0.015694436005049384,
+        "status": "verified",
+        "method": "recomputed",
+        "support": "exact matching historical keys/labels; no intersection or seed ensemble"
+      },
+      {
+        "model": "UA",
+        "seed": 42,
+        "split": "development_holdout",
+        "rows": 101574,
+        "days": 99,
+        "assets": 27,
+        "date_min": 20170206,
+        "date_max": 20170630,
+        "class_order": "0 Down,1 Flat,2 Up",
+        "class_counts": [
+          25800,
+          50465,
+          25309
+        ],
+        "nll": 0.908952595581859,
+        "selected_epoch": 178,
+        "duplicate_keys": 0,
+        "finite_probabilities": true,
+        "max_probability_sum_error": 1.300000000981072e-07,
+        "key_label_sha256": "43146b5e2f8b9727fe3181da15baf3bca09ee8c0d1829032f1fb9459b7e4e9f1",
+        "recorded_protocol": "qf_discrimination_dev_v1",
+        "feature_set": "no_investor",
+        "endpoint": "origin+10 minutes same day inferred from legacy source; not explicit saved column",
+        "status": "verified",
+        "method": "recomputed"
+      },
+      {
+        "model": "UC",
+        "seed": 42,
+        "split": "development_holdout",
+        "rows": 101574,
+        "days": 99,
+        "assets": 27,
+        "date_min": 20170206,
+        "date_max": 20170630,
+        "class_order": "0 Down,1 Flat,2 Up",
+        "class_counts": [
+          25800,
+          50465,
+          25309
+        ],
+        "nll": 0.9227557997184821,
+        "selected_epoch": 151,
+        "duplicate_keys": 0,
+        "finite_probabilities": true,
+        "max_probability_sum_error": 1.300000000981072e-07,
+        "key_label_sha256": "43146b5e2f8b9727fe3181da15baf3bca09ee8c0d1829032f1fb9459b7e4e9f1",
+        "recorded_protocol": "qf_discrimination_dev_v1",
+        "feature_set": "no_investor",
+        "endpoint": "origin+10 minutes same day inferred from legacy source; not explicit saved column",
+        "status": "verified",
+        "method": "recomputed"
+      },
+      {
+        "model": "UA-UC",
+        "seed": 42,
+        "split": "development_holdout",
+        "rows": 101574,
+        "nll": -0.01380320413662306,
+        "status": "verified",
+        "method": "recomputed",
+        "support": "exact matching historical keys/labels; no intersection or seed ensemble"
+      }
+    ],
+    "splits_recovered_from_materialized_caches": {
+      "train": {
+        "first": 20150701,
+        "last": 20161123,
+        "days": 345,
+        "labels": 353970
+      },
+      "validation": {
+        "first": 20161124,
+        "last": 20170203,
+        "days": 49,
+        "labels": 50274
+      },
+      "development_holdout": {
+        "first": 20170206,
+        "last": 20170630,
+        "days": 99,
+        "labels": 101574
+      }
+    },
+    "label_specification": {
+      "threshold": 0.0001,
+      "comparison": "strict > +epsilon up; strict < -epsilon down; equality/inside flat; nonpositive current midpoint defaults flat",
+      "numeric_path": "float32 current/future top bid+ask midpoint after same-day imposed-grid ffill and zero fill",
+      "class_order": [
+        "Down",
+        "Flat",
+        "Up"
+      ],
+      "provider_quote_provenance": "unknown"
+    },
+    "method": "read-only CSV probability rescoring and date intersection; no training or checkpoint load; equal row weights; natural log; normalize then float64 epsilon clip"
+  },
+  "environment": {
+    "historical_launcher_interpreter": "HISTORICAL_HOME/miniconda3/envs/lob/bin/python3.10",
+    "historical_interpreter_usable": false,
+    "cpu_test_interpreter": "USER_HOME/miniconda3/bin/python3",
+    "cpu_test_versions": {
+      "python": "3.13.5",
+      "torch": "2.13.0+cu130",
+      "torch_cuda_build": "13.0",
+      "numpy": "2.5.1",
+      "pytest": "9.1.1"
+    },
+    "rescoring_interpreter": "USER_HOME/miniconda3/envs/mpnn/bin/python",
+    "rescoring_versions": {
+      "python": "3.9.16",
+      "pandas": "1.5.3",
+      "numpy": "1.22.3"
+    },
+    "dependencies": "existing requirements/base.txt and pyproject.toml; unpinned, no lockfile recovered",
+    "portability": "21 committed files contain historical hardcoded paths; preserved and listed in export_manifest.json"
+  },
+  "checks_performed": [
+    "128 exported source files match committed bytes and modes",
+    "134-file root staged list and diff reviewed; no parents, alternates, datasets, predictions or checkpoints",
+    "new recovery files whitespace check passed; 85 inherited source whitespace warnings preserved",
+    "91 source Python files parsed with Python 3.9 AST grammar",
+    "YAML configurations parsed",
+    "6 bounded CPU tests passed (1.17 seconds), no pytest cache or bytecode writes",
+    "all 54 input files verified against Git blob IDs, SHA256 and size",
+    "selected saved UA/UC probabilities rescored on exact matching historical keys; no inference",
+    "7 pre-existing scientific checkouts retain original HEAD and porcelain state",
+    "Fresh filtered remote clone reproduced all 134 code/helper files; targeted remote downloads of one workbook and one CSV matched SHA256 and sizes"
+  ],
+  "checks_skipped": [
+    "training/tuning/checkpoint inference",
+    "checkpoint deserialization",
+    "package installation or environment upgrades",
+    "XLSX conversion and cache rebuilding",
+    "new reserve evaluation",
+    "full model or pipeline readiness",
+    "September/GRU scoring because relevant artifacts were not recovered"
+  ],
+  "readiness_by_category": {
+    "source_data_present": "verified: 27 supplied workbooks recovered",
+    "derived_data_present": "verified: 27 existing runtime CSV caches recovered",
+    "code_ready": "published mapped August source subset; syntax/config and bounded tests passed; historical path portability unresolved",
+    "environment_ready": "partial: existing CPU tools usable; historical training environment not demonstrated",
+    "artifacts_available": "local August artifacts present; selected pair copied and verified; absent from new Git code branch",
+    "experiment_ready": "not established; no launch authorized or performed"
+  },
+  "unresolved_questions": [
+    "Why this accessible session reports four RTX4090s rather than A5000s",
+    "Whether September study exists on RTX3090 or other owner-accessible copies/refs",
+    "Original Stage-2 code/dirty state and fresh-versus-resumed launch provenance",
+    "Provider aggregation, observation and release semantics",
+    "Historical hardcoded paths and exact dependency environment before future execution"
+  ],
+  "actions_performed": [
+    "bounded accessible workspace/repository/archive discovery",
+    "fresh remote advertisement and filtered explicit-ref fetches, plus exact September SHA attempt",
+    "read-only local object/ref/reflog inspection",
+    "isolated no-checkout source worktree with selective code materialization",
+    "54 already-published aggregate input blobs recovered into a new destination from existing local objects",
+    "11 selected local result artifacts copied without checkpoints",
+    "CPU probability rescoring and bounded tests",
+    "fresh empty code-only repository, explicit staged review, root commit and verified named push",
+    "separate sanitized report publication planned from the now-published code root",
+    "14,274,936 bytes of already-published representative input blobs downloaded into a separate new remote-input-check directory"
+  ],
+  "handoff_constraint": "Candidate comparison baseline only. RTX3090 must first preserve/inventory its own newer or dirty work. No future action on the unavailable old server is required. Git does not transfer untracked workbooks/caches/artifacts; these particular 54 inputs are already tracked and recoverable through exact published paths.",
+  "original_source_remote_fetch": {
+    "commit": "feb10a130bb036617229d6c4c9bc4a96df3b9fe6",
+    "result": "not our ref",
+    "method": "fresh filtered exact-SHA fetch into new validation clone"
+  },
+  "finding_statuses": {
+    "hardware_a5000_claim": {
+      "status": "contradicted",
+      "method": "source_inspection"
+    },
+    "export_source_identity": {
+      "status": "verified",
+      "method": "recomputed"
+    },
+    "published_input_identity": {
+      "status": "verified",
+      "method": "recomputed"
+    },
+    "august_completed_artifact_sets": {
+      "status": "verified",
+      "method": "saved_artifact"
+    },
+    "label_and_selection_rules": {
+      "status": "verified",
+      "method": "static_code"
+    },
+    "explicit_saved_endpoint_identity": {
+      "status": "inferred",
+      "method": "static_code"
+    },
+    "provider_semantics": {
+      "status": "unknown"
+    },
+    "september_recovery": {
+      "status": "unknown"
+    }
+  },
+  "remote_recovery_validation": {
+    "timestamp": "2026-09-30T22:20:00.065346+00:00",
+    "remote": "git@github.com:bigchan22/lob_seq2seq.git",
+    "code_ref": "refs/heads/recovery/qf-august-code-20260930-220020",
+    "export_sha": "200e5758de0f5cb545322f5b5ab522ad645f9209",
+    "parents": [],
+    "source_code_sha": "feb10a130bb036617229d6c4c9bc4a96df3b9fe6",
+    "fresh_filtered_clone_verified_files": 134,
+    "fresh_clone_path": "RECOVERY_ROOT/remote-code-check",
+    "published_input_commit": "073cd89b556224eeae22413c3c05188a947e990a",
+    "input_manifest_validation": 54,
+    "direct_remote_input_blob_checks": [
+      {
+        "path": "data/raw/KRXaggData/KR7000030007_t.xlsx",
+        "git_blob": "9b0dd478f44c151ec5164afd65bdcc02f90e9f85",
+        "sha256": "44c1d756a9242e325c37e12c3be5e0571deb4ab72031ab3c6f741cb988b6fdf6",
+        "bytes": 6367467
+      },
+      {
+        "path": "data/processed/KR7000030007_t.csv",
+        "git_blob": "3068ca602be9e4e0850e7f3bcdf3fe4ab01a945d",
+        "sha256": "c7a177a704beb7573951080156c74fa9658f5cf220eeda004d973c6a7e8bdf04",
+        "bytes": 7907469
+      }
+    ]
+  },
+  "publication_path_redaction": "Private absolute locations replaced by named root aliases; exact locations remain in the local packet. RECOVERY_ROOT is the new output directory; PROJECT_* and LOCAL_STAGE2 denote original candidate checkouts/artifacts."
+}

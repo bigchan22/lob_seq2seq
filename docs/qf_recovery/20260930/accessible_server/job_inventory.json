@@ -1,0 +1,312 @@
+[
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/pilot_S_aggregate",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/pilot_S_shard_A",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/pilot_S_shard_B",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/pilot_U0",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/pilot_U1",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/pilot_UA",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/pilot_UC",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/pilot_UM",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/pilot_UX",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/pilot_compare",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/pilot_gate",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/pilot_package",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/pilot_seed7_U1",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/pilot_seed7_UA",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/pilot_seed7_UC",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/pilot_seed7_UM",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/pilot_seed7_UX",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/pilot_seed7_compare",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/smoke_S",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/smoke_U0",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/smoke_U1",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/smoke_UA",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/smoke_UC",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/smoke_UM",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_pilot",
+    "directory": "PROJECT_QUEUE_ROOT/artifacts/runs/smoke_UX",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/A_import",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/A_reconstruct",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/B_existing_analysis",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/C_um_v1_diagnosis",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/D_UM_V2_DEPTH_42",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/D_UM_V2_LITE_42",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/D_factor_tests",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/D_select",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/D_selected_123",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/D_selected_7",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/D_smoke_DEPTH",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/D_smoke_LITE",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/E_placebo_42",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/E_placebo_7",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/E_placebo_gate",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/E_placebo_tests",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/F_PAIR_1_HALF_LR_UA_42",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/F_PAIR_1_HALF_LR_UC_42",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/F_PAIR_2_DOUBLE_LR_UA_42",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/F_PAIR_2_DOUBLE_LR_UC_42",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/F_PAIR_3_LOW_DROPOUT_UA_42",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/F_PAIR_3_LOW_DROPOUT_UC_42",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/F_PAIR_4_HIGH_DROPOUT_UA_42",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/F_PAIR_4_HIGH_DROPOUT_UC_42",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/F_PAIR_5_SHALLOW_INTERACTION_UA_42",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/F_PAIR_5_SHALLOW_INTERACTION_UC_42",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/F_best_UA_123",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/F_best_UA_7",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/F_best_UC_123",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/F_best_UC_42_stage2",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/F_best_UC_7",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/F_compare",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/F_select",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/G_corrected_compare",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/H_pooling_existing",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/I_final_decision",
+    "state": "SUCCEEDED"
+  },
+  {
+    "family": "august_discrimination",
+    "directory": "LOCAL_STAGE2/runs/J_package",
+    "state": "SUCCEEDED"
+  }
+]

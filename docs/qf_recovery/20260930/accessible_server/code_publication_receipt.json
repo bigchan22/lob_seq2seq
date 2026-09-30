@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-09-30T22:20:00.065346+00:00",
+  "remote": "git@github.com:bigchan22/lob_seq2seq.git",
+  "code_ref": "refs/heads/recovery/qf-august-code-20260930-220020",
+  "export_sha": "200e5758de0f5cb545322f5b5ab522ad645f9209",
+  "parents": [],
+  "source_code_sha": "feb10a130bb036617229d6c4c9bc4a96df3b9fe6",
+  "fresh_filtered_clone_verified_files": 134,
+  "fresh_clone_path": "RECOVERY_ROOT/remote-code-check",
+  "published_input_commit": "073cd89b556224eeae22413c3c05188a947e990a",
+  "input_manifest_validation": 54,
+  "direct_remote_input_blob_checks": [
+    {
+      "path": "data/raw/KRXaggData/KR7000030007_t.xlsx",
+      "git_blob": "9b0dd478f44c151ec5164afd65bdcc02f90e9f85",
+      "sha256": "44c1d756a9242e325c37e12c3be5e0571deb4ab72031ab3c6f741cb988b6fdf6",
+      "bytes": 6367467
+    },
+    {
+      "path": "data/processed/KR7000030007_t.csv",
+      "git_blob": "3068ca602be9e4e0850e7f3bcdf3fe4ab01a945d",
+      "sha256": "c7a177a704beb7573951080156c74fa9658f5cf220eeda004d973c6a7e8bdf04",
+      "bytes": 7907469
+    }
+  ]
+}
