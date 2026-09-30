@@ -1,0 +1,8 @@
+protocol_version: legacy_v1
+master_grid: {start: "09:00:00", end: "15:20:00", frequency_minutes: 10}
+date_policy: sorted_common_intersection
+missing_policy: [forward_fill, zero_fill]
+label_endpoint_policy: post_imputation
+epsilon: 0.0001
+split: {train_ratio: 0.7, validation_ratio: 0.1, test_ratio: 0.2, rounding: integer_truncation}
+checkpoint_policy: best_validation_macro_f1

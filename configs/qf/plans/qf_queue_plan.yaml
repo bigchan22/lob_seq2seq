@@ -1,0 +1,7 @@
+plan_id: qf_core_queue_v1
+generator: lob_forecasting.experiments.qf_plan
+allowed_physical_gpus: [0, 1]
+artifact_root: artifacts
+protocols: [qf_decomposition_dev_v1, qf_rolling_v1]
+feature_set: no_investor
+note: Job expansion is deterministic and validated programmatically; confirmatory GPU count must equal 72.

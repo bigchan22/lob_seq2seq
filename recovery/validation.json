@@ -1,0 +1,8 @@
+{
+  "source_file_identity_and_mode_checks": 128,
+  "python39_source_syntax_checks": 91,
+  "yaml": "parsed all exported config YAML",
+  "input_verification": "54 files checked against published source blobs, SHA256 and byte counts",
+  "scope": "No training, inference, checkpoint deserialization, or cache conversion",
+  "bounded_existing_cpu_tests": "6 passed in 1.17 seconds: tests/leakage/test_causal_masks.py and tests/qf/test_queue_contract.py; CUDA hidden, bytecode/cache writes disabled"
+}

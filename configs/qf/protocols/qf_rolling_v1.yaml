@@ -1,0 +1,5 @@
+protocol_id: qf_rolling_v1
+status: blocked
+required_gate: protocol_qf_rolling_ready
+requirements: [chronological_fold_manifests, train_only_transform_fits, non_overlapping_windows, valid_label_masks, prediction_identifiers, documented_session_rule, no_final_lockbox_access]
+fold_dates: verification_pending

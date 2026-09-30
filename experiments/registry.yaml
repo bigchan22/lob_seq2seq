@@ -1,0 +1,27 @@
+schema_version: 1
+defaults: &defaults
+  status: not_scheduled
+  protocol_version: qf_v2
+  dependencies: []
+  seeds: []
+  data_manifest: null
+  split_manifest: null
+  lockbox_access: prohibited
+  expected_outputs: [manifest, predictions, metrics]
+  notes: Placeholder only; no execution command assigned.
+experiments:
+  - {experiment_id: checkpoint_replay, phase: "00", research_question: Can historical checkpoints be replayed?, config_path: null, <<: *defaults}
+  - {experiment_id: data_validity_masks, phase: "01", research_question: How do endpoint-validity masks affect samples?, config_path: null, <<: *defaults}
+  - {experiment_id: independent_model, phase: "02", research_question: What is the independent-asset baseline?, config_path: null, <<: *defaults}
+  - {experiment_id: universal_own_history, phase: "02", research_question: Does shared own-history learning help?, config_path: null, <<: *defaults}
+  - {experiment_id: asset_embedding, phase: "02", research_question: What is the asset-identity contribution?, config_path: null, <<: *defaults}
+  - {experiment_id: market_factor, phase: "03", research_question: Do market factors explain gains?, config_path: null, <<: *defaults}
+  - {experiment_id: sparse_cross_asset, phase: "02", research_question: Is sparse cross-asset structure sufficient?, config_path: null, <<: *defaults}
+  - {experiment_id: fixed_cross_asset_mixer, phase: "02", research_question: Does a fixed mixer match attention?, config_path: null, <<: *defaults}
+  - {experiment_id: parameter_matched_no_attention, phase: "02", research_question: Are gains parameter-count effects?, config_path: null, <<: *defaults}
+  - {experiment_id: full_cross_asset_attention, phase: "02", research_question: What is full attention performance?, config_path: null, <<: *defaults}
+  - {experiment_id: temporal_shift_placebo, phase: "04", research_question: Do temporal shifts destroy the signal?, config_path: null, <<: *defaults}
+  - {experiment_id: day_shuffle_placebo, phase: "04", research_question: Does day alignment matter?, config_path: null, <<: *defaults}
+  - {experiment_id: multiple_horizons, phase: "05", research_question: Does evidence persist across labels and horizons?, config_path: null, <<: *defaults}
+  - {experiment_id: statistical_inference, phase: "06", research_question: Are differences statistically supported?, config_path: null, <<: *defaults}
+  - {experiment_id: economic_diagnostics, phase: "07", research_question: Are predictions economically meaningful?, config_path: null, <<: *defaults}

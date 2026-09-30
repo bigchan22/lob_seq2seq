@@ -1,0 +1,4 @@
+protocol_id: final_lockbox
+status: not_runnable
+authorization_file: LOCKBOX_AUTHORIZED.txt
+requirements: [authorization_file_exists, model_configs_frozen, clean_git_commit, data_manifest_frozen, manual_command_confirmation]

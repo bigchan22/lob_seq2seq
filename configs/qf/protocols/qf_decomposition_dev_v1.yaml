@@ -1,0 +1,9 @@
+protocol_id: qf_decomposition_dev_v1
+development_only: true
+final_evidence: false
+split: {train: 0.7, validation: 0.1, development_holdout: 0.2}
+selection_partition: validation
+development_holdout_used_for_selection: false
+feature_set: no_investor
+horizon_intervals: 1
+representation: state

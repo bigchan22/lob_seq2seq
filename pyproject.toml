@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lob-forecasting"
+version = "0.1.0"
+description = "Legacy-compatible limit-order-book forecasting research code"
+requires-python = ">=3.9"
+dependencies = ["numpy", "pandas", "torch", "scikit-learn", "tqdm", "openpyxl", "PyYAML"]
+
+[tool.setuptools.packages.find]
+include = ["lob_forecasting*", "src*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

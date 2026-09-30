@@ -1,0 +1,1 @@
+FUTURE_PREDICTION_COLUMNS=("date","timestamp","asset","horizon","y_true","y_pred","probability_down","probability_flat","probability_up","split","seed","model","protocol_version","original_current_endpoint","original_future_endpoint","staleness_flag","session_regime_flag")
