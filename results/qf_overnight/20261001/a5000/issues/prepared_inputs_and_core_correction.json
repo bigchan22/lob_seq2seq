@@ -10,5 +10,7 @@
   "resolved_source_sha": "19b9b56ff865cec3a24f500727015b33a201e93b",
   "exact_caches_published": true,
   "tlob_ready": true,
-  "aggregation_compatibility_fix": true
+  "aggregation_compatibility_fix": true,
+  "latest_ready_sha": "19b9b56ff865cec3a24f500727015b33a201e93b",
+  "freeze_note": "Common source now frozen after reviewed CSV validator and aggregate compatibility correction. Native e221 cache check must accept documented compatible source revisions or repin19b9b56. Latest READY retains identical prepared_data_hashes and canonical protocol. Do not wait for a user response."
 }
