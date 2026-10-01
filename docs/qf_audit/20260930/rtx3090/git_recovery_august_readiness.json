@@ -1,0 +1,397 @@
+{
+  "timestamp": "2026-09-30T22:48:45.574361+00:00",
+  "returncode": 0,
+  "result": {
+    "interpreter": "RECEIVER_PYTHON_ROOT/envs/mpnn/bin/python",
+    "python": "3.9.13",
+    "scope": "syntax/YAML/header/path checks and reviewed imports only; no entrypoints, constructors, data rows, model forward or GPU calls",
+    "syntax": {
+      "files_checked": 92,
+      "passed": 92,
+      "failures": [],
+      "method": "ast.parse in installed Python 3.9.13; no bytecode emitted"
+    },
+    "imports": [
+      {
+        "module": "numpy",
+        "status": "import_pass",
+        "version": "1.21.5"
+      },
+      {
+        "module": "pandas",
+        "status": "import_pass",
+        "version": "1.4.4"
+      },
+      {
+        "module": "torch",
+        "status": "import_pass",
+        "version": "2.7.1+cu118"
+      },
+      {
+        "module": "sklearn",
+        "status": "import_pass",
+        "version": "1.0.2"
+      },
+      {
+        "module": "openpyxl",
+        "status": "import_pass",
+        "version": "3.0.10"
+      },
+      {
+        "module": "yaml",
+        "status": "import_pass",
+        "version": "6.0"
+      },
+      {
+        "module": "tqdm",
+        "status": "import_pass",
+        "version": "4.64.1"
+      },
+      {
+        "module": "lob_forecasting.models.qf_variants",
+        "status": "import_pass",
+        "version": null
+      },
+      {
+        "module": "lob_forecasting.data.dataset",
+        "status": "import_pass",
+        "version": null
+      },
+      {
+        "module": "lob_forecasting.data.transforms",
+        "status": "import_pass",
+        "version": null
+      },
+      {
+        "module": "lob_forecasting.experiments.qf_training",
+        "status": "import_pass",
+        "version": null
+      },
+      {
+        "module": "lob_forecasting.experiments.discrimination_factors",
+        "status": "import_pass",
+        "version": null
+      },
+      {
+        "module": "lob_forecasting.evaluation.qf_metrics",
+        "status": "import_pass",
+        "version": null
+      }
+    ],
+    "yaml_checks": [
+      {
+        "path": "configs/base_config.yaml",
+        "status": "parsed",
+        "type": "NoneType"
+      },
+      {
+        "path": "configs/experiment_v1.yaml",
+        "status": "parsed",
+        "type": "NoneType"
+      },
+      {
+        "path": "configs/legacy/classical_default.yaml",
+        "status": "parsed",
+        "type": "dict"
+      },
+      {
+        "path": "configs/legacy/parallel_default.yaml",
+        "status": "parsed",
+        "type": "dict"
+      },
+      {
+        "path": "configs/legacy/protocol_legacy_v1.yaml",
+        "status": "parsed",
+        "type": "dict"
+      },
+      {
+        "path": "configs/legacy/single_asset_default.yaml",
+        "status": "parsed",
+        "type": "dict"
+      },
+      {
+        "path": "configs/qf/models/matched_temporal_v1.yaml",
+        "status": "parsed",
+        "type": "dict"
+      },
+      {
+        "path": "configs/qf/plans/qf_queue_plan.yaml",
+        "status": "parsed",
+        "type": "dict"
+      },
+      {
+        "path": "configs/qf/protocols/final_lockbox_TEMPLATE.yaml",
+        "status": "parsed",
+        "type": "dict"
+      },
+      {
+        "path": "configs/qf/protocols/qf_decomposition_dev_v1.yaml",
+        "status": "parsed",
+        "type": "dict"
+      },
+      {
+        "path": "configs/qf/protocols/qf_rolling_v1.yaml",
+        "status": "parsed",
+        "type": "dict"
+      },
+      {
+        "path": "experiments/registry.yaml",
+        "status": "failed",
+        "error": "while parsing a flow mapping\n  in \"<unicode string>\", line 13, column 5:\n      - {experiment_id: checkpoint_repla ... \n        ^\nexpected ',' or '}', but got '?'\n  in \"<unicode string>\", line 13, column 110:\n     ... storical checkpoints be replayed?, config_path: null, <<: *defaults}\n                                         ^"
+      }
+    ],
+    "selected_model_configuration": {
+      "contract_id": "matched_temporal_v1",
+      "num_assets": 27,
+      "feature_set": "no_investor",
+      "d_model": 128,
+      "temporal_layers": 2,
+      "cross_asset_layers": 1,
+      "nhead": 8,
+      "feed_forward_ratio": 4,
+      "dropout": 0.1,
+      "normalization": "post_norm",
+      "positional_encoding": "learned",
+      "optimizer": "AdamW",
+      "learning_rate": 0.0001,
+      "weight_decay": 0.0001,
+      "scheduler": "none",
+      "gradient_clip_norm": 1.0,
+      "max_epochs": 200,
+      "min_epochs": 20,
+      "early_stopping_patience": 30,
+      "early_stopping_min_delta": 0.0001,
+      "primary_checkpoint": "minimum_validation_multiclass_log_loss",
+      "secondary_checkpoint": "maximum_validation_macro_f1",
+      "mixed_precision": "disabled",
+      "seeds": [
+        42
+      ],
+      "validation_frequency_epochs": 1,
+      "tuning_budget": "none_model_specific",
+      "microbatch_size": 8,
+      "gradient_accumulation_steps": 4,
+      "effective_batch_size": 32
+    },
+    "selected_protocol_configuration": {
+      "protocol_id": "qf_decomposition_dev_v1",
+      "development_only": true,
+      "final_evidence": false,
+      "split": {
+        "train": 0.7,
+        "validation": 0.1,
+        "development_holdout": 0.2
+      },
+      "selection_partition": "validation",
+      "development_holdout_used_for_selection": false,
+      "feature_set": "no_investor",
+      "horizon_intervals": 1,
+      "representation": "state"
+    },
+    "numeric_config_types": {
+      "learning_rate": "float",
+      "weight_decay": "float",
+      "dropout": "float",
+      "early_stopping_min_delta": "float",
+      "gradient_clip_norm": "float",
+      "d_model": "int",
+      "nhead": "int"
+    },
+    "input_header_compatibility": {
+      "files": 27,
+      "all_required_columns_present": true,
+      "configured_asset_count_matches_csv_count": true,
+      "loader_required_column_count": 43,
+      "data_rows_read": 0,
+      "files_checked": [
+        {
+          "path": "KR7000030007_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7000100008_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7000120006_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7000150003_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7000270009_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7000660001_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7000720003_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7000810002_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7001040005_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7001450006_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7002380004_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7002550002_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7002790004_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7003550001_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7004020004_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7004170007_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7005300009_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7005380001_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7005440003_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7005490008_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7005830005_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7005930003_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7006400006_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7006800007_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7007070006_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7008770000_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7009150004_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        }
+      ]
+    },
+    "imposed_grid_metadata": {
+      "configured_grid_length": 39,
+      "configured_first": "09:00:00",
+      "configured_last": "15:20:00",
+      "assumed_targets_in_code": 38,
+      "source_sampling_interval_verified": false
+    },
+    "paths": {
+      "cache": "RECEIVER_ROOT/recovered_inputs/krx_main_073cd89b5562/data/processed",
+      "cache_exists": true,
+      "default_relative_data_dir_exists": false,
+      "qf_runner_data_override": "QF_DATA_DIR",
+      "qf_runner_artifact_override": "QF_ARTIFACT_ROOT",
+      "qf_runner_relative_config_requires_project_cwd": true,
+      "stage2_data_override_at_export_root": false,
+      "selected_configurations_exists_in_code": false
+    },
+    "gpu_hidden": true,
+    "bytecode_disabled": true,
+    "dataset_instantiated": false,
+    "model_instantiated": false,
+    "entrypoints_executed": false,
+    "real_data_rows_loaded": false
+  },
+  "stderr": "",
+  "side_effect_review": "Read import closure including package __init__, config, run_directory, metrics, transformers, dataset, preprocess, transforms, parallel, qf_training, shards and discrimination_factors. Main functions/constructors not called."
+}

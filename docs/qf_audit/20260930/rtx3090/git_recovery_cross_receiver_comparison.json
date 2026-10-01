@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-10-01T01:41:45.877799+00:00",
+  "remote": "git@github.com:bigchan22/lob_seq2seq.git",
+  "new_report_ref": "refs/heads/audit/qf-receiver-git-20261001-010238",
+  "new_report_sha": "2912890319b19a731e6e446b486ff7c8c6f3c3e3",
+  "parent_sha": "200e5758de0f5cb545322f5b5ab522ad645f9209",
+  "report_only_additions": 8,
+  "scientific_code_changed": false,
+  "code_manifest_byte_identical_to_export_root": true,
+  "input_identities_matched": 54,
+  "input_match_fields": [
+    "source_commit",
+    "source_path",
+    "source_git_blob",
+    "bytes",
+    "sha256"
+  ],
+  "metadata_download_bytes": 77455,
+  "new_data_or_predictions_downloaded": false,
+  "source_requested_role": "RTX3090 receiver",
+  "source_reported_gpu_models": [
+    "NVIDIA GeForce RTX 4090"
+  ],
+  "source_actual_A5000_identity_verified": false,
+  "receiver_observed_gpu_models": [
+    "NVIDIA GeForce RTX 3090"
+  ],
+  "receiver_observed_gpu_count": 4,
+  "source_mpnn_torch": "1.12.1",
+  "receiver_mpnn_torch": "2.7.1+cu118",
+  "receiver_torch_load_has_explicit_weights_only": true,
+  "source_torch_load_API_blocker_applies_locally": false,
+  "source_report_artifacts_claim": {
+    "predictions": "Selected August UA/UC predictions are present only in the existing local backup recovery packet; no new Git prediction download or inference.",
+    "local_selected_root": "PRIOR_RECOVERY_ROOT/recovered-artifacts",
+    "local_artifact_manifest": "PRIOR_RECOVERY_ROOT/artifact_manifest.csv",
+    "checkpoints": "Exist in original local backup artifact sets; not requested, downloaded, deserialized or copied in this pass.",
+    "september_gru": "not recovered",
+    "all_material_in_git_claim": "contradicted for the inspected QF runtime artifacts; code and the 54 aggregate inputs are recoverable through Git"
+  },
+  "interpretation": "Additional external audit corroborates existing export/input identities; it does not supply actual A5000 identity, newer code, saved predictions, or a portability commit. Its environment failure is not a demonstrated local failure. Source backup/artifact availability is source-reported; no endpoint inferred."
+}

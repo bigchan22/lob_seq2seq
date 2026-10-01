@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-10-01T01:39:26.887706+00:00",
+  "reason": "New external receiver report identifies PyTorch1.12.1 lacking explicit torch.load weights_only; verify whether this specific blocker applies locally",
+  "returncode": 0,
+  "result": {
+    "interpreter": "RECEIVER_PYTHON_ROOT/envs/mpnn/bin/python",
+    "python": "3.9.13",
+    "torch": "2.7.1+cu118",
+    "torch_cuda_build": "11.8",
+    "torch_load_has_explicit_weights_only_parameter": true,
+    "checkpoint_loaded": false,
+    "cuda_execution": false
+  },
+  "stderr": ""
+}

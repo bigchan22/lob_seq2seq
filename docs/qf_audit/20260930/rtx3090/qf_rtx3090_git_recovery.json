@@ -1,0 +1,1067 @@
+{
+  "schema_version": 2,
+  "server_role": "rtx3090_receiver_git_recovery",
+  "timestamp": "2026-10-01T01:41:45.877799+00:00",
+  "status": "august_code_inputs_verified; new_external_audit_compared; RTX3090_identity_confirmed; portability_and_actual_A5000_handoff_pending",
+  "blocked_on_4090_access": false,
+  "old_source_report_receipt_is_blocker": false,
+  "scope": "Continued existing inventory. Selective published Git code/aggregate/cache recovery and bounded read-only readiness; no new scientific execution.",
+  "instructions": {
+    "applicable_AGENTS": "No applicable AGENTS.md found in checked ancestors or selected published tree; new recovery directories had no additional ancestor instructions",
+    "inaccessible_home_revisited": false,
+    "existing_authentication_only": true
+  },
+  "git": {
+    "bridge_path": "RECEIVER_ROOT/git_bridge/lob_seq2seq",
+    "verified_remote": "git@github.com:bigchan22/lob_seq2seq.git",
+    "initial_shallow": "true",
+    "initial_promisor": "true",
+    "partial_filter": "blob:none",
+    "configured_default_fetch_refspec": [
+      "+refs/heads/audit/qf-a5000-20260930-142604:refs/remotes/origin/audit/qf-a5000-20260930-142604"
+    ],
+    "default_fetch_scope_note": "Configuration names only the old source audit branch. It does not describe all published remote refs. All current advertised heads/tags were queried explicitly.",
+    "initial_advertised_refs": {
+      "refs/heads/audit/qf-a5000-20260930-142604": "0ebdb6782f2322e346dfb0c303762aab8635419c",
+      "refs/heads/audit/qf-rtx3090-20260930-1506": "119bd79600d2f53a10fb7be3d9ab39ec62f23678",
+      "refs/heads/main": "073cd89b556224eeae22413c3c05188a947e990a"
+    },
+    "final_advertised_refs": {
+      "refs/heads/audit/qf-a5000-20260930-142604": "0ebdb6782f2322e346dfb0c303762aab8635419c",
+      "refs/heads/audit/qf-receiver-git-20261001-010238": "2912890319b19a731e6e446b486ff7c8c6f3c3e3",
+      "refs/heads/audit/qf-rtx3090-20260930-1506": "119bd79600d2f53a10fb7be3d9ab39ec62f23678",
+      "refs/heads/main": "073cd89b556224eeae22413c3c05188a947e990a",
+      "refs/heads/recovery/qf-august-code-20260930-220020": "200e5758de0f5cb545322f5b5ab522ad645f9209",
+      "refs/heads/recovery/qf-git-handoff-20260930-220020": "a323db8aea04fbb33b8e32e7644647106150899c"
+    },
+    "final_remote_observed_at": "2026-10-01T01:37:18.820449+00:00",
+    "tags_advertised": [],
+    "ref_refresh": {
+      "specs": [
+        "refs/heads/main:refs/remotes/origin/main",
+        "refs/heads/audit/qf-a5000-20260930-142604:refs/remotes/origin/audit/qf-a5000-20260930-142604",
+        "refs/heads/audit/qf-rtx3090-20260930-1506:refs/remotes/origin/audit/qf-rtx3090-20260930-1506"
+      ],
+      "returncode": 0,
+      "output": "From github.com:bigchan22/lob_seq2seq\n * [new branch]      main       -> origin/main\n * [new branch]      audit/qf-rtx3090-20260930-1506 -> origin/audit/qf-rtx3090-20260930-1506\n"
+    },
+    "september_candidate": {
+      "sha": "99e305a904eaebeaa6d9bedec827426c3de9a593",
+      "branch": "exp/qf-leadlag-competition-20260901_102354",
+      "advertised": false,
+      "local_fetch_gap_test": "Exact full-SHA filtered fetch attempted once after refreshing refs",
+      "fetch_returncode": 128,
+      "result": "upload-pack: not our ref",
+      "status": "not_retrievable_from_verified_remote_under_current_access_at_check_time",
+      "limitation": "Does not establish absence from actual A5000 local objects, other verified repositories not yet supplied, or unadvertised/inaccessible refs",
+      "latest_status_caveat": "September branch absent from current successful advertisements; prior exact-SHA rejection retained and not redundantly retried."
+    },
+    "august_candidate": {
+      "sha": "feb10a130bb036617229d6c4c9bc4a96df3b9fe6",
+      "prior_result": "unavailable in prior audit",
+      "retried_this_pass": false,
+      "required_for_recovery": false
+    },
+    "old_source_report_sha": "0ebdb6782f2322e346dfb0c303762aab8635419c",
+    "old_source_report_corroborated": true,
+    "prior_own_audit_sha": "119bd79600d2f53a10fb7be3d9ab39ec62f23678",
+    "full_history_downloaded": false,
+    "new_publication": false,
+    "new_recovery_refs_fetched": {
+      "refs/heads/recovery/qf-august-code-20260930-220020": "200e5758de0f5cb545322f5b5ab522ad645f9209",
+      "refs/heads/recovery/qf-git-handoff-20260930-220020": "a323db8aea04fbb33b8e32e7644647106150899c",
+      "refs/heads/audit/qf-receiver-git-20261001-010238": "2912890319b19a731e6e446b486ff7c8c6f3c3e3"
+    },
+    "new_ref_fetch_options": [
+      "--filter=blob:none",
+      "--depth=4",
+      "--no-tags",
+      "--no-recurse-submodules"
+    ],
+    "september_retried_on_resume": false,
+    "latest_remote_check": {
+      "timestamp": "2026-10-01T01:37:18.820449+00:00",
+      "remote": "git@github.com:bigchan22/lob_seq2seq.git",
+      "shallow": "true",
+      "partial_filter": "blob:none",
+      "promisor": "true",
+      "configured_fetch_refspec": [
+        "+refs/heads/audit/qf-a5000-20260930-142604:refs/remotes/origin/audit/qf-a5000-20260930-142604"
+      ],
+      "returncode": 0,
+      "advertised_refs": {
+        "refs/heads/audit/qf-a5000-20260930-142604": "0ebdb6782f2322e346dfb0c303762aab8635419c",
+        "refs/heads/audit/qf-receiver-git-20261001-010238": "2912890319b19a731e6e446b486ff7c8c6f3c3e3",
+        "refs/heads/audit/qf-rtx3090-20260930-1506": "119bd79600d2f53a10fb7be3d9ab39ec62f23678",
+        "refs/heads/main": "073cd89b556224eeae22413c3c05188a947e990a",
+        "refs/heads/recovery/qf-august-code-20260930-220020": "200e5758de0f5cb545322f5b5ab522ad645f9209",
+        "refs/heads/recovery/qf-git-handoff-20260930-220020": "a323db8aea04fbb33b8e32e7644647106150899c"
+      },
+      "stderr": "",
+      "local_refs": [
+        "0ebdb6782f2322e346dfb0c303762aab8635419c refs/heads/audit/qf-a5000-20260930-142604",
+        "119bd79600d2f53a10fb7be3d9ab39ec62f23678 refs/heads/audit/qf-rtx3090-20260930-1506",
+        "0ebdb6782f2322e346dfb0c303762aab8635419c refs/remotes/origin/audit/qf-a5000-20260930-142604",
+        "119bd79600d2f53a10fb7be3d9ab39ec62f23678 refs/remotes/origin/audit/qf-rtx3090-20260930-1506",
+        "073cd89b556224eeae22413c3c05188a947e990a refs/remotes/origin/main",
+        "200e5758de0f5cb545322f5b5ab522ad645f9209 refs/remotes/origin/recovery/qf-august-code-20260930-220020",
+        "a323db8aea04fbb33b8e32e7644647106150899c refs/remotes/origin/recovery/qf-git-handoff-20260930-220020"
+      ],
+      "bridge_head": "0ebdb6782f2322e346dfb0c303762aab8635419c",
+      "handoff_candidates": [
+        {
+          "path": "RECEIVER_ROOT/qf_a5000_handoff.json",
+          "bytes": 24714,
+          "mtime": "2026-09-30T14:54:31+00:00"
+        },
+        {
+          "path": "RECEIVER_ROOT/qf_rtx3090_handoff.json",
+          "bytes": 38003,
+          "mtime": "2026-09-30T15:16:34.265945+00:00"
+        }
+      ],
+      "received_report_directories": [
+        "a323db8aea04fbb33b8e32e7644647106150899c"
+      ]
+    },
+    "current_advertisements_verified": true,
+    "latest_check_evidence_path": "RECEIVER_ROOT/git_recovery_resume_20261001T013721Z.json",
+    "final_advertised_refs_are_last_successful_snapshot": true,
+    "final_advertised_refs_caveat": "Current successful advertisement; one new exact audit ref was fetched, consisting only of eight report files on export ROOT. Scientific code branch unchanged."
+  },
+  "recovered_code": {
+    "sha": "200e5758de0f5cb545322f5b5ab522ad645f9209",
+    "remote_ref": "refs/heads/recovery/qf-august-code-20260930-220020",
+    "path": "RECEIVER_ROOT/recovery_worktrees/qf_august_export_200e5758de0f",
+    "classification": "verified_parentless_August_code_export; September_not_recovered",
+    "export_root_sha": "200e5758de0f5cb545322f5b5ab522ad645f9209",
+    "parentless_root_verified": true,
+    "source_commit_mapping": "feb10a130bb036617229d6c4c9bc4a96df3b9fe6",
+    "source_commit_mapping_caveat": "Source attribution declared by export manifest; original scientific commit remains unavailable, but all 128 recovered file blobs/modes/bytes/SHA256 match its declared source mapping",
+    "code_report_sha": "a323db8aea04fbb33b8e32e7644647106150899c",
+    "exported_source_file_count": 128,
+    "total_file_count": 134,
+    "total_bytes": 256150,
+    "manifest_verified_at_root": "128/128 contents, bytes, Git blob IDs, SHA256 and modes match declared source mapping",
+    "post_readiness_all_export_files_verified": 134,
+    "worktree_clean": true,
+    "original_source_dirty_state": "62 paths: 47 reference symlink materializations and 15 executable-mode changes. Approved exported source/config/test/dependency contents match committed blobs. Dirty unrelated content excluded.",
+    "required_dirty_source_delta": "none declared for approved exported paths; unrelated dirty content excluded",
+    "portability_commits_observed": [],
+    "report_branch_changes": "seven metadata-only additions relative to export root; no scientific code changes",
+    "manifest_path": "RECEIVER_ROOT/qf_rtx3090_scientific_code_manifest.json",
+    "legacy_reference_preserved": {
+      "sha": "073cd89b556224eeae22413c3c05188a947e990a",
+      "remote_ref": "refs/heads/main",
+      "path": "RECEIVER_ROOT/recovery_worktrees/legacy_main_073cd89b5562",
+      "classification": "old_published_main_legacy_reference_only",
+      "file_count": 24,
+      "bytes": 21239,
+      "detached_sparse_worktree": true,
+      "worktree_clean": true,
+      "manifest_path": "RECEIVER_ROOT/qf_rtx3090_recovered_code_manifest.json",
+      "desired_September_code_recovered": false,
+      "actual_A5000_scientific_code_recovered": false,
+      "code_modified": false,
+      "manifest_verification": "Each selected file byte count and Git blob hash verified; SHA-256 recorded and rechecked after imports"
+    },
+    "desired_September_code_recovered": false,
+    "code_modified": false,
+    "portability_commits_observation_timestamp": "2026-10-01T01:37:18.820449+00:00",
+    "current_remote_tip_confirmed": true
+  },
+  "recovered_inputs": {
+    "root": "RECEIVER_ROOT/recovered_inputs/krx_main_073cd89b5562",
+    "aggregate_path": "RECEIVER_ROOT/recovered_inputs/krx_main_073cd89b5562/data/raw/KRXaggData",
+    "cache_path": "RECEIVER_ROOT/recovered_inputs/krx_main_073cd89b5562/data/processed",
+    "remote": "git@github.com:bigchan22/lob_seq2seq.git",
+    "remote_ref": "refs/heads/main",
+    "remote_sha": "073cd89b556224eeae22413c3c05188a947e990a",
+    "aggregate_count": 27,
+    "aggregate_bytes": 161779048,
+    "cache_count": 27,
+    "cache_bytes": 204319112,
+    "total_count": 54,
+    "total_bytes": 366098160,
+    "total_mib": 349.13841247558594,
+    "storage_kind": "ordinary Git blobs; no needed LFS pointers encountered",
+    "json_manifest_path": "RECEIVER_ROOT/qf_rtx3090_input_manifest.json",
+    "csv_manifest_path": "RECEIVER_ROOT/qf_rtx3090_input_manifest.csv",
+    "manifest_sha256": "d0c16994cb4e1b86d69c4c1d1fc524ccfb17972e985bf40054ae9e4667746974",
+    "hash_coverage": "All 54 files: Git blob SHA-1 and SHA-256 checked while streaming into new files; source path/full revision/size recorded",
+    "existing_files_overwritten": false,
+    "cache_regenerated": false,
+    "source_report_representative_hash_matches": [
+      {
+        "filename": "KR7000030007_t.xlsx",
+        "source_report_sha256": "44c1d756a9242e325c37e12c3be5e0571deb4ab72031ab3c6f741cb988b6fdf6",
+        "recovered_sha256": "44c1d756a9242e325c37e12c3be5e0571deb4ab72031ab3c6f741cb988b6fdf6",
+        "match": true
+      },
+      {
+        "filename": "KR7008770000_t.xlsx",
+        "source_report_sha256": "d9ff14b98a42043ebb4c09a9fc83e4bf62d219693b3d041423e971c8b66f12ce",
+        "recovered_sha256": "d9ff14b98a42043ebb4c09a9fc83e4bf62d219693b3d041423e971c8b66f12ce",
+        "match": true
+      },
+      {
+        "filename": "KR7009150004_t.xlsx",
+        "source_report_sha256": "fa37df2fd76f26aa4a228c797e4bbf43c332ae7a3df0188e95c57eae8af664a6",
+        "recovered_sha256": "fa37df2fd76f26aa4a228c797e4bbf43c332ae7a3df0188e95c57eae8af664a6",
+        "match": true
+      },
+      {
+        "filename": "KR7000030007_t.csv",
+        "source_report_sha256": "c7a177a704beb7573951080156c74fa9658f5cf220eeda004d973c6a7e8bdf04",
+        "recovered_sha256": "c7a177a704beb7573951080156c74fa9658f5cf220eeda004d973c6a7e8bdf04",
+        "match": true
+      },
+      {
+        "filename": "KR7008770000_t.csv",
+        "source_report_sha256": "be833461eeac62191810f301958c662c4bc94f40afd45f22fc936c2e308e410f",
+        "recovered_sha256": "be833461eeac62191810f301958c662c4bc94f40afd45f22fc936c2e308e410f",
+        "match": true
+      },
+      {
+        "filename": "KR7009150004_t.csv",
+        "source_report_sha256": "cbaf7cc80a30ee1b489873fc22e3b2ad8d50958f24829796ed16a6d27183b8bd",
+        "recovered_sha256": "cbaf7cc80a30ee1b489873fc22e3b2ad8d50958f24829796ed16a6d27183b8bd",
+        "match": true
+      }
+    ],
+    "source_report_comparison_scope": "All 54 recovered files match the new published export input manifest in path, published commit, Git blob, bytes and SHA-256. Prior streaming checks establish actual recovered byte hashes; files were not redundantly reread this resume.",
+    "schema_check": {
+      "files": 27,
+      "uniform_headers": true,
+      "column_count": 45,
+      "header_sha256": "0f2f0392c51da719451a10d3d55619fef5f75ab4d9ae7d2d65e2027d0e77753c",
+      "data_rows_read": 0
+    },
+    "workbook_sample": {
+      "filename": "KR7008770000_t.xlsx",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "method": "ZIP workbook.xml only; no worksheet data rows"
+    },
+    "provider_semantics": "Not inferred from nonmissing/equal aggregate values. This recovery does not establish exchange observation, provider filling or timestamp release semantics.",
+    "same_as_actual_A5000_inputs": "Actual A5000 identity/input inventory remains unconfirmed. Published August export input identity matches all 54 recovered files.",
+    "new_export_input_manifest": "RECEIVER_ROOT/recovery_worktrees/qf_august_export_200e5758de0f/recovery/input_manifest.csv",
+    "new_export_manifest_matches": 54,
+    "august_source_blob_equivalence": "Exporter declares all 54 blobs identical at August source SHA; original August tree unavailable locally, so this source-tree association is not independently verified.",
+    "inputs_redownloaded_on_resume": false,
+    "additional_report_input_manifest_match": {
+      "report_sha": "2912890319b19a731e6e446b486ff7c8c6f3c3e3",
+      "matches": 54,
+      "same_code_manifest": true
+    }
+  },
+  "received_handoff": {
+    "published_accessible_recovery_report_received": true,
+    "report_sha": "a323db8aea04fbb33b8e32e7644647106150899c",
+    "report_ref": "refs/heads/recovery/qf-git-handoff-20260930-220020",
+    "report_directory": "RECEIVER_ROOT/received_accessible_server_recovery/a323db8aea04fbb33b8e32e7644647106150899c/docs/qf_recovery/20260930/accessible_server",
+    "report_identity_verified_on_remote": true,
+    "actual_A5000_identity_confirmed": false,
+    "source_report_server_role": "accessible candidate recovery host; actual GPUs contradict A5000 label",
+    "source_report_gpu_models": [
+      "NVIDIA GeForce RTX 4090"
+    ],
+    "identity_status": "contradicted A5000 hardware label in report; actual source accessibility/identity unresolved",
+    "optional_question_to_user": "Does actual A5000 have a separate handoff or verified code ref?",
+    "question_blocks_recovery": false,
+    "source_code_and_input_manifest_checks_completed": true,
+    "remaining_actual_A5000_request": [
+      "actual hardware/project identity",
+      "verified September or other newer code ref/full SHA, if present",
+      "input/artifact inventory, including any local-only copies needed for result verification"
+    ],
+    "report_versus_code": "Report SHA a323db8 includes metadata; recovered scientific code is export ROOT 200e5758. Neither is the unavailable original August scientific commit.",
+    "latest_local_check": "2026-10-01T01:41:45.877799+00:00",
+    "latest_search_scope": [
+      "workspace root filenames matching handoff/recovery",
+      "known received_accessible_server_recovery directories"
+    ],
+    "new_handoff_found_on_resume": false,
+    "additional_verified_reports": [
+      {
+        "ref": "refs/heads/audit/qf-receiver-git-20261001-010238",
+        "sha": "2912890319b19a731e6e446b486ff7c8c6f3c3e3",
+        "local_directory": "RECEIVER_ROOT/received_accessible_server_recovery/2912890319b19a731e6e446b486ff7c8c6f3c3e3/docs/qf_recovery/20261001/accessible_session",
+        "actual_A5000_confirmed": false,
+        "reported_gpu_models": [
+          "NVIDIA GeForce RTX 4090"
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "aggregate_workbooks": "27 recovered; manifest verified",
+    "csv_caches": "27 recovered existing bytes; not rebuilt",
+    "predictions": "none recovered locally; two saved prediction archives recorded as local-only in source report",
+    "checkpoints": "none fetched or loaded; old-main checkpoint objects deliberately excluded",
+    "source_execution_inventory": "RECEIVER_ROOT/received_accessible_server_recovery/a323db8aea04fbb33b8e32e7644647106150899c/docs/qf_recovery/20260930/accessible_server/run_inventory.csv",
+    "source_execution_evidence_status": "source-reported executions/metrics; not RTX3090 executions and not locally rescored",
+    "optional_artifact_copy_manifest": "RECEIVER_ROOT/qf_rtx3090_optional_artifact_copy_manifest.json",
+    "optional_artifact_files": 11,
+    "optional_artifact_bytes": 6256259,
+    "optional_copy_requirement": "Only if accessible A5000 or another authorized holder confirms these hashes. Source alias LOCAL_STAGE2; destinations recorded locally. No SSH host inferred. No copied data committed.",
+    "actual_A5000_local_only_inputs": "unresolved; no further data is required for the verified published August input manifest"
+  },
+  "readiness": {
+    "code": "verified_available_August_export; September unavailable through checked remote access",
+    "data": "verified_54_published_inputs_and_all_export_manifest_hash_matches; loader headers compatible; source semantics/calendar coverage not re-established",
+    "syntax": {
+      "files_checked": 92,
+      "passed": 92,
+      "failures": [],
+      "method": "ast.parse in installed Python 3.9.13; no bytecode emitted"
+    },
+    "yaml_checks": [
+      {
+        "path": "configs/base_config.yaml",
+        "status": "parsed",
+        "type": "NoneType"
+      },
+      {
+        "path": "configs/experiment_v1.yaml",
+        "status": "parsed",
+        "type": "NoneType"
+      },
+      {
+        "path": "configs/legacy/classical_default.yaml",
+        "status": "parsed",
+        "type": "dict"
+      },
+      {
+        "path": "configs/legacy/parallel_default.yaml",
+        "status": "parsed",
+        "type": "dict"
+      },
+      {
+        "path": "configs/legacy/protocol_legacy_v1.yaml",
+        "status": "parsed",
+        "type": "dict"
+      },
+      {
+        "path": "configs/legacy/single_asset_default.yaml",
+        "status": "parsed",
+        "type": "dict"
+      },
+      {
+        "path": "configs/qf/models/matched_temporal_v1.yaml",
+        "status": "parsed",
+        "type": "dict"
+      },
+      {
+        "path": "configs/qf/plans/qf_queue_plan.yaml",
+        "status": "parsed",
+        "type": "dict"
+      },
+      {
+        "path": "configs/qf/protocols/final_lockbox_TEMPLATE.yaml",
+        "status": "parsed",
+        "type": "dict"
+      },
+      {
+        "path": "configs/qf/protocols/qf_decomposition_dev_v1.yaml",
+        "status": "parsed",
+        "type": "dict"
+      },
+      {
+        "path": "configs/qf/protocols/qf_rolling_v1.yaml",
+        "status": "parsed",
+        "type": "dict"
+      },
+      {
+        "path": "experiments/registry.yaml",
+        "status": "failed",
+        "error": "while parsing a flow mapping\n  in \"<unicode string>\", line 13, column 5:\n      - {experiment_id: checkpoint_repla ... \n        ^\nexpected ',' or '}', but got '?'\n  in \"<unicode string>\", line 13, column 110:\n     ... storical checkpoints be replayed?, config_path: null, <<: *defaults}\n                                         ^"
+      }
+    ],
+    "selected_model_config": {
+      "contract_id": "matched_temporal_v1",
+      "num_assets": 27,
+      "feature_set": "no_investor",
+      "d_model": 128,
+      "temporal_layers": 2,
+      "cross_asset_layers": 1,
+      "nhead": 8,
+      "feed_forward_ratio": 4,
+      "dropout": 0.1,
+      "normalization": "post_norm",
+      "positional_encoding": "learned",
+      "optimizer": "AdamW",
+      "learning_rate": 0.0001,
+      "weight_decay": 0.0001,
+      "scheduler": "none",
+      "gradient_clip_norm": 1.0,
+      "max_epochs": 200,
+      "min_epochs": 20,
+      "early_stopping_patience": 30,
+      "early_stopping_min_delta": 0.0001,
+      "primary_checkpoint": "minimum_validation_multiclass_log_loss",
+      "secondary_checkpoint": "maximum_validation_macro_f1",
+      "mixed_precision": "disabled",
+      "seeds": [
+        42
+      ],
+      "validation_frequency_epochs": 1,
+      "tuning_budget": "none_model_specific",
+      "microbatch_size": 8,
+      "gradient_accumulation_steps": 4,
+      "effective_batch_size": 32
+    },
+    "selected_protocol_config": {
+      "protocol_id": "qf_decomposition_dev_v1",
+      "development_only": true,
+      "final_evidence": false,
+      "split": {
+        "train": 0.7,
+        "validation": 0.1,
+        "development_holdout": 0.2
+      },
+      "selection_partition": "validation",
+      "development_holdout_used_for_selection": false,
+      "feature_set": "no_investor",
+      "horizon_intervals": 1,
+      "representation": "state"
+    },
+    "input_header_compatibility": {
+      "files": 27,
+      "all_required_columns_present": true,
+      "configured_asset_count_matches_csv_count": true,
+      "loader_required_column_count": 43,
+      "data_rows_read": 0,
+      "files_checked": [
+        {
+          "path": "KR7000030007_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7000100008_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7000120006_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7000150003_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7000270009_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7000660001_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7000720003_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7000810002_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7001040005_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7001450006_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7002380004_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7002550002_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7002790004_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7003550001_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7004020004_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7004170007_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7005300009_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7005380001_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7005440003_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7005490008_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7005830005_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7005930003_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7006400006_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7006800007_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7007070006_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7008770000_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        },
+        {
+          "path": "KR7009150004_t.csv",
+          "column_count": 45,
+          "missing_loader_columns": [],
+          "header_sha256": "cc04bbc9b5f794867edca43eafdcd4b695badccfefe9c153d5fd9517c3c77be3"
+        }
+      ]
+    },
+    "environment": {
+      "status": "verified_safe_CPU_imports_pass; complete runtime and GPU usability untested",
+      "interpreter": "RECEIVER_PYTHON_ROOT/envs/mpnn/bin/python",
+      "python": "3.9.13",
+      "dependency_versions": {
+        "numpy": "1.21.5",
+        "pandas": "1.4.4",
+        "torch": "2.7.1+cu118",
+        "sklearn": "1.0.2",
+        "openpyxl": "3.0.10",
+        "yaml": "6.0",
+        "tqdm": "4.64.1"
+      },
+      "checked_imports": [
+        {
+          "module": "numpy",
+          "status": "import_pass",
+          "version": "1.21.5"
+        },
+        {
+          "module": "pandas",
+          "status": "import_pass",
+          "version": "1.4.4"
+        },
+        {
+          "module": "torch",
+          "status": "import_pass",
+          "version": "2.7.1+cu118"
+        },
+        {
+          "module": "sklearn",
+          "status": "import_pass",
+          "version": "1.0.2"
+        },
+        {
+          "module": "openpyxl",
+          "status": "import_pass",
+          "version": "3.0.10"
+        },
+        {
+          "module": "yaml",
+          "status": "import_pass",
+          "version": "6.0"
+        },
+        {
+          "module": "tqdm",
+          "status": "import_pass",
+          "version": "4.64.1"
+        },
+        {
+          "module": "lob_forecasting.models.qf_variants",
+          "status": "import_pass",
+          "version": null
+        },
+        {
+          "module": "lob_forecasting.data.dataset",
+          "status": "import_pass",
+          "version": null
+        },
+        {
+          "module": "lob_forecasting.data.transforms",
+          "status": "import_pass",
+          "version": null
+        },
+        {
+          "module": "lob_forecasting.experiments.qf_training",
+          "status": "import_pass",
+          "version": null
+        },
+        {
+          "module": "lob_forecasting.experiments.discrimination_factors",
+          "status": "import_pass",
+          "version": null
+        },
+        {
+          "module": "lob_forecasting.evaluation.qf_metrics",
+          "status": "import_pass",
+          "version": null
+        }
+      ],
+      "checks_path": "RECEIVER_ROOT/git_recovery_august_readiness.json",
+      "source_report_environment": {
+        "historical_launcher_interpreter": "HISTORICAL_HOME/miniconda3/envs/lob/bin/python3.10",
+        "historical_interpreter_usable": false,
+        "cpu_test_interpreter": "USER_HOME/miniconda3/bin/python3",
+        "cpu_test_versions": {
+          "python": "3.13.5",
+          "torch": "2.13.0+cu130",
+          "torch_cuda_build": "13.0",
+          "numpy": "2.5.1",
+          "pytest": "9.1.1"
+        },
+        "rescoring_interpreter": "USER_HOME/miniconda3/envs/mpnn/bin/python",
+        "rescoring_versions": {
+          "python": "3.9.16",
+          "pandas": "1.5.3",
+          "numpy": "1.22.3"
+        },
+        "dependencies": "existing requirements/base.txt and pyproject.toml; unpinned, no lockfile recovered",
+        "portability": "21 committed files contain historical hardcoded paths; preserved and listed in export_manifest.json"
+      },
+      "source_receiver_versions_equal": false,
+      "dependency_files": [
+        "pyproject.toml",
+        "requirements.txt",
+        "requirements/base.txt",
+        "requirements/dev.txt"
+      ],
+      "dependency_lock": "none recovered; dependencies unpinned",
+      "installed_new_dependencies": false,
+      "gpu_execution_tested": false,
+      "prior_driver_inventory": "515.57 from initial RTX3090 audit; current GPU availability not re-audited; CUDA runtime compatibility not established by CPU imports",
+      "new_specific_torch_api_check": {
+        "timestamp": "2026-10-01T01:39:26.887706+00:00",
+        "reason": "New external receiver report identifies PyTorch1.12.1 lacking explicit torch.load weights_only; verify whether this specific blocker applies locally",
+        "returncode": 0,
+        "result": {
+          "interpreter": "RECEIVER_PYTHON_ROOT/envs/mpnn/bin/python",
+          "python": "3.9.13",
+          "torch": "2.7.1+cu118",
+          "torch_cuda_build": "11.8",
+          "torch_load_has_explicit_weights_only_parameter": true,
+          "checkpoint_loaded": false,
+          "cuda_execution": false
+        },
+        "stderr": ""
+      },
+      "source_API_limitation_is_local_blocker": false
+    },
+    "configuration_paths": {
+      "cache": "RECEIVER_ROOT/recovered_inputs/krx_main_073cd89b5562/data/processed",
+      "cache_exists": true,
+      "default_relative_data_dir_exists": false,
+      "qf_runner_data_override": "QF_DATA_DIR",
+      "qf_runner_artifact_override": "QF_ARTIFACT_ROOT",
+      "qf_runner_relative_config_requires_project_cwd": true,
+      "stage2_data_override_at_export_root": false,
+      "selected_configurations_exists_in_code": false
+    },
+    "portability_findings": [
+      {
+        "status": "verified",
+        "category": "historical_interpreter",
+        "evidence": [
+          "lob_forecasting/experiments/qf_plan.py:5",
+          "lob_forecasting/experiments/discrimination_plan.py:4",
+          "scripts/qf_queue/launch_workers.sh:3",
+          "scripts/qf_discrimination/launch_workers.sh:3"
+        ],
+        "detail": "Queue plan commands and worker launchers embed the original HISTORICAL_HOME/miniconda3/envs/lob/bin/python3.10 path. They require an explicit portable interpreter selection before future use."
+      },
+      {
+        "status": "verified",
+        "category": "stage2_input_and_pilot_paths",
+        "evidence": [
+          "lob_forecasting/experiments/discrimination_runner.py:16",
+          "lob_forecasting/experiments/discrimination_runner.py:43",
+          "lob_forecasting/experiments/discrimination_runner.py:66",
+          "lob_forecasting/experiments/discrimination_runner.py:70"
+        ],
+        "detail": "Stage-2 code embeds original processed-data and pilot-artifact paths. QF_DISC_ROOT only selects Stage-2 output; it does not override those input paths at this export root."
+      },
+      {
+        "status": "verified",
+        "category": "selected_configuration_missing",
+        "evidence": "artifact_manifest.csv / LOCAL_STAGE2/selected_configurations.yaml",
+        "detail": "BEST_UA/BEST_UC and UM_V2_SELECTED reuse requires the recorded selected_configurations.yaml (806 bytes), which is source-reported local-only and absent from the export. Generic pilot configs are present."
+      },
+      {
+        "status": "verified",
+        "category": "placeholder_registry_yaml",
+        "evidence": "experiments/registry.yaml:13",
+        "detail": "PyYAML 6.0 rejects the unquoted question mark in a flow mapping. This is an unscheduled qf_v2 placeholder registry; the two selected August runtime YAML files parse successfully. No registry repair or qf_v2 implementation performed."
+      }
+    ],
+    "historical_path_files_exporter_list": [
+      "experiments/legacy/scripts/run_overnight_seed_sweep_20260713.sh",
+      "lob_forecasting/experiments/discrimination_finalize.py",
+      "lob_forecasting/experiments/discrimination_plan.py",
+      "lob_forecasting/experiments/discrimination_runner.py",
+      "lob_forecasting/experiments/qf_plan.py",
+      "scripts/qf_discrimination/launch_workers.sh",
+      "scripts/qf_discrimination/package_results.sh",
+      "scripts/qf_discrimination/pause.sh",
+      "scripts/qf_discrimination/resume.sh",
+      "scripts/qf_discrimination/status.sh",
+      "scripts/qf_queue/launch_workers.sh",
+      "scripts/qf_queue/package_pilot_bundle.sh",
+      "scripts/qf_queue/package_setup_bundle.sh",
+      "scripts/qf_queue/pause.sh",
+      "scripts/qf_queue/resume.sh",
+      "scripts/qf_queue/status.sh",
+      "scripts/run_classical_baselines_20260713.sh",
+      "scripts/run_investor_lag1_ablation_queue_20260713.sh",
+      "scripts/run_no_investor_ablation_queue_20260713.sh",
+      "scripts/run_parallel_valtest_20260713.sh",
+      "scripts/run_single_valtest_20260713.sh"
+    ],
+    "scientific_semantics": {
+      "status": "verified_from_source_not_from_data_rows",
+      "entrypoint_chain": "qf_plan -> qf_runner.main -> qf_training.load_data -> cli.parallel.bake_tensors -> LOBDataset/LOBFeatureTransformer -> qf_variants.build_qf_model -> qf_training.fit/evaluate/finalize -> evaluation.qf_metrics; Stage-2 discrimination_runner adds factor scaling/tuning/placebo operations. None executed.",
+      "effective_feature_set": "QF load_data passes include_investor=False: 13 transformed own-asset features (log midpoint, two relative top-of-book prices, ten log1p depth quantities). Legacy investor branch exists but is disabled in selected QF path.",
+      "labels": {
+        "epsilon": 0.0001,
+        "class_order": {
+          "0": "Down",
+          "1": "Flat",
+          "2": "Up"
+        },
+        "formula": "relative change in bid/ask midpoint to the next imposed same-day grid endpoint; >+0.0001 Up, <-0.0001 Down, otherwise Flat; nonpositive current midpoint Flat",
+        "horizon": "one adjacent imposed grid interval; no cross-day target",
+        "evidence": [
+          "lob_forecasting/cli/parallel.py:78",
+          "lob_forecasting/data/dataset.py:7",
+          "lob_forecasting/experiments/qf_training.py:84"
+        ]
+      },
+      "grid": {
+        "configured_grid_length": 39,
+        "configured_first": "09:00:00",
+        "configured_last": "15:20:00",
+        "assumed_targets_in_code": 38,
+        "source_sampling_interval_verified": false
+      },
+      "missingness": "Per-asset/day grid left join followed by forward fill then zero fill in loader/bake path; transformed features nan_to_num. No backward fill in recovered August path. Observed workbook values and provider filling remain distinct/unresolved.",
+      "preprocessing_fit_population": "Own transforms are deterministic, with no fitted scaling. UM_V2 factors use scaler fit on first train_end days; fit clamps training quantiles then learns mean/std. No scaler fit performed in this pass.",
+      "split": "Chronologically sorted common dates across assets; first floor(0.7*n) train, next to floor(0.8*n) validation, remainder development holdout. Calendar split dates not recomputed in this header-only recovery.",
+      "checkpoint_selection": "Validation multiclass NLL improves by min_delta before best_logloss_checkpoint is replaced; secondary best macro-F1 saved in pilot. Existing last_checkpoint can trigger resume. All checkpoint loads/saves skipped.",
+      "scoring": "qf_training.metrics casts probabilities to float64 and row-normalizes, then sklearn log_loss(labels=[0,1,2]); code emits softmax probabilities. No prediction arrays available locally to verify support or rescore.",
+      "model_ids_verified": [
+        "S",
+        "U0",
+        "U1",
+        "UM",
+        "UX",
+        "UC",
+        "UA",
+        "UM_V2_LITE",
+        "UM_V2_DEPTH"
+      ],
+      "unrecovered_later_markers": [
+        "GRU_U1",
+        "UA_SYNC",
+        "UX_BASELINE",
+        "September trained lag-aware variants"
+      ],
+      "qf_v2": "Placeholder planning records only; no recovered execution evidence. Rolling confirmation/shared-query attention/TLOB completion not established.",
+      "development_holdout": "Previously examined holdout is development data, not an untouched lockbox."
+    },
+    "gpu": "Fresh identity query: 4 NVIDIA RTX3090, each 24576 MiB, driver515.57; GPU compute/runtime still untested.",
+    "experiment_readiness": "Not yet demonstrated. No experiment may be inferred from imports, complete checkout or matching input files. Remaining portable path/config work and actual runtime validation are separate.",
+    "hardware_confirmation": {
+      "timestamp": "2026-10-01T01:39:59.369074+00:00",
+      "method": "nvidia-smi --query-gpu=index,name,driver_version,memory.total --format=csv,noheader,nounits",
+      "gpu_count": 4,
+      "gpus": [
+        {
+          "index": 0,
+          "name": "NVIDIA GeForce RTX 3090",
+          "driver": "515.57",
+          "vram_mib": 24576
+        },
+        {
+          "index": 1,
+          "name": "NVIDIA GeForce RTX 3090",
+          "driver": "515.57",
+          "vram_mib": 24576
+        },
+        {
+          "index": 2,
+          "name": "NVIDIA GeForce RTX 3090",
+          "driver": "515.57",
+          "vram_mib": 24576
+        },
+        {
+          "index": 3,
+          "name": "NVIDIA GeForce RTX 3090",
+          "driver": "515.57",
+          "vram_mib": 24576
+        }
+      ],
+      "purpose": "Disambiguate local receiver identity from newly published external report claiming RTX4090 hardware",
+      "jobs_inspected_or_modified": false,
+      "gpu_compute_tested": false
+    }
+  },
+  "receiver_path_mapping": {
+    "project_cwd": "RECEIVER_ROOT/recovery_worktrees/qf_august_export_200e5758de0f",
+    "existing_python": "RECEIVER_PYTHON_ROOT/envs/mpnn/bin/python",
+    "QF_DATA_DIR": "RECEIVER_ROOT/recovered_inputs/krx_main_073cd89b5562/data/processed",
+    "future_QF_ARTIFACT_ROOT": "RECEIVER_ROOT/recovered_runs/qf_august_pilot",
+    "future_QF_DISC_ROOT": "RECEIVER_ROOT/recovered_runs/qf_august_stage2",
+    "future_artifact_directories_created": false,
+    "environment_persistently_modified": false,
+    "warning": "Mapping only; no queue initialization, launch commands or training executed."
+  },
+  "preservation_checks": {
+    "timestamp": "2026-09-30T22:49:59.534232+00:00",
+    "bridge_head": "0ebdb6782f2322e346dfb0c303762aab8635419c",
+    "bridge_head_unchanged": true,
+    "bridge_current_branch": "audit/qf-a5000-20260930-142604",
+    "audit_head": "119bd79600d2f53a10fb7be3d9ab39ec62f23678",
+    "audit_worktree_clean": true,
+    "legacy_worktree_clean": true,
+    "export_worktree_clean": true,
+    "export_files_hash_modes_verified_after_checks": 134,
+    "export_worktree_has_no_pycache": true,
+    "input_files_still_present": 54,
+    "input_bytes": 366098160,
+    "input_sha256_recomputed_this_resume": false,
+    "input_sha256_prior_streaming_verification_preserved": true,
+    "input_files_written_this_resume": false,
+    "shallow": "true",
+    "partial_filter": "blob:none",
+    "worktrees": "worktree RECEIVER_ROOT/git_bridge/lob_seq2seq\nHEAD 0ebdb6782f2322e346dfb0c303762aab8635419c\nbranch refs/heads/audit/qf-a5000-20260930-142604\n\nworktree RECEIVER_ROOT/audit_worktrees/qf-rtx3090-20260930-1506\nHEAD 119bd79600d2f53a10fb7be3d9ab39ec62f23678\nbranch refs/heads/audit/qf-rtx3090-20260930-1506\n\nworktree RECEIVER_ROOT/recovery_worktrees/legacy_main_073cd89b5562\nHEAD 073cd89b556224eeae22413c3c05188a947e990a\ndetached\n\nworktree RECEIVER_ROOT/recovery_worktrees/qf_august_export_200e5758de0f\nHEAD 200e5758de0f5cb545322f5b5ab522ad645f9209\ndetached",
+    "no_new_publication": true,
+    "no_jobs_managed_or_launched": true
+  },
+  "actions_performed": [
+    "Read applicable instruction locations and existing audit/bridge metadata; no repeat broad discovery",
+    "Revalidated existing remote; listed all advertised heads/tags twice and refreshed three exact refs",
+    "Tested September exact SHA once; did not retry inaccessible 4090 August code",
+    "Inspected published old main paths and excluded checkpoints, notebooks, backups and bytecode",
+    "Recovered only selected published blobs; inspected their byte sizes before materialization",
+    "Streamed 54 existing aggregate/cache files into a new directory and recorded per-file SHA-256/Git blob identity",
+    "Created a separate clean detached sparse old-main reference worktree containing 24 code/config/test files",
+    "Compared six recovered file hashes with prior source audit and checked CSV headers without reading data rows",
+    "Inspected recovered source side effects; parsed 21 Python files and ran safe imports in existing mpnn with GPUs hidden and bytecode disabled",
+    "Verified prior audit worktree/bridge identities and new reference worktree preserved; no data pushed",
+    "Wrote local recovery reports and manifests",
+    "Archived the prior partial recovery report/checksums before updating",
+    "Revalidated current origin and discovered two newly published exact recovery refs",
+    "Fetched only the two exact filtered recovery refs; inspected paths and blob sizes before code materialization",
+    "Verified parentless export root and all 128 source mapping rows; inspected seven report-only additions independently",
+    "Compared all 54 received input manifest identities with already recovered byte-verification records; no input redownload",
+    "Created separate clean code-only recovery worktree at exact root 200e5758; preserved old-main and audit worktrees",
+    "Parsed all 92 Python files in existing Python 3.9; safely imported six project modules and seven dependencies with GPUs hidden and bytecode disabled",
+    "Checked 12 YAML files and all 27 CSV headers against actual recovered loader requirements; found placeholder registry parse error",
+    "Reverified all 134 recovered file hashes/modes and clean worktrees after checks",
+    "Wrote updated reports, scientific code manifest and optional local-only artifact copy requirements; no new publication",
+    "Resume 2026-09-30T23:56:25.232147+00:00: re-read applicable instruction locations and saved report; no broad discovery",
+    "Attempted current advertised heads/tags on verified origin once; DNS failed before Git advertisement",
+    "Checked local refs/worktree states and all 134 exported code hashes/modes; checked presence/size of all 54 recovered inputs and prior report manifest checksums",
+    "Checked workspace-root handoff candidates and known received report directory; no new actual A5000 handoff found",
+    "Archived prior recovery outputs and updated reports with current network blocker; no installs, experiments, checkout changes or data transfers",
+    "Resume 2026-10-01T00:56:36.584646+00:00: retried established remote with existing authentication; current heads/tags retrieved successfully",
+    "Compared current advertised refs with all corresponding local tracking refs: identical; no new branch, portability commit, fetch or materialization needed",
+    "Checked workspace-root handoff filenames: unchanged; actual A5000 identity remains unresolved",
+    "Archived previous reports and removed resolved DNS blocker from active findings; no scientific/code/data/environment changes",
+    "Resume 2026-10-01T01:41:45.877799+00:00: verified origin/current advertised refs and fetched exact new audit/qf-receiver-git-20261001-010238 ref with blob filtering and no checkout",
+    "Inspected commit parent/tree; retrieved only eight metadata files (77,455 bytes), checking sizes/blob hashes before materialization",
+    "Compared new audit code manifest byte-for-byte and all54 input identities against verified local manifests; no data redownload",
+    "Confirmed local hardware is four RTX3090s through bounded nvidia-smi identity query; distinguished external RTX4090 report",
+    "New source environment concern justified one safe CPU API inspection: local torch2.7.1 explicitly supports weights_only; no checkpoints/GPU compute",
+    "Prepared sanitized compact recovery records for separate audit-only publication based on already published code-only export ROOT"
+  ],
+  "checks_skipped": [
+    "Original August source tree independent inspection: original commit not retrievable here; export mapping attribution remains exporter-declared",
+    "September candidate retry: already tested once after ref refresh, not advertised/retrievable; no repeated inaccessible-SHA retries",
+    "Full dataset/schema/calendar rows or tensor construction: bounded metadata/header checks only",
+    "Saved prediction rescoring: no prediction arrays recovered; source metadata retained separately",
+    "Queue launchers/training entrypoints/--help commands, conversions, cache rebuilds, checkpoints and real-data inference: not invoked",
+    "GPU runtime tests, installs/upgrades, full history/checkpoint transfers, raw-event acquisition, permission/auth changes: not performed",
+    "Actual A5000 host inspection: no separate hardware-consistent handoff received; this does not block published August recovery"
+  ],
+  "blockers": [
+    {
+      "category": "September_baseline",
+      "status": "verified_remote_unavailability_at_observation",
+      "detail": "Exact September SHA rejected by verified remote previously and desired branch remains unadvertised; actual A5000 may hold additional code. August export is explicitly a different recovered version."
+    },
+    {
+      "category": "runtime_portability",
+      "status": "verified",
+      "detail": "Hardcoded historical interpreter/data/pilot paths require separate portability work before launch; selected Stage-2 configuration is local-only."
+    },
+    {
+      "category": "exact_saved_result_reproduction",
+      "status": "unknown_accessible_artifact_holder",
+      "detail": "11 metadata-listed saved result/config files totaling 6,256,259 bytes remain unrecovered. No claim they are lost; obtain from accessible holder only if needed."
+    },
+    {
+      "category": "actual_A5000_identity",
+      "status": "unresolved",
+      "detail": "Received Git report is usable and verified, but records RTX4090 hardware. Actual A5000 inventory/ref still needed to establish that machine's additional contribution; not a prerequisite for current code/input availability."
+    }
+  ],
+  "next_concrete_setup_action": "Prepare a separate portability change from the unchanged August export: parameterize launcher/plan interpreter and Stage-2 data/pilot paths, use the existing mpnn environment and recovered CSVs, and choose fresh output directories. Local torch.load supports weights_only; preserve that option. Obtain actual A5000 identity and any newer September ref or required saved result artifacts separately before choosing the paper baseline. No experiment launch in this recovery pass.",
+  "report_paths": {
+    "markdown": "RECEIVER_ROOT/qf_rtx3090_git_recovery.md",
+    "json": "RECEIVER_ROOT/qf_rtx3090_git_recovery.json",
+    "input_manifest_json": "RECEIVER_ROOT/qf_rtx3090_input_manifest.json",
+    "input_manifest_csv": "RECEIVER_ROOT/qf_rtx3090_input_manifest.csv",
+    "scientific_code_manifest": "RECEIVER_ROOT/qf_rtx3090_scientific_code_manifest.json",
+    "optional_artifact_copy_manifest": "RECEIVER_ROOT/qf_rtx3090_optional_artifact_copy_manifest.json",
+    "readiness_checks": "RECEIVER_ROOT/git_recovery_august_readiness.json",
+    "checksums": "RECEIVER_ROOT/qf_rtx3090_git_recovery.sha256",
+    "prior_partial_archive": "RECEIVER_ROOT/git_recovery_archive/20260930T221254Z",
+    "latest_resume_remote_check": "RECEIVER_ROOT/git_recovery_resume_20261001T013721Z.json",
+    "latest_resume_preservation_check": "RECEIVER_ROOT/git_recovery_local_resume_20260930T235516Z.json",
+    "previous_complete_recovery_archive": "RECEIVER_ROOT/git_recovery_archive/20261001T014145Z",
+    "cross_receiver_comparison": "RECEIVER_ROOT/git_recovery_cross_receiver_comparison.json",
+    "local_torch_api_check": "RECEIVER_ROOT/git_recovery_local_torch_api_check.json",
+    "receiver_hardware_confirmation": "RECEIVER_ROOT/git_recovery_receiver_hardware_confirmation.json",
+    "publication_receipt": "RECEIVER_ROOT/qf_rtx3090_recovery_publication_receipt.json"
+  },
+  "publication": {
+    "these_recovery_reports": "Sanitized audit-only snapshot prepared on a separate branch; final commit/push result recorded in separate publication receipt to avoid embedding its own SHA.",
+    "prior_own_audit_branch": "audit/qf-rtx3090-20260930-1506",
+    "prior_own_audit_sha": "119bd79600d2f53a10fb7be3d9ab39ec62f23678",
+    "prior_own_audit_is_not_this_recovery_report": true,
+    "branch": "audit/qf-rtx3090-recovery-20261001-014145",
+    "published_base_sha": "200e5758de0f5cb545322f5b5ab522ad645f9209",
+    "sanitized_directory": "docs/qf_audit/20260930/rtx3090",
+    "receipt_path": "RECEIVER_ROOT/qf_rtx3090_recovery_publication_receipt.json"
+  },
+  "latest_resume": {
+    "timestamp": "2026-10-01T01:41:45.877799+00:00",
+    "remote_check": "RECEIVER_ROOT/git_recovery_resume_20261001T013721Z.json",
+    "new_report_ref": "refs/heads/audit/qf-receiver-git-20261001-010238",
+    "new_report_sha": "2912890319b19a731e6e446b486ff7c8c6f3c3e3",
+    "metadata_files_retrieved": 8,
+    "metadata_bytes": 77455,
+    "existing_export_unchanged": true,
+    "input_manifests_match": 54,
+    "source_and_local_environment_compared": true,
+    "specific_local_CPU_API_check": "torch.load explicitly supports weights_only in torch2.7.1+cu118; no checkpoint loaded",
+    "actual_A5000_handoff": false,
+    "new_code_worktree_required": false,
+    "data_downloaded": false,
+    "comparison_receipt": "RECEIVER_ROOT/git_recovery_cross_receiver_comparison.json",
+    "previous_report_archive": "RECEIVER_ROOT/git_recovery_archive/20261001T014145Z"
+  },
+  "resume_history": [
+    {
+      "timestamp": "2026-09-30T23:56:25.232147+00:00",
+      "remote_check": "RECEIVER_ROOT/git_recovery_resume_20260930T235432Z.json",
+      "local_preservation_check": "RECEIVER_ROOT/git_recovery_local_resume_20260930T235516Z.json",
+      "previous_report_archive": "RECEIVER_ROOT/git_recovery_archive/20260930T235625Z",
+      "remote_refresh_performed": false,
+      "failure": "github.com DNS resolution failed in this restricted-network session; no credentials/permissions/remotes changed",
+      "remote_state_currently_unknown": true,
+      "local_code_hash_mode_check": "134/134 match saved verified export",
+      "input_inventory_check": "54/54 present with recorded sizes; existing per-file streaming SHA256 verification retained; no data rehash/redownload",
+      "existing_worktrees": "audit, legacy and August export clean; heads unchanged",
+      "bounded_import_checks": "Prior results retained for unchanged code; not redundantly repeated",
+      "new_actual_A5000_handoff": false,
+      "new_artifact_recovery": false
+    },
+    {
+      "timestamp": "2026-10-01T00:56:36.584646+00:00",
+      "remote_check": "RECEIVER_ROOT/git_recovery_resume_20261001T005522Z.json",
+      "previous_report_archive": "RECEIVER_ROOT/git_recovery_archive/20261001T005636Z",
+      "remote_access": "restored; ls-remote succeeded with existing authentication",
+      "advertised_refs_changed": false,
+      "local_tracking_refs_match_all_advertised_heads": true,
+      "new_portability_commits": false,
+      "new_September_ref": false,
+      "new_actual_A5000_handoff": false,
+      "fetch_needed": false,
+      "new_checkout_or_data_transfer": false,
+      "readiness_checks_repeated": false,
+      "reason_no_repeated_checks": "Code/ref/input identities unchanged; prior checks retained.",
+      "prior_DNS_blocker_resolved": true
+    }
+  ]
+}
