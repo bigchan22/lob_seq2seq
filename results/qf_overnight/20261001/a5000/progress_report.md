@@ -1,9 +1,9 @@
 # qf-august-overnight-20261001: a5000 progress
 
-Updated 2026-10-01T18:21:36.779914+00:00; elapsed 2.73 hours. Exact source commit `08fcbdac350a00b7ca587d0c95c803766c01e9bf`; protocol `bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1`.
+Updated 2026-10-01T18:27:36.262371+00:00; elapsed 2.83 hours. Exact source commit `08fcbdac350a00b7ca587d0c95c803766c01e9bf`; protocol `bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1`.
 Queue states: `{"PENDING": 2, "RUNNING": 1, "SUCCEEDED": 175}`. Completed distinct full training jobs on this owner: 126; aliases and smokes are not counted as training. Local terminal: False.
 
-Currently running: `[{"job": "main_TLOB_ADAPTED_123_selected", "progress": {"epoch": 80, "completed_day_panels": 64, "phase": "train"}}]`.
+Currently running: `[{"job": "main_TLOB_ADAPTED_123_selected", "progress": {"epoch": 88, "completed_day_panels": 224, "phase": "train"}}]`.
 
 The finite global plan has153 unconditional full fits and up to4 conditional fixed-LR fits (157 maximum), plus explicit selection/reuse/analysis jobs. This owner never claims the other owner's models. A job succeeds only after result/prediction validation. Checkpoints remain task-local; hashes/relative names accompany each run. All selected compressed probabilities, histories, masks and scores are transferred through this result branch. Every LR trial and failure is recorded in selected_configs.json; performance never gates further valid work.
 
