@@ -2,12 +2,12 @@
   "run_group": "qf-august-overnight-20261001",
   "owner": "a5000",
   "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
-  "updated_at": "2026-10-01T15:43:56.144822+00:00",
+  "updated_at": "2026-10-01T15:44:42.645943+00:00",
   "counts": {
-    "BLOCKED": 16,
-    "PENDING": 115,
-    "RUNNING": 4,
-    "SUCCEEDED": 42,
+    "BLOCKED": 20,
+    "PENDING": 110,
+    "RUNNING": 3,
+    "SUCCEEDED": 44,
     "WAITING_ADAPTER": 1
   },
   "paused": false,
@@ -149,21 +149,22 @@
     },
     {
       "id": "R3_UM_V2_DEPTH_42_selected",
-      "state": "RUNNING",
+      "state": "SUCCEEDED",
       "attempt": 1,
       "retries": 0,
       "oom": 0,
       "pid": 2171193,
       "start": "1102391602",
-      "heartbeat": 1790869436.1270535,
-      "progress": 1790869436.1270535,
+      "heartbeat": 1790869465.526614,
+      "progress": 1790869461.4598584,
       "kind": "fit",
       "model": "UM_V2_DEPTH",
       "priority": 30,
       "detail": {
-        "epoch": 82,
-        "completed_day_panels": 64,
-        "phase": "train"
+        "epoch": 169,
+        "phase": "checkpoint",
+        "epoch_seconds": 0.25983517803251743,
+        "checkpoint_time": 1790869461.4581025
       }
     },
     {
@@ -174,14 +175,14 @@
       "oom": 0,
       "pid": 2171338,
       "start": "1102393601",
-      "heartbeat": 1790869436.133912,
-      "progress": 1790869436.1339123,
+      "heartbeat": 1790869482.6401963,
+      "progress": 1790869482.6401966,
       "kind": "fit",
       "model": "UM_V2_DEPTH",
       "priority": 30,
       "detail": {
-        "epoch": 10,
-        "completed_day_panels": 411,
+        "epoch": 179,
+        "completed_day_panels": 192,
         "phase": "train"
       }
     },
@@ -292,48 +293,57 @@
     },
     {
       "id": "analyze_R2_UM_V2_DEPTH_7_selected",
-      "state": "PENDING",
-      "attempt": 0,
+      "state": "BLOCKED",
+      "attempt": 1,
       "retries": 0,
       "oom": 0,
-      "pid": null,
-      "start": null,
-      "heartbeat": null,
-      "progress": null,
+      "pid": 2171692,
+      "start": "1102395124",
+      "heartbeat": 1790869447.0569623,
+      "progress": 1790869445.213659,
       "kind": "analysis",
       "model": "UM_V2_DEPTH",
       "priority": 31,
-      "detail": {}
+      "detail": {
+        "category": "scientific",
+        "error": ""
+      }
     },
     {
       "id": "analyze_R3_UM_V2_DEPTH_123_selected",
-      "state": "PENDING",
-      "attempt": 0,
+      "state": "BLOCKED",
+      "attempt": 1,
       "retries": 0,
       "oom": 0,
-      "pid": null,
-      "start": null,
-      "heartbeat": null,
-      "progress": null,
+      "pid": 2171697,
+      "start": "1102396126",
+      "heartbeat": 1790869456.8745658,
+      "progress": 1790869455.2322936,
       "kind": "analysis",
       "model": "UM_V2_DEPTH",
       "priority": 31,
-      "detail": {}
+      "detail": {
+        "category": "scientific",
+        "error": ""
+      }
     },
     {
       "id": "analyze_R3_UM_V2_DEPTH_42_selected",
-      "state": "PENDING",
-      "attempt": 0,
+      "state": "BLOCKED",
+      "attempt": 1,
       "retries": 0,
       "oom": 0,
-      "pid": null,
-      "start": null,
-      "heartbeat": null,
-      "progress": null,
+      "pid": 2171730,
+      "start": "1102397629",
+      "heartbeat": 1790869472.2243788,
+      "progress": 1790869470.2629821,
       "kind": "analysis",
       "model": "UM_V2_DEPTH",
       "priority": 31,
-      "detail": {}
+      "detail": {
+        "category": "scientific",
+        "error": ""
+      }
     },
     {
       "id": "analyze_R3_UM_V2_DEPTH_7_selected",
@@ -586,18 +596,21 @@
     },
     {
       "id": "analyze_UX_7",
-      "state": "RUNNING",
+      "state": "BLOCKED",
       "attempt": 1,
       "retries": 0,
       "oom": 0,
       "pid": 2171551,
       "start": "1102394123",
-      "heartbeat": 1790869435.1982796,
+      "heartbeat": 1790869437.1751347,
       "progress": 1790869435.1957014,
       "kind": "analysis",
       "model": "UX",
       "priority": 11,
-      "detail": {}
+      "detail": {
+        "category": "scientific",
+        "error": ""
+      }
     },
     {
       "id": "final_a5000",
@@ -661,21 +674,22 @@
     },
     {
       "id": "fixed_U1_123",
-      "state": "RUNNING",
+      "state": "SUCCEEDED",
       "attempt": 1,
       "retries": 0,
       "oom": 0,
       "pid": 2171339,
       "start": "1102393602",
-      "heartbeat": 1790869436.1373715,
-      "progress": 1790869436.137372,
+      "heartbeat": 1790869481.9978554,
+      "progress": 1790869475.5451567,
       "kind": "fixed_or_alias",
       "model": "U1",
       "priority": 50,
       "detail": {
-        "epoch": 12,
-        "completed_day_panels": 320,
-        "phase": "train"
+        "epoch": 192,
+        "phase": "checkpoint",
+        "epoch_seconds": 0.1940454225987196,
+        "checkpoint_time": 1790869475.5434217
       }
     },
     {
@@ -695,18 +709,23 @@
     },
     {
       "id": "fixed_U1_7",
-      "state": "PENDING",
-      "attempt": 0,
+      "state": "RUNNING",
+      "attempt": 1,
       "retries": 0,
       "oom": 0,
-      "pid": null,
-      "start": null,
-      "heartbeat": null,
-      "progress": null,
+      "pid": 2171571,
+      "start": "1102394602",
+      "heartbeat": 1790869480.0337143,
+      "progress": 1790869476.6820195,
       "kind": "fixed_or_alias",
       "model": "U1",
       "priority": 50,
-      "detail": {}
+      "detail": {
+        "epoch": 152,
+        "phase": "checkpoint",
+        "epoch_seconds": 0.1962405201047659,
+        "checkpoint_time": 1790869476.6804712
+      }
     },
     {
       "id": "gate_a5000",
@@ -845,18 +864,22 @@
     },
     {
       "id": "main_S_123_001000_KR7000030007_t",
-      "state": "PENDING",
-      "attempt": 0,
+      "state": "RUNNING",
+      "attempt": 1,
       "retries": 0,
       "oom": 0,
-      "pid": null,
-      "start": null,
-      "heartbeat": null,
-      "progress": null,
+      "pid": 2171727,
+      "start": "1102397608",
+      "heartbeat": 1790869482.625703,
+      "progress": 1790869482.6257033,
       "kind": "fit",
       "model": "S",
       "priority": 50,
-      "detail": {}
+      "detail": {
+        "epoch": 45,
+        "completed_day_panels": 345,
+        "phase": "train"
+      }
     },
     {
       "id": "main_S_123_001000_KR7000100008_t",

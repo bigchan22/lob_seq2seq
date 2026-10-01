@@ -72,6 +72,33 @@
     "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861"
   },
   {
+    "job": "analyze_R2_UM_V2_DEPTH_7_selected",
+    "state": "BLOCKED",
+    "detail": {
+      "category": "scientific",
+      "error": ""
+    },
+    "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861"
+  },
+  {
+    "job": "analyze_R3_UM_V2_DEPTH_123_selected",
+    "state": "BLOCKED",
+    "detail": {
+      "category": "scientific",
+      "error": ""
+    },
+    "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861"
+  },
+  {
+    "job": "analyze_R3_UM_V2_DEPTH_42_selected",
+    "state": "BLOCKED",
+    "detail": {
+      "category": "scientific",
+      "error": ""
+    },
+    "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861"
+  },
+  {
     "job": "analyze_U1_123",
     "state": "BLOCKED",
     "detail": {
@@ -136,6 +163,15 @@
   },
   {
     "job": "analyze_UX_42",
+    "state": "BLOCKED",
+    "detail": {
+      "category": "scientific",
+      "error": ""
+    },
+    "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861"
+  },
+  {
+    "job": "analyze_UX_7",
     "state": "BLOCKED",
     "detail": {
       "category": "scientific",

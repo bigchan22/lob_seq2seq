@@ -118,3 +118,14 @@
 {"seq": 118, "time": "2026-10-01T15:43:49.989649+00:00", "job": "fixed_U1_123", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
 {"seq": 119, "time": "2026-10-01T15:43:52.038181+00:00", "job": "R3_UM_V2_DEPTH_123_selected", "event": "succeeded", "detail": "{\"result\": \"runs/R3_UM_V2_DEPTH_123_selected/attempt_0001/result.json\"}"}
 {"seq": 120, "time": "2026-10-01T15:43:55.195801+00:00", "job": "analyze_UX_7", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 1}"}
+{"seq": 121, "time": "2026-10-01T15:43:57.176270+00:00", "job": "analyze_UX_7", "event": "attempt_failed", "detail": "{\"category\": \"scientific\", \"error\": \"\"}"}
+{"seq": 122, "time": "2026-10-01T15:43:59.991749+00:00", "job": "fixed_U1_7", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 123, "time": "2026-10-01T15:44:05.213823+00:00", "job": "analyze_R2_UM_V2_DEPTH_7_selected", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 1}"}
+{"seq": 124, "time": "2026-10-01T15:44:07.057050+00:00", "job": "analyze_R2_UM_V2_DEPTH_7_selected", "event": "attempt_failed", "detail": "{\"category\": \"scientific\", \"error\": \"\"}"}
+{"seq": 125, "time": "2026-10-01T15:44:15.232354+00:00", "job": "analyze_R3_UM_V2_DEPTH_123_selected", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 1}"}
+{"seq": 126, "time": "2026-10-01T15:44:16.874710+00:00", "job": "analyze_R3_UM_V2_DEPTH_123_selected", "event": "attempt_failed", "detail": "{\"category\": \"scientific\", \"error\": \"\"}"}
+{"seq": 127, "time": "2026-10-01T15:44:25.527044+00:00", "job": "R3_UM_V2_DEPTH_42_selected", "event": "succeeded", "detail": "{\"result\": \"runs/R3_UM_V2_DEPTH_42_selected/attempt_0001/result.json\"}"}
+{"seq": 128, "time": "2026-10-01T15:44:30.046658+00:00", "job": "main_S_123_001000_KR7000030007_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 129, "time": "2026-10-01T15:44:30.263064+00:00", "job": "analyze_R3_UM_V2_DEPTH_42_selected", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 1}"}
+{"seq": 130, "time": "2026-10-01T15:44:32.224451+00:00", "job": "analyze_R3_UM_V2_DEPTH_42_selected", "event": "attempt_failed", "detail": "{\"category\": \"scientific\", \"error\": \"\"}"}
+{"seq": 131, "time": "2026-10-01T15:44:41.998065+00:00", "job": "fixed_U1_123", "event": "succeeded", "detail": "{\"result\": \"runs/fixed_U1_123/attempt_0001/result.json\"}"}
