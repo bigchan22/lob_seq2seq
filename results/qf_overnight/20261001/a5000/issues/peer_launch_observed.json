@@ -1,0 +1,9 @@
+{
+  "verified_result_commit": "631593eeb8c30998aaca51521386f97c0e49b85e",
+  "peer_phase": "RUNNING",
+  "peer_coordinator_pid": 3832630,
+  "peer_code_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+  "canonical_protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+  "observed_at": "2026-10-01T16:08:30+00:00",
+  "scope": "coordinator launch; first exported queue counts null, do not infer GPU training/completion"
+}

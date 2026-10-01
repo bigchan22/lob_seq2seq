@@ -44,3 +44,7 @@ ${TASK_PYTHON} -B ${OVERNIGHT_ROOT}/execution-aggregate-fix/scripts/qf_overnight
 A task-local checkpoint is the epoch-boundary resume authority. Successful attempts are immutable; no queue database or checkpoints are sent through Git. The single publisher batches completions/status every five minutes, retries short network failures, fetches peer status/issues, and writes progress_8h.md at approximately23:38 UTC plus final_report.md at local queue exhaustion. These scripts continue without another LLM turn. A missing peer final report does not prevent local completion.
 
 Provider aggregation/release timing remains unknown. These are retrospective development/rolling evaluations, with P3 endpoint quality defining an ex-post evaluation/training-loss population, never a current peer-availability or executable trading rule. No manuscript changes or claims of profitable trading were made.
+
+## Peer update after the launch snapshot
+
+RTX3090 result commit631593eeb8c30998aaca51521386f97c0e49b85e reports RUNNING at2026-10-01T16:07:02 UTC. Coordinator PID3832630 started from common codee2212c40566e21c680a98186ebd8e984aa80d4fd with four allocated RTX3090 UUIDs. Canonical scientific protocol is unchanged; receiver transport protocol is the separately documented byte hash. Its first status does not yet contain materialized per-job counts, so this confirms coordinator launch, not completion or GPU training. The earlier BLOCKED status above is superseded by this published update.
