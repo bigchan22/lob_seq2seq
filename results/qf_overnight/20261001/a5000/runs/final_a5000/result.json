@@ -1,0 +1,14 @@
+{
+  "validated": true,
+  "local_queue_terminal": true,
+  "counts_at_finalization": {
+    "RUNNING": 1,
+    "SUCCEEDED": 177
+  },
+  "peer_final_not_required": true,
+  "job_id": "final_a5000",
+  "owner": "a5000",
+  "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+  "source_sha": "19b9b56ff865cec3a24f500727015b33a201e93b",
+  "completed_at": "2026-10-01T18:32:31.955456+00:00"
+}

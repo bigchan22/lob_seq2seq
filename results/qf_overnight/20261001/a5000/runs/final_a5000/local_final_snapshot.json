@@ -2,9 +2,10 @@
   "run_group": "qf-august-overnight-20261001",
   "owner": "a5000",
   "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
-  "updated_at": "2026-10-01T18:33:17.015491+00:00",
+  "updated_at": "2026-10-01T18:32:31.939954+00:00",
   "counts": {
-    "SUCCEEDED": 178
+    "RUNNING": 1,
+    "SUCCEEDED": 177
   },
   "paused": false,
   "stop": false,
@@ -197,7 +198,7 @@
       "model": "TLOB_ADAPTED",
       "priority": 40,
       "detail": {
-        "adapter_source": "${SOURCE_ROOT}"
+        "adapter_source": "/home/chanhomin/hosung/overnight/qf-august-overnight-20261001/execution-tlob"
       }
     },
     {
@@ -616,13 +617,13 @@
     },
     {
       "id": "final_a5000",
-      "state": "SUCCEEDED",
+      "state": "RUNNING",
       "attempt": 1,
       "retries": 0,
       "oom": 0,
       "pid": 2207475,
       "start": "1103405700",
-      "heartbeat": 1790879551.9569488,
+      "heartbeat": 1790879551.9367633,
       "progress": 1790879550.9668312,
       "kind": "final",
       "model": null,
@@ -3380,40 +3381,6 @@
       "detail": {}
     }
   ],
-  "all_terminal": true,
-  "all_required_validated": true,
-  "gpu_mapping": [
-    {
-      "worker": 0,
-      "physical_uuid": "GPU-06f84e27-1321-80be-d2ad-4d8d14649952",
-      "worker_cuda_visible_devices": "GPU-06f84e27-1321-80be-d2ad-4d8d14649952",
-      "worker_device": "cuda:0"
-    },
-    {
-      "worker": 1,
-      "physical_uuid": "GPU-8c8a9775-d1af-1bb3-d8e9-5278e716994c",
-      "worker_cuda_visible_devices": "GPU-8c8a9775-d1af-1bb3-d8e9-5278e716994c",
-      "worker_device": "cuda:0"
-    },
-    {
-      "worker": 2,
-      "physical_uuid": "GPU-05540e42-bea4-7b14-4321-97d0eef41202",
-      "worker_cuda_visible_devices": "GPU-05540e42-bea4-7b14-4321-97d0eef41202",
-      "worker_device": "cuda:0"
-    },
-    {
-      "worker": 3,
-      "physical_uuid": "GPU-bdd0c4d0-12d3-891c-6066-d21ba03c991d",
-      "worker_cuda_visible_devices": "GPU-bdd0c4d0-12d3-891c-6066-d21ba03c991d",
-      "worker_device": "cuda:0"
-    }
-  ],
-  "source_sha": "08fcbdac350a00b7ca587d0c95c803766c01e9bf",
-  "prepared_data_hashes": {
-    "covariates.npy": "03b29c2ddb87a2530380a0a78f14b2faff6c419813268ec282c9237e636d274b",
-    "masks.npy": "eca954c21da074c545cb7858315ea39fee0a6f54b19e06474b4f2f91f1666847",
-    "raw_factors.npy": "442aee93ad0745400f087f7ff3b2c67a669cd05b8fa2e637926298472dc028dd",
-    "x.npy": "75a5f6207eb3743927c97ac8361af405a4b3a890490e5a705ec07f5f255d5518",
-    "y.npy": "238526791f5a7dc13484f5279a03f7d6c624d1268dcd898360077c966b9d70cd"
-  }
+  "all_terminal": false,
+  "all_required_validated": false
 }

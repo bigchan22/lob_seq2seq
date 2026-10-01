@@ -1,0 +1,10 @@
+{
+  "validated": true,
+  "source_job": "main_TLOB_ADAPTED_123_selected",
+  "prediction_sha256": "c6e705f70d9709887a4f537c501b6b46b4dff0673b9ee64d82acbbe323994f57",
+  "job_id": "analyze_TLOB_ADAPTED_123",
+  "owner": "a5000",
+  "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+  "source_sha": "19b9b56ff865cec3a24f500727015b33a201e93b",
+  "completed_at": "2026-10-01T18:32:25.701795+00:00"
+}
