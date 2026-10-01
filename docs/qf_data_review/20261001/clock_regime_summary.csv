@@ -1,0 +1,3 @@
+scheduled_session_regime,source_cache_dates,asset_days,source_cache_rows,off_legacy_grid_rows,min_rows_per_asset_day,max_rows_per_asset_day
+from_20160801_extension,226,6102,316738,78760,40,55
+pre_20160801_extension,268,7221,371614,91841,18,55

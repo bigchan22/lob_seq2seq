@@ -1,0 +1,544 @@
+{
+  "asset_id": {
+    "storage_dtype": "object",
+    "csv_type": "string",
+    "description": "String equal to input filename stem, including _t; no issuer-name inference."
+  },
+  "date": {
+    "storage_dtype": "object",
+    "csv_type": "string",
+    "description": "Common date serialized YYYY-MM-DD; Asia/Seoul local-clock convention."
+  },
+  "origin_time": {
+    "storage_dtype": "object",
+    "csv_type": "string",
+    "description": "Forecast origin HH:MM:SS; fixed grid 09:00:00 through 15:10:00."
+  },
+  "endpoint_time": {
+    "storage_dtype": "object",
+    "csv_type": "string",
+    "description": "Same-date target endpoint HH:MM:SS, exactly origin plus ten minutes."
+  },
+  "split": {
+    "storage_dtype": "object",
+    "csv_type": "string",
+    "description": "train, validation, or development_holdout; whole common dates, chronological."
+  },
+  "legacy_label": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "0=Down, 1=Flat, 2=Up using the original float32 +/-0.0001 rule.",
+    "allowed_values": [
+      0,
+      1,
+      2
+    ]
+  },
+  "no_cross_day_target": {
+    "storage_dtype": "int64",
+    "csv_type": "integer",
+    "description": "1 iff origin/endpoint are on the same date; all rows are 1.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "exact_ten_minute_target": {
+    "storage_dtype": "int64",
+    "csv_type": "integer",
+    "description": "1 iff endpoint is exactly origin plus ten minutes; all rows are 1.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "scheduled_session_regime": {
+    "storage_dtype": "object",
+    "csv_type": "string",
+    "description": "pre_20160801_extension or from_20160801_extension; documented schedule era, not a per-day session certification."
+  },
+  "exceptional_session_status": {
+    "storage_dtype": "object",
+    "csv_type": "string",
+    "description": "Always unresolved; no inferred halt, holiday, auction, or exception-day flag."
+  },
+  "origin_cache_row_exists": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At origin: original cache contains this exact date/time row, before reindexing/filling.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "origin_workbook_row_exists": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At origin: supplied workbook contains this exact normalized date/time row.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "origin_workbook_cache_status": {
+    "storage_dtype": "object",
+    "csv_type": "string",
+    "description": "At origin: full-row status matched_exact, matched_tolerance, conflict, cache_only, workbook_only, or absent_in_both; numeric tolerance atol=rtol=1e-12."
+  },
+  "origin_file_value_conflict": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At origin: 1 for conflict/cache_only/workbook_only, otherwise 0.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "origin_cache_ask1_present": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At origin: ask1 original cache cell is nonmissing before filling (infinity would be present but nonfinite).",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "origin_cache_ask1_finite": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At origin: ask1 original cache cell is finite before filling.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "origin_cache_ask1_finite_positive": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At origin: ask1 original cache cell is finite and >0 before filling.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "origin_cache_ask1_nonpositive": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At origin: ask1 original cache cell is finite and <=0 before filling.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "origin_ask1_fill_method": {
+    "storage_dtype": "object",
+    "csv_type": "string",
+    "description": "At origin: ask1 original (present), forward_fill (earlier same-day on-grid value), or zero_fill (no earlier present grid value). Zero-valued original cells stay original."
+  },
+  "origin_ask1_source_time": {
+    "storage_dtype": "object",
+    "csv_type": "string",
+    "description": "At origin: ask1 supplying same-day grid time HH:MM:SS, or empty for zero_fill; origin fill source never exceeds origin."
+  },
+  "origin_workbook_ask1_present": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At origin: ask1 workbook cell nonmissing; not an exchange observation flag.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "origin_cache_bid1_present": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At origin: bid1 original cache cell is nonmissing before filling (infinity would be present but nonfinite).",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "origin_cache_bid1_finite": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At origin: bid1 original cache cell is finite before filling.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "origin_cache_bid1_finite_positive": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At origin: bid1 original cache cell is finite and >0 before filling.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "origin_cache_bid1_nonpositive": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At origin: bid1 original cache cell is finite and <=0 before filling.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "origin_bid1_fill_method": {
+    "storage_dtype": "object",
+    "csv_type": "string",
+    "description": "At origin: bid1 original (present), forward_fill (earlier same-day on-grid value), or zero_fill (no earlier present grid value). Zero-valued original cells stay original."
+  },
+  "origin_bid1_source_time": {
+    "storage_dtype": "object",
+    "csv_type": "string",
+    "description": "At origin: bid1 supplying same-day grid time HH:MM:SS, or empty for zero_fill; origin fill source never exceeds origin."
+  },
+  "origin_workbook_bid1_present": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At origin: bid1 workbook cell nonmissing; not an exchange observation flag.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "origin_crossed": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At origin: both original cache quotes finite and bid1>ask1; nonpositive values are separately flagged.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "origin_locked_positive": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At origin: both original cache quotes finite and positive and bid1==ask1.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "origin_valid_original_cache_quote": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At origin: original bid1/ask1 finite, strictly positive, and not crossed; locked positive quotes allowed.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "endpoint_cache_row_exists": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At endpoint: original cache contains this exact date/time row, before reindexing/filling.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "endpoint_workbook_row_exists": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At endpoint: supplied workbook contains this exact normalized date/time row.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "endpoint_workbook_cache_status": {
+    "storage_dtype": "object",
+    "csv_type": "string",
+    "description": "At endpoint: full-row status matched_exact, matched_tolerance, conflict, cache_only, workbook_only, or absent_in_both; numeric tolerance atol=rtol=1e-12."
+  },
+  "endpoint_file_value_conflict": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At endpoint: 1 for conflict/cache_only/workbook_only, otherwise 0.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "endpoint_cache_ask1_present": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At endpoint: ask1 original cache cell is nonmissing before filling (infinity would be present but nonfinite).",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "endpoint_cache_ask1_finite": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At endpoint: ask1 original cache cell is finite before filling.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "endpoint_cache_ask1_finite_positive": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At endpoint: ask1 original cache cell is finite and >0 before filling.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "endpoint_cache_ask1_nonpositive": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At endpoint: ask1 original cache cell is finite and <=0 before filling.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "endpoint_ask1_fill_method": {
+    "storage_dtype": "object",
+    "csv_type": "string",
+    "description": "At endpoint: ask1 original (present), forward_fill (earlier same-day on-grid value), or zero_fill (no earlier present grid value). Zero-valued original cells stay original."
+  },
+  "endpoint_ask1_source_time": {
+    "storage_dtype": "object",
+    "csv_type": "string",
+    "description": "At endpoint: ask1 supplying same-day grid time HH:MM:SS, or empty for zero_fill; origin fill source never exceeds origin."
+  },
+  "endpoint_workbook_ask1_present": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At endpoint: ask1 workbook cell nonmissing; not an exchange observation flag.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "endpoint_cache_bid1_present": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At endpoint: bid1 original cache cell is nonmissing before filling (infinity would be present but nonfinite).",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "endpoint_cache_bid1_finite": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At endpoint: bid1 original cache cell is finite before filling.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "endpoint_cache_bid1_finite_positive": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At endpoint: bid1 original cache cell is finite and >0 before filling.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "endpoint_cache_bid1_nonpositive": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At endpoint: bid1 original cache cell is finite and <=0 before filling.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "endpoint_bid1_fill_method": {
+    "storage_dtype": "object",
+    "csv_type": "string",
+    "description": "At endpoint: bid1 original (present), forward_fill (earlier same-day on-grid value), or zero_fill (no earlier present grid value). Zero-valued original cells stay original."
+  },
+  "endpoint_bid1_source_time": {
+    "storage_dtype": "object",
+    "csv_type": "string",
+    "description": "At endpoint: bid1 supplying same-day grid time HH:MM:SS, or empty for zero_fill; origin fill source never exceeds origin."
+  },
+  "endpoint_workbook_bid1_present": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At endpoint: bid1 workbook cell nonmissing; not an exchange observation flag.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "endpoint_crossed": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At endpoint: both original cache quotes finite and bid1>ask1; nonpositive values are separately flagged.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "endpoint_locked_positive": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At endpoint: both original cache quotes finite and positive and bid1==ask1.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "endpoint_valid_original_cache_quote": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "At endpoint: original bid1/ask1 finite, strictly positive, and not crossed; locked positive quotes allowed.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "origin_history_file_conflict": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "Any workbook/cache full-row conflict at an on-grid time up to and including origin in this asset-day; conservative provenance flag, not a quote-observation flag.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "workbook_cache_filled_mid_equal_origin": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "Exact equality of float32 filled mids at origin under independent workbook/cache reconstructions.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "workbook_cache_filled_mid_equal_endpoint": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "Exact equality of float32 filled mids at endpoint under independent workbook/cache reconstructions.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "workbook_cache_label_match": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "Exact class agreement under independent workbook/cache float32 reconstructions.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "missing_cache_quote_any_endpoint": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "Any missing (NaN/absent row) original bid1/ask1 at either endpoint; does not equate zero with missing.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "historical_missing_cache_endpoint": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "Earlier audit definition: any absent/nonfinite original bid1/ask1 at either endpoint. Distinct from the positive, uncrossed P1 rule.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "historical_missing_endpoint_kind": {
+    "storage_dtype": "object",
+    "csv_type": "string",
+    "description": "none, current, future, both according to historical_missing_cache_endpoint; disjoint categories."
+  },
+  "equal_filled_mids": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "Exact equality of filled float32 current/future mids; NOT evidence of provider imputation.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "historical_missing_equal_filled_flat": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "Historical missing endpoint AND equal filled mids AND legacy_label=1; overlapping subset of historical missing, not an independent exclusion.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "candidate_clock": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "origin>=09:10:00 AND endpoint<=14:40:00, with the verified same-day ten-minute target; origins 09:10–14:30 inclusive.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "P0_legacy": {
+    "storage_dtype": "int64",
+    "csv_type": "integer",
+    "description": "1 for every legacy row.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "P1_valid_cache_endpoints": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "Both original endpoints have finite positive bid1/ask1 and bid1<=ask1, with same-day ten-minute target. Positive locks retained. Ex-post evaluation eligibility.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "P2_candidate_clock": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "P0 restricted only to candidate_clock; independent of quote validity.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "P3_intersection": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "P1_valid_cache_endpoints AND P2_candidate_clock. Ex-post evaluation eligibility.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "peer_origin_available_cache": {
+    "storage_dtype": "int8",
+    "csv_type": "integer",
+    "description": "Only origin_valid_original_cache_quote. Never uses a future endpoint or P1/P3; cache-based availability proxy, not provider release certification.",
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  "P1_exclusion_reasons": {
+    "storage_dtype": "object",
+    "csv_type": "string",
+    "description": "none or pipe-separated endpoint-qualified row_absent, ask1/bid1_missing, nonfinite, nonpositive, crossed; multiple reasons may overlap."
+  },
+  "P2_exclusion_reason": {
+    "storage_dtype": "object",
+    "csv_type": "string",
+    "description": "none, origin_before_0910, or endpoint_after_1440."
+  }
+}

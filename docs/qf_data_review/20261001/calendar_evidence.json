@@ -1,0 +1,31 @@
+{
+  "method": "source_inspection of existing local reference PDFs; no open-ended calendar search",
+  "provider_documentation": "No provider aggregation/filling/observation/release specification established by inspected workbooks or project notes.",
+  "documents": [
+    {
+      "relative_reference": "references/market_data_and_krx/introduction_to_trading_at_krx_stock_market_kofia_2011.pdf",
+      "sha256": "04871dede5a51062cd1654510ccad1590f911811226841551b9488a0de3249e4",
+      "pdf_pages_1_based": [
+        26,
+        35
+      ],
+      "status": "verified",
+      "documented_rules": "2011 guide: regular 09:00–15:00; closing call 14:50–15:00. Describes first trading day of year 10:00–15:00 and college-exam day 10:00–16:00 exceptions.",
+      "limitation": "Older rule reference, not a dated exception-session manifest for 2015–2017."
+    },
+    {
+      "relative_reference": "references/market_data_and_krx/krx_eng_brochure_2017.pdf",
+      "sha256": "5b246b91b7135bc76ccd009ac3f293388fe9efe3f62dbe33ce92fb676cad5cf4",
+      "pdf_pages_1_based": [
+        16,
+        30
+      ],
+      "status": "verified",
+      "documented_rules": "2017 KRX brochure records regular-session extension by 30 minutes on 2016-08-01; regular hours shown as 09:00–15:30."
+    }
+  ],
+  "row_assignment": "Schedule-era split at 2016-08-01; exceptional_session_status always unresolved.",
+  "exception_dates_and_halts": "unknown; no flags inferred from gaps, prices, or modern calendars",
+  "candidate_clock_scope": "Predeclared conservative clock only; not executable availability or certified continuous-session membership.",
+  "pdf_payloads_published": false
+}

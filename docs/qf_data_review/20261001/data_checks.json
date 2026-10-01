@@ -1,0 +1,65 @@
+{
+  "workbook_pairs_compared": 27,
+  "comparison_errors": [],
+  "input_files_verified_before_and_after": 54,
+  "input_hashes_unchanged": true,
+  "common_dates": 493,
+  "common_first": "20150701",
+  "common_last": "20170630",
+  "union_dates": 494,
+  "union_dates_excluded_by_intersection": [
+    "20150728"
+  ],
+  "forecast_rows": 505818,
+  "split_rows": {
+    "development_holdout": 101574,
+    "train": 353970,
+    "validation": 50274
+  },
+  "expected_split_rows": {
+    "train": 353970,
+    "validation": 50274,
+    "development_holdout": 101574
+  },
+  "split_counts_match_reference": true,
+  "duplicate_keys": 0,
+  "row_key_sha256": "351211c39eeb2d2dd203a05f6f45d18f27499f3a2430ec000fdb310f96055191",
+  "row_key_label_sha256": "9efc3e422150c2c337ab6592e0357750b3aa58ff69c96993da0d69658cdd9eea",
+  "digest_serialization": "UTF8 LF-terminated TAB-separated columns asset_id,date,origin_time[,endpoint_time,split,legacy_label], sorted lexicographically by asset_id,date,origin_time",
+  "split_digests": {
+    "development_holdout": "0dc85d22e8e0f74c7b6ec962eed4c96d1cb3a8bab46491e011387f6965f98c1d",
+    "train": "9fc62a424cbe00043ff8be5ea38a8a1159fa674669daa57e5c99abdc58a49fe0",
+    "validation": "8554f7e47896ce912ee25183274a79552172e9c9a53366da0ed794a57786efe0"
+  },
+  "historical_missing_endpoint": 34600,
+  "historical_missing_endpoint_by_split": {
+    "development_holdout": 4411,
+    "train": 28195,
+    "validation": 1994
+  },
+  "historical_missing_equal_filled_flat": 27366,
+  "historical_missing_endpoint_kind": {
+    "none": 471218,
+    "future": 20719,
+    "current": 9365,
+    "both": 4516
+  },
+  "missing_reference_matches": true,
+  "overlapping_subset_reference_matches": true,
+  "workbook_cache_label_mismatches": 0,
+  "P1_excluded": 36427,
+  "population_totals": {
+    "P0_legacy": 505818,
+    "P1_valid_cache_endpoints": 469391,
+    "P2_candidate_clock": 439263,
+    "P3_intersection": 432560
+  },
+  "prediction_index_sha256_at_start_and_end": "cf75f3bedc2d2df75b513114ad187317c50fe2d9a434ea655a0c1d56ae77e5c0",
+  "literal_loop_label_equivalence": "checked every asset-day; exact equality",
+  "restricted_population_model_scores_computed": false,
+  "python": "3.9.16",
+  "numpy": "1.22.3",
+  "pandas": "1.5.3",
+  "openpyxl": "3.1.5",
+  "data_ready": true
+}

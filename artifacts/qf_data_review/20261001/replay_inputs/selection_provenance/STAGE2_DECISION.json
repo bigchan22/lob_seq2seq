@@ -1,0 +1,18 @@
+{
+  "classification": "ATTENTION_SUPPORTED",
+  "cross_asset_use_gate": "PASS",
+  "best_ua": "PAIR_2_DOUBLE_LR",
+  "best_uc": "PAIR_0_BASELINE",
+  "tuned_ua_minus_uc": -0.01702612196411553,
+  "day_bootstrap_95": [
+    -0.01866165186494227,
+    -0.015541169588046199
+  ],
+  "weekblock_95": [
+    -0.01858993779280036,
+    -0.015534605478526402
+  ],
+  "assets_ua_wins": 27,
+  "um_v2_selected": "UM_V2_DEPTH",
+  "lockbox_accessed": false
+}

@@ -1,0 +1,601 @@
+{
+  "created_at_utc": "2026-10-01T08:38:50.516550+00:00",
+  "remote": "git@github.com:bigchan22/lob_seq2seq.git",
+  "branch": "work/qf-august-data-review-20261001",
+  "source_sha": "feb10a130bb036617229d6c4c9bc4a96df3b9fe6",
+  "export_sha": "200e5758de0f5cb545322f5b5ab522ad645f9209",
+  "input_sha": "073cd89b556224eeae22413c3c05188a947e990a",
+  "report_commit_sha": "Supplied in external publication receipt; intentionally not self-referenced here.",
+  "prior_report_shas": [
+    "a323db8aea04fbb33b8e32e7644647106150899c",
+    "2912890319b19a731e6e446b486ff7c8c6f3c3e3"
+  ],
+  "task_scope": "August data identity, exhaustive workbook/cache comparison, diagnostic forecast masks and frozen selected historical prediction transfer",
+  "host": {
+    "session_nickname": "A5000",
+    "actual_devices_recorded_once": "4 NVIDIA GeForce RTX 4090",
+    "vram_mib_each": 24564,
+    "driver": "595.71.05",
+    "execution_device": "CPU",
+    "platform": "Linux"
+  },
+  "dependencies": {
+    "python": "3.9.16",
+    "numpy": "1.22.3",
+    "pandas": "1.5.3",
+    "openpyxl": "3.1.5"
+  },
+  "environment_modified": false,
+  "training_or_inference_run": false,
+  "source_mapped_code_unchanged": true,
+  "historical_dirty_state_caveat": "Original backup had unrelated mode/reference deltas; this task uses committed code-only export; per-run SHA/dirty state unknown.",
+  "input_manifest": "recovery/input_manifest.csv",
+  "input_manifest_sha256": "9cb89005693b1b70c102178849b740fde00b50c9ba5f3b5530d0e5749ea59837",
+  "code_manifest": "recovery/code_manifest.csv",
+  "code_manifest_sha256": "e2caabe1530b92dde1959d1b23e0701251a9ed71fcb875c7a61a781b9a80d13d",
+  "inputs": {
+    "files": 54,
+    "workbooks": 27,
+    "csv_caches": 27,
+    "bytes": 366098160,
+    "all_identity_checks_pass": true,
+    "reused_matching_local_files": true,
+    "new_input_downloads": 0,
+    "new_workbook_cache_publications": 0,
+    "materializable_paths": [
+      "data/raw/KRXaggData/KR*_t.xlsx",
+      "data/processed/KR*_t.csv"
+    ],
+    "exact_path_blob_checksums": "recovery/input_manifest.csv",
+    "commit": "073cd89b556224eeae22413c3c05188a947e990a"
+  },
+  "forecast_rows": "artifacts/qf_data_review/20261001/forecast_rows.csv.gz",
+  "row_count": 505818,
+  "row_key_sha256": "351211c39eeb2d2dd203a05f6f45d18f27499f3a2430ec000fdb310f96055191",
+  "row_key_label_sha256": "9efc3e422150c2c337ab6592e0357750b3aa58ff69c96993da0d69658cdd9eea",
+  "split_digests": {
+    "development_holdout": "0dc85d22e8e0f74c7b6ec962eed4c96d1cb3a8bab46491e011387f6965f98c1d",
+    "train": "9fc62a424cbe00043ff8be5ea38a8a1159fa674669daa57e5c99abdc58a49fe0",
+    "validation": "8554f7e47896ce912ee25183274a79552172e9c9a53366da0ed794a57786efe0"
+  },
+  "digest_serialization": "UTF8 LF-terminated TAB-separated columns asset_id,date,origin_time[,endpoint_time,split,legacy_label], sorted lexicographically by asset_id,date,origin_time",
+  "schema": {
+    "path": "docs/qf_data_review/20261001/schema_columns.json",
+    "contract": "docs/qf_data_review/20261001/data_contract.json",
+    "row_key": [
+      "asset_id",
+      "date",
+      "origin_time"
+    ],
+    "endpoint": "endpoint_time",
+    "class_order": [
+      "Down",
+      "Flat",
+      "Up"
+    ]
+  },
+  "populations": {
+    "P0_legacy": "All 27 assets x 493 common dates x 38 origins.",
+    "P1_valid_cache_endpoints": "Both endpoints originally present, finite positive bid1/ask1, no crossed quotes; same-date exact ten-minute target. Positive locks retained.",
+    "P2_candidate_clock": "Only origin>=09:10 and endpoint<=14:40 and same-date exact +10min: 33 origins 09:10–14:30.",
+    "P3_intersection": "P1 AND P2."
+  },
+  "population_totals": {
+    "P0_legacy": 505818,
+    "P1_valid_cache_endpoints": 469391,
+    "P2_candidate_clock": 439263,
+    "P3_intersection": 432560
+  },
+  "selected_prediction_index_path": "docs/qf_data_review/20261001/prediction_index.json",
+  "selected_prediction_index_sha256": "cf75f3bedc2d2df75b513114ad187317c50fe2d9a434ea655a0c1d56ae77e5c0",
+  "selected_prediction_index": [
+    {
+      "model": "UA",
+      "seed": 42,
+      "run_id": "F_PAIR_2_DOUBLE_LR_UA_42",
+      "selected_epoch": 178,
+      "prediction_path": "artifacts/qf_data_review/20261001/replay_inputs/UA_seed42/test_predictions.csv.gz",
+      "prediction_sha256": "dc0fcedcd0926b50ba6ae59755bbcb1294fa036fc00382771ea8220ac8ade1d9",
+      "decompressed_sha256": "23ee1b06f2fd931e367b31d5015fbe249b97e19295658df0203202fdc46b8cd9"
+    },
+    {
+      "model": "UA",
+      "seed": 7,
+      "run_id": "F_best_UA_7",
+      "selected_epoch": 181,
+      "prediction_path": "artifacts/qf_data_review/20261001/replay_inputs/UA_seed7/test_predictions.csv.gz",
+      "prediction_sha256": "5f5ef42b71f79fa255d5eb4192971c1fbf5a1b52466aae79bf9554d123c385af",
+      "decompressed_sha256": "26f80d49076e036826f53d5b07326273754eed220b11a16ac2f76353e1f90536"
+    },
+    {
+      "model": "UA",
+      "seed": 123,
+      "run_id": "F_best_UA_123",
+      "selected_epoch": 196,
+      "prediction_path": "artifacts/qf_data_review/20261001/replay_inputs/UA_seed123/test_predictions.csv.gz",
+      "prediction_sha256": "b3d07f2b549c12bfae11f264da5f9ad07fdc59db1d21183920ce6dae06b4f58b",
+      "decompressed_sha256": "4d73b46ee19c690d24d3ca44d5cb80d6e4db25529e919923da3daf0b98b3fc68"
+    },
+    {
+      "model": "UC",
+      "seed": 42,
+      "run_id": "F_best_UC_42_stage2",
+      "selected_epoch": 151,
+      "prediction_path": "artifacts/qf_data_review/20261001/replay_inputs/UC_seed42/test_predictions.csv.gz",
+      "prediction_sha256": "daf1fa7a74a03343021ea37893391e530331437e991c7daf0f53e6131bc46398",
+      "decompressed_sha256": "4d58aa5269707a8182af866d34a42f6be7e544056392fa3a45b75d14e7e84b7d"
+    },
+    {
+      "model": "UC",
+      "seed": 7,
+      "run_id": "F_best_UC_7",
+      "selected_epoch": 115,
+      "prediction_path": "artifacts/qf_data_review/20261001/replay_inputs/UC_seed7/test_predictions.csv.gz",
+      "prediction_sha256": "2f9a81ef1569424f314b4cec56be6710040decc8efa287da133745265e819c9f",
+      "decompressed_sha256": "370ac2645310e7e4ab6df571d115bb3285ea5161e4f9957f385594e3c6a96e04"
+    },
+    {
+      "model": "UC",
+      "seed": 123,
+      "run_id": "F_best_UC_123",
+      "selected_epoch": 124,
+      "prediction_path": "artifacts/qf_data_review/20261001/replay_inputs/UC_seed123/test_predictions.csv.gz",
+      "prediction_sha256": "8c1a4f217e98702b6fb7f5442e0d68f67b0fce60c93d7aa87e7f10065ae71f46",
+      "decompressed_sha256": "da401f8128c8af7b40fc94ea08f528e552d625a8514547642eeecacbcaa622ff"
+    },
+    {
+      "model": "UM_V2_DEPTH",
+      "seed": 42,
+      "run_id": "D_UM_V2_DEPTH_42",
+      "selected_epoch": 128,
+      "prediction_path": "artifacts/qf_data_review/20261001/replay_inputs/UM_V2_DEPTH_seed42/test_predictions.csv.gz",
+      "prediction_sha256": "6aab8c1b4764c9266d52ba8cdd36a69d04bdcd363a24313e8f855dc66a534cae",
+      "decompressed_sha256": "cefffca03eef98b9584f348240446e2638fd50704c6f86a9b568a7b6f0ab8837"
+    },
+    {
+      "model": "UM_V2_DEPTH",
+      "seed": 7,
+      "run_id": "D_selected_7",
+      "selected_epoch": 122,
+      "prediction_path": "artifacts/qf_data_review/20261001/replay_inputs/UM_V2_DEPTH_seed7/test_predictions.csv.gz",
+      "prediction_sha256": "fc4a8ff754f275c9276e2ad061840ed075a50c8df4104d630e935af2b4b8003e",
+      "decompressed_sha256": "f0c14a57b2d098213717256ec155238f90dc8b4c942f7475df3546206cc3a242"
+    },
+    {
+      "model": "UM_V2_DEPTH",
+      "seed": 123,
+      "run_id": "D_selected_123",
+      "selected_epoch": 127,
+      "prediction_path": "artifacts/qf_data_review/20261001/replay_inputs/UM_V2_DEPTH_seed123/test_predictions.csv.gz",
+      "prediction_sha256": "919b4859915c48c52a66e28e49ad9bafdc06fbb25c051651c63e753f7fcd0dee",
+      "decompressed_sha256": "57fd29ab07ed45e7317eea9cbb2751f7c8da7a57847bafdaef797019d8fdd42b"
+    }
+  ],
+  "selection_conflict": "BEST_UC YAML/decision call its choice PAIR_0_BASELINE, whereas the finalizer and task identify F_best_UC_42_stage2. Its decompressed predictions/config/history/manifest equal PAIR_5_SHALLOW_INTERACTION_UC_42. Preserve this metadata inconsistency; use the explicit frozen artifact, not a new winner.",
+  "readiness": {
+    "data_ready": true,
+    "predictions_ready": "true",
+    "provider_semantics_ready": false,
+    "exception_calendar_ready": false,
+    "new_training_pipeline_validated": false,
+    "independent_rescoring_inputs_ready": true
+  },
+  "missing_prediction_files": [],
+  "missing_cpu_dependencies": [],
+  "unknowns": [
+    "Provider aggregation/filling/observation/release timing and units",
+    "Dated exceptional sessions and halts",
+    "Historical per-run SHA/dirty state/host",
+    "UC YAML/decision versus explicit selected artifact inconsistency"
+  ],
+  "report_path": "docs/qf_data_review/20261001/report.md",
+  "receiver_path": "docs/qf_data_review/20261001/receiver.md",
+  "task_file_hashes_exclude": [
+    "docs/qf_data_review/20261001/handoff.json"
+  ],
+  "task_files": [
+    {
+      "path": "scripts/qf_data_review/build_data_review.py",
+      "bytes": 31133,
+      "sha256": "8f7b3a8d8df38e70860a7c9dfc8aa34db62f8535ca53b1904ed3563a831c3284"
+    },
+    {
+      "path": "scripts/qf_data_review/finalize_packet.py",
+      "bytes": 45761,
+      "sha256": "70f6a26b7c23fd558139569a93d8efe35cfc62303d8a695a32a5df65a16aca99"
+    },
+    {
+      "path": "scripts/qf_data_review/freeze_predictions.py",
+      "bytes": 7840,
+      "sha256": "833b4ab195b78ec4b32200affedc20a8d7db65a7897cc8ca754a2c071c3abcd5"
+    },
+    {
+      "path": "scripts/qf_data_review/validate_review.py",
+      "bytes": 9063,
+      "sha256": "ac5f850d40da224117285aaa964f8f524a6612ecdd8aba7b31e852c804cbc1e0"
+    },
+    {
+      "path": "scripts/qf_data_review/verify_handoff.py",
+      "bytes": 2195,
+      "sha256": "7cc58512557a0520a990527811e2d5c648f740543fd64f1b300cbcc64da607cc"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/calendar_evidence.json",
+      "bytes": 1665,
+      "sha256": "13b61f65aa0e2e323dec1947e385000febe7931cfd702f12b6f9e175d33061cc"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/clock_regime_summary.csv",
+      "bytes": 243,
+      "sha256": "bbd68d15f7075d3ba7f41bdd05af52fea3bf0b5ce61817a4f5e69d050614a7ce"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/code_identity_check.json",
+      "bytes": 337,
+      "sha256": "c4829d1a053aa945caf635ded1a5501e71dec68811c8e75e056639f277a594be"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/comparison_errors.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/daily_clock_summary.csv",
+      "bytes": 1167339,
+      "sha256": "025528716dfbb500168541164c11e47e4599d86dcc78d43cfb71c85be3198d02"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/data_checks.json",
+      "bytes": 2276,
+      "sha256": "44dd608de18b278d4e47110c7511de0cecc89db8d8e7837dba79402ee6f7c20d"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/data_contract.json",
+      "bytes": 24856,
+      "sha256": "296660390dd53a6f1a8052e6704b6dbaba8daeb7092cfd797cd14461019cb49d"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/input_verification_after.csv",
+      "bytes": 10710,
+      "sha256": "22ab7b51e806a2499f7e96f8edcc29a005eabca7a416e443ee52e9bc5e5407f5"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/input_verification_before.csv",
+      "bytes": 10710,
+      "sha256": "22ab7b51e806a2499f7e96f8edcc29a005eabca7a416e443ee52e9bc5e5407f5"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/missingness_by_asset_split.csv",
+      "bytes": 266065,
+      "sha256": "2538ce89f00864e7fdf3d804b7fea2e876e18ac94e26d7e5cdce2edc537b60ed"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/population_counts_by_asset.csv",
+      "bytes": 13297,
+      "sha256": "0e44f1edc306d6ac7acade381bbbfc35a3239a8bfae133588c89f84795807818"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/population_counts_by_asset_split.csv",
+      "bytes": 42586,
+      "sha256": "e0989696e4d29012151374f40c1d78b080ea97d02ea82fa73accd33c425d11e2"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/population_counts_by_origin_split.csv",
+      "bytes": 54014,
+      "sha256": "d8e96da16122262afdad02170f401c8a770ef7e5737ec5546c5336b89223bd3a"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/population_counts_by_regime_split.csv",
+      "bytes": 2481,
+      "sha256": "2db7da1bb3a6c23f1def997f20132a0a66cca205667ec229b044ef6fe6cbc1c8"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/population_counts_by_split.csv",
+      "bytes": 1614,
+      "sha256": "b8a94d7b36f2f99ae90f290ec33a7d7525e98dcb2057d2599a20d732dd3dd4ac"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/prediction_index.json",
+      "bytes": 34833,
+      "sha256": "cf75f3bedc2d2df75b513114ad187317c50fe2d9a434ea655a0c1d56ae77e5c0"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/quote_quality_by_split.csv",
+      "bytes": 296,
+      "sha256": "612084337dd865dff4598c07c9cbeb609fde9eb58ba668635e52ad0eb1fbc67e"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/receiver.md",
+      "bytes": 4033,
+      "sha256": "94b4cbce0abae10164c6e3f936d7ea92d5e9248cb20c8c6d5282e68457f28a89"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/report.md",
+      "bytes": 27207,
+      "sha256": "2c3fc09660609441d4f45faa7aa98ace4d966dcf6ed8c1744fcbe5bebc7fb532"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/schema.md",
+      "bytes": 9795,
+      "sha256": "887933204a9baf131d156c149edb433cf6a690c23bb6af655ac7edd8c1078ce7"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/schema_columns.json",
+      "bytes": 16904,
+      "sha256": "1ad074ed8476dc2a6a94327dec621db2606a855249f8646bc9d871cf04eeb767"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/split_dates.csv",
+      "bytes": 9037,
+      "sha256": "5b814c08a61daaf504b6f0fe4a2442a2f38679aa9e393e00802cad575c24c22f"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/validation_checks.json",
+      "bytes": 7439,
+      "sha256": "2f22babbaebd5562b468474eb9931dcf8817d6c1a3c1aafe5993870bc188d3c7"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/workbook_cache_columns.csv",
+      "bytes": 70795,
+      "sha256": "5ac66ed1dbffd9f5cc391be8bf754cdb93851f80a5d6b820712358b6bf5812ec"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/workbook_cache_comparison.csv",
+      "bytes": 2922,
+      "sha256": "995796305a79bec27ca187b47816e296f90dada85c8dda4aa80aa762510f2b89"
+    },
+    {
+      "path": "docs/qf_data_review/20261001/workbook_metadata.json",
+      "bytes": 45389,
+      "sha256": "43ae8d20202a13e17d4e52579655ea2de002d896b8f2951eeeb4d3a070aca772"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/forecast_rows.csv.gz",
+      "bytes": 3329505,
+      "sha256": "dc90797821d31d160a3bf4733958c61198de22e7aa5002501e6681b4922238fc",
+      "decompressed_sha256": "671efd67ebcabcfba807226bc4b51349fd9bdd0ce992f81c798885f8ee34ae24"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UA_seed123/manifest.json",
+      "bytes": 83,
+      "sha256": "318260f8effa5b89c36cf53a5809906d1ddfbe38d98e05abb11cc6226785e2cd"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UA_seed123/resolved_config.json",
+      "bytes": 317,
+      "sha256": "a4d58a116ee423c2e82714cb28dd58900bd54c4554f02c48751b6804980b08af"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UA_seed123/status.json",
+      "bytes": 22,
+      "sha256": "0edc22836e5cfe4eabf84c87da30d182d41b016ede3faa4f009fc3fcb1f5b47b"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UA_seed123/test_predictions.csv.gz",
+      "bytes": 3118791,
+      "sha256": "b3d07f2b549c12bfae11f264da5f9ad07fdc59db1d21183920ce6dae06b4f58b"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UA_seed123/training_history.csv",
+      "bytes": 12169,
+      "sha256": "f066508ebc1fbcc02fc2e190d3a625d92971bb0a949e4e2f8a96df59de6c4917"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UA_seed42/manifest.json",
+      "bytes": 82,
+      "sha256": "a19d9d1af2f145283fe318df3586deabf6eb781c289700d8bf72fb82863752ca"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UA_seed42/resolved_config.json",
+      "bytes": 316,
+      "sha256": "0854bf78c19b81041066b51bbbf39e6cc448eea1ebfeb9d391b2dfae3dc86bda"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UA_seed42/status.json",
+      "bytes": 22,
+      "sha256": "0edc22836e5cfe4eabf84c87da30d182d41b016ede3faa4f009fc3fcb1f5b47b"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UA_seed42/test_predictions.csv.gz",
+      "bytes": 3116576,
+      "sha256": "dc0fcedcd0926b50ba6ae59755bbcb1294fa036fc00382771ea8220ac8ade1d9"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UA_seed42/training_history.csv",
+      "bytes": 12163,
+      "sha256": "50508c7e85af7b8e90ff796a50b2b9fa1376ff108f10e0efc0c1bb66e4b97626"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UA_seed7/manifest.json",
+      "bytes": 81,
+      "sha256": "9372ba8fb209bf95b864829e533328b71151dcd9186b79951e3524dff4ebba13"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UA_seed7/resolved_config.json",
+      "bytes": 315,
+      "sha256": "c3eed55da712252ac69610821f190a57795bf36fe66ad70e299fc04ef2df1e6f"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UA_seed7/status.json",
+      "bytes": 22,
+      "sha256": "0edc22836e5cfe4eabf84c87da30d182d41b016ede3faa4f009fc3fcb1f5b47b"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UA_seed7/test_predictions.csv.gz",
+      "bytes": 3120262,
+      "sha256": "5f5ef42b71f79fa255d5eb4192971c1fbf5a1b52466aae79bf9554d123c385af"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UA_seed7/training_history.csv",
+      "bytes": 12176,
+      "sha256": "2007f0b74f57f33687b5f89588c4d2a03841f446568d49e1599202c55cc25437"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UC_seed123/manifest.json",
+      "bytes": 83,
+      "sha256": "fbfcb40b7499b8e75b39c0f0c0ddc7005811975f13984799aa2c86510f245bc6"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UC_seed123/resolved_config.json",
+      "bytes": 317,
+      "sha256": "a3a01f68aed131ec2ca2b5682c0c9bd5bba98aefc7456c02550cb17a3824dba1"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UC_seed123/status.json",
+      "bytes": 22,
+      "sha256": "0edc22836e5cfe4eabf84c87da30d182d41b016ede3faa4f009fc3fcb1f5b47b"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UC_seed123/test_predictions.csv.gz",
+      "bytes": 3109371,
+      "sha256": "8c1a4f217e98702b6fb7f5442e0d68f67b0fce60c93d7aa87e7f10065ae71f46"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UC_seed123/training_history.csv",
+      "bytes": 9344,
+      "sha256": "8f8c53fc4f759af139ded97f37c88fff3d5be68f802e3585bf92b69acf2beafe"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UC_seed42/manifest.json",
+      "bytes": 82,
+      "sha256": "423f10627418700ba3a55dc44b04dba40cc28f2fae3d5b46262ab10fda88941c"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UC_seed42/resolved_config.json",
+      "bytes": 316,
+      "sha256": "19cf684567489ca20eecdb31124d7f957456ff30f49aa4db4ec545c36d2ca81a"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UC_seed42/status.json",
+      "bytes": 22,
+      "sha256": "0edc22836e5cfe4eabf84c87da30d182d41b016ede3faa4f009fc3fcb1f5b47b"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UC_seed42/test_predictions.csv.gz",
+      "bytes": 3114888,
+      "sha256": "daf1fa7a74a03343021ea37893391e530331437e991c7daf0f53e6131bc46398"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UC_seed42/training_history.csv",
+      "bytes": 10986,
+      "sha256": "630e1167e7b103d3a2d7e0d2e6c52391cebe4fef7370e3ca533ab0c836c25b8d"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UC_seed7/manifest.json",
+      "bytes": 81,
+      "sha256": "694efc4d6e37dd7e0ad192ccc1a72d113c1edf2bccee13e96fcba36bfc6c44d4"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UC_seed7/resolved_config.json",
+      "bytes": 315,
+      "sha256": "458f35ac3f355903ecf186d6d8ed93fb54bca8be475dabeaa1fe839c10956333"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UC_seed7/status.json",
+      "bytes": 22,
+      "sha256": "0edc22836e5cfe4eabf84c87da30d182d41b016ede3faa4f009fc3fcb1f5b47b"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UC_seed7/test_predictions.csv.gz",
+      "bytes": 3111555,
+      "sha256": "2f9a81ef1569424f314b4cec56be6710040decc8efa287da133745265e819c9f"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UC_seed7/training_history.csv",
+      "bytes": 8800,
+      "sha256": "e896eaf161661fb502ca5370e7219f1c99a27fb3b6c9012e34f6acb027c80ab0"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UM_V2_DEPTH_seed123/manifest.json",
+      "bytes": 784,
+      "sha256": "0b11500c3fba85601fccc9b056dcc0a2dcac68905d8f0b78092b64a1f46a10af"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UM_V2_DEPTH_seed123/resolved_config.json",
+      "bytes": 317,
+      "sha256": "a3a01f68aed131ec2ca2b5682c0c9bd5bba98aefc7456c02550cb17a3824dba1"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UM_V2_DEPTH_seed123/status.json",
+      "bytes": 22,
+      "sha256": "0edc22836e5cfe4eabf84c87da30d182d41b016ede3faa4f009fc3fcb1f5b47b"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UM_V2_DEPTH_seed123/test_predictions.csv.gz",
+      "bytes": 3115082,
+      "sha256": "919b4859915c48c52a66e28e49ad9bafdc06fbb25c051651c63e753f7fcd0dee"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UM_V2_DEPTH_seed123/training_history.csv",
+      "bytes": 9535,
+      "sha256": "a999bbee2d5709890c8b89d3f51d755d44d81cb04995cc2f06049dd0ee6c0db9"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UM_V2_DEPTH_seed42/manifest.json",
+      "bytes": 783,
+      "sha256": "83110d1b7b564becec372b4b2e194e93662880dab20d014e5e2160867e6a6963"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UM_V2_DEPTH_seed42/resolved_config.json",
+      "bytes": 316,
+      "sha256": "19cf684567489ca20eecdb31124d7f957456ff30f49aa4db4ec545c36d2ca81a"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UM_V2_DEPTH_seed42/status.json",
+      "bytes": 22,
+      "sha256": "0edc22836e5cfe4eabf84c87da30d182d41b016ede3faa4f009fc3fcb1f5b47b"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UM_V2_DEPTH_seed42/test_predictions.csv.gz",
+      "bytes": 3114429,
+      "sha256": "6aab8c1b4764c9266d52ba8cdd36a69d04bdcd363a24313e8f855dc66a534cae"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UM_V2_DEPTH_seed42/training_history.csv",
+      "bytes": 9611,
+      "sha256": "e5f9308e25a5007083ef1d36056101f855ee72f7d17f26a2626d871051e24795"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UM_V2_DEPTH_seed7/manifest.json",
+      "bytes": 782,
+      "sha256": "f8734e0d399f6feb5789ce085f353ec68e1262aad172ecca03041cc95baac414"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UM_V2_DEPTH_seed7/resolved_config.json",
+      "bytes": 315,
+      "sha256": "458f35ac3f355903ecf186d6d8ed93fb54bca8be475dabeaa1fe839c10956333"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UM_V2_DEPTH_seed7/status.json",
+      "bytes": 22,
+      "sha256": "0edc22836e5cfe4eabf84c87da30d182d41b016ede3faa4f009fc3fcb1f5b47b"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UM_V2_DEPTH_seed7/test_predictions.csv.gz",
+      "bytes": 3114270,
+      "sha256": "fc4a8ff754f275c9276e2ad061840ed075a50c8df4104d630e935af2b4b8003e"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/UM_V2_DEPTH_seed7/training_history.csv",
+      "bytes": 9224,
+      "sha256": "543c56c56b01caf0c31f1a3e14069e549a0b998f02b08fe21cba7ff23b828554"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/selection_provenance/STAGE2_DECISION.json",
+      "bytes": 435,
+      "sha256": "7d21e83bd00907f5d3a109a273b0c4516fbe3218174bf3c3c253a42324328514"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/selection_provenance/selected_configuration_hashes.txt",
+      "bytes": 226,
+      "sha256": "09849631e2e75182051e347a6729a811bdbf8c850675f5db277148cbbbda8f17"
+    },
+    {
+      "path": "artifacts/qf_data_review/20261001/replay_inputs/selection_provenance/selected_configurations.yaml",
+      "bytes": 806,
+      "sha256": "6eb7b0a3b73c14f87687caabf2fb4115e2aa066e37f353cfc91bbd37b389a36f"
+    }
+  ],
+  "payload_bytes_excluding_handoff": 33388925,
+  "next_action": "RTX3090 fetch exact advertised ref/SHA into isolated worktree; verify task hashes and row joins, then independently rescore frozen files per split and named population without selecting new winners."
+}

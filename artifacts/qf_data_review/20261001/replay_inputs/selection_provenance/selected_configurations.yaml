@@ -1,0 +1,40 @@
+BEST_UA:
+  config:
+    accumulation: 4
+    cross_asset_layers: 1
+    d_model: 128
+    dropout: 0.1
+    gradient_clip: 1.0
+    learning_rate: 0.0002
+    max_epochs: 200
+    microbatch: 8
+    min_delta: 0.0001
+    min_epochs: 20
+    nhead: 8
+    patience: 30
+    seed: 42
+    temporal_layers: 2
+    weight_decay: 0.0001
+  pair: PAIR_2_DOUBLE_LR
+  validation_log_loss: 0.8875930497053438
+BEST_UC:
+  config:
+    accumulation: 4
+    cross_asset_layers: 1
+    d_model: 128
+    dropout: 0.1
+    gradient_clip: 1.0
+    learning_rate: 0.0001
+    max_epochs: 200
+    microbatch: 8
+    min_delta: 0.0001
+    min_epochs: 20
+    nhead: 8
+    patience: 30
+    seed: 42
+    temporal_layers: 2
+    weight_decay: 0.0001
+  pair: PAIR_0_BASELINE
+  validation_log_loss: 0.9030327459880497
+UM_V2_SELECTED:
+  model: UM_V2_DEPTH
