@@ -9,33 +9,33 @@
   "checksums": [
     {
       "path": "incomplete_comparisons.csv",
-      "sha256": "998bc3b071d6e70130832f4027f7c0edf212331624de7d7e91de17b8fe84bcfb"
+      "sha256": "4197c50c752af74abf36a6fba1d29edb69bb9b06d199dd5279981416062bd18c"
     },
     {
       "path": "metrics.csv",
-      "sha256": "ebe9079054e2d6ce29381c0e1392ac34123913ffbdb7f7fa1eb6f57997973e45"
+      "sha256": "f7083037ce33d10cfc539a5bbd84b4e8c52760f4bb11cbfffc6a62eb95fa42ba"
     },
     {
       "path": "paired_differences.csv",
-      "sha256": "7fa62c97912e815b219a472e14846af722f794a29a17c19d0a0686601cacf97c"
+      "sha256": "c2c05ba8c309dfa2a30346389b257fa50df869dcf11823887d6579ddc1f99049"
     },
     {
       "path": "rolling_metrics.csv",
-      "sha256": "fb7c39d2ae8e857479212a73f8dad13d9d8d0a959abc8a6acf9f130571a182ad"
+      "sha256": "31e63b9d9d9a008a48eb6c48f7651eb16ac72b30fdd63e39fd77d28ded4d6990"
     }
   ],
-  "complete_pair_rows": 384,
+  "complete_pair_rows": 400,
   "data_handoff_sha": "e85a89fd56584b513be940e6259c637369bd830b",
-  "incomplete_seed_comparisons": 72,
+  "incomplete_seed_comparisons": 56,
   "issues": [
     "rtx3090: independent_analysis/metrics.csv missing columns ['config_hash', 'core_source_digest', 'input_hash', 'mask_hash', 'panel', 'protocol_hash', 'row_key_label_digest', 'selected', 'source_digest', 'source_sha', 'split_hash']"
   ],
   "limitations": "Daily sums and key/label digests originate in owner-validated saved-prediction exports. No probability ensemble; no inference or selection here. Intervals retrospective/conditional on selection. Missing results are not zero.",
   "namespace": "new_p3_training",
   "source_result_shas": {
-    "a5000": "537ddd6ef3f80d358fa3bcf440ba89c4b967850f",
-    "rtx3090": "6f55926b07b4ba7ef4d8ed0ed21123c0af1e3003"
+    "a5000": "094273fcec8a4ee33dfb89a75789effd8e75c61d",
+    "rtx3090": "ec5b1bcc63ad652fa9b35a290bb510ae8cff6fd2"
   },
   "status": "partial",
-  "validated_metric_rows": 408
+  "validated_metric_rows": 432
 }
