@@ -13,15 +13,15 @@
     },
     {
       "path": "metrics.csv",
-      "sha256": "88726af5c747e06eb8468c49cbfcc8dac375ccecc4d9904f62934be481ec4b5f"
+      "sha256": "73937e7248284795999b4d6c75c26376bee68752bd2b30ca74a021e8a3f5a8da"
     },
     {
       "path": "paired_differences.csv",
-      "sha256": "7414b34f29ec3138bd0beccb7f4077fa320333e15e91b60da40bfe2fe4aae68b"
+      "sha256": "27be0bd10474a1427209842065f79fed539245a3c36712897caadf85b04bcab4"
     },
     {
       "path": "rolling_metrics.csv",
-      "sha256": "85ab3e859298dbe6b1e90ee0214c368c9d6c086449187dfd48ebfa298df986bd"
+      "sha256": "479bca66a1d3128d74927b6e854484f5b7aed12de4503adc9de47b0bb5f9fc80"
     }
   ],
   "complete_pair_rows": 384,
@@ -34,7 +34,7 @@
   "namespace": "new_p3_training",
   "source_result_shas": {
     "a5000": "09b744a319e63ece4f1a7f13b00e341a17c2f53d",
-    "rtx3090": "c3f3f201b74fc1ae69866f4f81f92f4b6c360bc8"
+    "rtx3090": "4b9833972f68ac181597188fc8dafef476ece8c1"
   },
   "status": "partial",
   "validated_metric_rows": 408
