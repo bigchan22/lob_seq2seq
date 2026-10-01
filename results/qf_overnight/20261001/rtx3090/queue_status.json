@@ -36,9 +36,9 @@
     "all_required_validated": false,
     "all_terminal": false,
     "counts": {
-      "PENDING": 20,
+      "PENDING": 14,
       "RUNNING": 4,
-      "SUCCEEDED": 45
+      "SUCCEEDED": 51
     },
     "jobs": [
       {
@@ -194,104 +194,114 @@
       {
         "attempt": 1,
         "detail": {
-          "completed_day_panels": 64,
-          "epoch": 118,
-          "phase": "train"
+          "checkpoint_time": 1790872129.882046,
+          "epoch": 150,
+          "epoch_seconds": 0.8794402927160263,
+          "phase": "checkpoint"
         },
-        "heartbeat": 1790872093.6125183,
+        "heartbeat": 1790872137.9468708,
         "id": "R2_UC_123_selected",
         "kind": "fit",
         "model": "UC",
         "oom": 0,
         "pid": 3839524,
         "priority": 30,
-        "progress": 1790872093.6125195,
+        "progress": 1790872129.885918,
         "retries": 0,
         "start": "3484367712",
-        "state": "RUNNING"
+        "state": "SUCCEEDED"
       },
       {
         "attempt": 1,
         "detail": {
-          "completed_day_panels": 288,
-          "epoch": 9,
-          "phase": "train"
+          "checkpoint_time": 1790872260.6223032,
+          "epoch": 153,
+          "epoch_seconds": 1.128096953034401,
+          "phase": "checkpoint"
         },
-        "heartbeat": 1790872093.6657388,
+        "heartbeat": 1790872266.690924,
         "id": "R2_UC_42_selected",
         "kind": "fit",
         "model": "UC",
         "oom": 0,
         "pid": 3841396,
         "priority": 30,
-        "progress": 1790872093.66574,
+        "progress": 1790872260.6249614,
         "retries": 0,
         "start": "3484383735",
-        "state": "RUNNING"
+        "state": "SUCCEEDED"
       },
       {
         "attempt": 1,
         "detail": {
           "completed_day_panels": 160,
-          "epoch": 3,
+          "epoch": 162,
           "phase": "train"
         },
-        "heartbeat": 1790872093.5741687,
+        "heartbeat": 1790872277.656208,
         "id": "R2_UC_7_selected",
         "kind": "fit",
         "model": "UC",
         "oom": 0,
         "pid": 3841421,
         "priority": 30,
-        "progress": 1790872093.57417,
+        "progress": 1790872277.656209,
         "retries": 0,
         "start": "3484384737",
         "state": "RUNNING"
       },
       {
-        "attempt": 0,
-        "detail": {},
-        "heartbeat": null,
+        "attempt": 1,
+        "detail": {
+          "completed_day_panels": 64,
+          "epoch": 106,
+          "phase": "train"
+        },
+        "heartbeat": 1790872277.6402519,
         "id": "R3_UA_123_selected",
         "kind": "fit",
         "model": "UA",
         "oom": 0,
-        "pid": null,
+        "pid": 3841953,
         "priority": 30,
-        "progress": null,
+        "progress": 1790872277.6402524,
         "retries": 0,
-        "start": null,
-        "state": "PENDING"
+        "start": "3484387739",
+        "state": "RUNNING"
       },
       {
-        "attempt": 0,
-        "detail": {},
-        "heartbeat": null,
+        "attempt": 1,
+        "detail": {
+          "completed_day_panels": 384,
+          "epoch": 80,
+          "phase": "train"
+        },
+        "heartbeat": 1790872277.6615982,
         "id": "R3_UA_42_selected",
         "kind": "fit",
         "model": "UA",
         "oom": 0,
-        "pid": null,
+        "pid": 3842453,
         "priority": 30,
-        "progress": null,
+        "progress": 1790872277.661599,
         "retries": 0,
-        "start": null,
-        "state": "PENDING"
+        "start": "3484390736",
+        "state": "RUNNING"
       },
       {
-        "attempt": 0,
+        "attempt": 1,
         "detail": {},
-        "heartbeat": null,
+        "heartbeat": 1790872274.264837,
         "id": "R3_UA_7_selected",
         "kind": "fit",
         "model": "UA",
         "oom": 0,
-        "pid": null,
+        "pid": 3842658,
         "priority": 30,
-        "progress": null,
+        "progress": 1790872271.6900644,
         "retries": 0,
-        "start": null,
-        "state": "PENDING"
+        "start": "3484403755",
+        "state": "RUNNING"
       },
       {
         "attempt": 0,
@@ -384,34 +394,34 @@
         "state": "SUCCEEDED"
       },
       {
-        "attempt": 0,
+        "attempt": 1,
         "detail": {},
-        "heartbeat": null,
+        "heartbeat": 1790872149.902484,
         "id": "analyze_R2_UC_123_selected",
         "kind": "analysis",
         "model": "UC",
         "oom": 0,
-        "pid": null,
+        "pid": 3842460,
         "priority": 31,
-        "progress": null,
+        "progress": 1790872142.8659472,
         "retries": 0,
-        "start": null,
-        "state": "PENDING"
+        "start": "3484390873",
+        "state": "SUCCEEDED"
       },
       {
-        "attempt": 0,
+        "attempt": 1,
         "detail": {},
-        "heartbeat": null,
+        "heartbeat": 1790872274.8627403,
         "id": "analyze_R2_UC_42_selected",
         "kind": "analysis",
         "model": "UC",
         "oom": 0,
-        "pid": null,
+        "pid": 3842654,
         "priority": 31,
-        "progress": null,
+        "progress": 1790872268.1742373,
         "retries": 0,
-        "start": null,
-        "state": "PENDING"
+        "start": "3484403403",
+        "state": "SUCCEEDED"
       },
       {
         "attempt": 0,
@@ -549,19 +559,19 @@
         "state": "SUCCEEDED"
       },
       {
-        "attempt": 0,
+        "attempt": 1,
         "detail": {},
-        "heartbeat": null,
+        "heartbeat": 1790872122.0330434,
         "id": "analyze_SHARED_QUERY_7",
         "kind": "analysis",
         "model": "SHARED_QUERY",
         "oom": 0,
-        "pid": null,
+        "pid": 3841959,
         "priority": 21,
-        "progress": null,
+        "progress": 1790872112.7997775,
         "retries": 0,
-        "start": null,
-        "state": "PENDING"
+        "start": "3484387866",
+        "state": "SUCCEEDED"
       },
       {
         "attempt": 1,
@@ -846,21 +856,22 @@
       {
         "attempt": 1,
         "detail": {
-          "completed_day_panels": 160,
-          "epoch": 146,
-          "phase": "train"
+          "checkpoint_time": 1790872097.7800076,
+          "epoch": 149,
+          "epoch_seconds": 1.1096203327178955,
+          "phase": "checkpoint"
         },
-        "heartbeat": 1790872093.6392581,
+        "heartbeat": 1790872108.1268744,
         "id": "main_SHARED_QUERY_7_selected",
         "kind": "fit",
         "model": "SHARED_QUERY",
         "oom": 0,
         "pid": 3839462,
         "priority": 20,
-        "progress": 1790872093.6392593,
+        "progress": 1790872097.7827835,
         "retries": 0,
         "start": "3484365716",
-        "state": "RUNNING"
+        "state": "SUCCEEDED"
       },
       {
         "attempt": 1,
@@ -1198,7 +1209,7 @@
     "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
     "run_group": "qf-august-overnight-20261001",
     "stop": false,
-    "updated_at": "2026-10-01T16:28:13.698051+00:00",
+    "updated_at": "2026-10-01T16:31:17.680396+00:00",
     "workers": {
       "cpu": {
         "alive": true,
@@ -1229,5 +1240,5 @@
   },
   "source_path": "/home/chanhomin/hosung/overnight_execution/e2212c40566e21c680a98186ebd8e984aa80d4fd",
   "started_at": "2026-10-01T15:14:09.791661+00:00",
-  "updated_at": "2026-10-01T16:28:20.507701+00:00"
+  "updated_at": "2026-10-01T16:31:27.346430+00:00"
 }

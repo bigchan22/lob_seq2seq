@@ -41,9 +41,29 @@
       "complete_sha256": "097810070068b478b992922e6bcbaf974918a80b9c8ef76c47e9569d8b1db5d0"
     },
     {
+      "job": "analyze_R2_UA_7_selected",
+      "path": "analyze_R2_UA_7_selected__11dbc20f8d6adbf4",
+      "complete_sha256": "ad0ea42b87a5e399703539f9ed69029d880502e657a0e4478a444ccb746f9635"
+    },
+    {
+      "job": "analyze_R2_UC_123_selected",
+      "path": "analyze_R2_UC_123_selected__a28268ab89d0d732",
+      "complete_sha256": "a3b531514a5c8d40fbc2912e02d03b31e7cdd0a4ad71654fc0ca2585cd2564c6"
+    },
+    {
+      "job": "analyze_SHARED_QUERY_123",
+      "path": "analyze_SHARED_QUERY_123__ff6a3b91f9038476",
+      "complete_sha256": "5af51563d86151094c80af1a2d67186ce4626605b88bb0f4eca12e8ef576e71f"
+    },
+    {
       "job": "analyze_SHARED_QUERY_42",
       "path": "analyze_SHARED_QUERY_42__fd87fabe411e094c",
       "complete_sha256": "d1823dfe7ea212b0b35bda83fcf57097a0d8f6b5349eb9faaf8d4ee8c098ef9b"
+    },
+    {
+      "job": "analyze_SHARED_QUERY_7",
+      "path": "analyze_SHARED_QUERY_7__777ab9c0a43b6d6f",
+      "complete_sha256": "acef76c36013a4d8b4bdacc5dffdb86bdfa7785ebddf7558686e743ca6f21523"
     },
     {
       "job": "analyze_UA_123",

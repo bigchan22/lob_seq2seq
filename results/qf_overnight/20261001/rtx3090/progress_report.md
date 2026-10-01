@@ -6,7 +6,7 @@ Phase: RUNNING
 
 READY SHA: e2212c40566e21c680a98186ebd8e984aa80d4fd; protocol SHA256: 3cfd389bbd05ec9201a41c0892e29bf8199198d1b216b9a8061370d4240aa583
 
-Actual shared queue counts: {"PENDING": 20, "RUNNING": 4, "SUCCEEDED": 45}
+Actual shared queue counts: {"PENDING": 14, "RUNNING": 4, "SUCCEEDED": 51}
 
 Planned ownership: 18 main UA/UC/SHARED_QUERY fits + 12 rolling UA/UC fits, plus finite inference/reuse/analysis nodes. These are not reported as launched jobs until the common DAG exists.
 

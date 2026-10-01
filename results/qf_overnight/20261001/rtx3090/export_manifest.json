@@ -379,6 +379,110 @@
     },
     {
       "attempt": 1,
+      "job_id": "R2_UA_7_selected",
+      "kind": "fit",
+      "relative_directory": "runs/exports/runs/R2_UA_7_selected__11dbc20f8d6adbf4",
+      "result": {
+        "asset": null,
+        "attempt": 1,
+        "completed_at": "2026-10-01T16:27:59.095540+00:00",
+        "config_hash": "6200eb6d40c3e41c0eb2ae4474c780641a1f60aa698d19676a126717f7954744",
+        "epochs_completed": 144,
+        "executable_source_digest": "4d4ad03b827958468b1a231e360c7ad1aa68035c25af068059838ceae6dfa6d6",
+        "family": "rolling",
+        "files": {
+          "calibration.csv": "c0f3ded1286beea43477ce4c18f27de45273689c10bddc99b5e7e24ecd21928f",
+          "daily_losses.csv": "c13e01a3f84f4d8d428e829569c5b27d85f358d086ea2b2d247bf366c55aa888",
+          "history.csv": "ddc652b8dde15a82d8d786865107b5be2bd2bd6fbc8bf8f21704c30eee78f858",
+          "metrics.csv": "c7e4fafbc69bb54d363255fbc0a96be526e1f26c01037b95fee1bcabca8d5c12",
+          "per_asset.csv": "77d1fb943c051f49730dad82d70de9c9a7fb8daa1ee05edcee45abb70c87f2b6",
+          "predictions.csv.gz": "850c1b3a8797b962437d8e9677f209b906ee05c4a3082ef8a82fe0a0b465f45a",
+          "process.log": "420beb6d6d0f7a8402f37de65523f51ddb4f19abacfe9f9e10b0787eedf7b200",
+          "reliability.svg": "3c1940673db924ab2a098c51a200ea13f999e3a6897cb5fd4462031c9a94e1fb",
+          "resolved_config.json": "3ea363165aeb20062918c792f0783322de24c41296d43773bf844165e7efcc84",
+          "subgroup_metrics.csv": "922bbaf9b4c668eab66cfbe089cdf1b90a70cd6e1aa39993b82765498a89daa5"
+        },
+        "fold": "R2",
+        "input_hash": "9cb89005693b1b70c102178849b740fde00b50c9ba5f3b5530d0e5749ea59837",
+        "job_id": "R2_UA_7_selected",
+        "local_checkpoints": {
+          "best_checkpoint.pt": "6f6db4cdd8fca78f2b367790ce8ea5370b715cf7f3e16e7835f128409bf71658",
+          "last_checkpoint.pt": "62e37660fd3d5b40f3ca43678d70beebe85f74b1dc24ec2542d5a902f0a1a796"
+        },
+        "lr": 0.0004,
+        "model": "UA",
+        "owner": "rtx3090",
+        "parameters": 605315,
+        "prediction_rows": 84132,
+        "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+        "resume_checkpoint_used": null,
+        "run_id": "63ebe84a850d6880544cda708f843eea11df7b5764dd379e9b4e709a31a797c4",
+        "seed": 7,
+        "selected_epoch": 114,
+        "smoke": false,
+        "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+        "split_hash": "8b90aa08a2480ce64e3784f1560ad81adcdab8870ccac0c6e424e34745f74c1e",
+        "training_hash": "70cba5ce37d43d6a7c4434b178131b94c51db09d410919e4a3bc31b8a3fadb61",
+        "transform_hash": "d9c5ac686ced9b81ab9985e059cb85d4c43169cf30726cb3d17404fa6d166bc6",
+        "validated": true,
+        "validation_p3_nll": 0.9173531743829586
+      },
+      "result_hash": "11dbc20f8d6adbf4157182df8643ea6ae3e5552692728171772cbdfa6fdf4850"
+    },
+    {
+      "attempt": 1,
+      "job_id": "R2_UC_123_selected",
+      "kind": "fit",
+      "relative_directory": "runs/exports/runs/R2_UC_123_selected__a28268ab89d0d732",
+      "result": {
+        "asset": null,
+        "attempt": 1,
+        "completed_at": "2026-10-01T16:28:57.758293+00:00",
+        "config_hash": "96aedfbf9f819a88d783aa57f54d05675da9f05ce0b4d291fef37724d3c13dba",
+        "epochs_completed": 150,
+        "executable_source_digest": "4d4ad03b827958468b1a231e360c7ad1aa68035c25af068059838ceae6dfa6d6",
+        "family": "rolling",
+        "files": {
+          "calibration.csv": "7c34b216169cb33fa367613f210639d6f351f4c1c0224529af4f4ece513e56b4",
+          "daily_losses.csv": "7ebd1241872ab47deb0fb98c963f6edceb8a5aa1cd068fb0b5451f31e22a5006",
+          "history.csv": "04b00b26154b845603c07474721074f87597779de5114d649195cb8012fe82dc",
+          "metrics.csv": "78b6749e03401f283007e67de283e3ea04404fe6c9e6c45d8f4253c0eae81da3",
+          "per_asset.csv": "46db503c6f820efe062990d28a37abb4521280a7d4686b8eeebb72800b83415f",
+          "predictions.csv.gz": "386acd34b91692cd1b13711ced5d395e9dee1f7ecab1cfd85710e91ae680a214",
+          "process.log": "da63444b247b9e2c635eb17fbb4ab53e1b324c772e9c15390167b839f74111b3",
+          "reliability.svg": "6fa033965a2a76da782977dc7de3e15fc53d7033fc2147a09788b1841e9dc768",
+          "resolved_config.json": "bd30bb0b765920178b47d6d073be796a4371897581894ed12c1ee6b9c85fef1f",
+          "subgroup_metrics.csv": "2e9daba1e93c985b3ac8735df81821d8bca8f0720d9cd3d4a0f0e63728bfcc22"
+        },
+        "fold": "R2",
+        "input_hash": "9cb89005693b1b70c102178849b740fde00b50c9ba5f3b5530d0e5749ea59837",
+        "job_id": "R2_UC_123_selected",
+        "local_checkpoints": {
+          "best_checkpoint.pt": "eeddec4c9c66ff53298d44a5b6cf15ec8ccb50d5f9257c5bab2dd070b548991d",
+          "last_checkpoint.pt": "72ed2c734816ebeace1b4c3c84c0fd6aa625887bb9ba990347268604c1907a64"
+        },
+        "lr": 0.0004,
+        "model": "UC",
+        "owner": "rtx3090",
+        "parameters": 605315,
+        "prediction_rows": 84132,
+        "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+        "resume_checkpoint_used": null,
+        "run_id": "83c09eff48a321ea7a43ece367ded792e9a9486054953a537b04ce43d1d6b0b6",
+        "seed": 123,
+        "selected_epoch": 120,
+        "smoke": false,
+        "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+        "split_hash": "8b90aa08a2480ce64e3784f1560ad81adcdab8870ccac0c6e424e34745f74c1e",
+        "training_hash": "70cba5ce37d43d6a7c4434b178131b94c51db09d410919e4a3bc31b8a3fadb61",
+        "transform_hash": "d9c5ac686ced9b81ab9985e059cb85d4c43169cf30726cb3d17404fa6d166bc6",
+        "validated": true,
+        "validation_p3_nll": 0.9136014794242565
+      },
+      "result_hash": "a28268ab89d0d7322203fe07f32d5ebcc142f3b07fba318720866ca0926a8612"
+    },
+    {
+      "attempt": 1,
       "job_id": "analyze_R2_UA_123_selected",
       "kind": "analysis",
       "relative_directory": "runs/exports/runs/analyze_R2_UA_123_selected__849e0dde4b70b71e",
@@ -413,6 +517,57 @@
     },
     {
       "attempt": 1,
+      "job_id": "analyze_R2_UA_7_selected",
+      "kind": "analysis",
+      "relative_directory": "runs/exports/runs/analyze_R2_UA_7_selected__131f86922b751e2d",
+      "result": {
+        "completed_at": "2026-10-01T16:28:12.371162+00:00",
+        "job_id": "analyze_R2_UA_7_selected",
+        "owner": "rtx3090",
+        "prediction_sha256": "850c1b3a8797b962437d8e9677f209b906ee05c4a3082ef8a82fe0a0b465f45a",
+        "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+        "source_job": "R2_UA_7_selected",
+        "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+        "validated": true
+      },
+      "result_hash": "131f86922b751e2d19c21a843192d6e1d5bceb044f15ba04708d8200fad51160"
+    },
+    {
+      "attempt": 1,
+      "job_id": "analyze_R2_UC_123_selected",
+      "kind": "analysis",
+      "relative_directory": "runs/exports/runs/analyze_R2_UC_123_selected__c6bf7b713c602a02",
+      "result": {
+        "completed_at": "2026-10-01T16:29:09.900267+00:00",
+        "job_id": "analyze_R2_UC_123_selected",
+        "owner": "rtx3090",
+        "prediction_sha256": "386acd34b91692cd1b13711ced5d395e9dee1f7ecab1cfd85710e91ae680a214",
+        "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+        "source_job": "R2_UC_123_selected",
+        "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+        "validated": true
+      },
+      "result_hash": "c6bf7b713c602a0228af6d7d99b4471b998ef85a94d51ec89d2329ab39faa3bd"
+    },
+    {
+      "attempt": 1,
+      "job_id": "analyze_SHARED_QUERY_123",
+      "kind": "analysis",
+      "relative_directory": "runs/exports/runs/analyze_SHARED_QUERY_123__d00c9dee9f297dc2",
+      "result": {
+        "completed_at": "2026-10-01T16:27:56.798322+00:00",
+        "job_id": "analyze_SHARED_QUERY_123",
+        "owner": "rtx3090",
+        "prediction_sha256": "a033d1483c42c3a34229a4670ecefb6eaee35f3bbd13ee3cc8b179343d3df733",
+        "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+        "source_job": "main_SHARED_QUERY_123_selected",
+        "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+        "validated": true
+      },
+      "result_hash": "d00c9dee9f297dc2d1d3afbbbfd42e999856339c5a426fa325839b37a96e1cc4"
+    },
+    {
+      "attempt": 1,
       "job_id": "analyze_SHARED_QUERY_42",
       "kind": "analysis",
       "relative_directory": "runs/exports/runs/analyze_SHARED_QUERY_42__51fb05bfe161bd0b",
@@ -427,6 +582,23 @@
         "validated": true
       },
       "result_hash": "51fb05bfe161bd0b30cae10a4739b738fc9552aab661b57d3e1ceb928fa97557"
+    },
+    {
+      "attempt": 1,
+      "job_id": "analyze_SHARED_QUERY_7",
+      "kind": "analysis",
+      "relative_directory": "runs/exports/runs/analyze_SHARED_QUERY_7__da56a7273596db07",
+      "result": {
+        "completed_at": "2026-10-01T16:28:42.027422+00:00",
+        "job_id": "analyze_SHARED_QUERY_7",
+        "owner": "rtx3090",
+        "prediction_sha256": "05de7cb5bca9d5144139d37cfa828cf18a91d7d4663364cfafeb5836b5f3906b",
+        "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+        "source_job": "main_SHARED_QUERY_7_selected",
+        "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+        "validated": true
+      },
+      "result_hash": "da56a7273596db078e8aa82393ebe7927b9e86c6b0e8ea1ba747e9f70bb95389"
     },
     {
       "attempt": 1,
@@ -583,6 +755,58 @@
         "validated": true
       },
       "result_hash": "3c1fb857b5233213440bab857c86b6fb332ea92fab5abd1369b2bce35e9b4415"
+    },
+    {
+      "attempt": 1,
+      "job_id": "main_SHARED_QUERY_123_selected",
+      "kind": "fit",
+      "relative_directory": "runs/exports/runs/main_SHARED_QUERY_123_selected__ff6a3b91f9038476",
+      "result": {
+        "asset": null,
+        "attempt": 1,
+        "completed_at": "2026-10-01T16:27:44.427573+00:00",
+        "config_hash": "7a69fb21427492956ac16a4f0657ee843cdef3db07eff5a24421b9f9b4267e2c",
+        "epochs_completed": 143,
+        "executable_source_digest": "4d4ad03b827958468b1a231e360c7ad1aa68035c25af068059838ceae6dfa6d6",
+        "family": "selected",
+        "files": {
+          "calibration.csv": "53d4aadef4570c96015e4f6227a4ab42c4a8614111345fe32383651ce6f6d3fe",
+          "daily_losses.csv": "1f4756bb48fe90d44392c6e75f89399244db469633a0a27484332f1a6422ac4c",
+          "history.csv": "32780f640469ccb28de34f7aa728f4a57c788c74a82868220fee7db870a6d921",
+          "metrics.csv": "1d3ffe22ef8e5834026e8aebaa587df92b9c6af05ec14ceb368968a499dd7105",
+          "per_asset.csv": "fb18e99019f5a1ec63f21e2f7429ecf9a84992946a3aad9946694b1b532ea6bd",
+          "predictions.csv.gz": "a033d1483c42c3a34229a4670ecefb6eaee35f3bbd13ee3cc8b179343d3df733",
+          "process.log": "cce0c4c3ce0348110abcc9b95cc2e8a4ae2922ca53a3cd5e0323f296fce1bca4",
+          "reliability.svg": "8b1617711f2e402cca6fa611149c94327500968d9f7011e11f14f1d276296157",
+          "resolved_config.json": "55fb395269126e92d596f740709b6c884e5c4284e4531b795d255dd3fd05b375",
+          "subgroup_metrics.csv": "5ce6b8ecfad356fac2592f0e346566da09d9ae8cd75a5436ddf888d4e7129954"
+        },
+        "fold": "main",
+        "input_hash": "9cb89005693b1b70c102178849b740fde00b50c9ba5f3b5530d0e5749ea59837",
+        "job_id": "main_SHARED_QUERY_123_selected",
+        "local_checkpoints": {
+          "best_checkpoint.pt": "3969517df9763c5ff3ec5c0227b739db9774420842be301231bf85b71a193ca6",
+          "last_checkpoint.pt": "40367ed99a6bd2fe3ccfd6732660b15687f7a974fdb822a3f1d2f639a709302f"
+        },
+        "lr": 0.0004,
+        "model": "SHARED_QUERY",
+        "owner": "rtx3090",
+        "parameters": 605315,
+        "prediction_rows": 151848,
+        "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+        "resume_checkpoint_used": null,
+        "run_id": "4a971f35f588ef6b3b559d5d925dc402cac445517dafdca6f6f5f1517404ad6b",
+        "seed": 123,
+        "selected_epoch": 113,
+        "smoke": false,
+        "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+        "split_hash": "490eeb15970ef077ee050323b551cd9c3c5534c257f1febddca9af74ed1cf0a4",
+        "training_hash": "223278c5c320dd2fd9a015e99abbe21e25e9eb36b6e4be6ea87cf10e93b3775e",
+        "transform_hash": "7c046856fb93caadaba00219d440e28b84a542bcec20f13640d962cb8ad3d89f",
+        "validated": true,
+        "validation_p3_nll": 0.9057386135906377
+      },
+      "result_hash": "ff6a3b91f9038476558adf931d64271dcf45252fe551593daa0a9840aea990da"
     },
     {
       "attempt": 1,
@@ -791,6 +1015,58 @@
         "validation_p3_nll": 0.9058103377754188
       },
       "result_hash": "fd87fabe411e094c2db1d7be217a0e069ed24194fdd18a0a413ec516c9a3b76e"
+    },
+    {
+      "attempt": 1,
+      "job_id": "main_SHARED_QUERY_7_selected",
+      "kind": "fit",
+      "relative_directory": "runs/exports/runs/main_SHARED_QUERY_7_selected__777ab9c0a43b6d6f",
+      "result": {
+        "asset": null,
+        "attempt": 1,
+        "completed_at": "2026-10-01T16:28:27.942176+00:00",
+        "config_hash": "7582bd17d2c075f3046980287e3874d97abf508c8c9379f7828fe6d21b65631b",
+        "epochs_completed": 149,
+        "executable_source_digest": "4d4ad03b827958468b1a231e360c7ad1aa68035c25af068059838ceae6dfa6d6",
+        "family": "selected",
+        "files": {
+          "calibration.csv": "f2346d7c05da42ec1b3d5c19e0fb1756f2894d7f30e41b15e263ca426749c46a",
+          "daily_losses.csv": "1a57a4c66b48ce868034c1f2245d39579f905f23b8e7c226da762923e624864c",
+          "history.csv": "4b4f5e69eb0aea8e1960d7f996e48c3e7a9d6f41bdd3bfbfc730384434e56fa5",
+          "metrics.csv": "924af9f5403a2fc5f0583bf8f39a09d011c982062bdf649c86552dec95bc1591",
+          "per_asset.csv": "7391c80e82d16e9965655229a2f89accb7cda6a6c9c37a5793e6ff0041fa9970",
+          "predictions.csv.gz": "05de7cb5bca9d5144139d37cfa828cf18a91d7d4663364cfafeb5836b5f3906b",
+          "process.log": "1255119f207bb20903043db2db265746849712c8846f1a4fc9fc142f66da2e7c",
+          "reliability.svg": "2c5125546ba94c0f602b6acc3f485cbad62a638c61803228f7b0e77790ac2aef",
+          "resolved_config.json": "c32c6cc1a715aef05f94794171234d7e275020c721d7b2e1d30d549c8685a2d0",
+          "subgroup_metrics.csv": "4bf9d7307337290480dd36738348b73aa63b938dcd4daec8be2295d95353b22c"
+        },
+        "fold": "main",
+        "input_hash": "9cb89005693b1b70c102178849b740fde00b50c9ba5f3b5530d0e5749ea59837",
+        "job_id": "main_SHARED_QUERY_7_selected",
+        "local_checkpoints": {
+          "best_checkpoint.pt": "7e92830a311efe975d2fb76705562c474874790e12746eb66bba22dc4bb390f1",
+          "last_checkpoint.pt": "e78a93c5b99a71deb90ccb13ea1e166c2dedf5937f4d9766a6f8ec27249198f1"
+        },
+        "lr": 0.0004,
+        "model": "SHARED_QUERY",
+        "owner": "rtx3090",
+        "parameters": 605315,
+        "prediction_rows": 151848,
+        "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+        "resume_checkpoint_used": null,
+        "run_id": "7829448990cb0816d19af2f250e7cec6ba4f7e1b721fa16170de66909d4e909a",
+        "seed": 7,
+        "selected_epoch": 119,
+        "smoke": false,
+        "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+        "split_hash": "490eeb15970ef077ee050323b551cd9c3c5534c257f1febddca9af74ed1cf0a4",
+        "training_hash": "223278c5c320dd2fd9a015e99abbe21e25e9eb36b6e4be6ea87cf10e93b3775e",
+        "transform_hash": "7c046856fb93caadaba00219d440e28b84a542bcec20f13640d962cb8ad3d89f",
+        "validated": true,
+        "validation_p3_nll": 0.906194628660433
+      },
+      "result_hash": "777ab9c0a43b6d6f56ea2beb238aff502146948a32c92d7e60ea24a1cced0030"
     },
     {
       "attempt": 1,
