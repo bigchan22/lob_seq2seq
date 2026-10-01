@@ -5,15 +5,15 @@
   "TLOB_ADAPTER_READY": true,
   "TLOB_status": "READY",
   "TLOB_reason": null,
-  "prior_code_commit": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
-  "published_at": "2026-10-01T15:55:32.533788+00:00",
+  "prior_code_commit": "08fcbdac350a00b7ca587d0c95c803766c01e9bf",
+  "published_at": "2026-10-01T15:59:37.495422+00:00",
   "core_source_files": {
     "lob_forecasting/data/transforms.py": "76973eb252a6bd0bffb8ab859342db1208ec5ec8cd6b1f2d5a391d9c4d156cac",
     "lob_forecasting/experiments/discrimination_factors.py": "d9c8009edb68b82721e1c6a65033693274b7e0d8013e46fcece15a85fb6ab5af",
     "lob_forecasting/models/qf_variants.py": "d4857ddc7c8537211b3cf0c3f22349eb2a94767dbc25f42e8c39d5f6625ede9a",
     "scripts/qf_data_review/build_data_review.py": "8f7b3a8d8df38e70860a7c9dfc8aa34db62f8535ca53b1904ed3563a831c3284",
     "scripts/qf_overnight/common.py": "df24d02fb455e063d10d7b1be4eb239cdfaf33a0dcaac7ba7a29d07444eb4d1f",
-    "scripts/qf_overnight/consolidate.py": "326998080471be4107592ffec292d0540aae7b14e67d6aaf43dceea80e3dbb5c",
+    "scripts/qf_overnight/consolidate.py": "096217d7be20a98271336f71ec3a49b6a2a8e31df6b76cc53060fef1827cb7b0",
     "scripts/qf_overnight/data.py": "0503d4414c37b5f3ce79fc96186fe0ad25b8b76f8ad53e56f852514f85ad8ab3",
     "scripts/qf_overnight/freeze.py": "b03a8c0c6e4af9ce078acf41c0e5106f4c2088cac20ee4440e847ba1c76e4ed7",
     "scripts/qf_overnight/gates.py": "6f7dcfde139ffe2d45d695ff879646ca79727c54a731e1a97a0a132e10e30b6b",
@@ -26,14 +26,14 @@
     "scripts/qf_overnight/scoring.py": "cac9296b79ab9a7d28e31fcb9964f8b0e8f43d5c834d37671376ab5d4e2bcfa0",
     "scripts/qf_overnight/trainer.py": "4c241bbd661b839aa051c0df50a293e4390ca28900d7ad41d37cdcdb0a516229"
   },
-  "core_executable_digest": "4d4ad03b827958468b1a231e360c7ad1aa68035c25af068059838ceae6dfa6d6",
+  "core_executable_digest": "ee4171a748b4c685cc052e7d8649fed17e2774fb900c9ef4eedecb92c3ae61d5",
   "optional_source_files": {
     "lob_forecasting/data/transforms.py": "76973eb252a6bd0bffb8ab859342db1208ec5ec8cd6b1f2d5a391d9c4d156cac",
     "lob_forecasting/experiments/discrimination_factors.py": "d9c8009edb68b82721e1c6a65033693274b7e0d8013e46fcece15a85fb6ab5af",
     "lob_forecasting/models/qf_variants.py": "d4857ddc7c8537211b3cf0c3f22349eb2a94767dbc25f42e8c39d5f6625ede9a",
     "scripts/qf_data_review/build_data_review.py": "8f7b3a8d8df38e70860a7c9dfc8aa34db62f8535ca53b1904ed3563a831c3284",
     "scripts/qf_overnight/common.py": "df24d02fb455e063d10d7b1be4eb239cdfaf33a0dcaac7ba7a29d07444eb4d1f",
-    "scripts/qf_overnight/consolidate.py": "326998080471be4107592ffec292d0540aae7b14e67d6aaf43dceea80e3dbb5c",
+    "scripts/qf_overnight/consolidate.py": "096217d7be20a98271336f71ec3a49b6a2a8e31df6b76cc53060fef1827cb7b0",
     "scripts/qf_overnight/data.py": "0503d4414c37b5f3ce79fc96186fe0ad25b8b76f8ad53e56f852514f85ad8ab3",
     "scripts/qf_overnight/freeze.py": "b03a8c0c6e4af9ce078acf41c0e5106f4c2088cac20ee4440e847ba1c76e4ed7",
     "scripts/qf_overnight/gates.py": "6f7dcfde139ffe2d45d695ff879646ca79727c54a731e1a97a0a132e10e30b6b",
@@ -65,7 +65,7 @@
   },
   "prepared_identity_sha256": "255199b39c32eba4d6aced8c3e45d7e84accfbfd35b487d873bba12a5e5974e0",
   "input_manifest_sha256": "9cb89005693b1b70c102178849b740fde00b50c9ba5f3b5530d0e5749ea59837",
-  "core_gates_sha256": "ea00de71850ba9006dbbb8528a6ba560973b275c59a86fe844971a6cda8bf6c2",
+  "core_gates_sha256": "d05b0d97a4cdb3698c12d75ae7373d569a13f9c605ef361b8aa9da6a376a5c9f",
   "manifest_sha256": "571be2a41f21ed73673c74550747d8e4738ce66207b3c7da007b6737d1c3e909",
   "split_manifest_sha256": "8a5d918ca5a156cb125c954443800c8cdab233092ccbdc2fa0d9e383f5648d65",
   "smoke_parameters": {
@@ -224,11 +224,11 @@
     },
     {
       "path": "docs/qf_overnight/20261001/compatible_core_revisions.json",
-      "sha256": "d4a71133ccd288b9e6fa17b4657ef2c4d30d51c94fc10730672788babac4f5d5"
+      "sha256": "085dac2324fa6f20b133c5b58367f353937d9dee8dfe269f023f69a1b60b8583"
     },
     {
       "path": "docs/qf_overnight/20261001/core_gates.json",
-      "sha256": "ea00de71850ba9006dbbb8528a6ba560973b275c59a86fe844971a6cda8bf6c2"
+      "sha256": "d05b0d97a4cdb3698c12d75ae7373d569a13f9c605ef361b8aa9da6a376a5c9f"
     },
     {
       "path": "docs/qf_overnight/20261001/prepared_cache_manifest.json",
@@ -256,7 +256,7 @@
     },
     {
       "path": "docs/qf_overnight/20261001/tlob_gates.json",
-      "sha256": "14e1ce66f04f7f36cf078153c6ad3daa652c05ee9ebbc60f924d263ebad63ca3"
+      "sha256": "9acceea6a5dee7e4ad8d61dea8540e1948f14b790c1a110288d456a8f92abfc8"
     },
     {
       "path": "docs/qf_overnight/20261001/transport_fix_validation.json",
@@ -284,7 +284,7 @@
     },
     {
       "path": "scripts/qf_overnight/consolidate.py",
-      "sha256": "326998080471be4107592ffec292d0540aae7b14e67d6aaf43dceea80e3dbb5c"
+      "sha256": "096217d7be20a98271336f71ec3a49b6a2a8e31df6b76cc53060fef1827cb7b0"
     },
     {
       "path": "scripts/qf_overnight/data.py",

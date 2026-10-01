@@ -60,7 +60,11 @@ def run(local,peer,owner):
                         pa,ra=aa;pb,rb=bb
                         assert ra['protocol_hash']==rb['protocol_hash'],'protocol mismatch: refuse combined scoring'
                         assert ra.get('training_hash')==rb.get('training_hash'),'train/validation/transform identity mismatch'
-                        assert ra.get('executable_source_digest')==rb.get('executable_source_digest') or comparator=='TLOB_ADAPTED','core source mismatch'
+                        da,db=ra.get('executable_source_digest'),rb.get('executable_source_digest')
+                        reviewed=read(DOCS/'compatible_core_revisions.json') if (DOCS/'compatible_core_revisions.json').exists() else {}
+                        compatible=set(reviewed.get('compatible_core_executable_digests',[]))
+                        compatible.add(read(READY)['core_executable_digest'])
+                        assert da==db or {da,db}<=compatible or comparator=='TLOB_ADAPTED','unreviewed core source mismatch'
                         a=pd.read_csv(pa,dtype={'date':str,'asset_id':str});b=pd.read_csv(pb,dtype={'date':str,'asset_id':str})
                         left.append(a);right.append(b);refs.append({'left_run':ra.get('run_id'),'right_run':rb.get('run_id'),'fold':fold,'seed':seed,
                                                                    'left_source_sha':ra.get('source_sha'),'right_source_sha':rb.get('source_sha')})

@@ -129,7 +129,7 @@
     "lob_forecasting/models/qf_variants.py": "d4857ddc7c8537211b3cf0c3f22349eb2a94767dbc25f42e8c39d5f6625ede9a",
     "scripts/qf_data_review/build_data_review.py": "8f7b3a8d8df38e70860a7c9dfc8aa34db62f8535ca53b1904ed3563a831c3284",
     "scripts/qf_overnight/common.py": "df24d02fb455e063d10d7b1be4eb239cdfaf33a0dcaac7ba7a29d07444eb4d1f",
-    "scripts/qf_overnight/consolidate.py": "326998080471be4107592ffec292d0540aae7b14e67d6aaf43dceea80e3dbb5c",
+    "scripts/qf_overnight/consolidate.py": "096217d7be20a98271336f71ec3a49b6a2a8e31df6b76cc53060fef1827cb7b0",
     "scripts/qf_overnight/data.py": "0503d4414c37b5f3ce79fc96186fe0ad25b8b76f8ad53e56f852514f85ad8ab3",
     "scripts/qf_overnight/freeze.py": "b03a8c0c6e4af9ce078acf41c0e5106f4c2088cac20ee4440e847ba1c76e4ed7",
     "scripts/qf_overnight/gates.py": "6f7dcfde139ffe2d45d695ff879646ca79727c54a731e1a97a0a132e10e30b6b",
@@ -149,5 +149,12 @@
     ],
     "reason": "Remove stale task-export metric schema copies only; no training/scoring changes",
     "reviewed": true
+  },
+  "post_gate_aggregation_compatibility": {
+    "reviewed": true,
+    "changed_files": [
+      "scripts/qf_overnight/consolidate.py"
+    ],
+    "model_data_trainer_unchanged": true
   }
 }

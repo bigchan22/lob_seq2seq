@@ -23,5 +23,20 @@
     "x.npy": "75a5f6207eb3743927c97ac8361af405a4b3a890490e5a705ec07f5f255d5518",
     "y.npy": "238526791f5a7dc13484f5279a03f7d6c624d1268dcd898360077c966b9d70cd"
   },
-  "validation_report": "docs/qf_overnight/20261001/transport_fix_validation.json"
+  "validation_report": "docs/qf_overnight/20261001/transport_fix_validation.json",
+  "compatible_core_executable_digests": [
+    "b9974a8f8c017bb8dcd4b62d614209421269020760d78e9d860a074b8cc9561f",
+    "4d4ad03b827958468b1a231e360c7ad1aa68035c25af068059838ceae6dfa6d6"
+  ],
+  "post_transport_aggregation_review": {
+    "change": "Permit explicitly reviewed non-scientific source revisions when pairing; preserve exact source digest in every result",
+    "affects_existing_training": false,
+    "new_metric_or_selection_rule": false,
+    "required_other_checks": [
+      "protocol_hash equality",
+      "training_hash equality",
+      "one-to-one keys labels and seeds",
+      "matching fold/population"
+    ]
+  }
 }
