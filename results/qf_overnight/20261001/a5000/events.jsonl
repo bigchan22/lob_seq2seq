@@ -411,7 +411,12 @@
 {"seq": 411, "time": "2026-10-01T15:56:30.831451+00:00", "job": "main_S_7_001000_KR7006400006_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7006400006_t/attempt_0001/result.json\"}"}
 {"seq": 412, "time": "2026-10-01T15:56:31.876639+00:00", "job": "main_S_7_001000_KR7008770000_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
 {"seq": 413, "time": "2026-10-01T15:56:31.882390+00:00", "job": "main_S_7_001000_KR7009150004_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
-{"seq": 414, "time": "2026-10-01T15:56:33.759625+00:00", "job": "adapter_TLOB_ADAPTED", "event": "adapter_ready", "detail": "{\"source\": \"/home/chanhomin/hosung/overnight/qf-august-overnight-20261001/execution-tlob\"}"}
+{"seq": 414, "time": "2026-10-01T15:56:33.759625+00:00", "job": "adapter_TLOB_ADAPTED", "event": "adapter_ready", "detail": "{\"source\": \"${SOURCE_ROOT}\"}"}
 {"seq": 415, "time": "2026-10-01T15:56:36.312742+00:00", "job": "main_S_7_001000_KR7007070006_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7007070006_t/attempt_0001/result.json\"}"}
 {"seq": 416, "time": "2026-10-01T15:56:54.309713+00:00", "job": "main_S_7_001000_KR7009150004_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7009150004_t/attempt_0001/result.json\"}"}
 {"seq": 417, "time": "2026-10-01T15:56:54.874789+00:00", "job": "main_S_7_001000_KR7008770000_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7008770000_t/attempt_0001/result.json\"}"}
+{"seq": 418, "time": "2026-10-01T15:57:18.929447+00:00", "job": null, "event": "all_four_workers_and_TLOB_enabled", "detail": "{\"source_sha\": \"08fcbdac350a00b7ca587d0c95c803766c01e9bf\", \"scientific_protocol_unchanged\": true}"}
+{"seq": 419, "time": "2026-10-01T15:57:19.110979+00:00", "job": "main_TLOB_ADAPTED_42_000500", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 420, "time": "2026-10-01T15:57:19.114895+00:00", "job": "main_TLOB_ADAPTED_42_001000", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 421, "time": "2026-10-01T15:57:19.121242+00:00", "job": "main_TLOB_ADAPTED_42_002000", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 422, "time": "2026-10-01T15:57:19.127707+00:00", "job": "main_TLOB_ADAPTED_42_004000", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}

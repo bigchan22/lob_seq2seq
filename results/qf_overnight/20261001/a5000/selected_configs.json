@@ -275,28 +275,28 @@
       "job_id": "main_TLOB_ADAPTED_42_000500",
       "model": "TLOB_ADAPTED",
       "lr": 5e-05,
-      "state": "PENDING",
+      "state": "RUNNING",
       "validation_p3_nll": null
     },
     {
       "job_id": "main_TLOB_ADAPTED_42_001000",
       "model": "TLOB_ADAPTED",
       "lr": 0.0001,
-      "state": "PENDING",
+      "state": "RUNNING",
       "validation_p3_nll": null
     },
     {
       "job_id": "main_TLOB_ADAPTED_42_002000",
       "model": "TLOB_ADAPTED",
       "lr": 0.0002,
-      "state": "PENDING",
+      "state": "RUNNING",
       "validation_p3_nll": null
     },
     {
       "job_id": "main_TLOB_ADAPTED_42_004000",
       "model": "TLOB_ADAPTED",
       "lr": 0.0004,
-      "state": "PENDING",
+      "state": "RUNNING",
       "validation_p3_nll": null
     },
     {
