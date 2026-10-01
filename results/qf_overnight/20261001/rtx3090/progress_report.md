@@ -6,7 +6,7 @@ Phase: RUNNING
 
 READY SHA: e2212c40566e21c680a98186ebd8e984aa80d4fd; protocol SHA256: 3cfd389bbd05ec9201a41c0892e29bf8199198d1b216b9a8061370d4240aa583
 
-Actual shared queue counts: {"PENDING": 33, "RUNNING": 4, "SUCCEEDED": 32}
+Actual shared queue counts: {"PENDING": 20, "RUNNING": 4, "SUCCEEDED": 45}
 
 Planned ownership: 18 main UA/UC/SHARED_QUERY fits + 12 rolling UA/UC fits, plus finite inference/reuse/analysis nodes. These are not reported as launched jobs until the common DAG exists.
 
@@ -14,7 +14,7 @@ Historical replay is separate; see historical_replay_reference.json. No performa
 
 Consolidated analysis status: partial; see consolidated/progress_report.md.
 
-Other owner result SHA: e2dc9ba7db90614633970c4a4410d566dd7a89e8
+Other owner result SHA: 54a10ea64ce815db430e6fd987d9ae9add5e5d12
 
 Current blocker: None
 

@@ -2,9 +2,9 @@
 
 Status: partial
 
-Exact advertised source result commits: {"a5000": "e2dc9ba7db90614633970c4a4410d566dd7a89e8", "rtx3090": "cd6b7594d14793efe3e76a677887712426c776fa"}
+Exact advertised source result commits: {"a5000": "54a10ea64ce815db430e6fd987d9ae9add5e5d12", "rtx3090": "b217af5e45e64a580e963c9b67ecc6bc8dbbab51"}
 
-Verified selected saved files: 23. Every loaded file passed its Git/result digest, full expected support, labels, masks, class order and probability checks.
+Verified selected saved files: 33. Every loaded file passed its Git/result digest, full expected support, labels, masks, class order and probability checks.
 
 Retrospective conditional-on-selection diagnostics. Future endpoint P3 validity is ex post, never a trading filter. No probability ensemble; missing outputs are not zero.
 

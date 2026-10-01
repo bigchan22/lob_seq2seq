@@ -30,4 +30,18 @@ class ReceiverChecks(unittest.TestCase):
         r=self.fixture();atomic(r.root/'control.json',{'generation':1,'stop':True})
         with patch('receiver.os.killpg') as kill:
             self.assertEqual(r.controls(None,None),'stop');kill.assert_not_called()
+    def test_final_analysis_uses_last_published_exports_and_independent_gate(self):
+        r=self.fixture();calls=[]
+        r.publish=lambda:calls.append('publish_exports')
+        r.collect_other=lambda:calls.append('fetch_peer')
+        def aggregate():
+            self.assertEqual(calls,['publish_exports','fetch_peer'])
+            calls.append('aggregate');r.state['consolidation_status']='complete'
+        r.aggregate=aggregate;r.final_publish=lambda:calls.append('publish_analysis')
+        r.finalize_results({'all_required_validated':True})
+        self.assertEqual(calls,['publish_exports','fetch_peer','aggregate','publish_analysis'])
+        self.assertEqual(r.state['phase'],'TERMINAL_PARTIAL')
+        atomic(r.root/'native_analysis/analysis_manifest.json',{'status':'complete'})
+        calls.clear();r.finalize_results({'all_required_validated':True})
+        self.assertEqual(r.state['phase'],'COMPLETE')
 if __name__=='__main__':unittest.main(verbosity=2)

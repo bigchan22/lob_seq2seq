@@ -347,6 +347,21 @@ class Receiver:
                 if attempt<2:time.sleep(15*(attempt+1))
         self.export_files()
 
+    def finalize_results(self, status):
+        # The final local successes may be newer than the last publication.
+        # Publish their immutable exports before pinning analysis input commits.
+        self.publish()
+        self.collect_other()
+        self.last_aggregate_signature = None
+        self.aggregate()
+        independent = read(self.root/'native_analysis/analysis_manifest.json', {})
+        self.state['phase'] = ('COMPLETE' if status.get('all_required_validated')
+                               and self.state.get('consolidation_status') == 'complete'
+                               and independent.get('status') == 'complete'
+                               else 'TERMINAL_PARTIAL')
+        self.save()
+        self.final_publish()
+
     def export_queue_metadata(self,dest):
         source=self.state.get('source_path') or self.c.get('native_source')
         if source:
@@ -511,8 +526,7 @@ class Receiver:
                         if status.get('all_terminal') is True:
                             self.state['phase']='LOCAL_TERMINAL_AWAITING_PEER'
                             if self.other_terminal():
-                                self.aggregate();self.state['phase']='COMPLETE' if status.get('all_required_validated') and self.state.get('consolidation_status')=='complete' else 'TERMINAL_PARTIAL'
-                                self.save();self.final_publish();break
+                                self.finalize_results(status);break
                         attempts=self.state.get('coordinator_restart_attempts',0)
                         if status.get('all_terminal') is True:pass
                         elif attempts<2:

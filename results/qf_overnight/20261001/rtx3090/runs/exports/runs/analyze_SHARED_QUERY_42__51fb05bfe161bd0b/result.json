@@ -1,0 +1,10 @@
+{
+  "validated": true,
+  "source_job": "selected_SHARED_QUERY_42",
+  "prediction_sha256": "e7b7b3307a3b3c534703051317729c61fcae31b9e684d61e545339a84c735672",
+  "job_id": "analyze_SHARED_QUERY_42",
+  "owner": "rtx3090",
+  "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+  "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+  "completed_at": "2026-10-01T16:25:16.548866+00:00"
+}

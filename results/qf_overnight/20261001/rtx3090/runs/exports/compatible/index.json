@@ -16,6 +16,11 @@
       "complete_sha256": "115878122e783292ed9c0527e8edc52092a9b56ce707c4a2204eb0fd4caa966f"
     },
     {
+      "job": "R1_UC_123",
+      "path": "R1_UC_123__19c9bf35446d357c",
+      "complete_sha256": "aa764c45b01683289fef9206fd52125aa8519923fc8245090ff2185238bbc4cb"
+    },
+    {
       "job": "R1_UC_42",
       "path": "R1_UC_42__61eae199176986b9",
       "complete_sha256": "4aab4f824c7fbddf9c5d96da98a7671f556a755c2c84134a1ff4a0f79408ceb1"
@@ -24,6 +29,21 @@
       "job": "R1_UC_7",
       "path": "R1_UC_7__1df886eef947427c",
       "complete_sha256": "e3455330b06d8b1720833c35a49300163cef8174358bcafc46c7ed6e795d967f"
+    },
+    {
+      "job": "analyze_R2_UA_123_selected",
+      "path": "analyze_R2_UA_123_selected__1213a6249a0422c5",
+      "complete_sha256": "34c47e58902e752d6baa13af0129561a762233f5ff211facb42b8fe70d9ce8c3"
+    },
+    {
+      "job": "analyze_R2_UA_42_selected",
+      "path": "analyze_R2_UA_42_selected__112a2c22fa9a661d",
+      "complete_sha256": "097810070068b478b992922e6bcbaf974918a80b9c8ef76c47e9569d8b1db5d0"
+    },
+    {
+      "job": "analyze_SHARED_QUERY_42",
+      "path": "analyze_SHARED_QUERY_42__fd87fabe411e094c",
+      "complete_sha256": "d1823dfe7ea212b0b35bda83fcf57097a0d8f6b5349eb9faaf8d4ee8c098ef9b"
     },
     {
       "job": "analyze_UA_123",

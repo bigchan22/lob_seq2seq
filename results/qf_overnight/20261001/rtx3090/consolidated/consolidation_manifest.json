@@ -9,33 +9,33 @@
   "checksums": [
     {
       "path": "incomplete_comparisons.csv",
-      "sha256": "ceb99e3a0480e1e6bfdd4da91c0996c96336aaa1955ab9440bbba1ed3eee15c9"
+      "sha256": "ad543070cd836520c2a18587d55294bcbef45d94ca4c536659e7dd0da25afbf4"
     },
     {
       "path": "metrics.csv",
-      "sha256": "0f5760e7a6b734c2b5b41d7dc8d4aaaa6777f578e58fe071e6190651c1811d61"
+      "sha256": "ed94ce674055da0e6368c8d1170b700aa8b42da677cbdd1e15d146a24e2d30b5"
     },
     {
       "path": "paired_differences.csv",
-      "sha256": "00014c579ca384a6c6ac194971458f500e032530eb4a59ac66d9f2cd7792f051"
+      "sha256": "dae8afa9a59a38eb033d6974564c598336a6d2228bace7ef5590d5a9b5fc2caf"
     },
     {
       "path": "rolling_metrics.csv",
       "sha256": "e7303e1f578fd25b93d14aaa5269009fcd0b995183f6c511368f6100b2dd6ab7"
     }
   ],
-  "complete_pair_rows": 40,
+  "complete_pair_rows": 208,
   "data_handoff_sha": "e85a89fd56584b513be940e6259c637369bd830b",
-  "incomplete_seed_comparisons": 320,
+  "incomplete_seed_comparisons": 200,
   "issues": [
     "rtx3090: independent_analysis/metrics.csv missing columns ['config_hash', 'core_source_digest', 'input_hash', 'mask_hash', 'panel', 'protocol_hash', 'row_key_label_digest', 'selected', 'source_digest', 'source_sha', 'split_hash']"
   ],
   "limitations": "Daily sums and key/label digests originate in owner-validated saved-prediction exports. No probability ensemble; no inference or selection here. Intervals retrospective/conditional on selection. Missing results are not zero.",
   "namespace": "new_p3_training",
   "source_result_shas": {
-    "a5000": "e2dc9ba7db90614633970c4a4410d566dd7a89e8",
-    "rtx3090": "cd6b7594d14793efe3e76a677887712426c776fa"
+    "a5000": "54a10ea64ce815db430e6fd987d9ae9add5e5d12",
+    "rtx3090": "b217af5e45e64a580e963c9b67ecc6bc8dbbab51"
   },
   "status": "partial",
-  "validated_metric_rows": 208
+  "validated_metric_rows": 280
 }
