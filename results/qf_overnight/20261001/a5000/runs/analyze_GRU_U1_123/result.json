@@ -1,0 +1,10 @@
+{
+  "validated": true,
+  "source_job": "main_GRU_U1_123_selected",
+  "prediction_sha256": "6221604e4f63e6d1ca86063bb899ae2a4a084ce911f766f0df8b3960a98aaf24",
+  "job_id": "analyze_GRU_U1_123",
+  "owner": "a5000",
+  "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+  "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+  "completed_at": "2026-10-01T15:52:48.229683+00:00"
+}

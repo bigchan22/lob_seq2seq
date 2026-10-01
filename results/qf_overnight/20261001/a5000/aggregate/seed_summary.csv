@@ -1,4 +1,12 @@
 model,fold,split,population,family,seeds,mean_seed_nll,mean_seed_accuracy,three_seed_complete
+GRU_U1,main,development_holdout,P0_legacy,new_P3_selected,2,0.9251520165720987,0.5449770610589324,False
+GRU_U1,main,development_holdout,P1_valid_cache_endpoints,new_P3_selected,2,0.9206533004263868,0.5474391699946477,False
+GRU_U1,main,development_holdout,P2_candidate_clock,new_P3_selected,2,0.9249682166529893,0.5460553911732363,False
+GRU_U1,main,development_holdout,P3_intersection,new_P3_selected,2,0.9186999485879891,0.5496084907839424,False
+GRU_U1,main,validation,P0_legacy,new_P3_selected,2,0.9103070821846913,0.5552273540995345,False
+GRU_U1,main,validation,P1_valid_cache_endpoints,new_P3_selected,2,0.9054888826504248,0.5582021541010771,False
+GRU_U1,main,validation,P2_candidate_clock,new_P3_selected,2,0.9093046216958955,0.5568382235048902,False
+GRU_U1,main,validation,P3_intersection,new_P3_selected,2,0.9030804606070303,0.5603252032520325,False
 prior_global,R1,rolling_evaluation,P0_legacy,train_P3_Laplace_prior,1,1.06232895020497,0.4936499497903007,False
 prior_global,R1,rolling_evaluation,P1_valid_cache_endpoints,train_P3_Laplace_prior,1,1.066933998332855,0.4776238596922321,False
 prior_global,R1,rolling_evaluation,P2_candidate_clock,train_P3_Laplace_prior,1,1.0642009194169462,0.4872972145699418,False

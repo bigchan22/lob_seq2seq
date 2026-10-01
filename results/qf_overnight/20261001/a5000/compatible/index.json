@@ -1,0 +1,31 @@
+{
+  "entries": [
+    {
+      "job": "analyze_GRU_U1_123",
+      "path": "analyze_GRU_U1_123__2adb83d4c75af437",
+      "complete_sha256": "539789fac6fa29be770e3b42a029cb7e7f7d6a1c25f56427a07f20a7ad6c46da"
+    },
+    {
+      "job": "analyze_GRU_U1_42",
+      "path": "analyze_GRU_U1_42__b0697eda58cd2b10",
+      "complete_sha256": "ef7c6c3cb123907d521f889fa5042c72fced88fa9ed29dd1cdba3d88cae43b80"
+    },
+    {
+      "job": "fixed_U1_123",
+      "path": "fixed_U1_123__043e7e9b8c124012",
+      "complete_sha256": "05d4392933b1bc887d3648e236837479d0713a18eb99124d17bab2b71f554aa2"
+    },
+    {
+      "job": "fixed_U1_42",
+      "path": "fixed_U1_42__6038b7b8a43c4021",
+      "complete_sha256": "07d16df844872f8c0eddb53ae637b5ad90c2bafe827d3c25276a279b45093091"
+    },
+    {
+      "job": "fixed_U1_7",
+      "path": "fixed_U1_7__0f16dd2f11a237ca",
+      "complete_sha256": "d0fd78e65804ba9624256cda815c6e675b71c62eea9d2866074f0ab439f535e8"
+    }
+  ],
+  "protocol_hash": "3cfd389bbd05ec9201a41c0892e29bf8199198d1b216b9a8061370d4240aa583",
+  "canonical_protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1"
+}
