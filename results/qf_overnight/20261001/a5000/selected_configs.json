@@ -6,22 +6,28 @@
       "job_id": "main_GRU_U1_42_000500",
       "model": "GRU_U1",
       "lr": 5e-05,
-      "state": "RUNNING",
-      "validation_p3_nll": null
+      "state": "SUCCEEDED",
+      "validation_p3_nll": 0.914520736856118,
+      "selected_epoch": 198,
+      "run_id": "bd2c4877aa198e10500ccfabe9dfa300dc90498ff059c17d6749a3acdd09e4a2"
     },
     {
       "job_id": "main_GRU_U1_42_001000",
       "model": "GRU_U1",
       "lr": 0.0001,
-      "state": "RUNNING",
-      "validation_p3_nll": null
+      "state": "SUCCEEDED",
+      "validation_p3_nll": 0.9086900324438577,
+      "selected_epoch": 177,
+      "run_id": "7f0aa8f8542c654cfa768c1d41f06baac30c640cbcaf2c237ddf04413572bb0a"
     },
     {
       "job_id": "main_GRU_U1_42_002000",
       "model": "GRU_U1",
       "lr": 0.0002,
-      "state": "RUNNING",
-      "validation_p3_nll": null
+      "state": "SUCCEEDED",
+      "validation_p3_nll": 0.9055592465370481,
+      "selected_epoch": 146,
+      "run_id": "4d2c9995012009f4dc1fc6c83e39de5fafbeb94442772febc717c8f7a5b52d1b"
     },
     {
       "job_id": "main_GRU_U1_42_004000",
@@ -99,21 +105,21 @@
       "job_id": "main_U1_42_001000",
       "model": "U1",
       "lr": 0.0001,
-      "state": "PENDING",
+      "state": "RUNNING",
       "validation_p3_nll": null
     },
     {
       "job_id": "main_U1_42_002000",
       "model": "U1",
       "lr": 0.0002,
-      "state": "PENDING",
+      "state": "RUNNING",
       "validation_p3_nll": null
     },
     {
       "job_id": "main_U1_42_004000",
       "model": "U1",
       "lr": 0.0004,
-      "state": "PENDING",
+      "state": "RUNNING",
       "validation_p3_nll": null
     },
     {

@@ -24,6 +24,165 @@
       "attempt": 1
     },
     {
+      "job_id": "main_GRU_U1_42_000500",
+      "kind": "fit",
+      "relative_directory": "runs/main_GRU_U1_42_000500",
+      "result_hash": "10bf48bffe93dfd327562b25c640e69b64a73b2e2e6627cc8bd9bdbe97f7f02d",
+      "result": {
+        "run_id": "bd2c4877aa198e10500ccfabe9dfa300dc90498ff059c17d6749a3acdd09e4a2",
+        "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+        "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+        "executable_source_digest": "b9974a8f8c017bb8dcd4b62d614209421269020760d78e9d860a074b8cc9561f",
+        "input_hash": "9cb89005693b1b70c102178849b740fde00b50c9ba5f3b5530d0e5749ea59837",
+        "split_hash": "490eeb15970ef077ee050323b551cd9c3c5534c257f1febddca9af74ed1cf0a4",
+        "transform_hash": "7c046856fb93caadaba00219d440e28b84a542bcec20f13640d962cb8ad3d89f",
+        "training_hash": "223278c5c320dd2fd9a015e99abbe21e25e9eb36b6e4be6ea87cf10e93b3775e",
+        "config_hash": "ee7448b54561f6968f83751799be5920a03d81b45ecd4b04a1e43b2e5586a6ab",
+        "model": "GRU_U1",
+        "seed": 42,
+        "lr": 5e-05,
+        "fold": "main",
+        "asset": null,
+        "family": "lr_search",
+        "parameters": 203779,
+        "selected_epoch": 198,
+        "validation_p3_nll": 0.914520736856118,
+        "epochs_completed": 200,
+        "prediction_rows": 151848,
+        "validated": true,
+        "files": {
+          "metrics.csv": "5a607f1eac97b0713b73220232a71e1ae1fadad8dfde0325942f0d6c09e3091d",
+          "predictions.csv.gz": "4be497750883956ec021c82594d7599e77464048d0ecc0eb563bcbb60bf8f5c5",
+          "calibration.csv": "9c95d8b7570c3de9d5cacc5346b283fc99b537a8fb892ddc6b1045607599dfda",
+          "subgroup_metrics.csv": "686ebbf6218f9c72800a13a5f8dc20a2c7ad3c9aab7beca9677ed826b7793e98",
+          "daily_losses.csv": "e0abf2fc585a288553811e3d6bc906208c66ac3a9a9b3521dd5a36ab3ba178e6",
+          "history.csv": "9719ba197ca68f123d7494791b06d0e66b4ce5f362fa429e753c3ceafd993d5f",
+          "resolved_config.json": "d20ab6e4d0b334b09934a93ab022697811ce100cf2431935d54c083312686db9",
+          "process.log": "e0d22dd16bdd4d46409601bedcd7a186828e73de2eaf873aa29dae714ed959bc",
+          "reliability.svg": "dc661844f048bf30556c98ced3e90ad77a3e161fcf1807e042326b90b3f0f85d",
+          "per_asset.csv": "bf16bfdcc060cc7366096fdb4313d9ac7763c92f4a17f6520932d371a755f32d"
+        },
+        "local_checkpoints": {
+          "best_checkpoint.pt": "c515867fb7018ef38c311bb32bf27167040ba5628a268a87b08440de1d9ac0d7",
+          "last_checkpoint.pt": "04a6bacc13e5d5c92bc62c8cafee6b72db27fb86749db3ffa96b0eb432d00926"
+        },
+        "completed_at": "2026-10-01T15:38:44.344283+00:00",
+        "smoke": false,
+        "resume_checkpoint_used": null,
+        "attempt": 1,
+        "job_id": "main_GRU_U1_42_000500",
+        "owner": "a5000"
+      },
+      "prediction_exported": false,
+      "attempt": 1
+    },
+    {
+      "job_id": "main_GRU_U1_42_001000",
+      "kind": "fit",
+      "relative_directory": "runs/main_GRU_U1_42_001000",
+      "result_hash": "1aa0c0dc2d23fb65474c76381246fe192ea0bc56f2e91d908c2001b7e9571a19",
+      "result": {
+        "run_id": "7f0aa8f8542c654cfa768c1d41f06baac30c640cbcaf2c237ddf04413572bb0a",
+        "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+        "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+        "executable_source_digest": "b9974a8f8c017bb8dcd4b62d614209421269020760d78e9d860a074b8cc9561f",
+        "input_hash": "9cb89005693b1b70c102178849b740fde00b50c9ba5f3b5530d0e5749ea59837",
+        "split_hash": "490eeb15970ef077ee050323b551cd9c3c5534c257f1febddca9af74ed1cf0a4",
+        "transform_hash": "7c046856fb93caadaba00219d440e28b84a542bcec20f13640d962cb8ad3d89f",
+        "training_hash": "223278c5c320dd2fd9a015e99abbe21e25e9eb36b6e4be6ea87cf10e93b3775e",
+        "config_hash": "591034a5cb3b87e1a10945e82657ac7da1bba2ce36184f6a6ea2dc5fea406c36",
+        "model": "GRU_U1",
+        "seed": 42,
+        "lr": 0.0001,
+        "fold": "main",
+        "asset": null,
+        "family": "lr_search",
+        "parameters": 203779,
+        "selected_epoch": 177,
+        "validation_p3_nll": 0.9086900324438577,
+        "epochs_completed": 200,
+        "prediction_rows": 151848,
+        "validated": true,
+        "files": {
+          "metrics.csv": "85b3783624d5194f12d848ccd17a92713a86989021be538b133061ce7d26c31d",
+          "predictions.csv.gz": "c6756a3c80245d3315c438fe77bb1df1fabb6b3329d2514a77b996c074f6b044",
+          "calibration.csv": "070a0a5406f89fefd1ed339e9ddc415349fe7e6bc0e63179856c321187ec5dd3",
+          "subgroup_metrics.csv": "37342e0a6820f7bc8ade18d260d48632fa22e3f01ab777bd0cc7196be880bd07",
+          "daily_losses.csv": "866dbc9e245cf14f6c5c3d9d1136cfaa49a2d0c0350ba3defd13835faf3c401e",
+          "history.csv": "c1ec6b109124b8ade7cb919743b1eca350b9cfa3ca3595b084688649fdf48341",
+          "resolved_config.json": "1b9416368ef26ec8d5fbbf797438246ef996e7395b5896360243956a62590b24",
+          "process.log": "966701406388d0b1be47a612a4e0923730f902be622b464284da1038a93576ae",
+          "reliability.svg": "afdf1a196f55a84caadc68f1a996d80ed76182d631daeef60905c19cd2516e90",
+          "per_asset.csv": "b27b1f9e19a274868d587fefa5af971848fd5391d3bf28467643f40a5861c3c5"
+        },
+        "local_checkpoints": {
+          "best_checkpoint.pt": "145745479b19a398f5ace4ecc2bf743cbd00e07055fd103373d91f19a0086cfa",
+          "last_checkpoint.pt": "04bd7eb01d7256442756d7dd455c98d1e195effc0eb8e15d87d8cbbe8c90dc90"
+        },
+        "completed_at": "2026-10-01T15:38:48.801124+00:00",
+        "smoke": false,
+        "resume_checkpoint_used": null,
+        "attempt": 1,
+        "job_id": "main_GRU_U1_42_001000",
+        "owner": "a5000"
+      },
+      "prediction_exported": false,
+      "attempt": 1
+    },
+    {
+      "job_id": "main_GRU_U1_42_002000",
+      "kind": "fit",
+      "relative_directory": "runs/main_GRU_U1_42_002000",
+      "result_hash": "76baab703e4b8f07176fe0ad5d7892a366340589acddf97faf5b30f07a418d04",
+      "result": {
+        "run_id": "4d2c9995012009f4dc1fc6c83e39de5fafbeb94442772febc717c8f7a5b52d1b",
+        "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+        "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+        "executable_source_digest": "b9974a8f8c017bb8dcd4b62d614209421269020760d78e9d860a074b8cc9561f",
+        "input_hash": "9cb89005693b1b70c102178849b740fde00b50c9ba5f3b5530d0e5749ea59837",
+        "split_hash": "490eeb15970ef077ee050323b551cd9c3c5534c257f1febddca9af74ed1cf0a4",
+        "transform_hash": "7c046856fb93caadaba00219d440e28b84a542bcec20f13640d962cb8ad3d89f",
+        "training_hash": "223278c5c320dd2fd9a015e99abbe21e25e9eb36b6e4be6ea87cf10e93b3775e",
+        "config_hash": "45bde6b9a7e4905b7e909d08577a42541740d8d59916989262d0b988fe7305c9",
+        "model": "GRU_U1",
+        "seed": 42,
+        "lr": 0.0002,
+        "fold": "main",
+        "asset": null,
+        "family": "lr_search",
+        "parameters": 203779,
+        "selected_epoch": 146,
+        "validation_p3_nll": 0.9055592465370481,
+        "epochs_completed": 176,
+        "prediction_rows": 151848,
+        "validated": true,
+        "files": {
+          "metrics.csv": "309b1e02093bacaf46af0d27041be07f444c7b08d82199b09da8aad4be6fcb68",
+          "predictions.csv.gz": "9cfbb62a57e72dd32b2b9abe33a19044d98cc610e705824f0d356a6e1e28243c",
+          "calibration.csv": "3fb42a92e3f069ff142c5ed2cfee92ade0d162c4cd51c03824867b804373ee8a",
+          "subgroup_metrics.csv": "f2f4e95359182bae6ae1f7a93cd26f3314828c4dfe24910ce9f4e7d5048d2dbb",
+          "daily_losses.csv": "67f504ce283e4929f605d90c369b764a4b5153cc126c77e5bec354040ef6a825",
+          "history.csv": "f67196ca9f335b7a93fdf7500fbfe54778e0ffa6f26ed8296201b425bd7cae62",
+          "resolved_config.json": "1581b2d05e156320d9c88e4b1eff33dedb3a93908a9c63a79da64298d566b63b",
+          "process.log": "e0eb181068bcbb72049194ebd17ffaa74fdcf7fa196ab844362564339a28c5b1",
+          "reliability.svg": "691d52a2856132b2af91f3651d28bc769de7f8c9ab2e6aedcb3aa32615125c35",
+          "per_asset.csv": "0f82275c06fe534044bc79053b52b4c607ff889c0b6434544447c16088052aba"
+        },
+        "local_checkpoints": {
+          "best_checkpoint.pt": "aeaf0febb36433bfb48f33029189ace120976c4e5973e43bd78253805ae73991",
+          "last_checkpoint.pt": "12603f8c5c10f1503f136e1f222c59069b8bab13ffba572992877777d1cf558d"
+        },
+        "completed_at": "2026-10-01T15:38:42.144431+00:00",
+        "smoke": false,
+        "resume_checkpoint_used": null,
+        "attempt": 1,
+        "job_id": "main_GRU_U1_42_002000",
+        "owner": "a5000"
+      },
+      "prediction_exported": false,
+      "attempt": 1
+    },
+    {
       "job_id": "main_GRU_U1_42_004000",
       "kind": "fit",
       "relative_directory": "runs/main_GRU_U1_42_004000",
@@ -396,6 +555,330 @@
         "owner": "a5000",
         "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
         "completed_at": "2026-10-01T15:38:32.809614+00:00"
+      },
+      "prediction_exported": true,
+      "attempt": 1
+    },
+    {
+      "job_id": "prior_R3",
+      "kind": "prior",
+      "relative_directory": "runs/prior_R3",
+      "result_hash": "6c5089f3f487c3d38e494ab6669b0b021efa6e9d5fcfb8a3a812c8eabf1808a9",
+      "result": {
+        "validated": true,
+        "fold": "R3",
+        "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+        "training_hash": "0076c62fc2e103f0c8ea90d066fe0f6c5c9d1d891ad4fa0c15bbccbeaef7d382",
+        "global_train_counts": [
+          108755,
+          150289,
+          101891
+        ],
+        "per_asset_train_counts": [
+          [
+            3125,
+            7464,
+            2874
+          ],
+          [
+            4039,
+            5606,
+            3719
+          ],
+          [
+            3353,
+            6812,
+            3148
+          ],
+          [
+            3460,
+            6679,
+            3164
+          ],
+          [
+            4145,
+            5410,
+            3922
+          ],
+          [
+            4495,
+            4778,
+            4204
+          ],
+          [
+            4987,
+            3788,
+            4698
+          ],
+          [
+            3593,
+            6203,
+            3658
+          ],
+          [
+            4240,
+            5334,
+            3882
+          ],
+          [
+            4348,
+            4956,
+            4124
+          ],
+          [
+            4588,
+            4470,
+            4329
+          ],
+          [
+            4075,
+            5515,
+            3842
+          ],
+          [
+            3692,
+            6289,
+            3490
+          ],
+          [
+            4363,
+            4774,
+            4329
+          ],
+          [
+            4554,
+            4799,
+            4122
+          ],
+          [
+            3489,
+            6720,
+            3136
+          ],
+          [
+            5326,
+            1855,
+            4512
+          ],
+          [
+            2172,
+            9132,
+            2173
+          ],
+          [
+            3557,
+            6478,
+            3286
+          ],
+          [
+            3266,
+            6878,
+            3333
+          ],
+          [
+            4393,
+            4703,
+            4340
+          ],
+          [
+            5041,
+            3371,
+            5063
+          ],
+          [
+            3018,
+            7642,
+            2815
+          ],
+          [
+            4335,
+            5230,
+            3853
+          ],
+          [
+            4781,
+            4291,
+            4389
+          ],
+          [
+            4141,
+            5684,
+            3637
+          ],
+          [
+            4179,
+            5428,
+            3849
+          ]
+        ],
+        "laplace_alpha": 1,
+        "fit_population": "P3 train only",
+        "job_id": "prior_R3",
+        "owner": "a5000",
+        "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+        "completed_at": "2026-10-01T15:38:42.465769+00:00"
+      },
+      "prediction_exported": true,
+      "attempt": 1
+    },
+    {
+      "job_id": "prior_main",
+      "kind": "prior",
+      "relative_directory": "runs/prior_main",
+      "result_hash": "5b25d0fcc212cb3fcf946fb02bbb97be61fe59b95fdaa6ed6997fa1da0decad4",
+      "result": {
+        "validated": true,
+        "fold": "main",
+        "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+        "training_hash": "223278c5c320dd2fd9a015e99abbe21e25e9eb36b6e4be6ea87cf10e93b3775e",
+        "global_train_counts": [
+          94225,
+          121060,
+          87637
+        ],
+        "per_asset_train_counts": [
+          [
+            2902,
+            5754,
+            2636
+          ],
+          [
+            3591,
+            4346,
+            3277
+          ],
+          [
+            2911,
+            5459,
+            2786
+          ],
+          [
+            3168,
+            5078,
+            2906
+          ],
+          [
+            3663,
+            4237,
+            3404
+          ],
+          [
+            3750,
+            4041,
+            3513
+          ],
+          [
+            4215,
+            3145,
+            3940
+          ],
+          [
+            3069,
+            5043,
+            3170
+          ],
+          [
+            3716,
+            4173,
+            3400
+          ],
+          [
+            3738,
+            4015,
+            3504
+          ],
+          [
+            3997,
+            3470,
+            3766
+          ],
+          [
+            3554,
+            4327,
+            3384
+          ],
+          [
+            3231,
+            4999,
+            3073
+          ],
+          [
+            3819,
+            3743,
+            3731
+          ],
+          [
+            3897,
+            3938,
+            3467
+          ],
+          [
+            3087,
+            5356,
+            2754
+          ],
+          [
+            4664,
+            1361,
+            3923
+          ],
+          [
+            1924,
+            7499,
+            1881
+          ],
+          [
+            3189,
+            5121,
+            2904
+          ],
+          [
+            2675,
+            5844,
+            2785
+          ],
+          [
+            3786,
+            3736,
+            3752
+          ],
+          [
+            4232,
+            2838,
+            4232
+          ],
+          [
+            2693,
+            6192,
+            2417
+          ],
+          [
+            3621,
+            4519,
+            3115
+          ],
+          [
+            4141,
+            3480,
+            3679
+          ],
+          [
+            3433,
+            4871,
+            2989
+          ],
+          [
+            3559,
+            4475,
+            3249
+          ]
+        ],
+        "laplace_alpha": 1,
+        "fit_population": "P3 train only",
+        "job_id": "prior_main",
+        "owner": "a5000",
+        "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+        "completed_at": "2026-10-01T15:38:56.632668+00:00"
       },
       "prediction_exported": true,
       "attempt": 1
