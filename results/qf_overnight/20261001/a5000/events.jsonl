@@ -1,0 +1,13 @@
+{"seq": 1, "time": "2026-10-01T15:38:04.577458+00:00", "job": "gate_a5000", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 1}"}
+{"seq": 2, "time": "2026-10-01T15:38:05.533853+00:00", "job": "gate_a5000", "event": "succeeded", "detail": "{\"result\": \"runs/gate_a5000/attempt_0001/result.json\"}"}
+{"seq": 3, "time": "2026-10-01T15:38:09.604955+00:00", "job": "main_GRU_U1_42_000500", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 4, "time": "2026-10-01T15:38:09.611410+00:00", "job": "main_GRU_U1_42_001000", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 5, "time": "2026-10-01T15:38:09.618638+00:00", "job": "main_GRU_U1_42_002000", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 6, "time": "2026-10-01T15:38:09.622598+00:00", "job": "main_GRU_U1_42_004000", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 7, "time": "2026-10-01T15:38:14.594691+00:00", "job": "prior_R1", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 1}"}
+{"seq": 8, "time": "2026-10-01T15:38:23.347809+00:00", "job": "prior_R1", "event": "succeeded", "detail": "{\"result\": \"runs/prior_R1/attempt_0001/result.json\"}"}
+{"seq": 9, "time": "2026-10-01T15:38:24.612281+00:00", "job": "prior_R2", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 1}"}
+{"seq": 10, "time": "2026-10-01T15:38:32.812811+00:00", "job": "prior_R2", "event": "succeeded", "detail": "{\"result\": \"runs/prior_R2/attempt_0001/result.json\"}"}
+{"seq": 11, "time": "2026-10-01T15:38:34.631429+00:00", "job": "prior_R3", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 1}"}
+{"seq": 12, "time": "2026-10-01T15:38:36.815476+00:00", "job": "main_GRU_U1_42_004000", "event": "succeeded", "detail": "{\"result\": \"runs/main_GRU_U1_42_004000/attempt_0001/result.json\"}"}
+{"seq": 13, "time": "2026-10-01T15:38:39.650973+00:00", "job": "main_U1_42_000500", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}

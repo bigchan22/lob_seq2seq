@@ -1,0 +1,11 @@
+{
+  "validated": true,
+  "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+  "core_digest": "b9974a8f8c017bb8dcd4b62d614209421269020760d78e9d860a074b8cc9561f",
+  "label_and_mask_checks": "PASS",
+  "prepared_data_hashes_match": true,
+  "job_id": "gate_a5000",
+  "owner": "a5000",
+  "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+  "completed_at": "2026-10-01T15:38:05.531781+00:00"
+}

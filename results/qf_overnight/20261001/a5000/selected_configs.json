@@ -1,0 +1,176 @@
+{
+  "criterion": "main P3 validation only; min_delta checkpoint; LR ties<=1e-8 smaller",
+  "selected": {},
+  "every_lr_trial": [
+    {
+      "job_id": "main_GRU_U1_42_000500",
+      "model": "GRU_U1",
+      "lr": 5e-05,
+      "state": "RUNNING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_GRU_U1_42_001000",
+      "model": "GRU_U1",
+      "lr": 0.0001,
+      "state": "RUNNING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_GRU_U1_42_002000",
+      "model": "GRU_U1",
+      "lr": 0.0002,
+      "state": "RUNNING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_GRU_U1_42_004000",
+      "model": "GRU_U1",
+      "lr": 0.0004,
+      "state": "SUCCEEDED",
+      "validation_p3_nll": 0.9039634840198628,
+      "selected_epoch": 102,
+      "run_id": "d9e8d9314da4652f4eb657733357a26e121d25dd02e01dd2495d3a2f05f05114"
+    },
+    {
+      "job_id": "main_TLOB_ADAPTED_42_000500",
+      "model": "TLOB_ADAPTED",
+      "lr": 5e-05,
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_TLOB_ADAPTED_42_001000",
+      "model": "TLOB_ADAPTED",
+      "lr": 0.0001,
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_TLOB_ADAPTED_42_002000",
+      "model": "TLOB_ADAPTED",
+      "lr": 0.0002,
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_TLOB_ADAPTED_42_004000",
+      "model": "TLOB_ADAPTED",
+      "lr": 0.0004,
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_U0_42_000500",
+      "model": "U0",
+      "lr": 5e-05,
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_U0_42_001000",
+      "model": "U0",
+      "lr": 0.0001,
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_U0_42_002000",
+      "model": "U0",
+      "lr": 0.0002,
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_U0_42_004000",
+      "model": "U0",
+      "lr": 0.0004,
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_U1_42_000500",
+      "model": "U1",
+      "lr": 5e-05,
+      "state": "RUNNING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_U1_42_001000",
+      "model": "U1",
+      "lr": 0.0001,
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_U1_42_002000",
+      "model": "U1",
+      "lr": 0.0002,
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_U1_42_004000",
+      "model": "U1",
+      "lr": 0.0004,
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_UM_V2_DEPTH_42_000500",
+      "model": "UM_V2_DEPTH",
+      "lr": 5e-05,
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_UM_V2_DEPTH_42_001000",
+      "model": "UM_V2_DEPTH",
+      "lr": 0.0001,
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_UM_V2_DEPTH_42_002000",
+      "model": "UM_V2_DEPTH",
+      "lr": 0.0002,
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_UM_V2_DEPTH_42_004000",
+      "model": "UM_V2_DEPTH",
+      "lr": 0.0004,
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_UX_42_000500",
+      "model": "UX",
+      "lr": 5e-05,
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_UX_42_001000",
+      "model": "UX",
+      "lr": 0.0001,
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_UX_42_002000",
+      "model": "UX",
+      "lr": 0.0002,
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_UX_42_004000",
+      "model": "UX",
+      "lr": 0.0004,
+      "state": "PENDING",
+      "validation_p3_nll": null
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "draws": 10000,
+  "block_dates": 5,
+  "seed": 20261001,
+  "whole_date_panels": true,
+  "fold_boundaries_preserved": true,
+  "row_weighted": true
+}

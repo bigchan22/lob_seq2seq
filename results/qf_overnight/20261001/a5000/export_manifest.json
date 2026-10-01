@@ -1,0 +1,404 @@
+{
+  "owner": "a5000",
+  "run_group": "qf-august-overnight-20261001",
+  "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+  "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+  "runs": [
+    {
+      "job_id": "gate_a5000",
+      "kind": "gate",
+      "relative_directory": "runs/gate_a5000",
+      "result_hash": "5d27a9eca9e165e7c0eae3fc7816b00aafd95493049e33a90e91c54fd4a99dd8",
+      "result": {
+        "validated": true,
+        "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+        "core_digest": "b9974a8f8c017bb8dcd4b62d614209421269020760d78e9d860a074b8cc9561f",
+        "label_and_mask_checks": "PASS",
+        "prepared_data_hashes_match": true,
+        "job_id": "gate_a5000",
+        "owner": "a5000",
+        "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+        "completed_at": "2026-10-01T15:38:05.531781+00:00"
+      },
+      "prediction_exported": true,
+      "attempt": 1
+    },
+    {
+      "job_id": "main_GRU_U1_42_004000",
+      "kind": "fit",
+      "relative_directory": "runs/main_GRU_U1_42_004000",
+      "result_hash": "b0697eda58cd2b102748eb41b75ba37d528747515d6a718ee34d7c2cd01a1bca",
+      "result": {
+        "run_id": "d9e8d9314da4652f4eb657733357a26e121d25dd02e01dd2495d3a2f05f05114",
+        "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+        "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+        "executable_source_digest": "b9974a8f8c017bb8dcd4b62d614209421269020760d78e9d860a074b8cc9561f",
+        "input_hash": "9cb89005693b1b70c102178849b740fde00b50c9ba5f3b5530d0e5749ea59837",
+        "split_hash": "490eeb15970ef077ee050323b551cd9c3c5534c257f1febddca9af74ed1cf0a4",
+        "transform_hash": "7c046856fb93caadaba00219d440e28b84a542bcec20f13640d962cb8ad3d89f",
+        "training_hash": "223278c5c320dd2fd9a015e99abbe21e25e9eb36b6e4be6ea87cf10e93b3775e",
+        "config_hash": "3f14aeb855451110c3cef59bce1c2e6bf053e1b1389aa33cf0efa55b62c5efcc",
+        "model": "GRU_U1",
+        "seed": 42,
+        "lr": 0.0004,
+        "fold": "main",
+        "asset": null,
+        "family": "lr_search",
+        "parameters": 203779,
+        "selected_epoch": 102,
+        "validation_p3_nll": 0.9039634840198628,
+        "epochs_completed": 132,
+        "prediction_rows": 151848,
+        "validated": true,
+        "files": {
+          "metrics.csv": "472463fc81f49c466b346e06253db3a58b66c66e14b25174346c5589c802f5af",
+          "predictions.csv.gz": "504044d00fa7c63bc28f99a36b76c7872cf20dc7c60d6d15ecc79ca4db4e8d34",
+          "calibration.csv": "2110b6a0e308b985c832ba69e565578476bb3af06fb5e3ee898c0bbebe097fb3",
+          "subgroup_metrics.csv": "0df7d8c41b0e5373169d328dd8aadcf585296232a211260a2884e721a5a0497a",
+          "daily_losses.csv": "0af54b2f0f598cdd8c671296608885d60bb1b9f0edcc121e5cee26cf54f52b17",
+          "history.csv": "ef4836b02d76b7404d684bf1821ab05a4d3d6e19bb6f35ae5514ad224852c9df",
+          "resolved_config.json": "c96e1c6895699ddc213c3affeaaf43350cfd2cebe21bfd9adbfb07b0f83316a3",
+          "process.log": "2f150125769a469f179c41f11cbbf628c5e6f9ea94d8e35351da8d7100f166fc",
+          "reliability.svg": "52d05253bdc9064e28482f4e8c842b2d391e0680eb301cacfad11965b2c45a07",
+          "per_asset.csv": "74a40efdb1333b6a4075e041d6d191e5fec3fc990915b78eba713a31a62e26b8"
+        },
+        "local_checkpoints": {
+          "best_checkpoint.pt": "f931e3b4516b99bc8f2eceacbfd1e3bbe90f67cecbe270b2843825810543f24a",
+          "last_checkpoint.pt": "df46938bc9a8a9a96ff0cef258592fbf2c085dc2817dd9f02bc8376049ac7915"
+        },
+        "completed_at": "2026-10-01T15:38:36.725310+00:00",
+        "smoke": false,
+        "resume_checkpoint_used": null,
+        "attempt": 1,
+        "job_id": "main_GRU_U1_42_004000",
+        "owner": "a5000"
+      },
+      "prediction_exported": false,
+      "attempt": 1
+    },
+    {
+      "job_id": "prior_R1",
+      "kind": "prior",
+      "relative_directory": "runs/prior_R1",
+      "result_hash": "51e3fa5c3e81a5d1b1473dfd43e3edf4aed0eb13d34fb22d6ca3cd17fa7a4aa1",
+      "result": {
+        "validated": true,
+        "fold": "R1",
+        "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+        "training_hash": "223278c5c320dd2fd9a015e99abbe21e25e9eb36b6e4be6ea87cf10e93b3775e",
+        "global_train_counts": [
+          94225,
+          121060,
+          87637
+        ],
+        "per_asset_train_counts": [
+          [
+            2902,
+            5754,
+            2636
+          ],
+          [
+            3591,
+            4346,
+            3277
+          ],
+          [
+            2911,
+            5459,
+            2786
+          ],
+          [
+            3168,
+            5078,
+            2906
+          ],
+          [
+            3663,
+            4237,
+            3404
+          ],
+          [
+            3750,
+            4041,
+            3513
+          ],
+          [
+            4215,
+            3145,
+            3940
+          ],
+          [
+            3069,
+            5043,
+            3170
+          ],
+          [
+            3716,
+            4173,
+            3400
+          ],
+          [
+            3738,
+            4015,
+            3504
+          ],
+          [
+            3997,
+            3470,
+            3766
+          ],
+          [
+            3554,
+            4327,
+            3384
+          ],
+          [
+            3231,
+            4999,
+            3073
+          ],
+          [
+            3819,
+            3743,
+            3731
+          ],
+          [
+            3897,
+            3938,
+            3467
+          ],
+          [
+            3087,
+            5356,
+            2754
+          ],
+          [
+            4664,
+            1361,
+            3923
+          ],
+          [
+            1924,
+            7499,
+            1881
+          ],
+          [
+            3189,
+            5121,
+            2904
+          ],
+          [
+            2675,
+            5844,
+            2785
+          ],
+          [
+            3786,
+            3736,
+            3752
+          ],
+          [
+            4232,
+            2838,
+            4232
+          ],
+          [
+            2693,
+            6192,
+            2417
+          ],
+          [
+            3621,
+            4519,
+            3115
+          ],
+          [
+            4141,
+            3480,
+            3679
+          ],
+          [
+            3433,
+            4871,
+            2989
+          ],
+          [
+            3559,
+            4475,
+            3249
+          ]
+        ],
+        "laplace_alpha": 1,
+        "fit_population": "P3 train only",
+        "job_id": "prior_R1",
+        "owner": "a5000",
+        "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+        "completed_at": "2026-10-01T15:38:23.343985+00:00"
+      },
+      "prediction_exported": true,
+      "attempt": 1
+    },
+    {
+      "job_id": "prior_R2",
+      "kind": "prior",
+      "relative_directory": "runs/prior_R2",
+      "result_hash": "b131f0b37b8bbc73a1b78c5b43ef238f15175b4d97aaf5111b4b021be817b9e3",
+      "result": {
+        "validated": true,
+        "fold": "R2",
+        "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+        "training_hash": "70cba5ce37d43d6a7c4434b178131b94c51db09d410919e4a3bc31b8a3fadb61",
+        "global_train_counts": [
+          101395,
+          135841,
+          94610
+        ],
+        "per_asset_train_counts": [
+          [
+            3003,
+            6627,
+            2744
+          ],
+          [
+            3817,
+            4964,
+            3500
+          ],
+          [
+            3145,
+            6116,
+            2965
+          ],
+          [
+            3316,
+            5865,
+            3048
+          ],
+          [
+            3875,
+            4851,
+            3662
+          ],
+          [
+            4127,
+            4395,
+            3866
+          ],
+          [
+            4605,
+            3482,
+            4297
+          ],
+          [
+            3339,
+            5618,
+            3409
+          ],
+          [
+            3972,
+            4723,
+            3676
+          ],
+          [
+            4052,
+            4477,
+            3812
+          ],
+          [
+            4286,
+            3994,
+            4033
+          ],
+          [
+            3833,
+            4898,
+            3615
+          ],
+          [
+            3477,
+            5629,
+            3280
+          ],
+          [
+            4069,
+            4297,
+            4011
+          ],
+          [
+            4227,
+            4367,
+            3792
+          ],
+          [
+            3279,
+            6067,
+            2915
+          ],
+          [
+            4989,
+            1645,
+            4206
+          ],
+          [
+            2028,
+            8350,
+            2010
+          ],
+          [
+            3336,
+            5847,
+            3062
+          ],
+          [
+            2969,
+            6380,
+            3039
+          ],
+          [
+            4117,
+            4169,
+            4065
+          ],
+          [
+            4610,
+            3152,
+            4624
+          ],
+          [
+            2887,
+            6819,
+            2680
+          ],
+          [
+            3931,
+            4962,
+            3436
+          ],
+          [
+            4462,
+            3891,
+            4021
+          ],
+          [
+            3772,
+            5310,
+            3293
+          ],
+          [
+            3872,
+            4946,
+            3549
+          ]
+        ],
+        "laplace_alpha": 1,
+        "fit_population": "P3 train only",
+        "job_id": "prior_R2",
+        "owner": "a5000",
+        "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+        "completed_at": "2026-10-01T15:38:32.809614+00:00"
+      },
+      "prediction_exported": true,
+      "attempt": 1
+    }
+  ]
+}
