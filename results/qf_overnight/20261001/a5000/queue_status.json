@@ -2,7 +2,7 @@
   "run_group": "qf-august-overnight-20261001",
   "owner": "a5000",
   "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
-  "updated_at": "2026-10-01T16:22:31.935725+00:00",
+  "updated_at": "2026-10-01T16:36:48.133400+00:00",
   "counts": {
     "PENDING": 25,
     "RUNNING": 4,
@@ -2509,14 +2509,14 @@
       "oom": 0,
       "pid": 2180199,
       "start": "1102474514",
-      "heartbeat": 1790871750.6574893,
-      "progress": 1790871750.0662415,
+      "heartbeat": 1790872606.592317,
+      "progress": 1790872606.5923176,
       "kind": "fit",
       "model": "TLOB_ADAPTED",
       "priority": 40,
       "detail": {
-        "epoch": 38,
-        "completed_day_panels": 320,
+        "epoch": 60,
+        "completed_day_panels": 224,
         "phase": "train"
       }
     },
@@ -2528,14 +2528,14 @@
       "oom": 0,
       "pid": 2180200,
       "start": "1102474515",
-      "heartbeat": 1790871750.6547177,
-      "progress": 1790871748.5401115,
+      "heartbeat": 1790872606.8318732,
+      "progress": 1790872606.8318734,
       "kind": "fit",
       "model": "TLOB_ADAPTED",
       "priority": 40,
       "detail": {
-        "epoch": 34,
-        "completed_day_panels": 192,
+        "epoch": 53,
+        "completed_day_panels": 320,
         "phase": "train"
       }
     },
@@ -2547,14 +2547,14 @@
       "oom": 0,
       "pid": 2180203,
       "start": "1102474515",
-      "heartbeat": 1790871750.6500793,
-      "progress": 1790871750.3875325,
+      "heartbeat": 1790872605.7697208,
+      "progress": 1790872605.7697213,
       "kind": "fit",
       "model": "TLOB_ADAPTED",
       "priority": 40,
       "detail": {
-        "epoch": 39,
-        "completed_day_panels": 96,
+        "epoch": 61,
+        "completed_day_panels": 64,
         "phase": "train"
       }
     },
@@ -2566,14 +2566,14 @@
       "oom": 0,
       "pid": 2180206,
       "start": "1102474516",
-      "heartbeat": 1790871751.3476284,
-      "progress": 1790871751.3476286,
+      "heartbeat": 1790872607.5600765,
+      "progress": 1790872607.5600767,
       "kind": "fit",
       "model": "TLOB_ADAPTED",
       "priority": 40,
       "detail": {
-        "epoch": 37,
-        "completed_day_panels": 345,
+        "epoch": 59,
+        "completed_day_panels": 32,
         "phase": "train"
       }
     },
