@@ -1,0 +1,68 @@
+{
+  "run_group": "qf-august-overnight-20261001",
+  "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+  "READY_CORE": true,
+  "TLOB_ADAPTER_READY": false,
+  "TLOB_status": "PENDING_BOUNDED_ADAPTER",
+  "TLOB_reason": "Optional adapter effort pending; core is independent.",
+  "prior_code_commit": "e85a89fd56584b513be940e6259c637369bd830b",
+  "published_at": "2026-10-01T15:36:25.370917+00:00",
+  "core_source_files": {
+    "lob_forecasting/data/transforms.py": "76973eb252a6bd0bffb8ab859342db1208ec5ec8cd6b1f2d5a391d9c4d156cac",
+    "lob_forecasting/experiments/discrimination_factors.py": "d9c8009edb68b82721e1c6a65033693274b7e0d8013e46fcece15a85fb6ab5af",
+    "lob_forecasting/models/qf_variants.py": "d4857ddc7c8537211b3cf0c3f22349eb2a94767dbc25f42e8c39d5f6625ede9a",
+    "scripts/qf_data_review/build_data_review.py": "8f7b3a8d8df38e70860a7c9dfc8aa34db62f8535ca53b1904ed3563a831c3284",
+    "scripts/qf_overnight/common.py": "df24d02fb455e063d10d7b1be4eb239cdfaf33a0dcaac7ba7a29d07444eb4d1f",
+    "scripts/qf_overnight/consolidate.py": "e52cef5ab6b60b4a697f324c64a24af04cc0ec4f513dbe1efe0962b65be1757a",
+    "scripts/qf_overnight/data.py": "0503d4414c37b5f3ce79fc96186fe0ad25b8b76f8ad53e56f852514f85ad8ab3",
+    "scripts/qf_overnight/freeze.py": "b03a8c0c6e4af9ce078acf41c0e5106f4c2088cac20ee4440e847ba1c76e4ed7",
+    "scripts/qf_overnight/gates.py": "6f7dcfde139ffe2d45d695ff879646ca79727c54a731e1a97a0a132e10e30b6b",
+    "scripts/qf_overnight/jobs.py": "261065e132b7260b73850b10097e0099ca073a9ee18270f9897d6783b8f8ae31",
+    "scripts/qf_overnight/models.py": "e25f033d662a4a0eabf7f6932bf8a9b02e2419277321cfaa5ade33fbbdd98b94",
+    "scripts/qf_overnight/plan.py": "173c81fd60ecd30070252591e5861ff02e8ec4a688b90512f5b4a135ee2b35aa",
+    "scripts/qf_overnight/publisher.py": "59598184b10b0af904c2ed1c414fdf72f6b07eb3f9406a58fe4adb84d89ffe10",
+    "scripts/qf_overnight/queue_store.py": "521e30fb66a189b9e9b7281cbdaa5b892ba368323a97fd9c538758a72660eee0",
+    "scripts/qf_overnight/runtime.py": "691d50b85db39cc92997e705dc3b5e24d59005177a37e758974ba8abe472d9e3",
+    "scripts/qf_overnight/scoring.py": "471361f2821b448c8efbe10b1cbd18c7561984c8463d19450e66a0a306188a68",
+    "scripts/qf_overnight/trainer.py": "4c241bbd661b839aa051c0df50a293e4390ca28900d7ad41d37cdcdb0a516229"
+  },
+  "core_executable_digest": "b9974a8f8c017bb8dcd4b62d614209421269020760d78e9d860a074b8cc9561f",
+  "optional_source_files": {},
+  "prepared_data_hashes": {
+    "covariates.npy": "03b29c2ddb87a2530380a0a78f14b2faff6c419813268ec282c9237e636d274b",
+    "masks.npy": "eca954c21da074c545cb7858315ea39fee0a6f54b19e06474b4f2f91f1666847",
+    "raw_factors.npy": "442aee93ad0745400f087f7ff3b2c67a669cd05b8fa2e637926298472dc028dd",
+    "x.npy": "75a5f6207eb3743927c97ac8361af405a4b3a890490e5a705ec07f5f255d5518",
+    "y.npy": "238526791f5a7dc13484f5279a03f7d6c624d1268dcd898360077c966b9d70cd"
+  },
+  "prepared_identity_sha256": "255199b39c32eba4d6aced8c3e45d7e84accfbfd35b487d873bba12a5e5974e0",
+  "input_manifest_sha256": "9cb89005693b1b70c102178849b740fde00b50c9ba5f3b5530d0e5749ea59837",
+  "core_gates_sha256": "7a5836031e576e9bb15c650c39b6a520e44c33d52d0d73450cf64744db6d2232",
+  "manifest_sha256": "571be2a41f21ed73673c74550747d8e4738ce66207b3c7da007b6737d1c3e909",
+  "split_manifest_sha256": "8a5d918ca5a156cb125c954443800c8cdab233092ccbdc2fa0d9e383f5648d65",
+  "smoke_parameters": {
+    "U1": 407043,
+    "UC": 605315,
+    "UA": 605315,
+    "UM_V2_DEPTH": 424463,
+    "UX": 407772,
+    "GRU_U1": 203779,
+    "SHARED_QUERY": 605315,
+    "U0": 403587,
+    "S": 403587
+  },
+  "global_job_counts": {
+    "a5000": {
+      "jobs": 178,
+      "unconditional_fits": 123,
+      "conditional_fits_or_aliases": 4
+    },
+    "rtx3090": {
+      "jobs": 69,
+      "unconditional_fits": 30,
+      "conditional_fits_or_aliases": 0
+    }
+  },
+  "data_handoff_sha": "e85a89fd56584b513be940e6259c637369bd830b",
+  "consumer_rule": "Obtain READY_SHA from advertised Git ref externally. Execute only a clean immutable worktree; verify runtime_gate before claims."
+}

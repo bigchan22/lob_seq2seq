@@ -1,0 +1,154 @@
+{
+  "accumulation": "PASS: uneven masked batches, all-excluded micro rows and final5-day partial32-day window; zero excluded-output gradient",
+  "queue": "PASS: idempotent init, atomic dependency claim, live-process stale protection, dead-process retry, validation required",
+  "parameters": {
+    "U1": 407043,
+    "UC": 605315,
+    "UA": 605315,
+    "UM_V2_DEPTH": 424463,
+    "UX": 407772,
+    "GRU_U1": 203779,
+    "SHARED_QUERY": 605315,
+    "U0": 403587,
+    "S": 403587
+  },
+  "causality": {
+    "U1": {
+      "max_past_logit_change_after_future_perturbation": 0.0,
+      "day_isolation": true
+    },
+    "UC": {
+      "max_past_logit_change_after_future_perturbation": 0.0,
+      "day_isolation": true
+    },
+    "UA": {
+      "max_past_logit_change_after_future_perturbation": 0.0,
+      "day_isolation": true
+    },
+    "UM_V2_DEPTH": {
+      "max_past_logit_change_after_future_perturbation": 0.0,
+      "day_isolation": true
+    },
+    "UX": {
+      "max_past_logit_change_after_future_perturbation": 0.0,
+      "day_isolation": true
+    },
+    "GRU_U1": {
+      "max_past_logit_change_after_future_perturbation": 0.0,
+      "day_isolation": true
+    },
+    "SHARED_QUERY": {
+      "max_past_logit_change_after_future_perturbation": 0.0,
+      "day_isolation": true
+    },
+    "U0": {
+      "max_past_logit_change_after_future_perturbation": 0.0,
+      "day_isolation": true
+    },
+    "S": {
+      "max_past_logit_change_after_future_perturbation": 0.0,
+      "day_isolation": true
+    }
+  },
+  "smokes": {
+    "U1": {
+      "parameters": 407043,
+      "selected_epoch": 2,
+      "epochs_completed": 2,
+      "prediction_rows": 151848,
+      "validated": true
+    },
+    "UC": {
+      "parameters": 605315,
+      "selected_epoch": 2,
+      "epochs_completed": 2,
+      "prediction_rows": 151848,
+      "validated": true
+    },
+    "UA": {
+      "parameters": 605315,
+      "selected_epoch": 2,
+      "epochs_completed": 2,
+      "prediction_rows": 151848,
+      "validated": true
+    },
+    "UM_V2_DEPTH": {
+      "parameters": 424463,
+      "selected_epoch": 2,
+      "epochs_completed": 2,
+      "prediction_rows": 151848,
+      "validated": true
+    },
+    "UX": {
+      "parameters": 407772,
+      "selected_epoch": 2,
+      "epochs_completed": 2,
+      "prediction_rows": 151848,
+      "validated": true
+    },
+    "GRU_U1": {
+      "parameters": 203779,
+      "selected_epoch": 2,
+      "epochs_completed": 2,
+      "prediction_rows": 151848,
+      "validated": true
+    },
+    "SHARED_QUERY": {
+      "parameters": 605315,
+      "selected_epoch": 2,
+      "epochs_completed": 2,
+      "prediction_rows": 151848,
+      "validated": true
+    },
+    "U0": {
+      "parameters": 403587,
+      "selected_epoch": 2,
+      "epochs_completed": 2,
+      "prediction_rows": 151848,
+      "validated": true
+    },
+    "S": {
+      "parameters": 403587,
+      "selected_epoch": 2,
+      "epochs_completed": 2,
+      "prediction_rows": 5624,
+      "validated": true
+    }
+  },
+  "UM_target_exclusion": "PASS within float32 summation tolerance",
+  "train_only_scaling_and_R1_reuse": "PASS",
+  "passed": true,
+  "training_smokes_only": true,
+  "device": "cuda:0",
+  "torch": "1.12.1",
+  "numpy": "1.22.3",
+  "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+  "source_files": {
+    "lob_forecasting/data/transforms.py": "76973eb252a6bd0bffb8ab859342db1208ec5ec8cd6b1f2d5a391d9c4d156cac",
+    "lob_forecasting/experiments/discrimination_factors.py": "d9c8009edb68b82721e1c6a65033693274b7e0d8013e46fcece15a85fb6ab5af",
+    "lob_forecasting/models/qf_variants.py": "d4857ddc7c8537211b3cf0c3f22349eb2a94767dbc25f42e8c39d5f6625ede9a",
+    "scripts/qf_data_review/build_data_review.py": "8f7b3a8d8df38e70860a7c9dfc8aa34db62f8535ca53b1904ed3563a831c3284",
+    "scripts/qf_overnight/common.py": "df24d02fb455e063d10d7b1be4eb239cdfaf33a0dcaac7ba7a29d07444eb4d1f",
+    "scripts/qf_overnight/consolidate.py": "e52cef5ab6b60b4a697f324c64a24af04cc0ec4f513dbe1efe0962b65be1757a",
+    "scripts/qf_overnight/data.py": "0503d4414c37b5f3ce79fc96186fe0ad25b8b76f8ad53e56f852514f85ad8ab3",
+    "scripts/qf_overnight/freeze.py": "b03a8c0c6e4af9ce078acf41c0e5106f4c2088cac20ee4440e847ba1c76e4ed7",
+    "scripts/qf_overnight/gates.py": "6f7dcfde139ffe2d45d695ff879646ca79727c54a731e1a97a0a132e10e30b6b",
+    "scripts/qf_overnight/jobs.py": "261065e132b7260b73850b10097e0099ca073a9ee18270f9897d6783b8f8ae31",
+    "scripts/qf_overnight/models.py": "e25f033d662a4a0eabf7f6932bf8a9b02e2419277321cfaa5ade33fbbdd98b94",
+    "scripts/qf_overnight/plan.py": "173c81fd60ecd30070252591e5861ff02e8ec4a688b90512f5b4a135ee2b35aa",
+    "scripts/qf_overnight/publisher.py": "59598184b10b0af904c2ed1c414fdf72f6b07eb3f9406a58fe4adb84d89ffe10",
+    "scripts/qf_overnight/queue_store.py": "521e30fb66a189b9e9b7281cbdaa5b892ba368323a97fd9c538758a72660eee0",
+    "scripts/qf_overnight/runtime.py": "691d50b85db39cc92997e705dc3b5e24d59005177a37e758974ba8abe472d9e3",
+    "scripts/qf_overnight/scoring.py": "471361f2821b448c8efbe10b1cbd18c7561984c8463d19450e66a0a306188a68",
+    "scripts/qf_overnight/trainer.py": "4c241bbd661b839aa051c0df50a293e4390ca28900d7ad41d37cdcdb0a516229"
+  },
+  "completed_at": "2026-10-01T15:35:39.313290+00:00",
+  "cosmetic_post_gate_changes": [
+    {
+      "path": "scripts/qf_overnight/models.py",
+      "before_sha256": "19d0e4f42395c1fc6256f04101b914f1f831555152748dc1d845cffe80fbda49",
+      "after_sha256": "e25f033d662a4a0eabf7f6932bf8a9b02e2419277321cfaa5ade33fbbdd98b94",
+      "check": "AST unchanged; removed extra EOF blank line only"
+    }
+  ]
+}
