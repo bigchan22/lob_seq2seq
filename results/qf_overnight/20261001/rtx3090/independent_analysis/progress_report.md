@@ -1,10 +1,10 @@
 # Independently matched native results
 
-Status: partial
+Status: complete
 
-Exact advertised source result commits: {"a5000": "c0a226a11dd4effa68b7158e327ff04e780bc3ac", "rtx3090": "bac6230616ad79b2b773540d9502d22ae8025f81"}
+Exact advertised source result commits: {"a5000": "e7b47341ce1fbe8526de35d6d928890f584620da", "rtx3090": "e06a610d1f411f2d2121132f12923d9eb82c5a78"}
 
-Verified selected saved files: 53. Every loaded file passed its Git/result digest, full expected support, labels, masks, class order and probability checks.
+Verified selected saved files: 54. Every loaded file passed its Git/result digest, full expected support, labels, masks, class order and probability checks.
 
 Retrospective conditional-on-selection diagnostics. Future endpoint P3 validity is ex post, never a trading filter. No probability ensemble; missing outputs are not zero.
 
