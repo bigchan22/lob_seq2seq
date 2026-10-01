@@ -2,7 +2,7 @@
   "run_group": "qf-august-overnight-20261001",
   "owner": "a5000",
   "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
-  "updated_at": "2026-10-01T18:09:41.016181+00:00",
+  "updated_at": "2026-10-01T18:15:35.073835+00:00",
   "counts": {
     "PENDING": 3,
     "RUNNING": 2,
@@ -2504,14 +2504,14 @@
       "oom": 0,
       "pid": 2194369,
       "start": "1102997613",
-      "heartbeat": 1790878179.4242043,
-      "progress": 1790878179.4242046,
+      "heartbeat": 1790878533.2355518,
+      "progress": 1790878533.1464157,
       "kind": "fit",
       "model": "TLOB_ADAPTED",
       "priority": 40,
       "detail": {
-        "epoch": 63,
-        "completed_day_panels": 256,
+        "epoch": 71,
+        "completed_day_panels": 320,
         "phase": "train"
       }
     },
@@ -2603,13 +2603,13 @@
       "oom": 0,
       "pid": 2194372,
       "start": "1102997689",
-      "heartbeat": 1790878180.33111,
-      "progress": 1790878180.3311102,
+      "heartbeat": 1790878533.9866831,
+      "progress": 1790878531.9581895,
       "kind": "fit",
       "model": "TLOB_ADAPTED",
       "priority": 40,
       "detail": {
-        "epoch": 70,
+        "epoch": 79,
         "completed_day_panels": 192,
         "phase": "train"
       }
