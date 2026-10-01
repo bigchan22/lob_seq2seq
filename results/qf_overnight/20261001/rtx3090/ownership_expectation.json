@@ -1,0 +1,46 @@
+{
+  "run_group": "qf-august-overnight-20261001",
+  "owner": "rtx3090",
+  "state": "ownership expectation only; executable global DAG must come from pinned producer READY",
+  "source_of_authorization": "user frozen scientific contract",
+  "new_full_training_fits": 30,
+  "main_shared_fits": 18,
+  "new_rolling_fits": 12,
+  "main_families": [
+    "UA",
+    "UC",
+    "SHARED_QUERY"
+  ],
+  "learning_rates": [
+    5e-05,
+    0.0001,
+    0.0002,
+    0.0004
+  ],
+  "selection_seed": 42,
+  "confirmation_seeds": [
+    7,
+    123
+  ],
+  "selected_seed42_reused_not_refit": 3,
+  "rolling_families": [
+    "UA",
+    "UC"
+  ],
+  "rolling_new_folds": [
+    "R2",
+    "R3"
+  ],
+  "rolling_seeds": [
+    42,
+    7,
+    123
+  ],
+  "R1_main_selected_fit_reuses": 6,
+  "inference_intervention_jobs": 6,
+  "global_upper_training_fit_count": [
+    153,
+    157
+  ],
+  "not_actual_queue_status": true
+}

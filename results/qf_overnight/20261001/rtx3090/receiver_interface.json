@@ -2,7 +2,7 @@
   "schema_version": 1,
   "run_group": "qf-august-overnight-20261001",
   "owner": "rtx3090",
-  "state": "receiver being installed; common READY not advertised at initial check",
+  "state": "durable receiver installed; producer branch not advertised at 2026-10-01T15:36:43.977689+00:00",
   "data_handoff_sha": "e85a89fd56584b513be940e6259c637369bd830b",
   "required_ready_path": "coordination/qf_overnight/20261001/ready.json",
   "receiver_source": "receiver/qf_overnight/20261001/receiver.py",
@@ -91,7 +91,6 @@
         "causality",
         "masked_loss_gradient",
         "own_only_invariance",
-        "um_target_exclusion",
         "parameter_counts",
         "masked_accumulation_partial_window",
         "train_only_scaling",
@@ -156,8 +155,51 @@
       "loss_sum",
       "rows"
     ],
-    "publication_only_validated_results": true
+    "publication_only_validated_results": true,
+    "required_identity": [
+      "namespace=new_p3_training",
+      "selected=true for frozen validation-selected fits only",
+      "panel=tuned or fixed_0001",
+      "model",
+      "seed",
+      "fold=main/R1/R2/R3",
+      "split=validation/development_holdout",
+      "population=P0/P1/P2/P3"
+    ],
+    "required_hashes": [
+      "protocol_hash (exact READY protocol SHA256)",
+      "input_hash (SHA256 recovery/input_manifest.csv)",
+      "split_hash",
+      "mask_hash",
+      "core_source_digest",
+      "source_sha",
+      "source_digest",
+      "config_hash"
+    ],
+    "required_metric_fields": [
+      "rows",
+      "row_key_label_digest",
+      "nll"
+    ],
+    "required_daily_fields": [
+      "same model/seed/fold/split/population/panel identity",
+      "date",
+      "rows",
+      "loss_sum",
+      "row_key_label_digest for that date"
+    ],
+    "daily_and_metric_files": "metrics.csv beside daily_loss_sums.csv; can be in run output subdirectories; selected=true; all selected seeds retained. Other metric columns are carried into consolidated table.",
+    "key_digest": "Sort asset_id,date,origin_time; TAB-separated asset_id,date,origin_time,endpoint_time,split,legacy_label; UTF8 LF, no header. Date is ISO. Fold is a separate identity field; split is the fold-specific split.",
+    "missing_export_policy": "Publish exact partial/missing status; no inner joins or best-score selection. Receiver refetches snapshots every5min and regenerates matched tables automatically.",
+    "bootstrap": "10000 draws, 5-date noncircular blocks, seed20261001; all3 matched seeds; pooled row weights; rolling blocks cannot cross folds."
   },
   "deadline": "12 hours after receiver starts; no performance improvement gate",
-  "created_at": "2026-10-01T15:13:32.393508+00:00"
+  "created_at": "2026-10-01T15:13:32.393508+00:00",
+  "notes": [
+    "UM factor exclusion remains a producer obligation; it must not block unrelated UA/UC/SQ jobs on this receiver.",
+    "Historical replay is complete at dee398fb13078937833329a49f0665eb3c459b47; see historical_replay_reference.json.",
+    "Please publish a small compatible receiver command adapter alongside READY if the shared runner uses different CLI names; receiver does not recreate scientific code.",
+    "Gate reports must be freshly written by verify/smoke. Family-specific failures should mark only affected descendants blocked in the shared queue.",
+    "Producer runner owns checkpoint/RNG resume, lease handling, bounded infrastructure retries, OOM rebatching, per-job terminal validation, source repairs and dependency expansion."
+  ]
 }

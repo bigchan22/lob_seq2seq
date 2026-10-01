@@ -12,6 +12,8 @@ Planned ownership: 18 main UA/UC/SHARED_QUERY fits + 12 rolling UA/UC fits, plus
 
 Historical replay is separate; see historical_replay_reference.json. No performance-based launch gate.
 
+Consolidated analysis status: partial; see consolidated/progress_report.md.
+
 Other owner result SHA: None
 
 Current blocker: common READY not published

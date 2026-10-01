@@ -1,0 +1,41 @@
+{
+  "bootstrap": {
+    "block_length": 5,
+    "paired_whole_dates": true,
+    "replicates": 10000,
+    "rolling_blocks_do_not_cross_folds": true,
+    "seed": 20261001
+  },
+  "checksums": [
+    {
+      "path": "incomplete_comparisons.csv",
+      "sha256": "ec5fbbada405b43247ce74694ad13256136b6aab431bbab8613e59dba63e0249"
+    },
+    {
+      "path": "metrics.csv",
+      "sha256": "dba4ad8fc5f868840d4b14ca31eba994129e0a6271678fe5e6690ce2f0cf6bc9"
+    },
+    {
+      "path": "paired_differences.csv",
+      "sha256": "e571d7ff41f9a55eb3f7d7a76423f37833a675cff97c6c1cf3818ae89b437def"
+    },
+    {
+      "path": "rolling_metrics.csv",
+      "sha256": "e7303e1f578fd25b93d14aaa5269009fcd0b995183f6c511368f6100b2dd6ab7"
+    }
+  ],
+  "complete_pair_rows": 0,
+  "data_handoff_sha": "e85a89fd56584b513be940e6259c637369bd830b",
+  "incomplete_seed_comparisons": 360,
+  "issues": [
+    "rtx3090: selected metrics.csv has not been published",
+    "a5000: published result snapshot unavailable"
+  ],
+  "limitations": "Daily sums and key/label digests originate in owner-validated saved-prediction exports. No probability ensemble; no inference or selection here. Intervals retrospective/conditional on selection. Missing results are not zero.",
+  "namespace": "new_p3_training",
+  "source_result_shas": {
+    "rtx3090": "bc7282dae8ef0b4e4bbb98a68b34a3e277a85acf"
+  },
+  "status": "partial",
+  "validated_metric_rows": 0
+}

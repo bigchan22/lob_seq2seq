@@ -447,6 +447,7 @@ class Receiver:
                             self.issue('READY_INCOMPATIBLE_OR_GATE_FAILED',str(error),commit)
                             self.state.update(last_rejected_ready_sha=commit,last_error=str(error),phase='WAITING_FOR_COMPATIBLE_READY')
                 if ready and control!='pause':
+                    if alive(self.state.get('coordinator')):self.state['phase']='RUNNING'
                     status=read(self.root/'jobs/queue_status.json',{})
                     if not alive(self.state.get('coordinator')):
                         if status.get('all_terminal') is True:
@@ -478,12 +479,12 @@ class Receiver:
 
 def main():
     p=argparse.ArgumentParser(); p.add_argument('--config',required=True)
-    p.add_argument('action',choices=['run','status','pause','resume','retry','stop','publish'])
+    p.add_argument('action',choices=['run','start','status','pause','resume','retry','stop','publish'])
     p.add_argument('--job'); p.add_argument('--active',action='store_true'); a=p.parse_args()
     r=Receiver(a.config)
     if a.action=='run': return r.run()
     if a.action=='status':
-        print(json.dumps({'receiver':read(r.root/'receiver_status.json'),
+        print(json.dumps({'receiver_alive':alive(read(r.root/'receiver_process.json')), 'coordinator_alive':alive(r.state.get('coordinator')), 'receiver':read(r.root/'receiver_status.json'),
                           'queue':read(r.root/'jobs/queue_status.json'),
                           'publication':read(r.root/'publication_receipt.json'),
                           'control':read(r.root/'control.json',{})},indent=2)); return
@@ -492,6 +493,10 @@ def main():
          'stop_active':a.action=='stop' and a.active,'retry_job':a.job if a.action=='retry' else None}
     if a.action=='retry' and not a.job: p.error('retry requires --job exact_job_id')
     atomic(r.root/'control.json',ctl); print(json.dumps(ctl))
+    if a.action in ('start','resume') and not alive(read(r.root/'receiver_process.json')):
+        with (r.root/'receiver.log').open('ab') as log:
+            process=subprocess.Popen([sys.executable,'-B',str(Path(__file__).resolve()),'--config',r.config_path,'run'],stdin=subprocess.DEVNULL,stdout=log,stderr=subprocess.STDOUT,start_new_session=True,env=r.env)
+        print(json.dumps({'started_receiver_pid':process.pid}))
 
 
 if __name__=='__main__': main()

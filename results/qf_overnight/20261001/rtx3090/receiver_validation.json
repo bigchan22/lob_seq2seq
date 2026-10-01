@@ -1,0 +1,16 @@
+{
+  "orchestration_tests": {
+    "pause_persists": true,
+    "live_pid_start_time_identity": true,
+    "bounded_terminal_publication_retries": true,
+    "stop_does_not_signal_active_jobs_by_default": true,
+    "incompatible_support_rejected": true,
+    "rolling_bootstrap_row_weighting": true,
+    "missing_exports_remain_missing": true
+  },
+  "historical_replay_tests": 6,
+  "scientific_training_smokes": "pending shared implementation; no fake PASS",
+  "cuda_environment": "existing Python3.9.13 torch2.7.1+cu118; tiny CUDA tensor multiply passed; no environment installation",
+  "allocated_gpu_count": 4,
+  "running_scientific_jobs": 0
+}
