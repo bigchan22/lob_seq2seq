@@ -2,16 +2,16 @@
   "run_group": "qf-august-overnight-20261001",
   "owner": "a5000",
   "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
-  "updated_at": "2026-10-01T15:50:35.641595+00:00",
+  "updated_at": "2026-10-01T15:50:57.983231+00:00",
   "counts": {
     "BLOCKED": 21,
-    "PENDING": 60,
+    "PENDING": 57,
     "RUNNING": 3,
-    "SUCCEEDED": 93,
+    "SUCCEEDED": 96,
     "WAITING_ADAPTER": 1
   },
   "paused": false,
-  "stop": false,
+  "stop": true,
   "jobs": [
     {
       "id": "R1_UM_V2_DEPTH_123",
@@ -1788,21 +1788,22 @@
     },
     {
       "id": "main_S_42_001000_KR7005490008_t",
-      "state": "RUNNING",
+      "state": "SUCCEEDED",
       "attempt": 1,
       "retries": 0,
       "oom": 0,
       "pid": 2175903,
       "start": "1102430649",
-      "heartbeat": 1790869835.6354396,
-      "progress": 1790869835.6354399,
+      "heartbeat": 1790869838.1658938,
+      "progress": 1790869837.54225,
       "kind": "fit",
       "model": "S",
       "priority": 50,
       "detail": {
-        "epoch": 189,
-        "completed_day_panels": 96,
-        "phase": "train"
+        "epoch": 200,
+        "phase": "checkpoint",
+        "epoch_seconds": 0.13378005102276802,
+        "checkpoint_time": 1790869837.540504
       }
     },
     {
@@ -1827,13 +1828,13 @@
     },
     {
       "id": "main_S_42_001000_KR7005930003_t",
-      "state": "RUNNING",
+      "state": "SUCCEEDED",
       "attempt": 1,
       "retries": 0,
       "oom": 0,
       "pid": 2176216,
       "start": "1102432649",
-      "heartbeat": 1790869835.5730276,
+      "heartbeat": 1790869836.2716272,
       "progress": 1790869835.5730278,
       "kind": "fit",
       "model": "S",
@@ -1847,67 +1848,80 @@
     },
     {
       "id": "main_S_42_001000_KR7006400006_t",
-      "state": "RUNNING",
+      "state": "SUCCEEDED",
       "attempt": 1,
       "retries": 0,
       "oom": 0,
       "pid": 2176344,
       "start": "1102433653",
-      "heartbeat": 1790869835.6291077,
-      "progress": 1790869835.629108,
+      "heartbeat": 1790869854.9045727,
+      "progress": 1790869854.242896,
       "kind": "fit",
       "model": "S",
       "priority": 50,
       "detail": {
-        "epoch": 10,
-        "completed_day_panels": 256,
-        "phase": "train"
+        "epoch": 130,
+        "phase": "checkpoint",
+        "epoch_seconds": 0.13701938465237617,
+        "checkpoint_time": 1790869854.2412436
       }
     },
     {
       "id": "main_S_42_001000_KR7006800007_t",
-      "state": "PENDING",
-      "attempt": 0,
+      "state": "RUNNING",
+      "attempt": 1,
       "retries": 0,
       "oom": 0,
-      "pid": null,
-      "start": null,
-      "heartbeat": null,
-      "progress": null,
+      "pid": 2176498,
+      "start": "1102434653",
+      "heartbeat": 1790869857.966534,
+      "progress": 1790869857.966534,
       "kind": "fit",
       "model": "S",
       "priority": 50,
-      "detail": {}
+      "detail": {
+        "epoch": 89,
+        "completed_day_panels": 345,
+        "phase": "train"
+      }
     },
     {
       "id": "main_S_42_001000_KR7007070006_t",
-      "state": "PENDING",
-      "attempt": 0,
+      "state": "RUNNING",
+      "attempt": 1,
       "retries": 0,
       "oom": 0,
-      "pid": null,
-      "start": null,
-      "heartbeat": null,
-      "progress": null,
+      "pid": 2176499,
+      "start": "1102434654",
+      "heartbeat": 1790869857.9727893,
+      "progress": 1790869857.9727895,
       "kind": "fit",
       "model": "S",
       "priority": 50,
-      "detail": {}
+      "detail": {
+        "epoch": 75,
+        "completed_day_panels": 160,
+        "phase": "train"
+      }
     },
     {
       "id": "main_S_42_001000_KR7008770000_t",
-      "state": "PENDING",
-      "attempt": 0,
+      "state": "RUNNING",
+      "attempt": 1,
       "retries": 0,
       "oom": 0,
-      "pid": null,
-      "start": null,
-      "heartbeat": null,
-      "progress": null,
+      "pid": 2176500,
+      "start": "1102434654",
+      "heartbeat": 1790869857.9730275,
+      "progress": 1790869857.973028,
       "kind": "fit",
       "model": "S",
       "priority": 50,
-      "detail": {}
+      "detail": {
+        "epoch": 92,
+        "completed_day_panels": 256,
+        "phase": "train"
+      }
     },
     {
       "id": "main_S_42_001000_KR7009150004_t",
