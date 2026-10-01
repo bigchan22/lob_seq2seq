@@ -1,0 +1,20 @@
+{
+  "current_l5_depth": {
+    "fit_population": "train P3 only",
+    "fit_rows": 302922,
+    "invalid_group_separate": true,
+    "values": [
+      6703.0,
+      28410.0
+    ]
+  },
+  "current_relative_spread": {
+    "fit_population": "train P3 only",
+    "fit_rows": 302922,
+    "invalid_group_separate": true,
+    "values": [
+      0.0014892032762472078,
+      0.0020554984583761563
+    ]
+  }
+}

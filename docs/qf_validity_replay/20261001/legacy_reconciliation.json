@@ -1,0 +1,42 @@
+[
+  {
+    "actual": 0.8875930497053438,
+    "difference": -2.9465618833768303e-10,
+    "model": "UA",
+    "pass": true,
+    "recorded_reference": 0.88759305,
+    "seed": 42,
+    "split": "validation",
+    "tolerance": 1e-07
+  },
+  {
+    "actual": 0.9089525955818588,
+    "difference": -4.181411883408259e-10,
+    "model": "UA",
+    "pass": true,
+    "recorded_reference": 0.908952596,
+    "seed": 42,
+    "split": "development_holdout",
+    "tolerance": 1e-07
+  },
+  {
+    "actual": 0.9032874857103932,
+    "difference": -2.8960678299938536e-10,
+    "model": "UC",
+    "pass": true,
+    "recorded_reference": 0.903287486,
+    "seed": 42,
+    "split": "validation",
+    "tolerance": 1e-07
+  },
+  {
+    "actual": 0.9227557997184821,
+    "difference": -2.815179200865714e-10,
+    "model": "UC",
+    "pass": true,
+    "recorded_reference": 0.9227558,
+    "seed": 42,
+    "split": "development_holdout",
+    "tolerance": 1e-07
+  }
+]

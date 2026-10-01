@@ -1,0 +1,679 @@
+[
+  {
+    "class_mapping": {
+      "0": "Down",
+      "1": "Flat",
+      "2": "Up"
+    },
+    "configuration": {
+      "accumulation": 4,
+      "cross_asset_layers": 1,
+      "d_model": 128,
+      "dropout": 0.1,
+      "gradient_clip": 1.0,
+      "learning_rate": 0.0002,
+      "max_epochs": 200,
+      "microbatch": 8,
+      "min_delta": 0.0001,
+      "min_epochs": 20,
+      "nhead": 8,
+      "patience": 30,
+      "seed": 42,
+      "temporal_layers": 2,
+      "weight_decay": 0.0001
+    },
+    "configuration_canonical_sha256": "16e03154652a47758ab6bb0ab98702c482d6dc9dc55d191c8724f8c2fff771ca",
+    "configuration_sha256": "0854bf78c19b81041066b51bbbf39e6cc448eea1ebfeb9d391b2dfae3dc86bda",
+    "decompressed_sha256": "23ee1b06f2fd931e367b31d5015fbe249b97e19295658df0203202fdc46b8cd9",
+    "duplicates": 0,
+    "extra": 0,
+    "family": "selected_august_stage2",
+    "historical_code_sha": "unknown per-run; linked by recovered Stage-2 finalizer/source family",
+    "historical_dirty_state": "unknown",
+    "historical_execution_host": "unknown",
+    "label_mismatches": 0,
+    "max_probability_sum_error": 1.4000000003733248e-07,
+    "max_row_sum_error": 1.4000000003733248e-07,
+    "mean_row_sum_error": 3.0226900911151195e-08,
+    "missing": 0,
+    "model": "UA",
+    "original_relative_path": "runs/F_PAIR_2_DOUBLE_LR_UA_42",
+    "prediction_path": "artifacts/qf_data_review/20261001/replay_inputs/UA_seed42/test_predictions.csv.gz",
+    "prediction_sha256": "dc0fcedcd0926b50ba6ae59755bbcb1294fa036fc00382771ea8220ac8ade1d9",
+    "probability_columns": [
+      "probability_down",
+      "probability_flat",
+      "probability_up"
+    ],
+    "protocol_ids": [
+      "qf_discrimination_dev_v1"
+    ],
+    "rows_matched": 151848,
+    "run_id": "F_PAIR_2_DOUBLE_LR_UA_42",
+    "seed": 42,
+    "selected_epoch": 178,
+    "selected_history_validation_nll": 0.8875930496910773,
+    "selection_replayed_epoch": 178,
+    "split_counts": [
+      {
+        "assets": 27,
+        "days": 99,
+        "first_date": "20170206",
+        "last_date": "20170630",
+        "rows": 101574,
+        "split": "development_holdout"
+      },
+      {
+        "assets": 27,
+        "days": 49,
+        "first_date": "20161124",
+        "last_date": "20170203",
+        "rows": 50274,
+        "split": "validation"
+      }
+    ],
+    "split_mismatches": 0
+  },
+  {
+    "class_mapping": {
+      "0": "Down",
+      "1": "Flat",
+      "2": "Up"
+    },
+    "configuration": {
+      "accumulation": 4,
+      "cross_asset_layers": 1,
+      "d_model": 128,
+      "dropout": 0.1,
+      "gradient_clip": 1.0,
+      "learning_rate": 0.0002,
+      "max_epochs": 200,
+      "microbatch": 8,
+      "min_delta": 0.0001,
+      "min_epochs": 20,
+      "nhead": 8,
+      "patience": 30,
+      "seed": 7,
+      "temporal_layers": 2,
+      "weight_decay": 0.0001
+    },
+    "configuration_canonical_sha256": "70aa4409bd419894014fa920bf49540def35720dde44a23d21986892ce320be6",
+    "configuration_sha256": "c3eed55da712252ac69610821f190a57795bf36fe66ad70e299fc04ef2df1e6f",
+    "decompressed_sha256": "26f80d49076e036826f53d5b07326273754eed220b11a16ac2f76353e1f90536",
+    "duplicates": 0,
+    "extra": 0,
+    "family": "selected_august_stage2",
+    "historical_code_sha": "unknown per-run; linked by recovered Stage-2 finalizer/source family",
+    "historical_dirty_state": "unknown",
+    "historical_execution_host": "unknown",
+    "label_mismatches": 0,
+    "max_probability_sum_error": 1.3399999998497947e-07,
+    "max_row_sum_error": 1.3399999998497947e-07,
+    "mean_row_sum_error": 3.019446413248804e-08,
+    "missing": 0,
+    "model": "UA",
+    "original_relative_path": "runs/F_best_UA_7",
+    "prediction_path": "artifacts/qf_data_review/20261001/replay_inputs/UA_seed7/test_predictions.csv.gz",
+    "prediction_sha256": "5f5ef42b71f79fa255d5eb4192971c1fbf5a1b52466aae79bf9554d123c385af",
+    "probability_columns": [
+      "probability_down",
+      "probability_flat",
+      "probability_up"
+    ],
+    "protocol_ids": [
+      "qf_discrimination_dev_v1"
+    ],
+    "rows_matched": 151848,
+    "run_id": "F_best_UA_7",
+    "seed": 7,
+    "selected_epoch": 181,
+    "selected_history_validation_nll": 0.8875142648742879,
+    "selection_replayed_epoch": 181,
+    "split_counts": [
+      {
+        "assets": 27,
+        "days": 99,
+        "first_date": "20170206",
+        "last_date": "20170630",
+        "rows": 101574,
+        "split": "development_holdout"
+      },
+      {
+        "assets": 27,
+        "days": 49,
+        "first_date": "20161124",
+        "last_date": "20170203",
+        "rows": 50274,
+        "split": "validation"
+      }
+    ],
+    "split_mismatches": 0
+  },
+  {
+    "class_mapping": {
+      "0": "Down",
+      "1": "Flat",
+      "2": "Up"
+    },
+    "configuration": {
+      "accumulation": 4,
+      "cross_asset_layers": 1,
+      "d_model": 128,
+      "dropout": 0.1,
+      "gradient_clip": 1.0,
+      "learning_rate": 0.0002,
+      "max_epochs": 200,
+      "microbatch": 8,
+      "min_delta": 0.0001,
+      "min_epochs": 20,
+      "nhead": 8,
+      "patience": 30,
+      "seed": 123,
+      "temporal_layers": 2,
+      "weight_decay": 0.0001
+    },
+    "configuration_canonical_sha256": "a4ad0bcd1cf18516d90b7d01b6d15dbffe59111dfa488176ecabadbac341fba0",
+    "configuration_sha256": "a4d58a116ee423c2e82714cb28dd58900bd54c4554f02c48751b6804980b08af",
+    "decompressed_sha256": "4d73b46ee19c690d24d3ca44d5cb80d6e4db25529e919923da3daf0b98b3fc68",
+    "duplicates": 0,
+    "extra": 0,
+    "family": "selected_august_stage2",
+    "historical_code_sha": "unknown per-run; linked by recovered Stage-2 finalizer/source family",
+    "historical_dirty_state": "unknown",
+    "historical_execution_host": "unknown",
+    "label_mismatches": 0,
+    "max_probability_sum_error": 1.4000000003733248e-07,
+    "max_row_sum_error": 1.4000000003733248e-07,
+    "mean_row_sum_error": 3.017751955577979e-08,
+    "missing": 0,
+    "model": "UA",
+    "original_relative_path": "runs/F_best_UA_123",
+    "prediction_path": "artifacts/qf_data_review/20261001/replay_inputs/UA_seed123/test_predictions.csv.gz",
+    "prediction_sha256": "b3d07f2b549c12bfae11f264da5f9ad07fdc59db1d21183920ce6dae06b4f58b",
+    "probability_columns": [
+      "probability_down",
+      "probability_flat",
+      "probability_up"
+    ],
+    "protocol_ids": [
+      "qf_discrimination_dev_v1"
+    ],
+    "rows_matched": 151848,
+    "run_id": "F_best_UA_123",
+    "seed": 123,
+    "selected_epoch": 196,
+    "selected_history_validation_nll": 0.8862723995509885,
+    "selection_replayed_epoch": 196,
+    "split_counts": [
+      {
+        "assets": 27,
+        "days": 99,
+        "first_date": "20170206",
+        "last_date": "20170630",
+        "rows": 101574,
+        "split": "development_holdout"
+      },
+      {
+        "assets": 27,
+        "days": 49,
+        "first_date": "20161124",
+        "last_date": "20170203",
+        "rows": 50274,
+        "split": "validation"
+      }
+    ],
+    "split_mismatches": 0
+  },
+  {
+    "class_mapping": {
+      "0": "Down",
+      "1": "Flat",
+      "2": "Up"
+    },
+    "configuration": {
+      "accumulation": 4,
+      "cross_asset_layers": 1,
+      "d_model": 128,
+      "dropout": 0.1,
+      "gradient_clip": 1.0,
+      "learning_rate": 0.0001,
+      "max_epochs": 200,
+      "microbatch": 8,
+      "min_delta": 0.0001,
+      "min_epochs": 20,
+      "nhead": 8,
+      "patience": 30,
+      "seed": 42,
+      "temporal_layers": 2,
+      "weight_decay": 0.0001
+    },
+    "configuration_canonical_sha256": "f21eb305be8eaf2eb98ea95680660543b86e10afca941f6041bd26a130f25435",
+    "configuration_sha256": "19cf684567489ca20eecdb31124d7f957456ff30f49aa4db4ec545c36d2ca81a",
+    "decompressed_sha256": "4d58aa5269707a8182af866d34a42f6be7e544056392fa3a45b75d14e7e84b7d",
+    "duplicate_counted_once": true,
+    "duplicate_of": "runs/F_PAIR_5_SHALLOW_INTERACTION_UC_42",
+    "duplicates": 0,
+    "extra": 0,
+    "family": "selected_august_stage2",
+    "historical_code_sha": "unknown per-run; linked by recovered Stage-2 finalizer/source family",
+    "historical_dirty_state": "unknown",
+    "historical_execution_host": "unknown",
+    "label_mismatches": 0,
+    "max_probability_sum_error": 1.300000000981072e-07,
+    "max_row_sum_error": 1.300000000981072e-07,
+    "mean_row_sum_error": 3.0205918481208576e-08,
+    "missing": 0,
+    "model": "UC",
+    "original_relative_path": "runs/F_best_UC_42_stage2",
+    "prediction_path": "artifacts/qf_data_review/20261001/replay_inputs/UC_seed42/test_predictions.csv.gz",
+    "prediction_sha256": "daf1fa7a74a03343021ea37893391e530331437e991c7daf0f53e6131bc46398",
+    "probability_columns": [
+      "probability_down",
+      "probability_flat",
+      "probability_up"
+    ],
+    "protocol_ids": [
+      "qf_discrimination_dev_v1"
+    ],
+    "rows_matched": 151848,
+    "run_id": "F_best_UC_42_stage2",
+    "seed": 42,
+    "selected_epoch": 151,
+    "selected_history_validation_nll": 0.9032874857168453,
+    "selection_replayed_epoch": 151,
+    "split_counts": [
+      {
+        "assets": 27,
+        "days": 99,
+        "first_date": "20170206",
+        "last_date": "20170630",
+        "rows": 101574,
+        "split": "development_holdout"
+      },
+      {
+        "assets": 27,
+        "days": 49,
+        "first_date": "20161124",
+        "last_date": "20170203",
+        "rows": 50274,
+        "split": "validation"
+      }
+    ],
+    "split_mismatches": 0
+  },
+  {
+    "class_mapping": {
+      "0": "Down",
+      "1": "Flat",
+      "2": "Up"
+    },
+    "configuration": {
+      "accumulation": 4,
+      "cross_asset_layers": 1,
+      "d_model": 128,
+      "dropout": 0.1,
+      "gradient_clip": 1.0,
+      "learning_rate": 0.0001,
+      "max_epochs": 200,
+      "microbatch": 8,
+      "min_delta": 0.0001,
+      "min_epochs": 20,
+      "nhead": 8,
+      "patience": 30,
+      "seed": 7,
+      "temporal_layers": 2,
+      "weight_decay": 0.0001
+    },
+    "configuration_canonical_sha256": "f4934269a4f0628b45287af0e1f151b8d2b1ae2edaafa0f891ac91e3290a33d0",
+    "configuration_sha256": "458f35ac3f355903ecf186d6d8ed93fb54bca8be475dabeaa1fe839c10956333",
+    "decompressed_sha256": "370ac2645310e7e4ab6df571d115bb3285ea5161e4f9957f385594e3c6a96e04",
+    "duplicates": 0,
+    "extra": 0,
+    "family": "selected_august_stage2",
+    "historical_code_sha": "unknown per-run; linked by recovered Stage-2 finalizer/source family",
+    "historical_dirty_state": "unknown",
+    "historical_execution_host": "unknown",
+    "label_mismatches": 0,
+    "max_probability_sum_error": 1.4000000003733248e-07,
+    "max_row_sum_error": 1.4000000003733248e-07,
+    "mean_row_sum_error": 3.00532321763593e-08,
+    "missing": 0,
+    "model": "UC",
+    "original_relative_path": "runs/F_best_UC_7",
+    "prediction_path": "artifacts/qf_data_review/20261001/replay_inputs/UC_seed7/test_predictions.csv.gz",
+    "prediction_sha256": "2f9a81ef1569424f314b4cec56be6710040decc8efa287da133745265e819c9f",
+    "probability_columns": [
+      "probability_down",
+      "probability_flat",
+      "probability_up"
+    ],
+    "protocol_ids": [
+      "qf_discrimination_dev_v1"
+    ],
+    "rows_matched": 151848,
+    "run_id": "F_best_UC_7",
+    "seed": 7,
+    "selected_epoch": 115,
+    "selected_history_validation_nll": 0.9045031928628328,
+    "selection_replayed_epoch": 115,
+    "split_counts": [
+      {
+        "assets": 27,
+        "days": 99,
+        "first_date": "20170206",
+        "last_date": "20170630",
+        "rows": 101574,
+        "split": "development_holdout"
+      },
+      {
+        "assets": 27,
+        "days": 49,
+        "first_date": "20161124",
+        "last_date": "20170203",
+        "rows": 50274,
+        "split": "validation"
+      }
+    ],
+    "split_mismatches": 0
+  },
+  {
+    "class_mapping": {
+      "0": "Down",
+      "1": "Flat",
+      "2": "Up"
+    },
+    "configuration": {
+      "accumulation": 4,
+      "cross_asset_layers": 1,
+      "d_model": 128,
+      "dropout": 0.1,
+      "gradient_clip": 1.0,
+      "learning_rate": 0.0001,
+      "max_epochs": 200,
+      "microbatch": 8,
+      "min_delta": 0.0001,
+      "min_epochs": 20,
+      "nhead": 8,
+      "patience": 30,
+      "seed": 123,
+      "temporal_layers": 2,
+      "weight_decay": 0.0001
+    },
+    "configuration_canonical_sha256": "6a65627115a7a68c96e09a9780aab54f28562f29bb05baddfd5784e17a53173c",
+    "configuration_sha256": "a3a01f68aed131ec2ca2b5682c0c9bd5bba98aefc7456c02550cb17a3824dba1",
+    "decompressed_sha256": "da401f8128c8af7b40fc94ea08f528e552d625a8514547642eeecacbcaa622ff",
+    "duplicates": 0,
+    "extra": 0,
+    "family": "selected_august_stage2",
+    "historical_code_sha": "unknown per-run; linked by recovered Stage-2 finalizer/source family",
+    "historical_dirty_state": "unknown",
+    "historical_execution_host": "unknown",
+    "label_mismatches": 0,
+    "max_probability_sum_error": 1.3500000006771984e-07,
+    "max_row_sum_error": 1.3500000006771984e-07,
+    "mean_row_sum_error": 3.0213475380442555e-08,
+    "missing": 0,
+    "model": "UC",
+    "original_relative_path": "runs/F_best_UC_123",
+    "prediction_path": "artifacts/qf_data_review/20261001/replay_inputs/UC_seed123/test_predictions.csv.gz",
+    "prediction_sha256": "8c1a4f217e98702b6fb7f5442e0d68f67b0fce60c93d7aa87e7f10065ae71f46",
+    "probability_columns": [
+      "probability_down",
+      "probability_flat",
+      "probability_up"
+    ],
+    "protocol_ids": [
+      "qf_discrimination_dev_v1"
+    ],
+    "rows_matched": 151848,
+    "run_id": "F_best_UC_123",
+    "seed": 123,
+    "selected_epoch": 124,
+    "selected_history_validation_nll": 0.9046674014331612,
+    "selection_replayed_epoch": 124,
+    "split_counts": [
+      {
+        "assets": 27,
+        "days": 99,
+        "first_date": "20170206",
+        "last_date": "20170630",
+        "rows": 101574,
+        "split": "development_holdout"
+      },
+      {
+        "assets": 27,
+        "days": 49,
+        "first_date": "20161124",
+        "last_date": "20170203",
+        "rows": 50274,
+        "split": "validation"
+      }
+    ],
+    "split_mismatches": 0
+  },
+  {
+    "class_mapping": {
+      "0": "Down",
+      "1": "Flat",
+      "2": "Up"
+    },
+    "configuration": {
+      "accumulation": 4,
+      "cross_asset_layers": 1,
+      "d_model": 128,
+      "dropout": 0.1,
+      "gradient_clip": 1.0,
+      "learning_rate": 0.0001,
+      "max_epochs": 200,
+      "microbatch": 8,
+      "min_delta": 0.0001,
+      "min_epochs": 20,
+      "nhead": 8,
+      "patience": 30,
+      "seed": 42,
+      "temporal_layers": 2,
+      "weight_decay": 0.0001
+    },
+    "configuration_canonical_sha256": "f21eb305be8eaf2eb98ea95680660543b86e10afca941f6041bd26a130f25435",
+    "configuration_sha256": "19cf684567489ca20eecdb31124d7f957456ff30f49aa4db4ec545c36d2ca81a",
+    "decompressed_sha256": "cefffca03eef98b9584f348240446e2638fd50704c6f86a9b568a7b6f0ab8837",
+    "duplicates": 0,
+    "extra": 0,
+    "family": "selected_august_stage2",
+    "historical_code_sha": "unknown per-run; linked by recovered Stage-2 finalizer/source family",
+    "historical_dirty_state": "unknown",
+    "historical_execution_host": "unknown",
+    "label_mismatches": 0,
+    "max_probability_sum_error": 1.4000000003733248e-07,
+    "max_row_sum_error": 1.4000000003733248e-07,
+    "mean_row_sum_error": 3.004761353169185e-08,
+    "missing": 0,
+    "model": "UM_V2_DEPTH",
+    "original_relative_path": "runs/D_UM_V2_DEPTH_42",
+    "prediction_path": "artifacts/qf_data_review/20261001/replay_inputs/UM_V2_DEPTH_seed42/test_predictions.csv.gz",
+    "prediction_sha256": "6aab8c1b4764c9266d52ba8cdd36a69d04bdcd363a24313e8f855dc66a534cae",
+    "probability_columns": [
+      "probability_down",
+      "probability_flat",
+      "probability_up"
+    ],
+    "protocol_ids": [
+      "qf_discrimination_dev_v1"
+    ],
+    "rows_matched": 151848,
+    "run_id": "D_UM_V2_DEPTH_42",
+    "seed": 42,
+    "selected_epoch": 128,
+    "selected_history_validation_nll": 0.9049761555586804,
+    "selection_replayed_epoch": 128,
+    "split_counts": [
+      {
+        "assets": 27,
+        "days": 99,
+        "first_date": "20170206",
+        "last_date": "20170630",
+        "rows": 101574,
+        "split": "development_holdout"
+      },
+      {
+        "assets": 27,
+        "days": 49,
+        "first_date": "20161124",
+        "last_date": "20170203",
+        "rows": 50274,
+        "split": "validation"
+      }
+    ],
+    "split_mismatches": 0
+  },
+  {
+    "class_mapping": {
+      "0": "Down",
+      "1": "Flat",
+      "2": "Up"
+    },
+    "configuration": {
+      "accumulation": 4,
+      "cross_asset_layers": 1,
+      "d_model": 128,
+      "dropout": 0.1,
+      "gradient_clip": 1.0,
+      "learning_rate": 0.0001,
+      "max_epochs": 200,
+      "microbatch": 8,
+      "min_delta": 0.0001,
+      "min_epochs": 20,
+      "nhead": 8,
+      "patience": 30,
+      "seed": 7,
+      "temporal_layers": 2,
+      "weight_decay": 0.0001
+    },
+    "configuration_canonical_sha256": "f4934269a4f0628b45287af0e1f151b8d2b1ae2edaafa0f891ac91e3290a33d0",
+    "configuration_sha256": "458f35ac3f355903ecf186d6d8ed93fb54bca8be475dabeaa1fe839c10956333",
+    "decompressed_sha256": "f0c14a57b2d098213717256ec155238f90dc8b4c942f7475df3546206cc3a242",
+    "duplicates": 0,
+    "extra": 0,
+    "family": "selected_august_stage2",
+    "historical_code_sha": "unknown per-run; linked by recovered Stage-2 finalizer/source family",
+    "historical_dirty_state": "unknown",
+    "historical_execution_host": "unknown",
+    "label_mismatches": 0,
+    "max_probability_sum_error": 1.300000000981072e-07,
+    "max_row_sum_error": 1.300000000981072e-07,
+    "mean_row_sum_error": 3.0067643890751954e-08,
+    "missing": 0,
+    "model": "UM_V2_DEPTH",
+    "original_relative_path": "runs/D_selected_7",
+    "prediction_path": "artifacts/qf_data_review/20261001/replay_inputs/UM_V2_DEPTH_seed7/test_predictions.csv.gz",
+    "prediction_sha256": "fc4a8ff754f275c9276e2ad061840ed075a50c8df4104d630e935af2b4b8003e",
+    "probability_columns": [
+      "probability_down",
+      "probability_flat",
+      "probability_up"
+    ],
+    "protocol_ids": [
+      "qf_discrimination_dev_v1"
+    ],
+    "rows_matched": 151848,
+    "run_id": "D_selected_7",
+    "seed": 7,
+    "selected_epoch": 122,
+    "selected_history_validation_nll": 0.9069725378126616,
+    "selection_replayed_epoch": 122,
+    "split_counts": [
+      {
+        "assets": 27,
+        "days": 99,
+        "first_date": "20170206",
+        "last_date": "20170630",
+        "rows": 101574,
+        "split": "development_holdout"
+      },
+      {
+        "assets": 27,
+        "days": 49,
+        "first_date": "20161124",
+        "last_date": "20170203",
+        "rows": 50274,
+        "split": "validation"
+      }
+    ],
+    "split_mismatches": 0
+  },
+  {
+    "class_mapping": {
+      "0": "Down",
+      "1": "Flat",
+      "2": "Up"
+    },
+    "configuration": {
+      "accumulation": 4,
+      "cross_asset_layers": 1,
+      "d_model": 128,
+      "dropout": 0.1,
+      "gradient_clip": 1.0,
+      "learning_rate": 0.0001,
+      "max_epochs": 200,
+      "microbatch": 8,
+      "min_delta": 0.0001,
+      "min_epochs": 20,
+      "nhead": 8,
+      "patience": 30,
+      "seed": 123,
+      "temporal_layers": 2,
+      "weight_decay": 0.0001
+    },
+    "configuration_canonical_sha256": "6a65627115a7a68c96e09a9780aab54f28562f29bb05baddfd5784e17a53173c",
+    "configuration_sha256": "a3a01f68aed131ec2ca2b5682c0c9bd5bba98aefc7456c02550cb17a3824dba1",
+    "decompressed_sha256": "57fd29ab07ed45e7317eea9cbb2751f7c8da7a57847bafdaef797019d8fdd42b",
+    "duplicates": 0,
+    "extra": 0,
+    "family": "selected_august_stage2",
+    "historical_code_sha": "unknown per-run; linked by recovered Stage-2 finalizer/source family",
+    "historical_dirty_state": "unknown",
+    "historical_execution_host": "unknown",
+    "label_mismatches": 0,
+    "max_probability_sum_error": 1.4000000003733248e-07,
+    "max_row_sum_error": 1.4000000003733248e-07,
+    "mean_row_sum_error": 2.9987076481141766e-08,
+    "missing": 0,
+    "model": "UM_V2_DEPTH",
+    "original_relative_path": "runs/D_selected_123",
+    "prediction_path": "artifacts/qf_data_review/20261001/replay_inputs/UM_V2_DEPTH_seed123/test_predictions.csv.gz",
+    "prediction_sha256": "919b4859915c48c52a66e28e49ad9bafdc06fbb25c051651c63e753f7fcd0dee",
+    "probability_columns": [
+      "probability_down",
+      "probability_flat",
+      "probability_up"
+    ],
+    "protocol_ids": [
+      "qf_discrimination_dev_v1"
+    ],
+    "rows_matched": 151848,
+    "run_id": "D_selected_123",
+    "seed": 123,
+    "selected_epoch": 127,
+    "selected_history_validation_nll": 0.9059079165401802,
+    "selection_replayed_epoch": 127,
+    "split_counts": [
+      {
+        "assets": 27,
+        "days": 99,
+        "first_date": "20170206",
+        "last_date": "20170630",
+        "rows": 101574,
+        "split": "development_holdout"
+      },
+      {
+        "assets": 27,
+        "days": 49,
+        "first_date": "20161124",
+        "last_date": "20170203",
+        "rows": 50274,
+        "split": "validation"
+      }
+    ],
+    "split_mismatches": 0
+  }
+]

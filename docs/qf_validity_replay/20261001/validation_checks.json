@@ -1,0 +1,8 @@
+{
+  "targeted_integrity_tests": 6,
+  "passed": 6,
+  "real_data_per_row_mismatches": 0,
+  "legacy_score_absolute_tolerance": 1e-07,
+  "completed_saved_prediction_files": 9,
+  "no_training_or_inference": true
+}

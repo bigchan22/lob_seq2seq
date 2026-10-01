@@ -1,0 +1,65 @@
+namespace,model_a,model_b,seed,matched_seeds,split,population,rows,dates,assets,delta_nll,equal_asset_delta_nll,assets_with_negative_delta,ci_lower,ci_upper,replicates,block_length,resampling_seed,trading_dates,method
+historical_unmasked_training,UA,UC,42,42,validation,P0_legacy,50274,49,27,-0.01569443600504939,-0.015694436005049394,27,,,,,,,
+historical_unmasked_training,UA,UC,42,42,validation,P1_valid_cache_endpoints,48280,49,27,-0.01024861620711153,-0.010268067921996181,26,,,,,,,
+historical_unmasked_training,UA,UC,42,42,validation,P2_candidate_clock,43659,49,27,-0.005228501666003834,-0.005228501666003833,21,,,,,,,
+historical_unmasked_training,UA,UC,42,42,validation,P3_intersection,43050,49,27,-0.004384038238132,-0.004367131026145223,20,,,,,,,
+historical_unmasked_training,UA,UC,42,42,development_holdout,P0_legacy,101574,99,27,-0.013803204136623264,-0.013803204136623268,27,,,,,,,
+historical_unmasked_training,UA,UC,42,42,development_holdout,P1_valid_cache_endpoints,97156,99,27,-0.007082807030569845,-0.007129471548772585,27,,,,,,,
+historical_unmasked_training,UA,UC,42,42,development_holdout,P2_candidate_clock,88209,99,27,-0.005416327402827851,-0.005416327402827852,22,,,,,,,
+historical_unmasked_training,UA,UC,42,42,development_holdout,P3_intersection,86588,99,27,-0.0039004420103827867,-0.003991601723994477,22,,,,,,,
+historical_unmasked_training,UA,UC,7,7,validation,P0_legacy,50274,49,27,-0.016988927935802693,-0.016988927935802693,27,,,,,,,
+historical_unmasked_training,UA,UC,7,7,validation,P1_valid_cache_endpoints,48280,49,27,-0.007940623656539811,-0.007932702080832021,24,,,,,,,
+historical_unmasked_training,UA,UC,7,7,validation,P2_candidate_clock,43659,49,27,-0.006991478449891983,-0.0069914784498919845,23,,,,,,,
+historical_unmasked_training,UA,UC,7,7,validation,P3_intersection,43050,49,27,-0.006086439957834951,-0.006084905021927113,22,,,,,,,
+historical_unmasked_training,UA,UC,7,7,development_holdout,P0_legacy,101574,99,27,-0.014317463119217113,-0.014317463119217113,27,,,,,,,
+historical_unmasked_training,UA,UC,7,7,development_holdout,P1_valid_cache_endpoints,97156,99,27,-0.004246794637789798,-0.004257609558073544,23,,,,,,,
+historical_unmasked_training,UA,UC,7,7,development_holdout,P2_candidate_clock,88209,99,27,-0.005786505088155837,-0.005786505088155836,22,,,,,,,
+historical_unmasked_training,UA,UC,7,7,development_holdout,P3_intersection,86588,99,27,-0.004396878332937239,-0.004460831510970374,22,,,,,,,
+historical_unmasked_training,UA,UC,123,123,validation,P0_legacy,50274,49,27,-0.01839500196597792,-0.018395001965977924,27,,,,,,,
+historical_unmasked_training,UA,UC,123,123,validation,P1_valid_cache_endpoints,48280,49,27,-0.00962924093522307,-0.009640760980929301,25,,,,,,,
+historical_unmasked_training,UA,UC,123,123,validation,P2_candidate_clock,43659,49,27,-0.008712884492983658,-0.008712884492983658,24,,,,,,,
+historical_unmasked_training,UA,UC,123,123,validation,P3_intersection,43050,49,27,-0.008133632093687582,-0.008133767874329921,24,,,,,,,
+historical_unmasked_training,UA,UC,123,123,development_holdout,P0_legacy,101574,99,27,-0.01469601616701562,-0.014696016167015623,27,,,,,,,
+historical_unmasked_training,UA,UC,123,123,development_holdout,P1_valid_cache_endpoints,97156,99,27,-0.004508558524613162,-0.004528565030093698,23,,,,,,,
+historical_unmasked_training,UA,UC,123,123,development_holdout,P2_candidate_clock,88209,99,27,-0.0055076044771004235,-0.0055076044771004235,23,,,,,,,
+historical_unmasked_training,UA,UC,123,123,development_holdout,P3_intersection,86588,99,27,-0.004473194744319132,-0.004517186520827842,22,,,,,,,
+historical_unmasked_training,UA,UC,mean_3,"42,7,123",validation,P0_legacy,50274,49,27,-0.017026121968943337,-0.017026121968943337,27,-0.018543016436507253,-0.015517054144681963,10000.0,5.0,20261001.0,49.0,non-circular moving-date blocks; pooled row-weighted percentile interval
+historical_unmasked_training,UA,UC,mean_3,"42,7,123",validation,P1_valid_cache_endpoints,48280,49,27,-0.009272826932958136,-0.009280510327919166,25,-0.011207630368374064,-0.007546349999965018,10000.0,5.0,20261001.0,49.0,non-circular moving-date blocks; pooled row-weighted percentile interval
+historical_unmasked_training,UA,UC,mean_3,"42,7,123",validation,P2_candidate_clock,43659,49,27,-0.006977621536293157,-0.006977621536293158,22,-0.009239716500978414,-0.005289982091417549,10000.0,5.0,20261001.0,49.0,non-circular moving-date blocks; pooled row-weighted percentile interval
+historical_unmasked_training,UA,UC,mean_3,"42,7,123",validation,P3_intersection,43050,49,27,-0.006201370096551513,-0.006195267974134087,21,-0.008540070858685139,-0.004527658408692437,10000.0,5.0,20261001.0,49.0,non-circular moving-date blocks; pooled row-weighted percentile interval
+historical_unmasked_training,UA,UC,mean_3,"42,7,123",development_holdout,P0_legacy,101574,99,27,-0.014272227807618667,-0.014272227807618672,27,-0.016537249827553883,-0.011698045203132484,10000.0,5.0,20261001.0,99.0,non-circular moving-date blocks; pooled row-weighted percentile interval
+historical_unmasked_training,UA,UC,mean_3,"42,7,123",development_holdout,P1_valid_cache_endpoints,97156,99,27,-0.005279386730990936,-0.005305215378979941,26,-0.007773174088582203,-0.0025208884158026256,10000.0,5.0,20261001.0,99.0,non-circular moving-date blocks; pooled row-weighted percentile interval
+historical_unmasked_training,UA,UC,mean_3,"42,7,123",development_holdout,P2_candidate_clock,88209,99,27,-0.005570145656028037,-0.005570145656028035,24,-0.0069691239369419076,-0.004066064819268723,10000.0,5.0,20261001.0,99.0,non-circular moving-date blocks; pooled row-weighted percentile interval
+historical_unmasked_training,UA,UC,mean_3,"42,7,123",development_holdout,P3_intersection,86588,99,27,-0.004256838362546386,-0.004323206585264231,24,-0.005671693228955318,-0.0028481002351398526,10000.0,5.0,20261001.0,99.0,non-circular moving-date blocks; pooled row-weighted percentile interval
+historical_unmasked_training,UA,UM_V2_DEPTH,42,42,validation,P0_legacy,50274,49,27,-0.017383105888987446,-0.017383105888987442,27,,,,,,,
+historical_unmasked_training,UA,UM_V2_DEPTH,42,42,validation,P1_valid_cache_endpoints,48280,49,27,-0.009561165282838001,-0.00956735525694874,24,,,,,,,
+historical_unmasked_training,UA,UM_V2_DEPTH,42,42,validation,P2_candidate_clock,43659,49,27,-0.008316898596833704,-0.008316898596833704,25,,,,,,,
+historical_unmasked_training,UA,UM_V2_DEPTH,42,42,validation,P3_intersection,43050,49,27,-0.007586954389803575,-0.007593913311513477,25,,,,,,,
+historical_unmasked_training,UA,UM_V2_DEPTH,42,42,development_holdout,P0_legacy,101574,99,27,-0.014081911905395098,-0.014081911905395096,27,,,,,,,
+historical_unmasked_training,UA,UM_V2_DEPTH,42,42,development_holdout,P1_valid_cache_endpoints,97156,99,27,-0.005305739531983958,-0.005274019793697101,26,,,,,,,
+historical_unmasked_training,UA,UM_V2_DEPTH,42,42,development_holdout,P2_candidate_clock,88209,99,27,-0.00666861007315923,-0.00666861007315923,27,,,,,,,
+historical_unmasked_training,UA,UM_V2_DEPTH,42,42,development_holdout,P3_intersection,86588,99,27,-0.005726449041046696,-0.005782320508457208,27,,,,,,,
+historical_unmasked_training,UA,UM_V2_DEPTH,7,7,validation,P0_legacy,50274,49,27,-0.019458272975601126,-0.019458272975601123,27,,,,,,,
+historical_unmasked_training,UA,UM_V2_DEPTH,7,7,validation,P1_valid_cache_endpoints,48280,49,27,-0.01095449454928009,-0.010970696290479691,24,,,,,,,
+historical_unmasked_training,UA,UM_V2_DEPTH,7,7,validation,P2_candidate_clock,43659,49,27,-0.00993929884898772,-0.00993929884898772,23,,,,,,,
+historical_unmasked_training,UA,UM_V2_DEPTH,7,7,validation,P3_intersection,43050,49,27,-0.008863332948950906,-0.008897678903252139,23,,,,,,,
+historical_unmasked_training,UA,UM_V2_DEPTH,7,7,development_holdout,P0_legacy,101574,99,27,-0.015882211693834608,-0.015882211693834608,27,,,,,,,
+historical_unmasked_training,UA,UM_V2_DEPTH,7,7,development_holdout,P1_valid_cache_endpoints,97156,99,27,-0.00639615197365252,-0.006414372758365593,24,,,,,,,
+historical_unmasked_training,UA,UM_V2_DEPTH,7,7,development_holdout,P2_candidate_clock,88209,99,27,-0.00704850591867099,-0.007048505918670988,22,,,,,,,
+historical_unmasked_training,UA,UM_V2_DEPTH,7,7,development_holdout,P3_intersection,86588,99,27,-0.005807984814600754,-0.005900176039126505,22,,,,,,,
+historical_unmasked_training,UA,UM_V2_DEPTH,123,123,validation,P0_legacy,50274,49,27,-0.019635517084865377,-0.019635517084865373,27,,,,,,,
+historical_unmasked_training,UA,UM_V2_DEPTH,123,123,validation,P1_valid_cache_endpoints,48280,49,27,-0.011652155747544832,-0.011690425332622323,27,,,,,,,
+historical_unmasked_training,UA,UM_V2_DEPTH,123,123,validation,P2_candidate_clock,43659,49,27,-0.01035897487863434,-0.01035897487863434,25,,,,,,,
+historical_unmasked_training,UA,UM_V2_DEPTH,123,123,validation,P3_intersection,43050,49,27,-0.009800238136071376,-0.009833577636201688,24,,,,,,,
+historical_unmasked_training,UA,UM_V2_DEPTH,123,123,development_holdout,P0_legacy,101574,99,27,-0.01602316189070189,-0.016023161890701892,27,,,,,,,
+historical_unmasked_training,UA,UM_V2_DEPTH,123,123,development_holdout,P1_valid_cache_endpoints,97156,99,27,-0.006798034198648965,-0.0068123590165744,27,,,,,,,
+historical_unmasked_training,UA,UM_V2_DEPTH,123,123,development_holdout,P2_candidate_clock,88209,99,27,-0.006844508832733862,-0.006844508832733861,26,,,,,,,
+historical_unmasked_training,UA,UM_V2_DEPTH,123,123,development_holdout,P3_intersection,86588,99,27,-0.006263574118188113,-0.006311260564118089,26,,,,,,,
+historical_unmasked_training,UA,UM_V2_DEPTH,mean_3,"42,7,123",validation,P0_legacy,50274,49,27,-0.018825631983151316,-0.018825631983151316,27,-0.02017981377452628,-0.017237405534486633,10000.0,5.0,20261001.0,49.0,non-circular moving-date blocks; pooled row-weighted percentile interval
+historical_unmasked_training,UA,UM_V2_DEPTH,mean_3,"42,7,123",validation,P1_valid_cache_endpoints,48280,49,27,-0.010722605193220974,-0.010742825626683581,25,-0.012361758968986359,-0.009120263952048163,10000.0,5.0,20261001.0,49.0,non-circular moving-date blocks; pooled row-weighted percentile interval
+historical_unmasked_training,UA,UM_V2_DEPTH,mean_3,"42,7,123",validation,P2_candidate_clock,43659,49,27,-0.00953839077481859,-0.009538390774818587,24,-0.011215997675420234,-0.008107843190425807,10000.0,5.0,20261001.0,49.0,non-circular moving-date blocks; pooled row-weighted percentile interval
+historical_unmasked_training,UA,UM_V2_DEPTH,mean_3,"42,7,123",validation,P3_intersection,43050,49,27,-0.008750175158275286,-0.0087750566169891,24,-0.010550131474809887,-0.007407512631359265,10000.0,5.0,20261001.0,49.0,non-circular moving-date blocks; pooled row-weighted percentile interval
+historical_unmasked_training,UA,UM_V2_DEPTH,mean_3,"42,7,123",development_holdout,P0_legacy,101574,99,27,-0.01532909516331053,-0.015329095163310527,27,-0.017839963169614458,-0.012561954570531452,10000.0,5.0,20261001.0,99.0,non-circular moving-date blocks; pooled row-weighted percentile interval
+historical_unmasked_training,UA,UM_V2_DEPTH,mean_3,"42,7,123",development_holdout,P1_valid_cache_endpoints,97156,99,27,-0.006166641901428481,-0.006166917189545696,27,-0.008919196767686731,-0.0031881457606171607,10000.0,5.0,20261001.0,99.0,non-circular moving-date blocks; pooled row-weighted percentile interval
+historical_unmasked_training,UA,UM_V2_DEPTH,mean_3,"42,7,123",development_holdout,P2_candidate_clock,88209,99,27,-0.006853874941521359,-0.006853874941521359,26,-0.00847993576516765,-0.005137181821463635,10000.0,5.0,20261001.0,99.0,non-circular moving-date blocks; pooled row-weighted percentile interval
+historical_unmasked_training,UA,UM_V2_DEPTH,mean_3,"42,7,123",development_holdout,P3_intersection,86588,99,27,-0.0059326693246118545,-0.0059979190372339355,26,-0.0075760031739204115,-0.0042625635150858035,10000.0,5.0,20261001.0,99.0,non-circular moving-date blocks; pooled row-weighted percentile interval
