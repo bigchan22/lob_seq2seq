@@ -14,7 +14,7 @@ Historical replay is separate; see historical_replay_reference.json. No performa
 
 Consolidated analysis status: partial; see consolidated/progress_report.md.
 
-Other owner result SHA: c4788cf17ec09d653f9d455d3ea3f9c359281ede
+Other owner result SHA: 4dedb9a7be46e1c258d9096cd93ae70df55ed704
 
 Current blocker: None
 
