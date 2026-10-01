@@ -2,14 +2,14 @@
   "candidate_ready_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
   "consolidation_status": "partial",
   "deadline_epoch": 1790910849.7916808,
-  "last_error": "Missing Git-published frozen cache bytes: raw_factors.npy,x.npy",
-  "last_published_result_sha": "315c972054eaee705d8ccb7dd3549677b64c253b",
+  "last_error": "Cache export changed frozen core/protocol; needs versioned review",
+  "last_published_result_sha": "d488dfb5caa3ed90610884ef5c0be678b299f24c",
   "last_rejected_ready_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
   "local_runtime_alias": "RECEIVER_RUNTIME",
   "native_receiver": true,
   "owner": "rtx3090",
   "paused": false,
-  "phase": "WAITING_EXACT_PREPARED_CACHE",
+  "phase": "BLOCKED_NATIVE_VALIDATION",
   "planned_fits_are_not_materialized_jobs": false,
   "planned_owned_training_fits": 30,
   "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
@@ -20,5 +20,5 @@
     "reason": "Common queue not launched yet"
   },
   "started_at": "2026-10-01T15:14:09.791661+00:00",
-  "updated_at": "2026-10-01T15:49:44.409220+00:00"
+  "updated_at": "2026-10-01T15:51:32.641560+00:00"
 }

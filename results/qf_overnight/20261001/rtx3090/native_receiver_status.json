@@ -1,7 +1,7 @@
 {
-  "blocker": "Missing Git-published frozen cache bytes: raw_factors.npy,x.npy",
-  "phase": "WAITING_EXACT_PREPARED_CACHE",
+  "blocker": "Cache export changed frozen core/protocol; needs versioned review",
+  "phase": "BLOCKED_NATIVE_VALIDATION",
   "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
   "ready_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
-  "updated_at": "2026-10-01T15:49:44.408094+00:00"
+  "updated_at": "2026-10-01T15:51:32.638955+00:00"
 }
