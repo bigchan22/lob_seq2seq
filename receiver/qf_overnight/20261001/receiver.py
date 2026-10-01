@@ -370,8 +370,12 @@ class Receiver:
                 if result:rec.update(validation_p3_nll=result['validation_p3_nll'],selected_epoch=result['selected_epoch'],run_id=result['run_id'])
                 trials.append(rec)
             if row['state']=='SUCCEEDED' and result:
-                records.append({'job_id':row['id'],'kind':job['kind'],'relative_directory':'runs/exports/runs/'+row['id']+'__'+sha(row['result'])[:16],
-                                'result_hash':sha(row['result']),'result':result,'attempt':row['attempt']})
+                relative='runs/exports/runs/'+row['id']+'__'+sha(row['result'])[:16]
+                published=dest/relative/'result.json'
+                # Local success can precede the producer's next immutable export.
+                if published.exists() and sha(published)==sha(row['result']):
+                    records.append({'job_id':row['id'],'kind':job['kind'],'relative_directory':relative,
+                                    'result_hash':sha(row['result']),'result':result,'attempt':row['attempt']})
         atomic(dest/'selected_configs.json',{'criterion':'selected-checkpoint main P3 validation only; ties1e-8 choose smaller LR','selected':selected,'every_lr_trial':trials})
         atomic(dest/'export_manifest.json',{'owner':OWNER,'run_group':RUN_GROUP,'protocol_hash':self.state.get('scientific_protocol_hash'),
                                           'source_sha':self.state.get('ready_sha'),'runs':records})

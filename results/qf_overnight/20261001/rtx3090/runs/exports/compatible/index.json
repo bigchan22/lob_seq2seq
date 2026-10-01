@@ -1,14 +1,59 @@
 {
   "entries": [
     {
+      "job": "R1_UA_123",
+      "path": "R1_UA_123__811c8cd8e079f9a5",
+      "complete_sha256": "f9df6ab5e3a4cb837a653edddbd8e847a404531a0030d1464be7d44e5c6fa90d"
+    },
+    {
       "job": "R1_UA_42",
       "path": "R1_UA_42__16b6b39278b4270d",
       "complete_sha256": "69ee7d8386b62b0dc2460a097c10632af6bd5ce472ce0f4b4eb56fed7a641d05"
     },
     {
+      "job": "R1_UA_7",
+      "path": "R1_UA_7__9b3afe5ceee09616",
+      "complete_sha256": "115878122e783292ed9c0527e8edc52092a9b56ce707c4a2204eb0fd4caa966f"
+    },
+    {
+      "job": "R1_UC_42",
+      "path": "R1_UC_42__61eae199176986b9",
+      "complete_sha256": "4aab4f824c7fbddf9c5d96da98a7671f556a755c2c84134a1ff4a0f79408ceb1"
+    },
+    {
+      "job": "R1_UC_7",
+      "path": "R1_UC_7__1df886eef947427c",
+      "complete_sha256": "e3455330b06d8b1720833c35a49300163cef8174358bcafc46c7ed6e795d967f"
+    },
+    {
+      "job": "analyze_UA_123",
+      "path": "analyze_UA_123__81018442ca2f4d7a",
+      "complete_sha256": "40257f7075d17739c5532accb3ade01e62059d149f0a9c7b304dfbb89ddb5892"
+    },
+    {
       "job": "analyze_UA_42",
       "path": "analyze_UA_42__981f1d11b94aa2db",
       "complete_sha256": "bb122c0f9afb32190bff3fd0a6264ce73fa7dbe14c8c285187aca9ddff73c988"
+    },
+    {
+      "job": "analyze_UA_7",
+      "path": "analyze_UA_7__d03e946c5374e6d7",
+      "complete_sha256": "bd968b7ff2da9c6686847d5acf7495c9f36eb42502c3cf580df9cd775b784c13"
+    },
+    {
+      "job": "analyze_UC_123",
+      "path": "analyze_UC_123__ff72629fde8fd43d",
+      "complete_sha256": "d6019e369b8f5fd8fd6dc63f0797ee067a9ea5096798fa085131b69e7b6ff762"
+    },
+    {
+      "job": "analyze_UC_42",
+      "path": "analyze_UC_42__3dfe8c5447c8f608",
+      "complete_sha256": "374b79d43cec67bd2a4bb36058d65f2e4bf130fd25382d34679a51829cdccf1f"
+    },
+    {
+      "job": "analyze_UC_7",
+      "path": "analyze_UC_7__70c55c06c2b5623c",
+      "complete_sha256": "ed7bcfaa0f1e10bee5abfb45cf55a2df123c25f9b740e3c804e5aee35a8d41f4"
     }
   ],
   "protocol_hash": "3cfd389bbd05ec9201a41c0892e29bf8199198d1b216b9a8061370d4240aa583",

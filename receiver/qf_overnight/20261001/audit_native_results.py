@@ -59,7 +59,9 @@ class Audit:
   assert id not in trail,'alias cycle';record=records[id];result=record['result']
   if result.get('reused_from'):return self.resolve(owner,result['reused_from'],trail+(id,))
   directory=prefix+record['relative_directory']+'/'
-  rb=self.blob(commit,directory+'result.json');assert sha(rb)==record['result_hash'] and json.loads(rb)==result
+  try:rb=self.blob(commit,directory+'result.json')
+  except subprocess.CalledProcessError:return None
+  assert sha(rb)==record['result_hash'] and json.loads(rb)==result
   if not result.get('validated'):raise ValueError('unvalidated result')
   try:raw=self.blob(commit,directory+'predictions.csv.gz')
   except subprocess.CalledProcessError:
@@ -95,7 +97,10 @@ class Audit:
   for owner in ['rtx3090','a5000']:self.receive(owner)
   for model in MODELS:
    for fold in (['main','R1','R2','R3'] if model in ['UA','UC','UM_V2_DEPTH'] else ['main']):
-    for seed in SEEDS:self.load(model,seed,fold)
+    for seed in SEEDS:
+     try:self.load(model,seed,fold)
+     except (AssertionError,ValueError,KeyError,subprocess.CalledProcessError) as error:
+      self.missing.append({'model':model,'seed':seed,'fold':fold,'status':'failed_verification','reason':str(error)})
   mets=[];paired=[];assets=[];groups=[];calibration=[]
   for (model,seed,fold),(frame,result) in self.frames.items():
    for split,base in frame.groupby('split'):

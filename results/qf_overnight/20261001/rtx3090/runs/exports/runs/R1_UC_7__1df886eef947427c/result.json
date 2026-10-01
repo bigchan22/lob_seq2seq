@@ -1,0 +1,38 @@
+{
+  "run_id": "fcdec04082a1596a316646def3f08da304cb5c7c89f7a5af939059f3c6e93916",
+  "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+  "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+  "executable_source_digest": "4d4ad03b827958468b1a231e360c7ad1aa68035c25af068059838ceae6dfa6d6",
+  "input_hash": "9cb89005693b1b70c102178849b740fde00b50c9ba5f3b5530d0e5749ea59837",
+  "split_hash": "490eeb15970ef077ee050323b551cd9c3c5534c257f1febddca9af74ed1cf0a4",
+  "transform_hash": "7c046856fb93caadaba00219d440e28b84a542bcec20f13640d962cb8ad3d89f",
+  "training_hash": "223278c5c320dd2fd9a015e99abbe21e25e9eb36b6e4be6ea87cf10e93b3775e",
+  "config_hash": "c5db0e1ac214c643e67ba410b60db9e4656cfa0846d964512fa3c78d988a54c5",
+  "model": "UC",
+  "seed": 7,
+  "lr": 0.0004,
+  "fold": "R1",
+  "asset": null,
+  "family": "selected",
+  "parameters": 605315,
+  "selected_epoch": 60,
+  "validation_p3_nll": 0.9088812049800561,
+  "epochs_completed": 90,
+  "prediction_rows": 84132,
+  "validated": true,
+  "files": {
+    "predictions.csv.gz": "7a018d5fb6c0450bf9fddad344125c31f876c7af45eb4042b7762deb1a950677"
+  },
+  "local_checkpoints": {
+    "best_checkpoint.pt": "cb89b890a9d909347e7cf21ed57e8035890b82cccc3832eeef8d9219895fb388",
+    "last_checkpoint.pt": "3a4912bcb72748b14d06d617debabaa50762f50e86ea5f3de41776105cf86c46"
+  },
+  "completed_at": "2026-10-01T16:20:05.526985+00:00",
+  "smoke": false,
+  "resume_checkpoint_used": null,
+  "attempt": 1,
+  "job_id": "R1_UC_7",
+  "owner": "rtx3090",
+  "reused_main_job": "main_UC_7_selected",
+  "reuse_reason": "same train/val, LR, seed, configuration, scaler; eval subset only"
+}
