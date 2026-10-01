@@ -1,9 +1,9 @@
 # qf-august-overnight-20261001: a5000 progress
 
-Updated 2026-10-01T15:45:04.159077+00:00; elapsed 0.12 hours. Exact source commit `675a3086cd6c4f2abd63c7d3acd419ca12dbc861`; protocol `bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1`.
-Queue states: `{"BLOCKED": 21, "PENDING": 105, "RUNNING": 4, "SUCCEEDED": 47, "WAITING_ADAPTER": 1}`. Completed distinct full training jobs on this owner: 33; aliases and smokes are not counted as training. Local terminal: False.
+Updated 2026-10-01T15:50:36.147826+00:00; elapsed 0.21 hours. Exact source commit `675a3086cd6c4f2abd63c7d3acd419ca12dbc861`; protocol `bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1`.
+Queue states: `{"BLOCKED": 21, "PENDING": 60, "RUNNING": 3, "SUCCEEDED": 93, "WAITING_ADAPTER": 1}`. Completed distinct full training jobs on this owner: 79; aliases and smokes are not counted as training. Local terminal: False.
 
-Currently running: `[{"job": "main_S_123_001000_KR7000100008_t", "progress": {"epoch": 65, "completed_day_panels": 128, "phase": "train"}}, {"job": "main_S_123_001000_KR7000120006_t", "progress": {"epoch": 63, "completed_day_panels": 96, "phase": "train"}}, {"job": "main_S_123_001000_KR7000150003_t", "progress": {"epoch": 60, "completed_day_panels": 192, "phase": "train"}}, {"job": "main_S_123_001000_KR7000270009_t", "progress": {"epoch": 2, "completed_day_panels": 288, "phase": "train"}}]`.
+Currently running: `[{"job": "main_S_42_001000_KR7005490008_t", "progress": {"epoch": 189, "completed_day_panels": 96, "phase": "train"}}, {"job": "main_S_42_001000_KR7005930003_t", "progress": {"epoch": 62, "phase": "checkpoint", "epoch_seconds": 0.1606419887393713, "checkpoint_time": 1790869835.5716782}}, {"job": "main_S_42_001000_KR7006400006_t", "progress": {"epoch": 10, "completed_day_panels": 256, "phase": "train"}}]`.
 
 The finite global plan has153 unconditional full fits and up to4 conditional fixed-LR fits (157 maximum), plus explicit selection/reuse/analysis jobs. This owner never claims the other owner's models. A job succeeds only after result/prediction validation. Checkpoints remain task-local; hashes/relative names accompany each run. All selected compressed probabilities, histories, masks and scores are transferred through this result branch. Every LR trial and failure is recorded in selected_configs.json; performance never gates further valid work.
 
