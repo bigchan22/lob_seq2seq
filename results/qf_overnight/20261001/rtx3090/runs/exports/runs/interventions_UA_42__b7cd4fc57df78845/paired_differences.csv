@@ -1,0 +1,5 @@
+seed,condition,split,rows,delta_nll,support
+42,self_only,development_holdout,86588,0.09752911790756143,"common P3, original full temporal history"
+42,self_only,validation,43050,0.08835762273507919,"common P3, original full temporal history"
+42,peer_lag1,development_holdout,86588,0.0037786068774726318,"common P3, original full temporal history"
+42,peer_lag1,validation,43050,0.0035818599014908,"common P3, original full temporal history"

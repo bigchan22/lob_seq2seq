@@ -16,7 +16,7 @@
   },
   "deadline_epoch": 1790910849.7916808,
   "last_error": null,
-  "last_published_result_sha": "b217af5e45e64a580e963c9b67ecc6bc8dbbab51",
+  "last_published_result_sha": "bfee169fa6f3301b9fd4522046cd3389b25ce4cf",
   "last_rejected_ready_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
   "launched_at": "2026-10-01T16:07:02.644768+00:00",
   "local_runtime_alias": "RECEIVER_RUNTIME",
@@ -33,12 +33,10 @@
   "run_group": "qf-august-overnight-20261001",
   "scientific_protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
   "shared_queue_status": {
-    "all_required_validated": false,
-    "all_terminal": false,
+    "all_required_validated": true,
+    "all_terminal": true,
     "counts": {
-      "PENDING": 14,
-      "RUNNING": 4,
-      "SUCCEEDED": 51
+      "SUCCEEDED": 69
     },
     "jobs": [
       {
@@ -234,119 +232,142 @@
       {
         "attempt": 1,
         "detail": {
-          "completed_day_panels": 160,
-          "epoch": 162,
-          "phase": "train"
+          "checkpoint_time": 1790872297.2150877,
+          "epoch": 178,
+          "epoch_seconds": 1.1321479007601738,
+          "phase": "checkpoint"
         },
-        "heartbeat": 1790872277.656208,
+        "heartbeat": 1790872305.599717,
         "id": "R2_UC_7_selected",
         "kind": "fit",
         "model": "UC",
         "oom": 0,
         "pid": 3841421,
         "priority": 30,
-        "progress": 1790872277.656209,
+        "progress": 1790872297.2179658,
         "retries": 0,
         "start": "3484384737",
-        "state": "RUNNING"
+        "state": "SUCCEEDED"
       },
       {
         "attempt": 1,
         "detail": {
-          "completed_day_panels": 64,
-          "epoch": 106,
-          "phase": "train"
+          "checkpoint_time": 1790872302.281834,
+          "epoch": 128,
+          "epoch_seconds": 1.2208914384245872,
+          "phase": "checkpoint"
         },
-        "heartbeat": 1790872277.6402519,
+        "heartbeat": 1790872308.4842784,
         "id": "R3_UA_123_selected",
         "kind": "fit",
         "model": "UA",
         "oom": 0,
         "pid": 3841953,
         "priority": 30,
-        "progress": 1790872277.6402524,
+        "progress": 1790872302.284318,
         "retries": 0,
         "start": "3484387739",
-        "state": "RUNNING"
+        "state": "SUCCEEDED"
       },
       {
         "attempt": 1,
         "detail": {
-          "completed_day_panels": 384,
-          "epoch": 80,
-          "phase": "train"
+          "checkpoint_time": 1790872355.0646026,
+          "epoch": 133,
+          "epoch_seconds": 1.2237305492162704,
+          "phase": "checkpoint"
         },
-        "heartbeat": 1790872277.6615982,
+        "heartbeat": 1790872361.6988797,
         "id": "R3_UA_42_selected",
         "kind": "fit",
         "model": "UA",
         "oom": 0,
         "pid": 3842453,
         "priority": 30,
-        "progress": 1790872277.661599,
+        "progress": 1790872355.0671601,
         "retries": 0,
         "start": "3484390736",
-        "state": "RUNNING"
+        "state": "SUCCEEDED"
       },
       {
         "attempt": 1,
-        "detail": {},
-        "heartbeat": 1790872274.264837,
+        "detail": {
+          "checkpoint_time": 1790872520.1866062,
+          "epoch": 145,
+          "epoch_seconds": 1.6084443777799606,
+          "phase": "checkpoint"
+        },
+        "heartbeat": 1790872526.3354657,
         "id": "R3_UA_7_selected",
         "kind": "fit",
         "model": "UA",
         "oom": 0,
         "pid": 3842658,
         "priority": 30,
-        "progress": 1790872271.6900644,
+        "progress": 1790872520.1892161,
         "retries": 0,
         "start": "3484403755",
-        "state": "RUNNING"
+        "state": "SUCCEEDED"
       },
       {
-        "attempt": 0,
-        "detail": {},
-        "heartbeat": null,
+        "attempt": 1,
+        "detail": {
+          "checkpoint_time": 1790872477.796807,
+          "epoch": 143,
+          "epoch_seconds": 0.8949218019843102,
+          "phase": "checkpoint"
+        },
+        "heartbeat": 1790872484.6368022,
         "id": "R3_UC_123_selected",
         "kind": "fit",
         "model": "UC",
         "oom": 0,
-        "pid": null,
+        "pid": 3843282,
         "priority": 30,
-        "progress": null,
+        "progress": 1790872477.8004227,
         "retries": 0,
-        "start": null,
-        "state": "PENDING"
+        "start": "3484407765",
+        "state": "SUCCEEDED"
       },
       {
-        "attempt": 0,
-        "detail": {},
-        "heartbeat": null,
+        "attempt": 1,
+        "detail": {
+          "checkpoint_time": 1790872556.0331976,
+          "epoch": 151,
+          "epoch_seconds": 1.2749116346240044,
+          "phase": "checkpoint"
+        },
+        "heartbeat": 1790872562.1173835,
         "id": "R3_UC_42_selected",
         "kind": "fit",
         "model": "UC",
         "oom": 0,
-        "pid": null,
+        "pid": 3843283,
         "priority": 30,
-        "progress": null,
+        "progress": 1790872556.0359035,
         "retries": 0,
-        "start": null,
-        "state": "PENDING"
+        "start": "3484407768",
+        "state": "SUCCEEDED"
       },
       {
-        "attempt": 0,
-        "detail": {},
-        "heartbeat": null,
+        "attempt": 1,
+        "detail": {
+          "checkpoint_time": 1790872627.266086,
+          "epoch": 144,
+          "epoch_seconds": 1.438474178314209,
+          "phase": "checkpoint"
+        },
+        "heartbeat": 1790872633.2125576,
         "id": "R3_UC_7_selected",
         "kind": "fit",
         "model": "UC",
         "oom": 0,
-        "pid": null,
+        "pid": 3843352,
         "priority": 30,
-        "progress": null,
+        "progress": 1790872627.2686374,
         "retries": 0,
-        "start": null,
-        "state": "PENDING"
+        "start": "3484413757",
+        "state": "SUCCEEDED"
       },
       {
         "attempt": 1,
@@ -424,109 +445,109 @@
         "state": "SUCCEEDED"
       },
       {
-        "attempt": 0,
+        "attempt": 1,
         "detail": {},
-        "heartbeat": null,
+        "heartbeat": 1790872314.712614,
         "id": "analyze_R2_UC_7_selected",
         "kind": "analysis",
         "model": "UC",
         "oom": 0,
-        "pid": null,
+        "pid": 3843275,
         "priority": 31,
-        "progress": null,
+        "progress": 1790872308.2556753,
         "retries": 0,
-        "start": null,
-        "state": "PENDING"
+        "start": "3484407412",
+        "state": "SUCCEEDED"
       },
       {
-        "attempt": 0,
+        "attempt": 1,
         "detail": {},
-        "heartbeat": null,
+        "heartbeat": 1790872324.7973843,
         "id": "analyze_R3_UA_123_selected",
         "kind": "analysis",
         "model": "UA",
         "oom": 0,
-        "pid": null,
+        "pid": 3843308,
         "priority": 31,
-        "progress": null,
+        "progress": 1790872318.2715762,
         "retries": 0,
-        "start": null,
-        "state": "PENDING"
+        "start": "3484408413",
+        "state": "SUCCEEDED"
       },
       {
-        "attempt": 0,
+        "attempt": 1,
         "detail": {},
-        "heartbeat": null,
+        "heartbeat": 1790872370.7176507,
         "id": "analyze_R3_UA_42_selected",
         "kind": "analysis",
         "model": "UA",
         "oom": 0,
-        "pid": null,
+        "pid": 3843343,
         "priority": 31,
-        "progress": null,
+        "progress": 1790872363.3751612,
         "retries": 0,
-        "start": null,
-        "state": "PENDING"
+        "start": "3484412924",
+        "state": "SUCCEEDED"
       },
       {
-        "attempt": 0,
+        "attempt": 1,
         "detail": {},
-        "heartbeat": null,
+        "heartbeat": 1790872535.685021,
         "id": "analyze_R3_UA_7_selected",
         "kind": "analysis",
         "model": "UA",
         "oom": 0,
-        "pid": null,
+        "pid": 3843947,
         "priority": 31,
-        "progress": null,
+        "progress": 1790872528.7708247,
         "retries": 0,
-        "start": null,
-        "state": "PENDING"
+        "start": "3484429463",
+        "state": "SUCCEEDED"
       },
       {
-        "attempt": 0,
+        "attempt": 1,
         "detail": {},
-        "heartbeat": null,
+        "heartbeat": 1790872494.9470606,
         "id": "analyze_R3_UC_123_selected",
         "kind": "analysis",
         "model": "UC",
         "oom": 0,
-        "pid": null,
+        "pid": 3843420,
         "priority": 31,
-        "progress": null,
+        "progress": 1790872488.687748,
         "retries": 0,
-        "start": null,
-        "state": "PENDING"
+        "start": "3484425455",
+        "state": "SUCCEEDED"
       },
       {
-        "attempt": 0,
+        "attempt": 1,
         "detail": {},
-        "heartbeat": null,
+        "heartbeat": 1790872570.422316,
         "id": "analyze_R3_UC_42_selected",
         "kind": "analysis",
         "model": "UC",
         "oom": 0,
-        "pid": null,
+        "pid": 3844070,
         "priority": 31,
-        "progress": null,
+        "progress": 1790872563.8438175,
         "retries": 0,
-        "start": null,
-        "state": "PENDING"
+        "start": "3484432971",
+        "state": "SUCCEEDED"
       },
       {
-        "attempt": 0,
+        "attempt": 1,
         "detail": {},
-        "heartbeat": null,
+        "heartbeat": 1790872640.5967035,
         "id": "analyze_R3_UC_7_selected",
         "kind": "analysis",
         "model": "UC",
         "oom": 0,
-        "pid": null,
+        "pid": 3844184,
         "priority": 31,
-        "progress": null,
+        "progress": 1790872633.9939384,
         "retries": 0,
-        "start": null,
-        "state": "PENDING"
+        "start": "3484439986",
+        "state": "SUCCEEDED"
       },
       {
         "attempt": 1,
@@ -664,19 +685,19 @@
         "state": "SUCCEEDED"
       },
       {
-        "attempt": 0,
+        "attempt": 1,
         "detail": {},
-        "heartbeat": null,
+        "heartbeat": 1790872646.329889,
         "id": "final_rtx3090",
         "kind": "final",
         "model": null,
         "oom": 0,
-        "pid": null,
+        "pid": 3844193,
         "priority": 60,
-        "progress": null,
+        "progress": 1790872644.0196657,
         "retries": 0,
-        "start": null,
-        "state": "PENDING"
+        "start": "3484440988",
+        "state": "SUCCEEDED"
       },
       {
         "attempt": 1,
@@ -709,49 +730,49 @@
         "state": "SUCCEEDED"
       },
       {
-        "attempt": 0,
+        "attempt": 1,
         "detail": {},
-        "heartbeat": null,
+        "heartbeat": 1790872526.7242813,
         "id": "interventions_UA_123",
         "kind": "intervention",
         "model": "UA",
         "oom": 0,
-        "pid": null,
+        "pid": 3843424,
         "priority": 35,
-        "progress": null,
+        "progress": 1790872492.017143,
         "retries": 0,
-        "start": null,
-        "state": "PENDING"
+        "start": "3484425788",
+        "state": "SUCCEEDED"
       },
       {
-        "attempt": 0,
+        "attempt": 1,
         "detail": {},
-        "heartbeat": null,
+        "heartbeat": 1790872555.6918237,
         "id": "interventions_UA_42",
         "kind": "intervention",
         "model": "UA",
         "oom": 0,
-        "pid": null,
+        "pid": 3843957,
         "priority": 35,
-        "progress": null,
+        "progress": 1790872531.961545,
         "retries": 0,
-        "start": null,
-        "state": "PENDING"
+        "start": "3484429782",
+        "state": "SUCCEEDED"
       },
       {
-        "attempt": 0,
+        "attempt": 1,
         "detail": {},
-        "heartbeat": null,
+        "heartbeat": 1790872568.1759388,
         "id": "interventions_UA_7",
         "kind": "intervention",
         "model": "UA",
         "oom": 0,
-        "pid": null,
+        "pid": 3843959,
         "priority": 35,
-        "progress": null,
+        "progress": 1790872532.065807,
         "retries": 0,
-        "start": null,
-        "state": "PENDING"
+        "start": "3484429793",
+        "state": "SUCCEEDED"
       },
       {
         "attempt": 1,
@@ -1209,36 +1230,9 @@
     "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
     "run_group": "qf-august-overnight-20261001",
     "stop": false,
-    "updated_at": "2026-10-01T16:31:17.680396+00:00",
-    "workers": {
-      "cpu": {
-        "alive": true,
-        "pid": 3832681,
-        "start": "3484259092"
-      },
-      "gpu0": {
-        "alive": true,
-        "pid": 3832683,
-        "start": "3484259094"
-      },
-      "gpu1": {
-        "alive": true,
-        "pid": 3832685,
-        "start": "3484259097"
-      },
-      "gpu2": {
-        "alive": true,
-        "pid": 3832686,
-        "start": "3484259099"
-      },
-      "gpu3": {
-        "alive": true,
-        "pid": 3832688,
-        "start": "3484259102"
-      }
-    }
+    "updated_at": "2026-10-01T16:37:43.430933+00:00"
   },
   "source_path": "/home/chanhomin/hosung/overnight_execution/e2212c40566e21c680a98186ebd8e984aa80d4fd",
   "started_at": "2026-10-01T15:14:09.791661+00:00",
-  "updated_at": "2026-10-01T16:31:27.346430+00:00"
+  "updated_at": "2026-10-01T16:38:20.259360+00:00"
 }

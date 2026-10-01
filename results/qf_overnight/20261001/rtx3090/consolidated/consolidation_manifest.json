@@ -9,24 +9,24 @@
   "checksums": [
     {
       "path": "incomplete_comparisons.csv",
-      "sha256": "f5eef8037ab6fd65755ff88735fb0ba0a1717d6db39638414836a52ad9483841"
+      "sha256": "24d16e11fc638cef0c6ca49d3d2f689bcd3fc50096d9feffc6e7824de5225b74"
     },
     {
       "path": "metrics.csv",
-      "sha256": "f7888233bd8fc63cfd428dc808a606a916ec5a43ecaf5d49721ebc0033f1dea1"
+      "sha256": "15247b070c50976e6044002bf939fdf0c789d93b91c4d70dbf242f7f0b0db110"
     },
     {
       "path": "paired_differences.csv",
-      "sha256": "662e4458922a7f7abba6f3478e8b6a21289b80e62f285ed6c2259a31c6650eb9"
+      "sha256": "a612f65ef0a0c3a1a1fe1e2d30191606e18dc8ef36efcc480ba5d7e213f6383e"
     },
     {
       "path": "rolling_metrics.csv",
       "sha256": "e7303e1f578fd25b93d14aaa5269009fcd0b995183f6c511368f6100b2dd6ab7"
     }
   ],
-  "complete_pair_rows": 248,
+  "complete_pair_rows": 296,
   "data_handoff_sha": "e85a89fd56584b513be940e6259c637369bd830b",
-  "incomplete_seed_comparisons": 168,
+  "incomplete_seed_comparisons": 136,
   "issues": [
     "rtx3090: independent_analysis/metrics.csv missing columns ['config_hash', 'core_source_digest', 'input_hash', 'mask_hash', 'panel', 'protocol_hash', 'row_key_label_digest', 'selected', 'source_digest', 'source_sha', 'split_hash']"
   ],
@@ -34,8 +34,8 @@
   "namespace": "new_p3_training",
   "source_result_shas": {
     "a5000": "54a10ea64ce815db430e6fd987d9ae9add5e5d12",
-    "rtx3090": "369d4e863ae8c3aaa9f56c5e392dd5ef4df7b046"
+    "rtx3090": "bfee169fa6f3301b9fd4522046cd3389b25ce4cf"
   },
   "status": "partial",
-  "validated_metric_rows": 312
+  "validated_metric_rows": 344
 }

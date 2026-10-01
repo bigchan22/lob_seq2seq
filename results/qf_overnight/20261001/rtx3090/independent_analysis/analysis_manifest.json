@@ -4,14 +4,14 @@
   "data_handoff_sha": "e85a89fd56584b513be940e6259c637369bd830b",
   "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
   "source_result_shas": {
-    "rtx3090": "369d4e863ae8c3aaa9f56c5e392dd5ef4df7b046",
+    "rtx3090": "bfee169fa6f3301b9fd4522046cd3389b25ce4cf",
     "a5000": "54a10ea64ce815db430e6fd987d9ae9add5e5d12"
   },
-  "verified_saved_prediction_files": 36,
+  "verified_saved_prediction_files": 40,
   "provenance": [
     {
       "owner": "rtx3090",
-      "source_result_sha": "369d4e863ae8c3aaa9f56c5e392dd5ef4df7b046",
+      "source_result_sha": "bfee169fa6f3301b9fd4522046cd3389b25ce4cf",
       "job": "main_UA_42_004000",
       "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
       "run_id": "2b83e064869226d82354188323bb9ccf2d6088f228dd3ca34e0860eb962f83b3",
@@ -27,7 +27,7 @@
     },
     {
       "owner": "rtx3090",
-      "source_result_sha": "369d4e863ae8c3aaa9f56c5e392dd5ef4df7b046",
+      "source_result_sha": "bfee169fa6f3301b9fd4522046cd3389b25ce4cf",
       "job": "main_UA_7_selected",
       "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
       "run_id": "c177f4f6434bc2011382f3beb5d35bb75ca88e7e7e2df8b45155f0ef2ab375de",
@@ -43,7 +43,7 @@
     },
     {
       "owner": "rtx3090",
-      "source_result_sha": "369d4e863ae8c3aaa9f56c5e392dd5ef4df7b046",
+      "source_result_sha": "bfee169fa6f3301b9fd4522046cd3389b25ce4cf",
       "job": "main_UA_123_selected",
       "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
       "run_id": "cb472558984eb0529a0f586c92b0c6e333120daea5399cff1b0f90dc87b93f52",
@@ -59,7 +59,7 @@
     },
     {
       "owner": "rtx3090",
-      "source_result_sha": "369d4e863ae8c3aaa9f56c5e392dd5ef4df7b046",
+      "source_result_sha": "bfee169fa6f3301b9fd4522046cd3389b25ce4cf",
       "job": "R1_UA_42",
       "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
       "run_id": "2b83e064869226d82354188323bb9ccf2d6088f228dd3ca34e0860eb962f83b3",
@@ -75,7 +75,7 @@
     },
     {
       "owner": "rtx3090",
-      "source_result_sha": "369d4e863ae8c3aaa9f56c5e392dd5ef4df7b046",
+      "source_result_sha": "bfee169fa6f3301b9fd4522046cd3389b25ce4cf",
       "job": "R1_UA_7",
       "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
       "run_id": "c177f4f6434bc2011382f3beb5d35bb75ca88e7e7e2df8b45155f0ef2ab375de",
@@ -91,7 +91,7 @@
     },
     {
       "owner": "rtx3090",
-      "source_result_sha": "369d4e863ae8c3aaa9f56c5e392dd5ef4df7b046",
+      "source_result_sha": "bfee169fa6f3301b9fd4522046cd3389b25ce4cf",
       "job": "R1_UA_123",
       "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
       "run_id": "cb472558984eb0529a0f586c92b0c6e333120daea5399cff1b0f90dc87b93f52",
@@ -107,7 +107,7 @@
     },
     {
       "owner": "rtx3090",
-      "source_result_sha": "369d4e863ae8c3aaa9f56c5e392dd5ef4df7b046",
+      "source_result_sha": "bfee169fa6f3301b9fd4522046cd3389b25ce4cf",
       "job": "R2_UA_42_selected",
       "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
       "run_id": "c4debaa44ed35c5e2d368d4499b660f09bcc8939b7beb23de52efee3e12cca10",
@@ -123,7 +123,23 @@
     },
     {
       "owner": "rtx3090",
-      "source_result_sha": "369d4e863ae8c3aaa9f56c5e392dd5ef4df7b046",
+      "source_result_sha": "bfee169fa6f3301b9fd4522046cd3389b25ce4cf",
+      "job": "R2_UA_7_selected",
+      "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+      "run_id": "63ebe84a850d6880544cda708f843eea11df7b5764dd379e9b4e709a31a797c4",
+      "prediction_sha256": "850c1b3a8797b962437d8e9677f209b906ee05c4a3082ef8a82fe0a0b465f45a",
+      "source_path": "results/qf_overnight/20261001/rtx3090/runs/exports/runs/R2_UA_7_selected__11dbc20f8d6adbf4/predictions.csv.gz",
+      "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+      "input_hash": "9cb89005693b1b70c102178849b740fde00b50c9ba5f3b5530d0e5749ea59837",
+      "split_hash": "8b90aa08a2480ce64e3784f1560ad81adcdab8870ccac0c6e424e34745f74c1e",
+      "transform_hash": "d9c5ac686ced9b81ab9985e059cb85d4c43169cf30726cb3d17404fa6d166bc6",
+      "rows": 84132,
+      "row_matches": "exact full expected support",
+      "max_probability_sum_error": 1.1920928977282585e-07
+    },
+    {
+      "owner": "rtx3090",
+      "source_result_sha": "bfee169fa6f3301b9fd4522046cd3389b25ce4cf",
       "job": "R2_UA_123_selected",
       "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
       "run_id": "f95381df58a8c2a43fb3f942c0d35d464752f732eeb066081d605d839e440074",
@@ -139,7 +155,7 @@
     },
     {
       "owner": "rtx3090",
-      "source_result_sha": "369d4e863ae8c3aaa9f56c5e392dd5ef4df7b046",
+      "source_result_sha": "bfee169fa6f3301b9fd4522046cd3389b25ce4cf",
       "job": "main_UC_42_004000",
       "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
       "run_id": "66156467206e56b3950433ca20c6962593dcc688707bcdb33ede0e7c103750a5",
@@ -155,7 +171,7 @@
     },
     {
       "owner": "rtx3090",
-      "source_result_sha": "369d4e863ae8c3aaa9f56c5e392dd5ef4df7b046",
+      "source_result_sha": "bfee169fa6f3301b9fd4522046cd3389b25ce4cf",
       "job": "main_UC_7_selected",
       "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
       "run_id": "fcdec04082a1596a316646def3f08da304cb5c7c89f7a5af939059f3c6e93916",
@@ -171,7 +187,7 @@
     },
     {
       "owner": "rtx3090",
-      "source_result_sha": "369d4e863ae8c3aaa9f56c5e392dd5ef4df7b046",
+      "source_result_sha": "bfee169fa6f3301b9fd4522046cd3389b25ce4cf",
       "job": "main_UC_123_selected",
       "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
       "run_id": "ce65f4ddd35c52b02fc23351faac676c6b7f197278a3ade034b836013256fddc",
@@ -187,7 +203,7 @@
     },
     {
       "owner": "rtx3090",
-      "source_result_sha": "369d4e863ae8c3aaa9f56c5e392dd5ef4df7b046",
+      "source_result_sha": "bfee169fa6f3301b9fd4522046cd3389b25ce4cf",
       "job": "R1_UC_42",
       "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
       "run_id": "66156467206e56b3950433ca20c6962593dcc688707bcdb33ede0e7c103750a5",
@@ -203,7 +219,7 @@
     },
     {
       "owner": "rtx3090",
-      "source_result_sha": "369d4e863ae8c3aaa9f56c5e392dd5ef4df7b046",
+      "source_result_sha": "bfee169fa6f3301b9fd4522046cd3389b25ce4cf",
       "job": "R1_UC_7",
       "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
       "run_id": "fcdec04082a1596a316646def3f08da304cb5c7c89f7a5af939059f3c6e93916",
@@ -219,7 +235,7 @@
     },
     {
       "owner": "rtx3090",
-      "source_result_sha": "369d4e863ae8c3aaa9f56c5e392dd5ef4df7b046",
+      "source_result_sha": "bfee169fa6f3301b9fd4522046cd3389b25ce4cf",
       "job": "R1_UC_123",
       "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
       "run_id": "ce65f4ddd35c52b02fc23351faac676c6b7f197278a3ade034b836013256fddc",
@@ -232,6 +248,22 @@
       "rows": 84132,
       "row_matches": "exact full expected support",
       "max_probability_sum_error": 1.1920928999487046e-07
+    },
+    {
+      "owner": "rtx3090",
+      "source_result_sha": "bfee169fa6f3301b9fd4522046cd3389b25ce4cf",
+      "job": "R2_UC_123_selected",
+      "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+      "run_id": "83c09eff48a321ea7a43ece367ded792e9a9486054953a537b04ce43d1d6b0b6",
+      "prediction_sha256": "386acd34b91692cd1b13711ced5d395e9dee1f7ecab1cfd85710e91ae680a214",
+      "source_path": "results/qf_overnight/20261001/rtx3090/runs/exports/runs/R2_UC_123_selected__a28268ab89d0d732/predictions.csv.gz",
+      "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+      "input_hash": "9cb89005693b1b70c102178849b740fde00b50c9ba5f3b5530d0e5749ea59837",
+      "split_hash": "8b90aa08a2480ce64e3784f1560ad81adcdab8870ccac0c6e424e34745f74c1e",
+      "transform_hash": "d9c5ac686ced9b81ab9985e059cb85d4c43169cf30726cb3d17404fa6d166bc6",
+      "rows": 84132,
+      "row_matches": "exact full expected support",
+      "max_probability_sum_error": 1.1920928955078125e-07
     },
     {
       "owner": "a5000",
@@ -571,7 +603,7 @@
     },
     {
       "owner": "rtx3090",
-      "source_result_sha": "369d4e863ae8c3aaa9f56c5e392dd5ef4df7b046",
+      "source_result_sha": "bfee169fa6f3301b9fd4522046cd3389b25ce4cf",
       "job": "main_SHARED_QUERY_42_004000",
       "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
       "run_id": "923731bfb247b2cc2a3e1efd796381c7b2facc252773b73982795882c4773278",
@@ -584,16 +616,41 @@
       "rows": 151848,
       "row_matches": "exact full expected support",
       "max_probability_sum_error": 1.1920928955078125e-07
+    },
+    {
+      "owner": "rtx3090",
+      "source_result_sha": "bfee169fa6f3301b9fd4522046cd3389b25ce4cf",
+      "job": "main_SHARED_QUERY_7_selected",
+      "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+      "run_id": "7829448990cb0816d19af2f250e7cec6ba4f7e1b721fa16170de66909d4e909a",
+      "prediction_sha256": "05de7cb5bca9d5144139d37cfa828cf18a91d7d4663364cfafeb5836b5f3906b",
+      "source_path": "results/qf_overnight/20261001/rtx3090/runs/exports/runs/main_SHARED_QUERY_7_selected__777ab9c0a43b6d6f/predictions.csv.gz",
+      "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+      "input_hash": "9cb89005693b1b70c102178849b740fde00b50c9ba5f3b5530d0e5749ea59837",
+      "split_hash": "490eeb15970ef077ee050323b551cd9c3c5534c257f1febddca9af74ed1cf0a4",
+      "transform_hash": "7c046856fb93caadaba00219d440e28b84a542bcec20f13640d962cb8ad3d89f",
+      "rows": 151848,
+      "row_matches": "exact full expected support",
+      "max_probability_sum_error": 1.1920928966180355e-07
+    },
+    {
+      "owner": "rtx3090",
+      "source_result_sha": "bfee169fa6f3301b9fd4522046cd3389b25ce4cf",
+      "job": "main_SHARED_QUERY_123_selected",
+      "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+      "run_id": "4a971f35f588ef6b3b559d5d925dc402cac445517dafdca6f6f5f1517404ad6b",
+      "prediction_sha256": "a033d1483c42c3a34229a4670ecefb6eaee35f3bbd13ee3cc8b179343d3df733",
+      "source_path": "results/qf_overnight/20261001/rtx3090/runs/exports/runs/main_SHARED_QUERY_123_selected__ff6a3b91f9038476/predictions.csv.gz",
+      "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+      "input_hash": "9cb89005693b1b70c102178849b740fde00b50c9ba5f3b5530d0e5749ea59837",
+      "split_hash": "490eeb15970ef077ee050323b551cd9c3c5534c257f1febddca9af74ed1cf0a4",
+      "transform_hash": "7c046856fb93caadaba00219d440e28b84a542bcec20f13640d962cb8ad3d89f",
+      "rows": 151848,
+      "row_matches": "exact full expected support",
+      "max_probability_sum_error": 1.1920928977282585e-07
     }
   ],
   "missing": [
-    {
-      "model": "UA",
-      "seed": 7,
-      "fold": "R2",
-      "job": "R2_UA_7_selected",
-      "reason": "exact selected saved prediction not yet published"
-    },
     {
       "model": "UA",
       "seed": 42,
@@ -631,13 +688,6 @@
     },
     {
       "model": "UC",
-      "seed": 123,
-      "fold": "R2",
-      "job": "R2_UC_123_selected",
-      "reason": "exact selected saved prediction not yet published"
-    },
-    {
-      "model": "UC",
       "seed": 42,
       "fold": "R3",
       "job": "R3_UC_42_selected",
@@ -655,20 +705,6 @@
       "seed": 123,
       "fold": "R3",
       "job": "R3_UC_123_selected",
-      "reason": "exact selected saved prediction not yet published"
-    },
-    {
-      "model": "SHARED_QUERY",
-      "seed": 7,
-      "fold": "main",
-      "job": "main_SHARED_QUERY_7_selected",
-      "reason": "exact selected saved prediction not yet published"
-    },
-    {
-      "model": "SHARED_QUERY",
-      "seed": 123,
-      "fold": "main",
-      "job": "main_SHARED_QUERY_123_selected",
       "reason": "exact selected saved prediction not yet published"
     },
     {
@@ -725,18 +761,8 @@
           "R2"
         ],
         [
-          "UA",
-          7,
-          "R2"
-        ],
-        [
           "UC",
           7,
-          "R2"
-        ],
-        [
-          "UC",
-          123,
           "R2"
         ]
       ]
@@ -793,18 +819,8 @@
           "R2"
         ],
         [
-          "UA",
-          7,
-          "R2"
-        ],
-        [
           "UC",
           7,
-          "R2"
-        ],
-        [
-          "UC",
-          123,
           "R2"
         ],
         [
@@ -836,19 +852,6 @@
           "UC",
           123,
           "R3"
-        ]
-      ]
-    },
-    {
-      "comparison": "UA-UM_V2_DEPTH",
-      "folds": [
-        "R2"
-      ],
-      "missing_model_seed_folds": [
-        [
-          "UA",
-          7,
-          "R2"
         ]
       ]
     },
@@ -885,11 +888,6 @@
       "missing_model_seed_folds": [
         [
           "UA",
-          7,
-          "R2"
-        ],
-        [
-          "UA",
           42,
           "R3"
         ],
@@ -902,24 +900,6 @@
           "UA",
           123,
           "R3"
-        ]
-      ]
-    },
-    {
-      "comparison": "UA-SHARED_QUERY",
-      "folds": [
-        "main"
-      ],
-      "missing_model_seed_folds": [
-        [
-          "SHARED_QUERY",
-          7,
-          "main"
-        ],
-        [
-          "SHARED_QUERY",
-          123,
-          "main"
         ]
       ]
     },

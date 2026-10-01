@@ -1,0 +1,10 @@
+{
+  "validated": true,
+  "source_job": "main_UA_123_selected",
+  "diagnostic": "inference-only distribution shift; not trained lag model or causal attribution",
+  "job_id": "interventions_UA_123",
+  "owner": "rtx3090",
+  "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+  "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+  "completed_at": "2026-10-01T16:35:26.722482+00:00"
+}
