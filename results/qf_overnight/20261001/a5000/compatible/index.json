@@ -51,6 +51,16 @@
       "complete_sha256": "d93779097de57c417dd17cded50544c2cdbc3e7c4e8de5c873c1b504f16a745a"
     },
     {
+      "job": "analyze_R3_UM_V2_DEPTH_42_selected",
+      "path": "analyze_R3_UM_V2_DEPTH_42_selected__4ecadfdf4f86dab4",
+      "complete_sha256": "9e2b1c47da6452d90bb8c657e9735eade166a377086705e4ad3922a47ea37356"
+    },
+    {
+      "job": "analyze_R3_UM_V2_DEPTH_7_selected",
+      "path": "analyze_R3_UM_V2_DEPTH_7_selected__335a14a6c140443f",
+      "complete_sha256": "ce7101001ffef5892d1ae5c37a0b93a9735295e4e3c34bad7b189d368eee220f"
+    },
+    {
       "job": "analyze_U1_123",
       "path": "analyze_U1_123__84ead72696a197eb",
       "complete_sha256": "f2c01584149f18bcbc9bd439ba3354e08aebdb432a1f036f014c655cc789ba6d"

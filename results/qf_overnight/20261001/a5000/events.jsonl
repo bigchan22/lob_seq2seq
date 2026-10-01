@@ -398,3 +398,17 @@
 {"seq": 398, "time": "2026-10-01T15:55:51.818586+00:00", "job": "main_S_7_001000_KR7005830005_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
 {"seq": 399, "time": "2026-10-01T15:55:51.840895+00:00", "job": "main_S_7_001000_KR7005930003_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
 {"seq": 400, "time": "2026-10-01T15:55:51.910792+00:00", "job": "analyze_R3_UM_V2_DEPTH_42_selected", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 2}"}
+{"seq": 401, "time": "2026-10-01T15:55:55.904960+00:00", "job": "analyze_R3_UM_V2_DEPTH_42_selected", "event": "succeeded", "detail": "{\"result\": \"runs/analyze_R3_UM_V2_DEPTH_42_selected/attempt_0002/result.json\"}"}
+{"seq": 402, "time": "2026-10-01T15:56:01.929892+00:00", "job": "analyze_R3_UM_V2_DEPTH_7_selected", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 2}"}
+{"seq": 403, "time": "2026-10-01T15:56:05.943678+00:00", "job": "analyze_R3_UM_V2_DEPTH_7_selected", "event": "succeeded", "detail": "{\"result\": \"runs/analyze_R3_UM_V2_DEPTH_7_selected/attempt_0002/result.json\"}"}
+{"seq": 404, "time": "2026-10-01T15:56:07.527310+00:00", "job": "main_S_7_001000_KR7005490008_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7005490008_t/attempt_0001/result.json\"}"}
+{"seq": 405, "time": "2026-10-01T15:56:11.331094+00:00", "job": "main_S_7_001000_KR7005830005_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7005830005_t/attempt_0001/result.json\"}"}
+{"seq": 406, "time": "2026-10-01T15:56:11.846815+00:00", "job": "main_S_7_001000_KR7006400006_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 407, "time": "2026-10-01T15:56:11.853518+00:00", "job": "main_S_7_001000_KR7006800007_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 408, "time": "2026-10-01T15:56:15.318403+00:00", "job": "main_S_7_001000_KR7005930003_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7005930003_t/attempt_0001/result.json\"}"}
+{"seq": 409, "time": "2026-10-01T15:56:21.880714+00:00", "job": "main_S_7_001000_KR7007070006_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 410, "time": "2026-10-01T15:56:30.692505+00:00", "job": "main_S_7_001000_KR7006800007_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7006800007_t/attempt_0001/result.json\"}"}
+{"seq": 411, "time": "2026-10-01T15:56:30.831451+00:00", "job": "main_S_7_001000_KR7006400006_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7006400006_t/attempt_0001/result.json\"}"}
+{"seq": 412, "time": "2026-10-01T15:56:31.876639+00:00", "job": "main_S_7_001000_KR7008770000_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 413, "time": "2026-10-01T15:56:31.882390+00:00", "job": "main_S_7_001000_KR7009150004_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 414, "time": "2026-10-01T15:56:33.759625+00:00", "job": "adapter_TLOB_ADAPTED", "event": "adapter_ready", "detail": "{\"source\": \"/home/chanhomin/hosung/overnight/qf-august-overnight-20261001/execution-tlob\"}"}

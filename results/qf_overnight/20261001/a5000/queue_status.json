@@ -2,15 +2,14 @@
   "run_group": "qf-august-overnight-20261001",
   "owner": "a5000",
   "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
-  "updated_at": "2026-10-01T15:55:51.664639+00:00",
+  "updated_at": "2026-10-01T15:56:35.530581+00:00",
   "counts": {
-    "PENDING": 38,
-    "RUNNING": 1,
-    "SUCCEEDED": 138,
-    "WAITING_ADAPTER": 1
+    "PENDING": 29,
+    "RUNNING": 3,
+    "SUCCEEDED": 146
   },
   "paused": false,
-  "stop": false,
+  "stop": true,
   "jobs": [
     {
       "id": "R1_UM_V2_DEPTH_123",
@@ -188,7 +187,7 @@
     },
     {
       "id": "adapter_TLOB_ADAPTED",
-      "state": "WAITING_ADAPTER",
+      "state": "SUCCEEDED",
       "attempt": 0,
       "retries": 0,
       "oom": 0,
@@ -199,7 +198,9 @@
       "kind": "adapter",
       "model": "TLOB_ADAPTED",
       "priority": 40,
-      "detail": {}
+      "detail": {
+        "adapter_source": "/home/chanhomin/hosung/overnight/qf-august-overnight-20261001/execution-tlob"
+      }
     },
     {
       "id": "analyze_GRU_U1_123",
@@ -329,14 +330,14 @@
     },
     {
       "id": "analyze_R3_UM_V2_DEPTH_42_selected",
-      "state": "PENDING",
-      "attempt": 1,
+      "state": "SUCCEEDED",
+      "attempt": 2,
       "retries": 1,
       "oom": 0,
-      "pid": 2171730,
-      "start": "1102397629",
-      "heartbeat": 1790869472.2243788,
-      "progress": 1790869470.2629821,
+      "pid": 2179326,
+      "start": "1102465794",
+      "heartbeat": 1790870155.904815,
+      "progress": 1790870151.9106896,
       "kind": "analysis",
       "model": "UM_V2_DEPTH",
       "priority": 31,
@@ -347,14 +348,14 @@
     },
     {
       "id": "analyze_R3_UM_V2_DEPTH_7_selected",
-      "state": "PENDING",
-      "attempt": 1,
+      "state": "SUCCEEDED",
+      "attempt": 2,
       "retries": 1,
       "oom": 0,
-      "pid": 2171868,
-      "start": "1102399633",
-      "heartbeat": 1790869491.9340816,
-      "progress": 1790869490.2998736,
+      "pid": 2179507,
+      "start": "1102466796",
+      "heartbeat": 1790870165.9435377,
+      "progress": 1790870161.9298263,
       "kind": "analysis",
       "model": "UM_V2_DEPTH",
       "priority": 31,
@@ -2327,127 +2328,161 @@
     },
     {
       "id": "main_S_7_001000_KR7005490008_t",
-      "state": "RUNNING",
+      "state": "SUCCEEDED",
       "attempt": 1,
       "retries": 0,
       "oom": 0,
       "pid": 2179121,
       "start": "1102463783",
-      "heartbeat": 1790870151.6542432,
-      "progress": 1790870151.6542435,
+      "heartbeat": 1790870167.5271664,
+      "progress": 1790870166.8891568,
       "kind": "fit",
       "model": "S",
       "priority": 50,
       "detail": {
-        "epoch": 109,
-        "completed_day_panels": 288,
-        "phase": "train"
+        "epoch": 200,
+        "phase": "checkpoint",
+        "epoch_seconds": 0.16130386106669903,
+        "checkpoint_time": 1790870166.8869374
       }
     },
     {
       "id": "main_S_7_001000_KR7005830005_t",
-      "state": "PENDING",
-      "attempt": 0,
+      "state": "SUCCEEDED",
+      "attempt": 1,
       "retries": 0,
       "oom": 0,
-      "pid": null,
-      "start": null,
-      "heartbeat": null,
-      "progress": null,
+      "pid": 2179324,
+      "start": "1102465785",
+      "heartbeat": 1790870171.3308878,
+      "progress": 1790870170.721476,
       "kind": "fit",
       "model": "S",
       "priority": 50,
-      "detail": {}
+      "detail": {
+        "epoch": 100,
+        "phase": "checkpoint",
+        "epoch_seconds": 0.12477844953536987,
+        "checkpoint_time": 1790870170.7201345
+      }
     },
     {
       "id": "main_S_7_001000_KR7005930003_t",
-      "state": "PENDING",
-      "attempt": 0,
+      "state": "SUCCEEDED",
+      "attempt": 1,
       "retries": 0,
       "oom": 0,
-      "pid": null,
-      "start": null,
-      "heartbeat": null,
-      "progress": null,
+      "pid": 2179325,
+      "start": "1102465787",
+      "heartbeat": 1790870175.3180037,
+      "progress": 1790870174.726423,
       "kind": "fit",
       "model": "S",
       "priority": 50,
-      "detail": {}
+      "detail": {
+        "epoch": 113,
+        "phase": "checkpoint",
+        "epoch_seconds": 0.14938806183636189,
+        "checkpoint_time": 1790870174.7249625
+      }
     },
     {
       "id": "main_S_7_001000_KR7006400006_t",
-      "state": "PENDING",
-      "attempt": 0,
+      "state": "SUCCEEDED",
+      "attempt": 1,
       "retries": 0,
       "oom": 0,
-      "pid": null,
-      "start": null,
-      "heartbeat": null,
-      "progress": null,
+      "pid": 2179561,
+      "start": "1102467788",
+      "heartbeat": 1790870190.831277,
+      "progress": 1790870190.213128,
       "kind": "fit",
       "model": "S",
       "priority": 50,
-      "detail": {}
+      "detail": {
+        "epoch": 92,
+        "phase": "checkpoint",
+        "epoch_seconds": 0.14131371304392815,
+        "checkpoint_time": 1790870190.2118318
+      }
     },
     {
       "id": "main_S_7_001000_KR7006800007_t",
-      "state": "PENDING",
-      "attempt": 0,
+      "state": "SUCCEEDED",
+      "attempt": 1,
       "retries": 0,
       "oom": 0,
-      "pid": null,
-      "start": null,
-      "heartbeat": null,
-      "progress": null,
+      "pid": 2179562,
+      "start": "1102467788",
+      "heartbeat": 1790870190.692208,
+      "progress": 1790870190.0843787,
       "kind": "fit",
       "model": "S",
       "priority": 50,
-      "detail": {}
+      "detail": {
+        "epoch": 102,
+        "phase": "checkpoint",
+        "epoch_seconds": 0.13141163252294064,
+        "checkpoint_time": 1790870190.0829892
+      }
     },
     {
       "id": "main_S_7_001000_KR7007070006_t",
-      "state": "PENDING",
-      "attempt": 0,
+      "state": "RUNNING",
+      "attempt": 1,
       "retries": 0,
       "oom": 0,
-      "pid": null,
-      "start": null,
-      "heartbeat": null,
-      "progress": null,
+      "pid": 2179725,
+      "start": "1102468791",
+      "heartbeat": 1790870195.5233197,
+      "progress": 1790870195.5233197,
       "kind": "fit",
       "model": "S",
       "priority": 50,
-      "detail": {}
+      "detail": {
+        "epoch": 62,
+        "completed_day_panels": 96,
+        "phase": "train"
+      }
     },
     {
       "id": "main_S_7_001000_KR7008770000_t",
-      "state": "PENDING",
-      "attempt": 0,
+      "state": "RUNNING",
+      "attempt": 1,
       "retries": 0,
       "oom": 0,
-      "pid": null,
-      "start": null,
-      "heartbeat": null,
-      "progress": null,
+      "pid": 2179883,
+      "start": "1102469791",
+      "heartbeat": 1790870195.5136526,
+      "progress": 1790870195.5136528,
       "kind": "fit",
       "model": "S",
       "priority": 50,
-      "detail": {}
+      "detail": {
+        "epoch": 2,
+        "completed_day_panels": 64,
+        "phase": "train"
+      }
     },
     {
       "id": "main_S_7_001000_KR7009150004_t",
-      "state": "PENDING",
-      "attempt": 0,
+      "state": "RUNNING",
+      "attempt": 1,
       "retries": 0,
       "oom": 0,
-      "pid": null,
-      "start": null,
-      "heartbeat": null,
-      "progress": null,
+      "pid": 2179884,
+      "start": "1102469791",
+      "heartbeat": 1790870195.515139,
+      "progress": 1790870195.5151393,
       "kind": "fit",
       "model": "S",
       "priority": 50,
-      "detail": {}
+      "detail": {
+        "epoch": 1,
+        "phase": "checkpoint",
+        "epoch_seconds": 0.9074658714234829,
+        "checkpoint_time": 1790870195.5112805
+      }
     },
     {
       "id": "main_TLOB_ADAPTED_123_selected",
