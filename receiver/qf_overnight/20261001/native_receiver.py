@@ -4,7 +4,7 @@ import argparse,fcntl,gzip,hashlib,json,os,shutil,subprocess,sys,time
 from pathlib import Path
 from receiver import Receiver,atomic,read,sha,identity,alive,now,PREFIX
 
-FROZEN_READY='675a3086cd6c4f2abd63c7d3acd419ca12dbc861'
+FROZEN_READY='e2212c40566e21c680a98186ebd8e984aa80d4fd'
 FROZEN_PROTOCOL='bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1'
 def digest(x):return hashlib.sha256(json.dumps(x,sort_keys=True,separators=(',',':'),allow_nan=False).encode()).hexdigest()
 
@@ -35,6 +35,7 @@ class Native:
         assert p['input_lineage']==self.c['input_sha']
         assert p['input_manifest_sha256']==r['input_manifest_sha256']==sha(self.source/'recovery/input_manifest.csv')
         for path,expected in r['core_source_files'].items():assert sha(self.source/path)==expected,path
+        for entry in r.get('files',[]):assert sha(self.source/entry['path'])==entry['sha256'],entry['path']
         assert digest(r['core_source_files'])==r['core_executable_digest']
         files={'configs/qf_overnight/20261001/queue_manifest.json':r['manifest_sha256'],
                'configs/qf_overnight/20261001/splits.json':r['split_manifest_sha256'],
@@ -62,7 +63,7 @@ class Native:
         result={'verified':True,'ready_sha':FROZEN_READY,'protocol_hash':FROZEN_PROTOCOL,'core_executable_digest':r['core_executable_digest'],'global_dag_nodes':247,'owned_dag_nodes':69,'owned_new_fits':30,'source_files_verified':len(r['core_source_files']),'resolved_splits_verified':True,'historical_replay_sha':'dee398fb13078937833329a49f0665eb3c459b47'}
         atomic(self.root/'native_source_verification.json',result);atomic(self.r.pub/PREFIX/'native_source_verification.json',result)
     def cache(self):
-        wanted=self.ready['prepared_data_hashes'];dest=self.root/'prepared_canonical';dest.mkdir(exist_ok=True)
+        wanted=self.ready['prepared_data_hashes'];dest=self.queue/'prepared';dest.mkdir(parents=True,exist_ok=True)
         source=self.root/self.c.get('local_prepared_directory','prepared')
         original=read(source/'identity.json');received=read(self.root/'prepared_cache_receipt.json',{'files':[]})
         missing=[]
@@ -111,27 +112,32 @@ class Native:
     def launch(self,cache):
         ok,reason=self.r.resource_available()
         if not ok:self.state.update(phase='WAITING_FOR_ALLOCATED_GPU',blocker=reason);return False
-        gpu=self.r.state['active_gpu_uuids'];env=self.r.worker_env();env['CUBLAS_WORKSPACE_CONFIG']=':4096:8'
-        gates=self.root/'smoke_canonical'
         if self.state.get('deterministic_smoke_failed'):
-            self.state.update(phase='BLOCKED_NATIVE_SMOKE',blocker='Recorded deterministic smoke failure requires a producer/source or reviewed environment repair; no automatic repetition');return False
-        if not (gates/'gates.json').exists():
-            self.state.update(phase='NATIVE_REAL_DATA_GATES',gpus_for_smoke=[gpu[0]]);self.save()
-            env['CUDA_VISIBLE_DEVICES']=gpu[0]
-            with (self.root/'native_canonical_smoke.log').open('ab') as log:
-                p=subprocess.run([self.c['python'],'-u','-B',str(self.source/'scripts/qf_overnight/gates.py'),'--cache',str(cache),'--out',str(gates),'--device','cuda:0'],cwd=self.source,env=env,stdout=log,stderr=subprocess.STDOUT,timeout=1200)
-            if p.returncode:
-                self.state['deterministic_smoke_failed']=True
-                raise RuntimeError('Native canonical smoke failed; native_canonical_smoke.log; no scientific training launched')
-        gate=read(gates/'gates.json');assert gate['passed'] and gate['protocol_hash']==FROZEN_PROTOCOL and gate['source_files']==self.ready['core_source_files']
-        atomic(self.r.pub/PREFIX/'receiver_native_gates.json',gate)
-        self.invoke(['init','--root',str(self.queue),'--owner','rtx3090','--cache',str(cache),'--publication',str(self.r.pub),'--gpus',','.join(gpu)],'native_init.log',env)
+            self.state.update(phase='BLOCKED_NATIVE_SMOKE',blocker='Recorded gate failure; preserve artifacts and await reviewed repair');return False
+        # Producer bridge uses this exact task-local prepared path; no input patch.
+        assert cache==self.queue/'prepared'
+        sys.path.insert(0,str(self.source/'scripts/qf_overnight'))
+        from queue_store import Queue
+        q=Queue(self.queue);q.initialize(read(self.source/'configs/qf_overnight/20261001/queue_manifest.json'),'rtx3090',self.source);q.close()
         self.reuse_historical()
-        self.state.update(phase='LAUNCHING_NATIVE_QUEUE',blocker=None,gpu_uuids=gpu)
-        self.save();self.publish() # final receiver Git write, before native publisher ownership
-        self.invoke(['start','--root',str(self.queue)],'native_start.log',env)
-        self.state.update(phase='RUNNING_NATIVE_QUEUE',native_started=True,queue_root_alias='NATIVE_QUEUE_ROOT')
-        atomic(self.root/'native_handoff.json',{'ready_sha':FROZEN_READY,'source_path':str(self.source),'python':self.c['python'],'queue_root':str(self.queue),'runtime_script':str(self.source/'scripts/qf_overnight/runtime.py'),'gpu_uuids':gpu,'started_at':now()})
+        self.state.update(phase='NATIVE_REAL_DATA_GATES',blocker=None);self.save()
+        try:self.r.launch(self.ready,self.source)
+        except Exception:
+            self.state['deterministic_smoke_failed']=True;raise
+        if self.r.state.get('phase')!='RUNNING':return False
+        atomic(self.root/'pinned_ready.json',self.ready)
+        self.r.state.update(ready_sha=FROZEN_READY,source_path=str(self.source),
+                            protocol_hash=self.ready['protocol_sha256'],scientific_protocol_hash=FROZEN_PROTOCOL,
+                            last_error=None,native_receiver=False)
+        self.r.save();self.r.publish()
+        entry=Path(__file__).with_name('receiver.py')
+        with (self.root/'receiver.log').open('ab') as log:
+            process=subprocess.Popen([sys.executable,'-u','-B',str(entry),'--config',self.r.config_path,'run'],stdin=subprocess.DEVNULL,stdout=log,stderr=subprocess.STDOUT,start_new_session=True,env=self.r.env)
+        receipt={'script_path':str(entry),'pid':process.pid,'start_ticks':identity(process.pid),'process_group':process.pid,'started_at':now(),'native_bridge_source_sha':FROZEN_READY}
+        atomic(self.root/'launch_receipt.json',receipt)
+        self.state.update(phase='HANDED_TO_RUNNING_PRODUCER_BRIDGE',native_started=True,outer_receiver_pid=process.pid,
+                          coordinator=self.r.state['coordinator'])
+        atomic(self.root/'native_handoff.json',{'ready_sha':FROZEN_READY,'source_path':str(self.source),'python':self.c['python'],'queue_root':str(self.queue),'runtime_script':str(self.source/'scripts/qf_overnight/receiver_bridge/bridge.py'),'gpu_uuids':self.r.state['active_gpu_uuids'],'started_at':now()})
         self.save();return True
     def reuse_historical(self):
         # User permits reference/adoption of the exact completed replay instead of duplicate work.
@@ -171,7 +177,7 @@ class Native:
                     self.r.state.update(self.state);self.r.final_publish();return
                 if not control.get('paused'):
                     cache=self.cache()
-                    if cache and self.launch(cache):continue
+                    if cache and self.launch(cache):return
                 self.save()
                 if time.time()-self.last_pub>300:self.publish()
                 delay=min(120,delay*2)

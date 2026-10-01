@@ -62,14 +62,18 @@ class Audit:
   rb=self.blob(commit,directory+'result.json');assert sha(rb)==record['result_hash'] and json.loads(rb)==result
   if not result.get('validated'):raise ValueError('unvalidated result')
   try:raw=self.blob(commit,directory+'predictions.csv.gz')
-  except subprocess.CalledProcessError:return None
+  except subprocess.CalledProcessError:
+   try:raw=self.blob(commit,prefix+'runs/exports/selected_inputs/'+id+'/predictions.csv.gz')
+   except subprocess.CalledProcessError:return None
   assert sha(raw)==result['files']['predictions.csv.gz'],'prediction hash mismatch'
   assert result['protocol_hash']==self.ready['protocol_hash']
   assert result['input_hash']==self.ready['input_manifest_sha256']
   # Main/new-fold fits record exact executable file identities; R1 is an explicit alias.
   if 'resolved_config.json' in result.get('files',{}):
    cb=self.blob(commit,directory+'resolved_config.json');assert sha(cb)==result['files']['resolved_config.json'];cfg=json.loads(cb)
-   assert all(cfg['source_files'].get(p)==h for p,h in self.ready['core_source_files'].items())
+   scientific={p:h for p,h in self.ready['comparison_contract_files'].items() if p.endswith('.py')}
+   assert all(cfg['source_files'].get(p)==h for p,h in scientific.items())
+   assert cfg['source_files']['scripts/qf_overnight/scoring.py'] in ['471361f2821b448c8efbe10b1cbd18c7561984c8463d19450e66a0a306188a68','cac9296b79ab9a7d28e31fcb9964f8b0e8f43d5c834d37671376ab5d4e2bcfa0'], 'unreviewed metric implementation'
   p=pd.read_csv(io.BytesIO(raw),compression='gzip',dtype={'date':str,'asset_id':str,'origin_time':str,'endpoint_time':str})
   return p,result,{'owner':owner,'source_result_sha':commit,'job':id,'source_sha':result.get('source_sha'),'run_id':result.get('run_id'),'prediction_sha256':sha(raw),'source_path':directory+'predictions.csv.gz','protocol_hash':result['protocol_hash'],'input_hash':result['input_hash'],'split_hash':result['split_hash'],'transform_hash':result['transform_hash']}
  def load(self,model,seed,fold):
@@ -81,7 +85,7 @@ class Audit:
   assert not frame.duplicated(KEYS).any() and len(frame)==len(expected)
   frame=frame.sort_values(KEYS).reset_index(drop=True)
   cols=KEYS+['endpoint_time','legacy_label']+POPS
-  assert frame[cols].equals(expected[cols]),'row/key/label/mask mismatch'
+  for column in cols:assert np.array_equal(frame[column].to_numpy(),expected[column].to_numpy()),'row/key/label/mask mismatch: '+column
   assert frame.seed.eq(seed).all() and frame.model.eq(model).all()
   p=frame[PROBS].to_numpy(np.float64);assert np.isfinite(p).all() and (p>=0).all() and (p<=1).all();s=p.sum(1);assert (s>0).all()
   error=float(np.max(abs(s-1)));assert error<1e-5,'large probability sum error'
