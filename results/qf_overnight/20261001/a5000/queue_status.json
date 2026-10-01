@@ -2,11 +2,11 @@
   "run_group": "qf-august-overnight-20261001",
   "owner": "a5000",
   "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
-  "updated_at": "2026-10-01T17:10:15.163534+00:00",
+  "updated_at": "2026-10-01T17:16:45.998113+00:00",
   "counts": {
     "PENDING": 8,
-    "RUNNING": 2,
-    "SUCCEEDED": 168
+    "RUNNING": 1,
+    "SUCCEEDED": 169
   },
   "paused": false,
   "stop": false,
@@ -2513,21 +2513,22 @@
     },
     {
       "id": "main_TLOB_ADAPTED_42_000500",
-      "state": "RUNNING",
+      "state": "SUCCEEDED",
       "attempt": 1,
       "retries": 0,
       "oom": 0,
       "pid": 2180199,
       "start": "1102474514",
-      "heartbeat": 1790874613.54055,
-      "progress": 1790874612.4403257,
+      "heartbeat": 1790874956.78109,
+      "progress": 1790874947.2856112,
       "kind": "fit",
       "model": "TLOB_ADAPTED",
       "priority": 40,
       "detail": {
-        "epoch": 111,
-        "completed_day_panels": 128,
-        "phase": "train"
+        "epoch": 119,
+        "phase": "checkpoint",
+        "epoch_seconds": 38.672405706718564,
+        "checkpoint_time": 1790874947.283312
       }
     },
     {
@@ -2538,14 +2539,14 @@
       "oom": 0,
       "pid": 2180200,
       "start": "1102474515",
-      "heartbeat": 1790874613.5178642,
-      "progress": 1790874612.730446,
+      "heartbeat": 1790875003.9085615,
+      "progress": 1790875002.3203924,
       "kind": "fit",
       "model": "TLOB_ADAPTED",
       "priority": 40,
       "detail": {
-        "epoch": 98,
-        "completed_day_panels": 320,
+        "epoch": 107,
+        "completed_day_panels": 256,
         "phase": "train"
       }
     },

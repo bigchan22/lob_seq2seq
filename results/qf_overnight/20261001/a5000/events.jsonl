@@ -457,3 +457,4 @@
 {"seq": 457, "time": "2026-10-01T17:06:08.734133+00:00", "job": "pool_S_7", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 1}"}
 {"seq": 458, "time": "2026-10-01T17:06:17.709074+00:00", "job": "main_TLOB_ADAPTED_42_002000", "event": "succeeded", "detail": "{\"result\": \"runs/main_TLOB_ADAPTED_42_002000/attempt_0001/result.json\"}"}
 {"seq": 459, "time": "2026-10-01T17:06:17.716813+00:00", "job": "pool_S_7", "event": "succeeded", "detail": "{\"result\": \"runs/pool_S_7/attempt_0001/result.json\"}"}
+{"seq": 460, "time": "2026-10-01T17:15:56.781236+00:00", "job": "main_TLOB_ADAPTED_42_000500", "event": "succeeded", "detail": "{\"result\": \"runs/main_TLOB_ADAPTED_42_000500/attempt_0001/result.json\"}"}
