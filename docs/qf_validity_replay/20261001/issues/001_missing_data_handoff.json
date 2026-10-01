@@ -1,0 +1,20 @@
+{
+  "id": "001",
+  "kind": "missing_required_handoff_and_saved_predictions",
+  "severity": "blocks_production_replay",
+  "status": "open",
+  "producer_ref": "refs/heads/work/qf-august-data-review-20261001",
+  "observed_at": "2026-10-01T08:21:28.328912+00:00",
+  "observation": "Ref not advertised; no competing task refs; handoff/masks/frozen index/replay_inputs cannot be pinned. Known local August artifact roots contain no saved predictions.",
+  "missing_primary_prediction_paths": [
+    "LOCAL_STAGE2/runs/F_PAIR_2_DOUBLE_LR_UA_42/test_predictions.csv.gz",
+    "LOCAL_STAGE2/runs/F_best_UC_42_stage2/test_predictions.csv.gz"
+  ],
+  "known_payload_hashes": {
+    "UA": "dc0fcedcd0926b50ba6ae59755bbcb1294fa036fc00382771ea8220ac8ade1d9",
+    "UC": "daf1fa7a74a03343021ea37893391e530331437e991c7daf0f53e6131bc46398"
+  },
+  "data_or_mask_conflict_asserted": false,
+  "requested_resolution": "Publish producer handoff, contract/digests/masks, frozen index and exact selected saved probabilities through the established Git ref, then send its full commit SHA. Do not regenerate predictions.",
+  "receiver_action": "Prepared read-only preflight and tested CPU primitives; no actual masks or scores inferred."
+}

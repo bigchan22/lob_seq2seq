@@ -1,0 +1,120 @@
+{
+  "required_data_ref": "refs/heads/work/qf-august-data-review-20261001",
+  "required_handoff_path": "docs/qf_data_review/20261001/handoff.json",
+  "producer_commit": null,
+  "status": "WAITING_FOR_DATA_HANDOFF",
+  "required_handoff_contents": [
+    "Exact August code/input lineage and file checksums",
+    "Canonical row keys, endpoint, whole-date split, labels and P0/P1/P2/P3 masks or lossless reconstruction artifacts",
+    "Documented deterministic key/label/mask digest serialization and expected digests",
+    "Frozen selected artifact index including model/family/seed/epoch/config hashes and copy lineage",
+    "Git-published minimal replay_inputs probability files and associated selection/config metadata"
+  ],
+  "known_required_saved_files": [
+    {
+      "source_report_sha": "a323db8aea04fbb33b8e32e7644647106150899c",
+      "source_root_alias": "LOCAL_STAGE2",
+      "source_relative_path": "runs/F_PAIR_2_DOUBLE_LR_UA_42/test_predictions.csv.gz",
+      "bytes": 3116576,
+      "sha256": "dc0fcedcd0926b50ba6ae59755bbcb1294fa036fc00382771ea8220ac8ade1d9",
+      "available_locally": false,
+      "desired_git_location": "producer replay_inputs with frozen artifact index; exact layout to be supplied by handoff",
+      "checksum_status": "recorded in previous Git audit; payload absent and not independently hashed here"
+    },
+    {
+      "source_report_sha": "a323db8aea04fbb33b8e32e7644647106150899c",
+      "source_root_alias": "LOCAL_STAGE2",
+      "source_relative_path": "runs/F_PAIR_2_DOUBLE_LR_UA_42/resolved_config.json",
+      "bytes": 316,
+      "sha256": "0854bf78c19b81041066b51bbbf39e6cc448eea1ebfeb9d391b2dfae3dc86bda",
+      "available_locally": false,
+      "desired_git_location": "producer replay_inputs with frozen artifact index; exact layout to be supplied by handoff",
+      "checksum_status": "recorded in previous Git audit; payload absent and not independently hashed here"
+    },
+    {
+      "source_report_sha": "a323db8aea04fbb33b8e32e7644647106150899c",
+      "source_root_alias": "LOCAL_STAGE2",
+      "source_relative_path": "runs/F_best_UC_42_stage2/test_predictions.csv.gz",
+      "bytes": 3114888,
+      "sha256": "daf1fa7a74a03343021ea37893391e530331437e991c7daf0f53e6131bc46398",
+      "available_locally": false,
+      "desired_git_location": "producer replay_inputs with frozen artifact index; exact layout to be supplied by handoff",
+      "checksum_status": "recorded in previous Git audit; payload absent and not independently hashed here"
+    },
+    {
+      "source_report_sha": "a323db8aea04fbb33b8e32e7644647106150899c",
+      "source_root_alias": "LOCAL_STAGE2",
+      "source_relative_path": "runs/F_best_UC_42_stage2/resolved_config.json",
+      "bytes": 316,
+      "sha256": "19cf684567489ca20eecdb31124d7f957456ff30f49aa4db4ec545c36d2ca81a",
+      "available_locally": false,
+      "desired_git_location": "producer replay_inputs with frozen artifact index; exact layout to be supplied by handoff",
+      "checksum_status": "recorded in previous Git audit; payload absent and not independently hashed here"
+    },
+    {
+      "source_report_sha": "a323db8aea04fbb33b8e32e7644647106150899c",
+      "source_root_alias": "LOCAL_STAGE2",
+      "source_relative_path": "selected_configurations.yaml",
+      "bytes": 806,
+      "sha256": "6eb7b0a3b73c14f87687caabf2fb4115e2aa066e37f353cfc91bbd37b389a36f",
+      "available_locally": false,
+      "desired_git_location": "producer replay_inputs with frozen artifact index; exact layout to be supplied by handoff",
+      "checksum_status": "recorded in previous Git audit; payload absent and not independently hashed here"
+    }
+  ],
+  "primary_candidates_declared_before_scores": [
+    {
+      "model": "UA",
+      "seed": 42,
+      "family": "selected August Stage-2",
+      "run_id": "F_PAIR_2_DOUBLE_LR_UA_42",
+      "selected_epoch": 178,
+      "selection_rule": "historically selected validation-NLL configuration/checkpoint; must verify against frozen producer artifact index",
+      "selection_identity_source": "user task + prior Git artifact metadata",
+      "prediction_source_path": "LOCAL_STAGE2/runs/F_PAIR_2_DOUBLE_LR_UA_42/test_predictions.csv.gz",
+      "prediction_sha256": "dc0fcedcd0926b50ba6ae59755bbcb1294fa036fc00382771ea8220ac8ade1d9",
+      "prediction_bytes": 3116576,
+      "config_sha256": "0854bf78c19b81041066b51bbbf39e6cc448eea1ebfeb9d391b2dfae3dc86bda",
+      "scientific_fit_id": "F_PAIR_2_DOUBLE_LR_UA_42",
+      "payload_received": false,
+      "frozen_index_verified": false
+    },
+    {
+      "model": "UC",
+      "seed": 42,
+      "family": "selected August Stage-2",
+      "run_id": "F_best_UC_42_stage2",
+      "selected_epoch": 151,
+      "selection_rule": "historically selected validation-NLL configuration/checkpoint; must verify against frozen producer artifact index",
+      "selection_identity_source": "user task + prior Git artifact metadata",
+      "prediction_source_path": "LOCAL_STAGE2/runs/F_best_UC_42_stage2/test_predictions.csv.gz",
+      "prediction_sha256": "daf1fa7a74a03343021ea37893391e530331437e991c7daf0f53e6131bc46398",
+      "prediction_bytes": 3114888,
+      "config_sha256": "19cf684567489ca20eecdb31124d7f957456ff30f49aa4db4ec545c36d2ca81a",
+      "scientific_fit_id": "F_PAIR_5_SHALLOW_INTERACTION_UC_42",
+      "copied_artifact_not_independent_fit": true,
+      "payload_received": false,
+      "frozen_index_verified": false
+    }
+  ],
+  "optional_candidates": [
+    {
+      "model": "UM_V2_DEPTH corrected",
+      "seeds": [
+        42,
+        7,
+        123
+      ],
+      "status": "not identified; include only when selected artifact/config frozen before scoring"
+    },
+    {
+      "model": "UA/UC",
+      "seeds": [
+        7,
+        123
+      ],
+      "status": "not identified; never choose seeds using masked or holdout results"
+    }
+  ],
+  "transfer_channel": "Established Git remote only; no unavailable-server action or alternate transfer required"
+}

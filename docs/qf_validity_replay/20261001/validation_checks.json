@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-10-01T08:27:12.833474+00:00",
+  "unit_tests": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "test_bootstrap_uses_pooled_rows_and_is_reproducible (test_replay_core.ReplayIntegrityTests) ... ok\ntest_exact_key_set_and_labels (test_replay_core.ReplayIntegrityTests) ... ok\ntest_invalid_probabilities_are_not_hidden_by_normalization (test_replay_core.ReplayIntegrityTests) ... ok\ntest_legacy_float32_labels_and_no_cross_day_fill (test_replay_core.ReplayIntegrityTests) ... ok\ntest_normalization_and_clip_convention (test_replay_core.ReplayIntegrityTests) ... ok\ntest_raw_validity_and_clock_boundaries (test_replay_core.ReplayIntegrityTests) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.051s\n\nOK\n",
+    "scope": "Synthetic integrity tests only; no actual cache/mask/prediction rows scored"
+  },
+  "no_handoff_preflight": {
+    "returncode": 3,
+    "stdout": "{\n  \"status\": \"WAITING_FOR_DATA_HANDOFF\",\n  \"required_ref\": \"refs/heads/work/qf-august-data-review-20261001\",\n  \"required_path\": \"docs/qf_data_review/20261001/handoff.json\",\n  \"producer_sha\": null,\n  \"next\": \"Resolve the advertised exact task ref, fetch/filter and inspect it, then pin its full SHA.\",\n  \"scoring_run\": false,\n  \"training_or_inference_run\": false\n}\n",
+    "stderr": ""
+  },
+  "expected_preflight_exit_code": 3,
+  "producer_adapter_complete": false,
+  "production_masks_computed": false,
+  "production_scores_computed": false,
+  "training_or_inference_run": false,
+  "positive_pinned_read_fixture": {
+    "returncode": 4,
+    "response": {
+      "status": "PINNED_HANDOFF_REQUIRES_SCHEMA_AND_MANIFEST_REVIEW",
+      "producer_sha": "200e5758de0f5cb545322f5b5ab522ad645f9209",
+      "handoff_path": "recovery/export_manifest.json",
+      "handoff_sha256": "c0c09c099f22644a39c76ee6efe43790ed8699f18e757abeed08f4451c2d19e3",
+      "handoff_fields": [
+        "approved_source_files",
+        "code_bytes",
+        "excluded",
+        "hardcoded_historical_path_files",
+        "input_bytes",
+        "input_files",
+        "input_tree_identity",
+        "published_input_commit",
+        "required_dirty_code_delta",
+        "source_commit"
+      ],
+      "next": "Verify producer lineage/checksums/serialization and frozen artifact index before adapting rows to replay_core.py.",
+      "scoring_run": false,
+      "training_or_inference_run": false
+    },
+    "fixture": "Already-local export_manifest.json at August code root; this is deliberately not the missing data-review handoff",
+    "implicit_fetch_prevented": "All required commit/tree/blob IDs checked against locally stored object inventory before reading",
+    "production_contract_verification": false
+  },
+  "final_preflight_no_handoff_exit_code": 3
+}

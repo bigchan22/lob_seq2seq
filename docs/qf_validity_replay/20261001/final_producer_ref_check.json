@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-10-01T08:21:28.328912+00:00",
+  "remote": "git@github.com:bigchan22/lob_seq2seq.git",
+  "returncode": 0,
+  "requested_ref": "refs/heads/work/qf-august-data-review-20261001",
+  "candidate_refs": {},
+  "stderr": "",
+  "purpose": "One final availability check after independent preparation, not polling"
+}

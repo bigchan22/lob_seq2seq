@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-01T08:15:38.064347+00:00",
+  "host": "gpusystem",
+  "machine": "x86_64",
+  "cpu_count": 48,
+  "gpu_identity_command": "nvidia-smi --query-gpu=index,name,driver_version,memory.total --format=csv,noheader,nounits",
+  "gpu_query_returncode": 0,
+  "gpu_rows": [
+    "0, NVIDIA GeForce RTX 3090, 515.57, 24576",
+    "1, NVIDIA GeForce RTX 3090, 515.57, 24576",
+    "2, NVIDIA GeForce RTX 3090, 515.57, 24576",
+    "3, NVIDIA GeForce RTX 3090, 515.57, 24576"
+  ],
+  "gpu_compute_used": false,
+  "host_identity_purpose": "One task-local identity record; no nickname-based rediscovery"
+}

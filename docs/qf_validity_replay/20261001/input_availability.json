@@ -1,0 +1,11 @@
+{
+  "source_commit": "073cd89b556224eeae22413c3c05188a947e990a",
+  "source_remote": "git@github.com:bigchan22/lob_seq2seq.git",
+  "input_root_alias": "RECEIVER_ROOT/recovered_inputs/krx_main_073cd89b5562",
+  "files_present_expected_sizes": 54,
+  "bytes": 366098160,
+  "input_manifest_sha256": "d0c16994cb4e1b86d69c4c1d1fc524ccfb17972e985bf40054ae9e4667746974",
+  "prior_per_file_hash_verification_retained": true,
+  "data_rows_read_in_this_partial_task": 0,
+  "producer_input_contract_compared": false
+}

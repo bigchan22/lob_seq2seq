@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-01T08:25:01.026472+00:00",
+  "status": "WAITING_FOR_DATA_HANDOFF",
+  "completion": "partial",
+  "producer_ref": "refs/heads/work/qf-august-data-review-20261001",
+  "producer_sha": null,
+  "producer_handoff_path": "docs/qf_data_review/20261001/handoff.json",
+  "code_export_sha": "200e5758de0f5cb545322f5b5ab522ad645f9209",
+  "original_august_source_mapping": "feb10a130bb036617229d6c4c9bc4a96df3b9fe6",
+  "input_sha": "073cd89b556224eeae22413c3c05188a947e990a",
+  "analysis_branch": "analysis/qf-august-validity-replay-20261001-waiting-081733",
+  "progress_branch_base_sha": "200e5758de0f5cb545322f5b5ab522ad645f9209",
+  "progress_branch_not_based_on_missing_producer_commit": true,
+  "prediction_candidates": [
+    {
+      "model": "UA",
+      "seed": 42,
+      "family": "selected August Stage-2",
+      "run_id": "F_PAIR_2_DOUBLE_LR_UA_42",
+      "selected_epoch": 178,
+      "selection_rule": "historically selected validation-NLL configuration/checkpoint; must verify against frozen producer artifact index",
+      "selection_identity_source": "user task + prior Git artifact metadata",
+      "prediction_source_path": "LOCAL_STAGE2/runs/F_PAIR_2_DOUBLE_LR_UA_42/test_predictions.csv.gz",
+      "prediction_sha256": "dc0fcedcd0926b50ba6ae59755bbcb1294fa036fc00382771ea8220ac8ade1d9",
+      "prediction_bytes": 3116576,
+      "config_sha256": "0854bf78c19b81041066b51bbbf39e6cc448eea1ebfeb9d391b2dfae3dc86bda",
+      "scientific_fit_id": "F_PAIR_2_DOUBLE_LR_UA_42",
+      "payload_received": false,
+      "frozen_index_verified": false
+    },
+    {
+      "model": "UC",
+      "seed": 42,
+      "family": "selected August Stage-2",
+      "run_id": "F_best_UC_42_stage2",
+      "selected_epoch": 151,
+      "selection_rule": "historically selected validation-NLL configuration/checkpoint; must verify against frozen producer artifact index",
+      "selection_identity_source": "user task + prior Git artifact metadata",
+      "prediction_source_path": "LOCAL_STAGE2/runs/F_best_UC_42_stage2/test_predictions.csv.gz",
+      "prediction_sha256": "daf1fa7a74a03343021ea37893391e530331437e991c7daf0f53e6131bc46398",
+      "prediction_bytes": 3114888,
+      "config_sha256": "19cf684567489ca20eecdb31124d7f957456ff30f49aa4db4ec545c36d2ca81a",
+      "scientific_fit_id": "F_PAIR_5_SHALLOW_INTERACTION_UC_42",
+      "copied_artifact_not_independent_fit": true,
+      "payload_received": false,
+      "frozen_index_verified": false
+    }
+  ],
+  "actual_prediction_hashes_verified": false,
+  "actual_mask_hashes": null,
+  "producer_key_label_digests": null,
+  "row_match_assertions": {
+    "duplicate_missing_extra_keys_rejected_by_tested_code": true,
+    "production_row_matches_verified": false,
+    "production_labels_verified": false,
+    "actual_split_counts_verified": false
+  },
+  "expected_legacy_support": {
+    "assets": 27,
+    "common_dates": 493,
+    "origins_per_day": 38,
+    "all_rows": 505818,
+    "train": 353970,
+    "validation": 50274,
+    "development_holdout": 101574,
+    "status": "task-declared expectations, not recomputed"
+  },
+  "missing_only_diagnostic_reference": {
+    "missing_endpoint_rows": 34600,
+    "flat_equal_filled_mid_rows": 27366,
+    "verified": false,
+    "not_equivalent_to_P1": true
+  },
+  "scoring_convention": {
+    "class_order": [
+      "Down",
+      "Flat",
+      "Up"
+    ],
+    "probability_dtype": "float64",
+    "normalization": "each valid row divided by its sum after validation",
+    "large_row_sum_error_tolerance": 1e-05,
+    "true_class_clip_min": "numpy.finfo(float64).eps",
+    "log_base": "e",
+    "weights": "equal forecast rows",
+    "legacy_reconciliation_absolute_tolerance": 5e-09,
+    "equal_asset_sensitivity": "arithmetic mean of per-asset NLL on declared population",
+    "multi_seed_rule": "average losses on identical rows and matched selected seed set, never probabilities"
+  },
+  "bootstrap": {
+    "status": "prepared_and_synthetic_tested_only",
+    "replicates": 10000,
+    "block_length": 5,
+    "seed": 20261001,
+    "blocks": "non-circular consecutive trading dates, starts uniform 0..D-L",
+    "truncation": "concatenate ceil(D/L) sampled blocks then truncate to D dates",
+    "panel": "whole asset/model/seed panel retained per date",
+    "weights": "daily paired loss sums divided by sampled daily forecast counts",
+    "interval": "percentile 2.5/97.5",
+    "interpretation": "retrospective, conditional on historical selection"
+  },
+  "completed_steps": [
+    "Queried verified remote and exact task-prefix candidates twice without indefinite polling",
+    "Recorded host/device metadata once",
+    "Inspected known local August prediction paths; recorded concrete missing payloads and prior Git hashes",
+    "Confirmed existing inputs remain present; retained prior input hash provenance",
+    "Prepared read-only pinned-handoff preflight and CPU integrity/scoring/bootstrap primitives",
+    "Passed six targeted synthetic tests and expected missing-handoff exit status",
+    "Prepared scoped Git progress report, missing-artifact issue and header-only result CSVs"
+  ],
+  "blocked_steps": [
+    "Pin and verify absent producer handoff and frozen artifact index",
+    "Verify producer manifest/key/label/mask digests and row schema",
+    "Independently reconstruct and compare actual raw-cache endpoint/missingness/clock flags",
+    "Load and verify missing selected saved probability files",
+    "Reproduce primary seed42 legacy scores and exact matching support",
+    "Score P0/P1/P2/P3 and per-asset/equal-asset/matched-seed differences",
+    "Run paired market-date bootstrap and interpret restricted scores"
+  ],
+  "training_or_inference_run": false,
+  "checkpoint_loaded": false,
+  "real_data_scoring_run": false,
+  "gpu_compute_used": false,
+  "new_dependencies_installed": false,
+  "checksums": [
+    {
+      "path": "docs/qf_validity_replay/20261001/artifact_requirements.json",
+      "bytes": 5948,
+      "sha256": "ba4f1f854dd815ec68f5f826c07068b0477b8f71c0f9fd423454a2accb6962ea"
+    },
+    {
+      "path": "docs/qf_validity_replay/20261001/cpu_environment.json",
+      "bytes": 222,
+      "sha256": "a5d87ccdf226de06bfddc3c86e3be515d2962ff54c1d38c6bc1a84f1fabf5ce9"
+    },
+    {
+      "path": "docs/qf_validity_replay/20261001/final_producer_ref_check.json",
+      "bytes": 326,
+      "sha256": "f6fa32a767eaceffc852f226d59896ce9c748391da92ebc5bf30666229023500"
+    },
+    {
+      "path": "docs/qf_validity_replay/20261001/host_metadata.json",
+      "bytes": 606,
+      "sha256": "1a0cdd2f982c5df5178eb4226b464d6a7b9366604f20cb396b2f8e508e7b0d52"
+    },
+    {
+      "path": "docs/qf_validity_replay/20261001/input_availability.json",
+      "bytes": 504,
+      "sha256": "6798ec48c1a3851c648e31e791fda94cfc7aee030089e4edd1e2fd3aa0c2a1be"
+    },
+    {
+      "path": "docs/qf_validity_replay/20261001/issues/001_missing_data_handoff.json",
+      "bytes": 1208,
+      "sha256": "600d99df9d5ace8d3ef7ef8a250173c56d3653c6f0f35228b9170938ea0d4bc3"
+    },
+    {
+      "path": "docs/qf_validity_replay/20261001/local_prediction_inventory.json",
+      "bytes": 1067,
+      "sha256": "2c2b9ceaa10678297e88c953c9ae0aa404caddd0a5bde6a93418a240ff1248b5"
+    },
+    {
+      "path": "docs/qf_validity_replay/20261001/metrics.csv",
+      "bytes": 218,
+      "sha256": "4e9a536af3fe4c6feb41c0633a0a985280edbb9dc691d0ea12603e073377ee91"
+    },
+    {
+      "path": "docs/qf_validity_replay/20261001/paired_differences.csv",
+      "bytes": 202,
+      "sha256": "d0fc0308fd44c174b58590e94f4ae3e83989c9ba5b38c4992fb576478506e6c7"
+    },
+    {
+      "path": "docs/qf_validity_replay/20261001/per_asset_differences.csv",
+      "bytes": 97,
+      "sha256": "48e856853cc1b097291389f13e29d7694a644f749ab380e8647efb34267a2bd7"
+    },
+    {
+      "path": "docs/qf_validity_replay/20261001/population_counts.csv",
+      "bytes": 217,
+      "sha256": "36d8396b820cf6b4836d5003fdd01f1135af7967398d13a6ed87e1eb742bba0d"
+    },
+    {
+      "path": "docs/qf_validity_replay/20261001/replay_report.md",
+      "bytes": 8908,
+      "sha256": "315e84a96d7ddb1c805586eb681c703823bf0576f475fc9d634d07e10b201322"
+    },
+    {
+      "path": "docs/qf_validity_replay/20261001/validation_checks.json",
+      "bytes": 2808,
+      "sha256": "3f71fafb5837dc819f1d938078ce3641526d601d77ddf5fd4c5976e4fb0c2e51"
+    },
+    {
+      "path": "scripts/qf_validity_replay/README.md",
+      "bytes": 3668,
+      "sha256": "3d265a363c7b83baaea2cd6c1c16c60e4e369daca68da2821e6b578325b02384"
+    },
+    {
+      "path": "scripts/qf_validity_replay/preflight.py",
+      "bytes": 4168,
+      "sha256": "0bc06fb45588b12f7b5839e43ed2a24584fe1a4c8fdcfbfea309588842b79495"
+    },
+    {
+      "path": "scripts/qf_validity_replay/replay_core.py",
+      "bytes": 10924,
+      "sha256": "8555cbf5bfdf409a6660975beb4627986d362237741d1675a0cf038811619b8d"
+    },
+    {
+      "path": "scripts/qf_validity_replay/test_replay_core.py",
+      "bytes": 4633,
+      "sha256": "cfdd62d4e976c0eb54cc09a4b181566d7db48d7826927ee18568b28ec79bf1b8"
+    }
+  ]
+}

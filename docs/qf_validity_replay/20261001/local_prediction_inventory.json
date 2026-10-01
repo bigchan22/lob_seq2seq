@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-10-01T08:15:38.065686+00:00",
+  "searched": [
+    {
+      "root": "RECEIVER_ROOT/recovered_artifacts",
+      "exists": false,
+      "matches": [],
+      "maximum_subdirectory_depth": 5
+    },
+    {
+      "root": "RECEIVER_ROOT/artifacts",
+      "exists": false,
+      "matches": [],
+      "maximum_subdirectory_depth": 5
+    },
+    {
+      "root": "RECEIVER_ROOT/recovered_runs",
+      "exists": false,
+      "matches": [],
+      "maximum_subdirectory_depth": 5
+    },
+    {
+      "root": "RECEIVER_ROOT/recovery_worktrees/qf_august_export_200e5758de0f/artifacts",
+      "exists": false,
+      "matches": [],
+      "maximum_subdirectory_depth": 5
+    },
+    {
+      "root": "RECEIVER_ROOT/recovery_worktrees/legacy_main_073cd89b5562/artifacts",
+      "exists": false,
+      "matches": [],
+      "maximum_subdirectory_depth": 5
+    }
+  ],
+  "known_external_metadata_only": "RECEIVER_ROOT/qf_rtx3090_optional_artifact_copy_manifest.json",
+  "source_reported_artifacts_are_not_local_predictions": true,
+  "unrelated_filesystems_searched": false
+}

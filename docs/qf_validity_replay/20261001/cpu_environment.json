@@ -1,0 +1,9 @@
+{
+  "interpreter": "RECEIVER_PYTHON_ROOT/envs/mpnn/bin/python",
+  "python": "3.9.13",
+  "numpy": "1.21.5",
+  "pandas": "1.4.4",
+  "scikit_learn": "1.0.2",
+  "new_dependencies_installed": false,
+  "torch_imported": false
+}

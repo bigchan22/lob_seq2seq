@@ -1,0 +1,1 @@
+population,split,model,seed,rows,dates,assets,retained_fraction,class_0_count,class_1_count,class_2_count,class_0_proportion,class_1_proportion,class_2_proportion,nll,equal_asset_mean_nll,accuracy,macro_f1,mcc,status
