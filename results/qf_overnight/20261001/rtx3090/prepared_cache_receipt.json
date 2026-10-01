@@ -1,0 +1,45 @@
+{
+  "complete": true,
+  "files": [
+    {
+      "bytes": 8093216,
+      "name": "covariates.npy",
+      "provenance": "local common prepare; exact frozen byte match",
+      "sha256": "03b29c2ddb87a2530380a0a78f14b2faff6c419813268ec282c9237e636d274b"
+    },
+    {
+      "bytes": 2023400,
+      "name": "masks.npy",
+      "provenance": "local common prepare; exact frozen byte match",
+      "sha256": "eca954c21da074c545cb7858315ea39fee0a6f54b19e06474b4f2f91f1666847"
+    },
+    {
+      "bytes": 505946,
+      "name": "y.npy",
+      "provenance": "local common prepare; exact frozen byte match",
+      "sha256": "238526791f5a7dc13484f5279a03f7d6c624d1268dcd898360077c966b9d70cd"
+    },
+    {
+      "bytes": 26302664,
+      "git_blob_oid": "e6aec00016dff3fdaa19938aa9884354677caa74",
+      "independent_local_torch112_cpu_preparation_also_matches": true,
+      "name": "x.npy",
+      "sha256": "75a5f6207eb3743927c97ac8361af405a4b3a890490e5a705ec07f5f255d5518",
+      "source_commit": "19b9b56ff865cec3a24f500727015b33a201e93b",
+      "source_path": "artifacts/qf_overnight/20261001/prepared_inputs/x.npy.gz",
+      "transfer_sha256": "32032a51c08509b25afa658588b95f4bbcfa15439dbd54837d2ed383b293d39f"
+    },
+    {
+      "bytes": 12139760,
+      "git_blob_oid": "f2f62359bf37485fcd3f07154ccc948d59db82e8",
+      "independent_local_torch112_cpu_preparation_also_matches": true,
+      "name": "raw_factors.npy",
+      "sha256": "442aee93ad0745400f087f7ff3b2c67a669cd05b8fa2e637926298472dc028dd",
+      "source_commit": "19b9b56ff865cec3a24f500727015b33a201e93b",
+      "source_path": "artifacts/qf_overnight/20261001/prepared_inputs/raw_factors.npy.gz",
+      "transfer_sha256": "c5e9e52b3d1a1875a832c36c198398c025c46ad6f10623cac6aa21d9003c0af3"
+    }
+  ],
+  "identity_sha256": "255199b39c32eba4d6aced8c3e45d7e84accfbfd35b487d873bba12a5e5974e0",
+  "ready_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd"
+}

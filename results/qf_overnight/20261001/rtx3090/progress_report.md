@@ -2,9 +2,9 @@
 
 Run group: qf-august-overnight-20261001
 
-Phase: BLOCKED_NATIVE_VALIDATION
+Phase: RUNNING
 
-READY SHA: e2212c40566e21c680a98186ebd8e984aa80d4fd; protocol SHA256: bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1
+READY SHA: e2212c40566e21c680a98186ebd8e984aa80d4fd; protocol SHA256: 3cfd389bbd05ec9201a41c0892e29bf8199198d1b216b9a8061370d4240aa583
 
 Actual shared queue counts: null
 
@@ -16,6 +16,6 @@ Consolidated analysis status: partial; see consolidated/progress_report.md.
 
 Other owner result SHA: None
 
-Current blocker: Cache export changed frozen core/protocol; needs versioned review
+Current blocker: None
 
 Status is partial until every finite job is terminal and matching required outputs validate. Provider timing unknown; retrospective development data; future endpoint P3 eligibility is not a trading or peer-availability rule.

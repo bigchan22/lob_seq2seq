@@ -1,0 +1,90 @@
+{
+  "criterion": "selected-checkpoint main P3 validation only; ties1e-8 choose smaller LR",
+  "every_lr_trial": [
+    {
+      "job_id": "main_SHARED_QUERY_42_000500",
+      "lr": 5e-05,
+      "model": "SHARED_QUERY",
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_SHARED_QUERY_42_001000",
+      "lr": 0.0001,
+      "model": "SHARED_QUERY",
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_SHARED_QUERY_42_002000",
+      "lr": 0.0002,
+      "model": "SHARED_QUERY",
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_SHARED_QUERY_42_004000",
+      "lr": 0.0004,
+      "model": "SHARED_QUERY",
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_UA_42_000500",
+      "lr": 5e-05,
+      "model": "UA",
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_UA_42_001000",
+      "lr": 0.0001,
+      "model": "UA",
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_UA_42_002000",
+      "lr": 0.0002,
+      "model": "UA",
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_UA_42_004000",
+      "lr": 0.0004,
+      "model": "UA",
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_UC_42_000500",
+      "lr": 5e-05,
+      "model": "UC",
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_UC_42_001000",
+      "lr": 0.0001,
+      "model": "UC",
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_UC_42_002000",
+      "lr": 0.0002,
+      "model": "UC",
+      "state": "PENDING",
+      "validation_p3_nll": null
+    },
+    {
+      "job_id": "main_UC_42_004000",
+      "lr": 0.0004,
+      "model": "UC",
+      "state": "PENDING",
+      "validation_p3_nll": null
+    }
+  ],
+  "selected": {}
+}

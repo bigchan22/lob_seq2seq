@@ -1,0 +1,44 @@
+{
+  "owner": "rtx3090",
+  "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+  "run_group": "qf-august-overnight-20261001",
+  "runs": [
+    {
+      "attempt": 0,
+      "job_id": "historical_replay",
+      "kind": "historical",
+      "relative_directory": "runs/exports/runs/historical_replay__3c1fb857b5233213",
+      "result": {
+        "files": 9,
+        "frozen_index_sha256": "cf75f3bedc2d2df75b513114ad187317c50fe2d9a434ea655a0c1d56ae77e5c0",
+        "historical_only": true,
+        "no_new_training_or_inference": true,
+        "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+        "replay_manifest_sha256": "b011028f6367483825c3b22c00d59ad7485de30f65228f0c36e21d70600e08e5",
+        "reuse_reason": "Complete independently verified historical replay; exact frozen artifacts and scoring convention; user explicitly permits published replay reference",
+        "reused_published_replay_sha": "dee398fb13078937833329a49f0665eb3c459b47",
+        "scoring_convention": {
+          "anchor_tolerance": 1e-07,
+          "class_order": [
+            "Down",
+            "Flat",
+            "Up"
+          ],
+          "clip_min": 2.220446049250313e-16,
+          "dtype": "float64",
+          "log": "natural",
+          "max_allowed_probability_sum_error": 1e-05,
+          "multiclass_brier": "sum over all three classes",
+          "normalize_after_validation": true,
+          "seed_aggregation": "mean losses, not probability ensemble",
+          "weight": "equal forecast rows"
+        },
+        "scoring_source_sha256": "aa24312eb594a8576ab14e55e83e77000fcced0c08efb2ebd2ffcb83bded898c",
+        "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+        "validated": true
+      },
+      "result_hash": "3c1fb857b5233213440bab857c86b6fb332ea92fab5abd1369b2bce35e9b4415"
+    }
+  ],
+  "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd"
+}
