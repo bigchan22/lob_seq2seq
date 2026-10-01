@@ -1,0 +1,12 @@
+{
+  "branch": "analysis/qf-august-validity-replay-20261001",
+  "sha": "dee398fb13078937833329a49f0665eb3c459b47",
+  "verified": true,
+  "data_handoff_sha": "e85a89fd56584b513be940e6259c637369bd830b",
+  "status": "complete",
+  "report_path": "docs/qf_validity_replay/20261001/replay_report.md",
+  "manifest_path": "docs/qf_validity_replay/20261001/replay_manifest.json",
+  "manifest_sha256": "b011028f6367483825c3b22c00d59ad7485de30f65228f0c36e21d70600e08e5",
+  "namespace": "historical_unmasked_training",
+  "training_or_inference_run": false
+}

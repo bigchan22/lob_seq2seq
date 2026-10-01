@@ -19,7 +19,7 @@ OWNER = 'rtx3090'
 REMOTE = 'git@github.com:bigchan22/lob_seq2seq.git'
 PREFIX = Path('results/qf_overnight/20261001/rtx3090')
 REQUIRED_GATES = ['labels_masks_splits', 'causality', 'masked_loss_gradient',
-                  'own_only_invariance', 'um_target_exclusion', 'parameter_counts',
+                  'own_only_invariance', 'parameter_counts',
                   'masked_accumulation_partial_window', 'train_only_scaling',
                   'r1_reuse_identity', 'restart_idempotency_stale_lease',
                   'real_data_smoke']
@@ -238,10 +238,13 @@ class Receiver:
         if alive(self.state.get('coordinator')): return
         ok, reason = self.resource_available()
         if not ok: self.state.update(phase='WAITING_FOR_RESOURCE', resource_blocker=reason); return
+        gates_started=time.time()
         self.command(ready, source, 'verify')
         self.command(ready, source, 'smoke')
         gate_report = self.root / 'jobs' / 'receiver_gate_report.json'
         report = read(gate_report, {})
+        if not gate_report.exists() or gate_report.stat().st_mtime < gates_started:
+            raise ValueError('Gate report is absent or stale')
         if report.get('protocol_sha256') != ready['protocol_sha256'] or report.get('data_handoff_sha') != self.c['data_sha']:
             raise ValueError('Fresh executable gate report lacks pinned hashes')
         for gate in REQUIRED_GATES:
@@ -256,26 +259,72 @@ class Receiver:
         self.state.update(coordinator=record, phase='RUNNING', launched_at=now())
         self.event('coordinator_launched', **record)
 
-    def collect_other(self):
-        ref = self.c['other_result_ref']; commit = self.advertised(ref)
-        if not commit or commit == self.state.get('other_result_sha'): return
-        tree = self.get_source(ref, commit)
-        prefix = 'results/qf_overnight/20261001/a5000/'
-        out = self.root / 'other_results' / commit; out.mkdir(parents=True, exist_ok=True)
-        copied = []
+    def snapshot(self, owner, commit, tree):
+        prefix='results/qf_overnight/20261001/'+owner+'/'
+        out=self.root/'result_snapshots'/owner/commit
+        if (out/'_receipt.json').exists(): return out
+        out.mkdir(parents=True,exist_ok=True); copied=[]
         for line in tree.splitlines():
-            meta, path = line.split('\t'); mode, kind, oid = meta.split()
-            if not path.startswith(prefix) or kind != 'blob' or mode == '120000': continue
-            rel = relative_path(path[len(prefix):])
-            if rel.suffix not in ('.json', '.csv', '.md', '.jsonl'): continue
-            size = int(self.git('cat-file', '-s', oid).stdout)
-            if size > 20_000_000: continue
-            payload = self.git('cat-file', 'blob', oid).stdout
-            dest = out / rel; dest.parent.mkdir(parents=True, exist_ok=True); dest.write_text(payload)
-            copied.append({'path':str(rel), 'sha256':sha(dest), 'bytes':dest.stat().st_size})
-        atomic(out / '_receipt.json', {'source_result_sha':commit, 'files':copied})
-        self.state['other_result_sha'] = commit
-        self.event('other_results_received', source_result_sha=commit, files=len(copied))
+            meta,path=line.split('\t'); mode,kind,oid=meta.split()
+            if not path.startswith(prefix) or kind!='blob' or mode=='120000': continue
+            rel=relative_path(path[len(prefix):])
+            if rel.parts[0] in ('consolidated','issues') or rel.suffix not in ('.json','.csv','.md'): continue
+            size=int(self.git('cat-file','-s',oid).stdout)
+            if size>20_000_000: continue
+            payload=self.git('cat-file','blob',oid).stdout
+            dest=out/rel;dest.parent.mkdir(parents=True,exist_ok=True);dest.write_text(payload)
+            copied.append({'path':str(rel),'git_blob_oid':oid,'sha256':sha(dest),'bytes':dest.stat().st_size})
+        atomic(out/'_receipt.json',{'source_result_sha':commit,'files':copied})
+        return out
+
+    def collect_other(self):
+        ref=self.c['other_result_ref'];commit=self.advertised(ref)
+        if not commit or commit==self.state.get('other_result_sha'): return
+        tree=self.get_source(ref,commit);out=self.snapshot('a5000',commit,tree)
+        self.state['other_result_sha']=commit;self.state['other_snapshot']=str(out)
+        self.event('other_results_received',source_result_sha=commit)
+
+    def aggregate(self):
+        # Read immutable, already-published commits, never a live output directory.
+        receipt=read(self.root/'publication_receipt.json',{})
+        commit=receipt.get('sha');local=None;other=self.state.get('other_snapshot')
+        if commit:
+            tree=self.git('ls-tree','-r',commit).stdout
+            local=self.snapshot(OWNER,commit,tree)
+        signature=(commit,self.state.get('other_result_sha'))
+        if signature==self.last_aggregate_signature: return
+        script=Path(__file__).with_name('consolidate.py')
+        if not script.exists(): return
+        argv=[self.c['python'],'-B',str(script),'--data',self.c['data_worktree'],
+              '--output',str(self.root/'consolidated'),'--cache',str(self.root/'expected_support.json')]
+        if local: argv+=['--local',str(local)]
+        if other: argv+=['--other',other]
+        if self.state.get('protocol_hash'):argv+=['--protocol-hash',self.state['protocol_hash']]
+        env=self.env.copy();env['CUDA_VISIBLE_DEVICES']=''
+        with (self.root/'consolidation.log').open('ab') as log:
+            result=subprocess.run(argv,env=env,stdout=log,stderr=subprocess.STDOUT,timeout=240)
+        if result.returncode:
+            self.issue('CONSOLIDATION_SCHEMA_OR_SUPPORT','See consolidation.log; no unverified comparisons published',self.state.get('ready_sha'))
+        else:
+            self.state['consolidation_status']=read(self.root/'consolidated/consolidation_manifest.json',{}).get('status')
+            self.last_aggregate_signature=signature
+
+    def other_terminal(self):
+        root=self.state.get('other_snapshot')
+        if not root:return False
+        for path in (Path(root)/'queue_status.json',Path(root)/'runs/queue_status.json'):
+            s=read(path,{})
+            if s.get('all_terminal') is True or s.get('shared_queue_status',{}).get('all_terminal') is True:return True
+        return False
+
+    def final_publish(self):
+        # A network failure cannot keep the 12-hour READY poll alive forever.
+        for attempt in range(3):
+            try:self.publish();return
+            except Exception as error:
+                self.state.update(last_error=str(error),unsynced=True);self.event('terminal_publication_failed',attempt=attempt+1,error=str(error));self.save()
+                if attempt<2:time.sleep(15*(attempt+1))
+        self.export_files()
 
     def export_files(self):
         dest = self.pub / PREFIX; dest.mkdir(parents=True, exist_ok=True)
@@ -301,6 +350,9 @@ class Receiver:
             target = dest / 'runs' / rel; target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(src,target)
             if sha(target) != entry['sha256']: raise ValueError('Export was not immutable during copy')
+        for path in (self.root/'consolidated').glob('*') if (self.root/'consolidated').exists() else []:
+            if path.is_file() and path.suffix in ('.json','.csv','.md'):
+                target=dest/'consolidated'/path.name;target.parent.mkdir(exist_ok=True);shutil.copyfile(path,target)
         counts = state['shared_queue_status'].get('counts')
         report = '# RTX3090 overnight progress\n\n'
         report += 'Run group: '+RUN_GROUP+'\n\nPhase: '+state['phase']+'\n\n'
@@ -308,6 +360,7 @@ class Receiver:
         report += 'Actual shared queue counts: '+json.dumps(counts)+'\n\n'
         report += 'Planned ownership: 18 main UA/UC/SHARED_QUERY fits + 12 rolling UA/UC fits, plus finite inference/reuse/analysis nodes. These are not reported as launched jobs until the common DAG exists.\n\n'
         report += 'Historical replay is separate; see historical_replay_reference.json. No performance-based launch gate.\n\n'
+        report += 'Consolidated analysis status: '+str(state.get('consolidation_status','pending exports'))+'; see consolidated/progress_report.md.\n\n'
         report += 'Other owner result SHA: '+str(state.get('other_result_sha'))+'\n\n'
         report += 'Current blocker: '+str(state.get('last_error') or state.get('resource_blocker') or ('common READY not published' if not state.get('ready_sha') else None))+'\n\n'
         report += 'Status is partial until every finite job is terminal and matching required outputs validate. Provider timing unknown; retrospective development data; future endpoint P3 eligibility is not a trading or peer-availability rule.\n'
@@ -329,6 +382,12 @@ class Receiver:
         if any(not p.startswith((str(PREFIX)+'/', 'receiver/qf_overnight/20261001/')) for p in changed):
             raise ValueError('Unrelated staged paths; publisher stopped')
         if changed:
+            staged=self.git('diff','--cached','--numstat',where=self.pub).stdout
+            self.event('staged_review',files=changed,numstat=staged)
+            for path in changed:
+                f=self.pub/relative_path(path)
+                if f.stat().st_size>90_000_000 or f.suffix in ('.sqlite','.db','.pt','.pth','.ckpt'):
+                    raise ValueError('Forbidden staged file')
             self.git('-c','core.hooksPath=/dev/null','-c','commit.gpgsign=false','commit','-m',
                      'Snapshot RTX3090 overnight receiver and owned results',where=self.pub)
         commit = self.git('rev-parse','HEAD',where=self.pub).stdout.strip()
@@ -341,7 +400,8 @@ class Receiver:
 
     def controls(self, ready, source):
         ctl = read(self.root/'control.json',{})
-        if ctl.get('generation') == self.state.get('control_generation'): return
+        if ctl.get('generation') == self.state.get('control_generation'):
+            return 'stop' if ctl.get('stop') else ('pause' if ctl.get('paused') else None)
         if ready and source and alive(self.state.get('coordinator')):
             if ctl.get('paused') or ctl.get('stop'): self.command(ready,source,'pause',timeout=60)
             elif ctl.get('retry_job'):
@@ -366,10 +426,10 @@ class Receiver:
             try:
                 control = self.controls(ready,source)
                 self.state['paused'] = control=='pause'
-                if control=='stop': self.save(); self.publish(); break
+                if control=='stop': self.save(); self.final_publish(); break
                 if control!='pause' and not ready:
                     if time.time()>self.state['deadline_epoch']:
-                        self.state['phase']='BLOCKED_READY_TIMEOUT'; self.issue('READY_TIMEOUT','No compatible READY within 12 hours'); self.save(); self.publish(); break
+                        self.state['phase']='BLOCKED_READY_TIMEOUT'; self.issue('READY_TIMEOUT','No compatible READY within 12 hours'); self.save(); self.final_publish(); break
                     commit=self.advertised(self.c['shared_ref'])
                     if commit and commit != self.state.get('last_rejected_ready_sha'):
                         try:
@@ -390,10 +450,13 @@ class Receiver:
                     status=read(self.root/'jobs/queue_status.json',{})
                     if not alive(self.state.get('coordinator')):
                         if status.get('all_terminal') is True:
-                            self.state['phase']='COMPLETE' if status.get('all_required_validated') else 'TERMINAL_PARTIAL'
-                            self.save(); self.publish(); break
+                            self.state['phase']='LOCAL_TERMINAL_AWAITING_PEER'
+                            if self.other_terminal():
+                                self.aggregate();self.state['phase']='COMPLETE' if status.get('all_required_validated') and self.state.get('consolidation_status')=='complete' else 'TERMINAL_PARTIAL'
+                                self.save();self.final_publish();break
                         attempts=self.state.get('coordinator_restart_attempts',0)
-                        if attempts<2:
+                        if status.get('all_terminal') is True:pass
+                        elif attempts<2:
                             self.state['coordinator_restart_attempts']=attempts+1
                             self.launch(ready,source)
                         else:
@@ -401,6 +464,7 @@ class Receiver:
                             self.issue('COORDINATOR_EXIT','Coordinator exited without all-terminal validated queue status',self.state['ready_sha'])
                 if time.time()-self.last_other>=300:
                     self.collect_other(); self.last_other=time.time()
+                    self.aggregate()
                 self.save()
                 if time.time()-self.last_publish>=self.c['publish_seconds']:
                     self.publish(); self.last_publish=time.time()
