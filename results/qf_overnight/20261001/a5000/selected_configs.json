@@ -347,8 +347,10 @@
       "job_id": "main_TLOB_ADAPTED_42_002000",
       "model": "TLOB_ADAPTED",
       "lr": 0.0002,
-      "state": "RUNNING",
-      "validation_p3_nll": null
+      "state": "SUCCEEDED",
+      "validation_p3_nll": 0.9380321014644645,
+      "selected_epoch": 75,
+      "run_id": "5db41790ef635440d7c7c7ef470971e76524c3c5323bd24bd4c25ca585039287"
     },
     {
       "job_id": "main_TLOB_ADAPTED_42_004000",

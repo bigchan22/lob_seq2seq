@@ -1,0 +1,17 @@
+comparison,seed,split,population,rows,delta_nll
+fixed_U0_minus_S,123,validation,P0_legacy,50274,0.007237368238238483
+fixed_U0_minus_S,123,validation,P1_valid_cache_endpoints,48280,0.005216537939917748
+fixed_U0_minus_S,123,validation,P2_candidate_clock,43659,0.009299305649569569
+fixed_U0_minus_S,123,validation,P3_intersection,43050,0.007783293754787615
+fixed_U0_minus_S,123,development_holdout,P0_legacy,101574,-0.0021697613899845356
+fixed_U0_minus_S,123,development_holdout,P1_valid_cache_endpoints,97156,-0.0020888051016406616
+fixed_U0_minus_S,123,development_holdout,P2_candidate_clock,88209,-0.0011590141956033027
+fixed_U0_minus_S,123,development_holdout,P3_intersection,86588,-0.0007982440732369925
+fixed_U1_minus_U0,123,validation,P0_legacy,50274,-0.01152102624698971
+fixed_U1_minus_U0,123,validation,P1_valid_cache_endpoints,48280,-0.014019718849162213
+fixed_U1_minus_U0,123,validation,P2_candidate_clock,43659,-0.01324795309347478
+fixed_U1_minus_U0,123,validation,P3_intersection,43050,-0.014130504988047682
+fixed_U1_minus_U0,123,development_holdout,P0_legacy,101574,-0.011651015546326074
+fixed_U1_minus_U0,123,development_holdout,P1_valid_cache_endpoints,97156,-0.01333944029520064
+fixed_U1_minus_U0,123,development_holdout,P2_candidate_clock,88209,-0.012916490717671512
+fixed_U1_minus_U0,123,development_holdout,P3_intersection,86588,-0.013219972102546464

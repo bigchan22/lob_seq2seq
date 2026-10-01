@@ -1,9 +1,9 @@
 # qf-august-overnight-20261001: a5000 progress
 
-Updated 2026-10-01T17:04:13.571615+00:00; elapsed 1.44 hours. Exact source commit `08fcbdac350a00b7ca587d0c95c803766c01e9bf`; protocol `bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1`.
-Queue states: `{"PENDING": 15, "RUNNING": 3, "SUCCEEDED": 160}`. Completed distinct full training jobs on this owner: 119; aliases and smokes are not counted as training. Local terminal: False.
+Updated 2026-10-01T17:10:34.625878+00:00; elapsed 1.54 hours. Exact source commit `08fcbdac350a00b7ca587d0c95c803766c01e9bf`; protocol `bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1`.
+Queue states: `{"PENDING": 8, "RUNNING": 2, "SUCCEEDED": 168}`. Completed distinct full training jobs on this owner: 123; aliases and smokes are not counted as training. Local terminal: False.
 
-Currently running: `[{"job": "main_TLOB_ADAPTED_42_000500", "progress": {"epoch": 101, "completed_day_panels": 320, "phase": "train"}}, {"job": "main_TLOB_ADAPTED_42_001000", "progress": {"epoch": 90, "completed_day_panels": 192, "phase": "train"}}, {"job": "main_TLOB_ADAPTED_42_002000", "progress": {"epoch": 102, "completed_day_panels": 288, "phase": "train"}}]`.
+Currently running: `[{"job": "main_TLOB_ADAPTED_42_000500", "progress": {"epoch": 111, "completed_day_panels": 128, "phase": "train"}}, {"job": "main_TLOB_ADAPTED_42_001000", "progress": {"epoch": 98, "completed_day_panels": 320, "phase": "train"}}]`.
 
 The finite global plan has153 unconditional full fits and up to4 conditional fixed-LR fits (157 maximum), plus explicit selection/reuse/analysis jobs. This owner never claims the other owner's models. A job succeeds only after result/prediction validation. Checkpoints remain task-local; hashes/relative names accompany each run. All selected compressed probabilities, histories, masks and scores are transferred through this result branch. Every LR trial and failure is recorded in selected_configs.json; performance never gates further valid work.
 

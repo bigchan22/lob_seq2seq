@@ -1,0 +1,10 @@
+{
+  "validated": true,
+  "source_job": "main_U0_7_selected",
+  "prediction_sha256": "881e1797ad541c5f521d645564b8d9d6f3f5b1fd660c0e19050eff0b06f34aae",
+  "job_id": "analyze_U0_7",
+  "owner": "a5000",
+  "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+  "source_sha": "19b9b56ff865cec3a24f500727015b33a201e93b",
+  "completed_at": "2026-10-01T17:05:33.653589+00:00"
+}
