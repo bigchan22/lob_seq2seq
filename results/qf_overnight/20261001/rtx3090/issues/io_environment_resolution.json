@@ -1,0 +1,15 @@
+{
+  "status": "resolved_with_isolated_cpu_environment",
+  "old_environment_preserved": true,
+  "old_pandas": "1.4.4",
+  "failure": "DataFrame.to_csv(lineterminator=...) unsupported by old pandas",
+  "new_task_environment": {
+    "numpy": "1.22.3",
+    "pandas": "1.5.3",
+    "scikit_learn": "1.2.2",
+    "torch": "2.7.1+cu118 inherited unchanged"
+  },
+  "installed_gpu_packages": false,
+  "input_feature_hash_mismatch_persists": true,
+  "next_action": "Native receiver obtains exact frozen cache through Git and runs full bounded gates before native queue launch"
+}

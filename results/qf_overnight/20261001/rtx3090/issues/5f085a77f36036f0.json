@@ -1,0 +1,8 @@
+{
+  "action": "A5000: publish corrected shared source/READY; receiver keeps polling. No local semantic patch.",
+  "category": "READY_INCOMPATIBLE_OR_GATE_FAILED",
+  "message": "READY input lineage mismatch",
+  "owner": "rtx3090",
+  "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+  "time": "2026-10-01T15:37:32.805971+00:00"
+}
