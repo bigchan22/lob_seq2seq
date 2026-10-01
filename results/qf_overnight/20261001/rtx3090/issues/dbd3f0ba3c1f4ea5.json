@@ -1,0 +1,8 @@
+{
+  "action": "A5000: publish corrected shared source/READY; receiver keeps polling. No local semantic patch.",
+  "category": "NATIVE_VALIDATION",
+  "message": "Cache export changed frozen core/protocol; needs versioned review",
+  "owner": "rtx3090",
+  "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+  "time": "2026-10-01T16:00:49.612383+00:00"
+}

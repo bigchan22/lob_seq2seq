@@ -308,6 +308,13 @@ class Receiver:
         else:
             self.state['consolidation_status']=read(self.root/'consolidated/consolidation_manifest.json',{}).get('status')
             self.last_aggregate_signature=signature
+        audit=Path(__file__).with_name('audit_native_results.py')
+        if audit.exists() and self.c.get('native_source'):
+            with (self.root/'independent_analysis.log').open('ab') as log:
+                process=subprocess.run([self.c['python'],'-B',str(audit),'--config',self.config_path,'--output',str(self.root/'native_analysis')],
+                                       env=env,stdout=log,stderr=subprocess.STDOUT,timeout=300)
+            if process.returncode:self.issue('INDEPENDENT_RESULT_AUDIT','Independent result audit failed; see independent_analysis.log; do not interpret unchecked cross-server results',self.state.get('ready_sha'))
+
 
     def other_terminal(self):
         root=self.state.get('other_snapshot')
@@ -326,13 +333,42 @@ class Receiver:
                 if attempt<2:time.sleep(15*(attempt+1))
         self.export_files()
 
+    def export_queue_metadata(self,dest):
+        source=self.state.get('source_path') or self.c.get('native_source')
+        if source:
+            for name in ['queue_manifest.json','queue_manifest.csv']:
+                path=Path(source)/'configs/qf_overnight/20261001'/name
+                if path.exists():shutil.copyfile(path,dest/name)
+        database=self.root/'jobs/queue.sqlite'
+        if not database.exists():return
+        import sqlite3
+        db=sqlite3.connect('file:'+str(database)+'?mode=ro',uri=True,timeout=30);db.row_factory=sqlite3.Row
+        rows=[dict(x) for x in db.execute('SELECT * FROM jobs ORDER BY id')]
+        events=[dict(x) for x in db.execute('SELECT * FROM events ORDER BY seq')];db.close()
+        with (dest/'events.jsonl').open('w') as f:
+            for e in events:f.write(json.dumps(e,sort_keys=True)+'\n')
+        selected={};trials=[];records=[]
+        for row in rows:
+            job=json.loads(row['payload']);result=read(row['result']) if row.get('result') else None
+            if job['kind']=='select' and result:selected[result['model']]=result
+            if job['kind']=='fit' and job['config'].get('family')=='lr_search':
+                rec={'job_id':row['id'],'model':job['config']['model'],'lr':job['config']['lr'],'state':row['state'],'validation_p3_nll':None}
+                if result:rec.update(validation_p3_nll=result['validation_p3_nll'],selected_epoch=result['selected_epoch'],run_id=result['run_id'])
+                trials.append(rec)
+            if row['state']=='SUCCEEDED' and result:
+                records.append({'job_id':row['id'],'kind':job['kind'],'relative_directory':'runs/exports/runs/'+row['id']+'__'+sha(row['result'])[:16],
+                                'result_hash':sha(row['result']),'result':result,'attempt':row['attempt']})
+        atomic(dest/'selected_configs.json',{'criterion':'selected-checkpoint main P3 validation only; ties1e-8 choose smaller LR','selected':selected,'every_lr_trial':trials})
+        atomic(dest/'export_manifest.json',{'owner':OWNER,'run_group':RUN_GROUP,'protocol_hash':self.state.get('scientific_protocol_hash'),
+                                          'source_sha':self.state.get('ready_sha'),'runs':records})
+
     def export_files(self):
         dest = self.pub / PREFIX; dest.mkdir(parents=True, exist_ok=True)
         state = dict(self.state)
         for k in ('receiver_pid', 'receiver_start_ticks'): state.pop(k, None)
         state['local_runtime_alias'] = 'RECEIVER_RUNTIME'
         state['planned_owned_training_fits'] = 30
-        state['planned_fits_are_not_materialized_jobs'] = not bool(self.state.get('ready_sha'))
+        state['planned_fits_are_not_materialized_jobs'] = not (self.root/'jobs/queue.sqlite').exists()
         state['shared_queue_status'] = read(self.root / 'jobs/queue_status.json', {'counts': None, 'reason':'Common queue not launched yet'})
         atomic(dest / 'queue_status.json', state)
         if (self.root / 'events.jsonl').exists():
@@ -350,9 +386,13 @@ class Receiver:
             target = dest / 'runs' / rel; target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(src,target)
             if sha(target) != entry['sha256']: raise ValueError('Export was not immutable during copy')
+        self.export_queue_metadata(dest)
         for path in (self.root/'consolidated').glob('*') if (self.root/'consolidated').exists() else []:
             if path.is_file() and path.suffix in ('.json','.csv','.md'):
                 target=dest/'consolidated'/path.name;target.parent.mkdir(exist_ok=True);shutil.copyfile(path,target)
+        for path in (self.root/'native_analysis').glob('*') if (self.root/'native_analysis').exists() else []:
+            if path.is_file() and path.suffix in ('.json','.csv','.md'):
+                target=dest/'independent_analysis'/path.name;target.parent.mkdir(exist_ok=True);shutil.copyfile(path,target)
         counts = state['shared_queue_status'].get('counts')
         report = '# RTX3090 overnight progress\n\n'
         report += 'Run group: '+RUN_GROUP+'\n\nPhase: '+state['phase']+'\n\n'
