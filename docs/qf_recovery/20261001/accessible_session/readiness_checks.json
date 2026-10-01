@@ -1,0 +1,78 @@
+{
+  "root_sha": "200e5758de0f5cb545322f5b5ab522ad645f9209",
+  "parents": [],
+  "root_worktree_clean": true,
+  "original_source_files_verified": 128,
+  "python39_ast_files": 91,
+  "yaml_configs_parsed": 11,
+  "model_config": "configs/qf/models/matched_temporal_v1.yaml",
+  "protocol_config": "configs/qf/protocols/qf_decomposition_dev_v1.yaml",
+  "inputs": 54,
+  "input_bytes": 366098160,
+  "input_verification": "Reviewed materializer checks every SHA256, Git blob hash and byte count before writing final files; this check also matched input tree paths and sizes.",
+  "environments": [
+    {
+      "interpreter": "USER_HOME/miniconda3/bin/python3",
+      "python": "3.13.5",
+      "packages": {
+        "numpy": "2.5.1",
+        "pandas": "missing",
+        "torch": "2.13.0",
+        "scikit-learn": "missing",
+        "openpyxl": "missing",
+        "PyYAML": "6.0.2",
+        "tqdm": "4.67.1"
+      },
+      "imports": {
+        "numpy": "passed",
+        "torch": "passed",
+        "yaml": "passed",
+        "pandas": "ModuleNotFoundError: No module named 'pandas'",
+        "openpyxl": "ModuleNotFoundError: No module named 'openpyxl'",
+        "sklearn": "ModuleNotFoundError: No module named 'sklearn'",
+        "lob_forecasting": "passed",
+        "lob_forecasting.models.qf_variants": "passed",
+        "lob_forecasting.data.dataset": "ModuleNotFoundError: No module named 'pandas'"
+      },
+      "torch_runtime": "2.13.0+cu130",
+      "torch_cuda_build": "13.0",
+      "torch_load_weights_only_explicit_parameter": true,
+      "torch_load_source_mentions_weights_only": true,
+      "model_constructed": false,
+      "checkpoint_loaded": false
+    },
+    {
+      "interpreter": "USER_HOME/miniconda3/envs/mpnn/bin/python",
+      "python": "3.9.16",
+      "packages": {
+        "numpy": "1.22.3",
+        "pandas": "1.5.3",
+        "torch": "1.12.1",
+        "scikit-learn": "1.2.2",
+        "openpyxl": "3.1.5",
+        "PyYAML": "6.0",
+        "tqdm": "4.65.0"
+      },
+      "imports": {
+        "numpy": "passed",
+        "torch": "passed",
+        "yaml": "passed",
+        "pandas": "passed",
+        "openpyxl": "passed",
+        "sklearn": "passed",
+        "lob_forecasting": "passed",
+        "lob_forecasting.models.qf_variants": "passed",
+        "lob_forecasting.data.dataset": "passed"
+      },
+      "torch_runtime": "1.12.1",
+      "torch_cuda_build": "11.3",
+      "torch_load_weights_only_explicit_parameter": false,
+      "torch_load_source_mentions_weights_only": false,
+      "model_constructed": false,
+      "checkpoint_loaded": false
+    }
+  ],
+  "source_changes": "none; original root files kept byte-for-byte; no portability implementation",
+  "data_changes": "only copying already-published blobs into a new destination; no conversion or rebuilding",
+  "training_or_checkpoint_inference": false
+}

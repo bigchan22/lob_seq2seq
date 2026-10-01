@@ -1,0 +1,8 @@
+{
+  "unique_blob_count": 173,
+  "expected_unique_blob_count": 173,
+  "unexpected_blob_count": 0,
+  "total_blob_bytes": 366354310,
+  "checkpoint_blobs_downloaded": 0,
+  "local_alternates": false
+}

@@ -1,0 +1,374 @@
+{
+  "timestamp": "2026-10-01T01:16:33.033594+00:00",
+  "requested_role": "RTX3090 receiver",
+  "actual_hardware": [
+    {
+      "index": "0",
+      "model": "NVIDIA GeForce RTX 4090",
+      "vram": "24564 MiB",
+      "driver": "595.71.05"
+    },
+    {
+      "index": "1",
+      "model": "NVIDIA GeForce RTX 4090",
+      "vram": "24564 MiB",
+      "driver": "595.71.05"
+    },
+    {
+      "index": "2",
+      "model": "NVIDIA GeForce RTX 4090",
+      "vram": "24564 MiB",
+      "driver": "595.71.05"
+    },
+    {
+      "index": "3",
+      "model": "NVIDIA GeForce RTX 4090",
+      "vram": "24564 MiB",
+      "driver": "595.71.05"
+    }
+  ],
+  "hardware_evidence": {
+    "status": "verified",
+    "method": "source_inspection",
+    "command": "fresh nvidia-smi"
+  },
+  "role_caveat": "Current session reports four RTX4090s, not RTX3090s. The requested bridge is absent. File backup provenance does not explain or replace a live hardware reading. Recovery was completed in the workspace actually accessible to this session; a distinct RTX3090/A5000 endpoint was not accessed.",
+  "workspace": "WORKSPACE_ROOT",
+  "active_gpu_jobs_at_query": [],
+  "requested_bridge": "WORKSPACE_ROOT/git_bridge/lob_seq2seq",
+  "requested_bridge_present": false,
+  "existing_recovery_context": "PRIOR_RECOVERY_ROOT",
+  "backup_provenance": "User reports that the project files are a backup from the formerly accessible RTX4090 server; per-run execution host remains unknown.",
+  "git": {
+    "remote": "git@github.com:bigchan22/lob_seq2seq.git",
+    "current_transport_available": true,
+    "authentication": "existing authorized SSH authentication worked",
+    "protocol_v2_filter_verified": true,
+    "advertised_refs": {
+      "refs/heads/audit/qf-a5000-20260930-142604": "0ebdb6782f2322e346dfb0c303762aab8635419c",
+      "refs/heads/audit/qf-rtx3090-20260930-1506": "119bd79600d2f53a10fb7be3d9ab39ec62f23678",
+      "refs/heads/main": "073cd89b556224eeae22413c3c05188a947e990a",
+      "refs/heads/recovery/qf-august-code-20260930-220020": "200e5758de0f5cb545322f5b5ab522ad645f9209",
+      "refs/heads/recovery/qf-git-handoff-20260930-220020": "a323db8aea04fbb33b8e32e7644647106150899c"
+    },
+    "advertisement_timestamp": "2026-10-01T01:02:41.232924+00:00",
+    "tags_advertised": [],
+    "metadata_clone": "RECOVERY_ROOT/git-metadata",
+    "code_worktree": "RECOVERY_ROOT/code",
+    "clone_acquisition": "--filter=blob:none --no-checkout --single-branch of the exact recovery branch",
+    "promisor": "true",
+    "filter": "blob:none",
+    "shallow_after_explicit_input_report_fetch": "true",
+    "new_worktree_detached_at_export_root": true,
+    "submodules_initialized": false,
+    "failure_and_resolution": "Bulk explicit-blob fetch with blob:none failed before any blobs arrived. Standard targeted promisor retrieval through checkout and the reviewed input helper succeeded. No unrestricted historical clone or fallback occurred.",
+    "prior_dns_blocker": "Resolved in this unrestricted session; the earlier failed DNS check remains historical evidence only."
+  },
+  "code": {
+    "version": "August development decomposition/discrimination study",
+    "ref": "recovery/qf-august-code-20260930-220020",
+    "export_sha": "200e5758de0f5cb545322f5b5ab522ad645f9209",
+    "source_sha": "feb10a130bb036617229d6c4c9bc4a96df3b9fe6",
+    "parents_at_export_root": [],
+    "root_identity_status": "verified",
+    "method": "recomputed",
+    "path": "RECOVERY_ROOT/code",
+    "source_manifest": "RECOVERY_ROOT/code_manifest.csv",
+    "original_files_verified": 128,
+    "all_code_helper_files": 134,
+    "original_dirty_state": "Selected original source checkout has reference materialization and executable-mode changes; exported subset uses exact committed bytes/modes. No required content delta was identified in that subset.",
+    "recovered_worktree_clean": true,
+    "portability_commits": "none at the verified advertised branch; no source changes in this pass"
+  },
+  "handoff": {
+    "accessible_server_handoff_received": true,
+    "verified_prior_report_ref": "recovery/qf-git-handoff-20260930-220020",
+    "verified_prior_report_sha": "a323db8aea04fbb33b8e32e7644647106150899c",
+    "actual_a5000_handoff_independently_verified": false,
+    "interpretation": "The previous handoff and code source mapping were verified through Git. Its physical A5000 origin is not established; user clarified backup origin. That does not block recovery of already-published code and inputs.",
+    "old_4090_action_required": false
+  },
+  "input_recovery": {
+    "status": "verified",
+    "method": "recomputed",
+    "source_transport": "fresh remote Git clone and targeted promisor blob retrieval; no local object alternates or source-file copy fallback",
+    "source_remote": "git@github.com:bigchan22/lob_seq2seq.git",
+    "source_ref": "refs/heads/main",
+    "source_commit": "073cd89b556224eeae22413c3c05188a947e990a",
+    "source_paths": [
+      "data/raw/KRXaggData/KR*_t.xlsx",
+      "data/processed/KR*_t.csv"
+    ],
+    "workbooks": 27,
+    "workbook_bytes": 161779048,
+    "caches": 27,
+    "cache_bytes": 204319112,
+    "total_files": 54,
+    "total_bytes": 366098160,
+    "new_destination": "RECOVERY_ROOT/inputs",
+    "source_root": "RECOVERY_ROOT/inputs/data/raw/KRXaggData",
+    "cache_root": "RECOVERY_ROOT/inputs/data/processed",
+    "manifest": "RECOVERY_ROOT/input_manifest.csv",
+    "manifest_sha256": "9cb89005693b1b70c102178849b740fde00b50c9ba5f3b5530d0e5749ea59837",
+    "verification": "Every recovered file passed Git blob SHA1, SHA256 and byte-count checks before final rename; exact source commit/path/blob/mode mapping was checked.",
+    "ordinary_git_blobs": true,
+    "lfs_retrieval_needed": false,
+    "existing_inputs_overwritten": false,
+    "cache_conversion_or_rebuild": false,
+    "new_data_publication": false,
+    "provider_semantics": "Unknown upstream aggregation, observation and release times; restored cell presence does not establish exchange observation provenance.",
+    "receipt": {
+      "started": "2026-10-01T01:11:45.739641+00:00",
+      "finished": "2026-10-01T01:15:02.926630+00:00",
+      "exit_code": 0,
+      "summary": "Recovered and verified 54 existing input files (366098160 bytes). No conversion performed.",
+      "error": null,
+      "remote": "git@github.com:bigchan22/lob_seq2seq.git",
+      "input_commit": "073cd89b556224eeae22413c3c05188a947e990a",
+      "new_destination": "RECOVERY_ROOT/inputs",
+      "helper": "RECOVERY_ROOT/code/recovery/materialize_inputs.py",
+      "source": "fresh filtered remote clone with no local alternates; targeted promisor blob requests",
+      "checkpoints_requested": 0
+    }
+  },
+  "september": {
+    "candidate_sha": "99e305a904eaebeaa6d9bedec827426c3de9a593",
+    "candidate_branch": "exp/qf-leadlag-competition-20260901_102354",
+    "advertised_branch_present": false,
+    "local_original_store_object": "missing",
+    "original_store_shallow": false,
+    "exact_remote_sha_retried": false,
+    "interpretation": "No matching current advertised ref; absent from the inspected original non-shallow store. A prior exact-SHA attempt returned not our ref; this pass did not repeat it. Hidden/unadvertised objects and other machines remain unknown. August is an explicit fallback baseline, not recovered September code."
+  },
+  "local_candidate_commit_objects": {
+    "119bd79600d2f53a10fb7be3d9ab39ec62f23678": "commit",
+    "feb10a130bb036617229d6c4c9bc4a96df3b9fe6": "commit",
+    "99e305a904eaebeaa6d9bedec827426c3de9a593": "missing"
+  },
+  "scientific_protocol": {
+    "labels": "strict relative-return thresholds +/-0.0001 (1bp), Down/Flat/Up=0/1/2; equality and nonpositive current midpoint are Flat",
+    "code_evidence": [
+      "lob_forecasting/cli/parallel.py:78-129",
+      "lob_forecasting/experiments/qf_training.py:84-85"
+    ],
+    "features": "no_investor",
+    "split_unit": "chronological common day",
+    "train_dates": [
+      "2015-07-01",
+      "2016-11-23"
+    ],
+    "validation_dates": [
+      "2016-11-24",
+      "2017-02-03"
+    ],
+    "development_holdout_dates": [
+      "2017-02-06",
+      "2017-06-30"
+    ],
+    "checkpoint_selection": "validation NLL improvement >0.0001; min 20/max 200 epochs and patience30 in matched config",
+    "evaluation_this_pass": "none; dates/results referenced from verified earlier recovery record and source, not new inference",
+    "qf_v2": "not implemented or executed during recovery; UM_V2_DEPTH is a model variant",
+    "provider_timestamp_semantics": "unknown; no new assumptions or flags"
+  },
+  "artifacts": {
+    "predictions": "Selected August UA/UC predictions are present only in the existing local backup recovery packet; no new Git prediction download or inference.",
+    "local_selected_root": "PRIOR_RECOVERY_ROOT/recovered-artifacts",
+    "local_artifact_manifest": "PRIOR_RECOVERY_ROOT/artifact_manifest.csv",
+    "checkpoints": "Exist in original local backup artifact sets; not requested, downloaded, deserialized or copied in this pass.",
+    "september_gru": "not recovered",
+    "all_material_in_git_claim": "contradicted for the inspected QF runtime artifacts; code and the 54 aggregate inputs are recoverable through Git"
+  },
+  "bounded_checks": {
+    "root_sha": "200e5758de0f5cb545322f5b5ab522ad645f9209",
+    "parents": [],
+    "root_worktree_clean": true,
+    "original_source_files_verified": 128,
+    "python39_ast_files": 91,
+    "yaml_configs_parsed": 11,
+    "model_config": "configs/qf/models/matched_temporal_v1.yaml",
+    "protocol_config": "configs/qf/protocols/qf_decomposition_dev_v1.yaml",
+    "inputs": 54,
+    "input_bytes": 366098160,
+    "input_verification": "Reviewed materializer checks every SHA256, Git blob hash and byte count before writing final files; this check also matched input tree paths and sizes.",
+    "environments": [
+      {
+        "interpreter": "USER_HOME/miniconda3/bin/python3",
+        "python": "3.13.5",
+        "packages": {
+          "numpy": "2.5.1",
+          "pandas": "missing",
+          "torch": "2.13.0",
+          "scikit-learn": "missing",
+          "openpyxl": "missing",
+          "PyYAML": "6.0.2",
+          "tqdm": "4.67.1"
+        },
+        "imports": {
+          "numpy": "passed",
+          "torch": "passed",
+          "yaml": "passed",
+          "pandas": "ModuleNotFoundError: No module named 'pandas'",
+          "openpyxl": "ModuleNotFoundError: No module named 'openpyxl'",
+          "sklearn": "ModuleNotFoundError: No module named 'sklearn'",
+          "lob_forecasting": "passed",
+          "lob_forecasting.models.qf_variants": "passed",
+          "lob_forecasting.data.dataset": "ModuleNotFoundError: No module named 'pandas'"
+        },
+        "torch_runtime": "2.13.0+cu130",
+        "torch_cuda_build": "13.0",
+        "torch_load_weights_only_explicit_parameter": true,
+        "torch_load_source_mentions_weights_only": true,
+        "model_constructed": false,
+        "checkpoint_loaded": false
+      },
+      {
+        "interpreter": "USER_HOME/miniconda3/envs/mpnn/bin/python",
+        "python": "3.9.16",
+        "packages": {
+          "numpy": "1.22.3",
+          "pandas": "1.5.3",
+          "torch": "1.12.1",
+          "scikit-learn": "1.2.2",
+          "openpyxl": "3.1.5",
+          "PyYAML": "6.0",
+          "tqdm": "4.65.0"
+        },
+        "imports": {
+          "numpy": "passed",
+          "torch": "passed",
+          "yaml": "passed",
+          "pandas": "passed",
+          "openpyxl": "passed",
+          "sklearn": "passed",
+          "lob_forecasting": "passed",
+          "lob_forecasting.models.qf_variants": "passed",
+          "lob_forecasting.data.dataset": "passed"
+        },
+        "torch_runtime": "1.12.1",
+        "torch_cuda_build": "11.3",
+        "torch_load_weights_only_explicit_parameter": false,
+        "torch_load_source_mentions_weights_only": false,
+        "model_constructed": false,
+        "checkpoint_loaded": false
+      }
+    ],
+    "source_changes": "none; original root files kept byte-for-byte; no portability implementation",
+    "data_changes": "only copying already-published blobs into a new destination; no conversion or rebuilding",
+    "training_or_checkpoint_inference": false
+  },
+  "completed_object_inventory": {
+    "unique_blob_count": 173,
+    "expected_unique_blob_count": 173,
+    "unexpected_blob_count": 0,
+    "total_blob_bytes": 366354310,
+    "checkpoint_blobs_downloaded": 0,
+    "local_alternates": false
+  },
+  "historical_interpreter_accessibility": {
+    "expected_current_lob_interpreter_exists": false,
+    "backup_lob_interpreter_exists": true,
+    "backup_lob_interpreter_executable": false,
+    "permissions_changed": false
+  },
+  "final_remote_recheck": {
+    "timestamp": "2026-10-01 01:16:32 UTC",
+    "advertised_refs": {
+      "refs/heads/audit/qf-a5000-20260930-142604": "0ebdb6782f2322e346dfb0c303762aab8635419c",
+      "refs/heads/audit/qf-rtx3090-20260930-1506": "119bd79600d2f53a10fb7be3d9ab39ec62f23678",
+      "refs/heads/main": "073cd89b556224eeae22413c3c05188a947e990a",
+      "refs/heads/recovery/qf-august-code-20260930-220020": "200e5758de0f5cb545322f5b5ab522ad645f9209",
+      "refs/heads/recovery/qf-git-handoff-20260930-220020": "a323db8aea04fbb33b8e32e7644647106150899c"
+    },
+    "unchanged_from_preflight": true
+  },
+  "portability_work_remaining": [
+    "Confirm the intended receiver host/session and actual-A5000 handoff independently; current live hardware is RTX4090.",
+    "Pilot runner supports QF_DATA_DIR, so use the new cache root when an experiment is later authorized; do not launch now.",
+    "Replace Stage-2 hardcoded data/source-artifact paths with explicit configuration in a later reviewed portability change; see discrimination_runner.py:15,43,64,69.",
+    "Replace launcher historical interpreter paths in a later reviewed setup change; scripts/qf_queue/launch_workers.sh:3 and scripts/qf_discrimination/launch_workers.sh:3.",
+    "Resolve dependency/version compatibility: the base interpreter lacks pandas/scikit-learn/openpyxl; mpnn passes selected imports but its PyTorch1.12.1 has no weights_only API used by the trainer. Do not remove the safety option silently."
+  ],
+  "readiness": {
+    "git_transport_available": true,
+    "source_code_present": true,
+    "source_aggregate_inputs_present": true,
+    "derived_cache_inputs_present": true,
+    "root_and_input_identities_verified": true,
+    "intended_rtx3090_host_verified": false,
+    "actual_a5000_handoff_verified": false,
+    "environment_pipeline_ready": false,
+    "experiment_ready": false
+  },
+  "actions_performed": [
+    "Read existing recovery context and applicable instructions; no broad discovery repeated.",
+    "Verified live GPU inventory, requested bridge absence, exact configured remote and fresh advertised heads/tags.",
+    "Verified remote protocol filter capability; created a new filtered no-checkout metadata clone.",
+    "Fetched exact input and prior-report refs with blob filtering and depth1.",
+    "Reviewed tracked path/type metadata and manifest sizes before materialization.",
+    "Created a separate detached code worktree at the verified parentless export root.",
+    "Retrieved exactly identified aggregate inputs through Git into a new destination and verified all identities.",
+    "Ran source AST/config checks and safe CPU imports in two existing environments.",
+    "Wrote reports and compact manifests; prepared sanitized audit-only publication from an already-published code root."
+  ],
+  "checks_skipped": [
+    "training/tuning",
+    "real-data inference",
+    "checkpoint load",
+    "cache preprocessing/rebuilding",
+    "package/driver changes",
+    "new reserve evaluation",
+    "new scientific data publication",
+    "repeat exact missing September SHA fetch"
+  ],
+  "scientific_checkout_preservation": [
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor",
+      "head": "74cce6b90d2b95c36d305db26a9892fedfe515e5",
+      "dirty_path_count": 62,
+      "unchanged": true
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_baseline_20260812_235444",
+      "head": "74cce6b90d2b95c36d305db26a9892fedfe515e5",
+      "dirty_path_count": 47,
+      "unchanged": true
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_clean_20260813_014759",
+      "head": "e599b3534f115dca1fcda5c85bd00f84f6ad7094",
+      "dirty_path_count": 48,
+      "unchanged": true
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_clean_baseline_20260813_014759",
+      "head": "74cce6b90d2b95c36d305db26a9892fedfe515e5",
+      "dirty_path_count": 47,
+      "unchanged": true
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_discrimination_20260813_115217",
+      "head": "feb10a130bb036617229d6c4c9bc4a96df3b9fe6",
+      "dirty_path_count": 62,
+      "unchanged": true
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_queue_20260813_092802",
+      "head": "7c1c84c2be4e473003addeaa31d15df4d5555a1b",
+      "dirty_path_count": 56,
+      "unchanged": true
+    },
+    {
+      "path": "WORKSPACE_ROOT/lob_seq2seq_predictor_qf_refactor_20260812_232959",
+      "head": "422d08ddadefc8bd39a83a227900d86076edc344",
+      "dirty_path_count": 48,
+      "unchanged": true
+    }
+  ],
+  "publication": {
+    "ref": "audit/qf-receiver-git-20261001-010238",
+    "directory": "docs/qf_recovery/20261001/accessible_session",
+    "report_sha": "final receipt supplied outside committed report"
+  },
+  "next_concrete_setup_action": "Before any experiment, confirm the actual receiver session, select an existing compatible environment, and make a small separately reviewed portability change for Stage-2/launcher paths. On a distinct RTX3090, use the verified ref and input manifest procedure; no old-server export is needed.",
+  "path_aliases": "Private absolute paths replaced by RECOVERY_ROOT, PRIOR_RECOVERY_ROOT, WORKSPACE_ROOT, USER_HOME and HISTORICAL_HOME. Exact locations retained in the local report."
+}

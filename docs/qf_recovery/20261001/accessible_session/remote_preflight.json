@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-10-01T01:02:41.232924+00:00",
+  "remote": "git@github.com:bigchan22/lob_seq2seq.git",
+  "advertised_refs": {
+    "refs/heads/audit/qf-a5000-20260930-142604": "0ebdb6782f2322e346dfb0c303762aab8635419c",
+    "refs/heads/audit/qf-rtx3090-20260930-1506": "119bd79600d2f53a10fb7be3d9ab39ec62f23678",
+    "refs/heads/main": "073cd89b556224eeae22413c3c05188a947e990a",
+    "refs/heads/recovery/qf-august-code-20260930-220020": "200e5758de0f5cb545322f5b5ab522ad645f9209",
+    "refs/heads/recovery/qf-git-handoff-20260930-220020": "a323db8aea04fbb33b8e32e7644647106150899c"
+  },
+  "protocol_v2_filter_supported": true,
+  "requested_bridge_present": false,
+  "recovery_root": "RECOVERY_ROOT"
+}

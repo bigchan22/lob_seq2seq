@@ -1,0 +1,13 @@
+{
+  "started": "2026-10-01T01:11:45.739641+00:00",
+  "finished": "2026-10-01T01:15:02.926630+00:00",
+  "exit_code": 0,
+  "summary": "Recovered and verified 54 existing input files (366098160 bytes). No conversion performed.",
+  "error": null,
+  "remote": "git@github.com:bigchan22/lob_seq2seq.git",
+  "input_commit": "073cd89b556224eeae22413c3c05188a947e990a",
+  "new_destination": "RECOVERY_ROOT/inputs",
+  "helper": "RECOVERY_ROOT/code/recovery/materialize_inputs.py",
+  "source": "fresh filtered remote clone with no local alternates; targeted promisor blob requests",
+  "checkpoints_requested": 0
+}
