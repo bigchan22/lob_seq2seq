@@ -12,3 +12,5 @@ Read metrics and per-asset/subgroup/calibration tables under runs/ and aggregate
 Limitations: provider aggregation/release timing unknown; historical selection and retrospective holdout; only3 optimization seeds; adapted-model scope where applicable. These classification results do not establish executable trading profitability or causality. P3 uses future endpoint quality ex post and never masks peer input. UC historical description conflict is preserved in the frozen replay namespace.
 
 This report does not wait for the peer's final report to describe local completion. Local publication receipts outside Git and peer_receipt.json identify advertised result SHAs; no file tries to embed its own final commit SHA.
+
+Scheduled8-hour snapshot; active jobs were not stopped.
