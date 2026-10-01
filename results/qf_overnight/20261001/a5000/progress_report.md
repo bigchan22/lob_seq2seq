@@ -1,9 +1,9 @@
 # qf-august-overnight-20261001: a5000 progress
 
-Updated 2026-10-01T16:36:48.918955+00:00; elapsed 0.98 hours. Exact source commit `08fcbdac350a00b7ca587d0c95c803766c01e9bf`; protocol `bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1`.
+Updated 2026-10-01T16:57:55.341688+00:00; elapsed 1.33 hours. Exact source commit `08fcbdac350a00b7ca587d0c95c803766c01e9bf`; protocol `bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1`.
 Queue states: `{"PENDING": 25, "RUNNING": 4, "SUCCEEDED": 149}`. Completed distinct full training jobs on this owner: 113; aliases and smokes are not counted as training. Local terminal: False.
 
-Currently running: `[{"job": "main_TLOB_ADAPTED_42_000500", "progress": {"epoch": 60, "completed_day_panels": 224, "phase": "train"}}, {"job": "main_TLOB_ADAPTED_42_001000", "progress": {"epoch": 53, "completed_day_panels": 320, "phase": "train"}}, {"job": "main_TLOB_ADAPTED_42_002000", "progress": {"epoch": 61, "completed_day_panels": 64, "phase": "train"}}, {"job": "main_TLOB_ADAPTED_42_004000", "progress": {"epoch": 59, "completed_day_panels": 32, "phase": "train"}}]`.
+Currently running: `[{"job": "main_TLOB_ADAPTED_42_000500", "progress": {"epoch": 92, "completed_day_panels": 224, "phase": "train"}}, {"job": "main_TLOB_ADAPTED_42_001000", "progress": {"epoch": 82, "completed_day_panels": 128, "phase": "train"}}, {"job": "main_TLOB_ADAPTED_42_002000", "progress": {"epoch": 93, "completed_day_panels": 192, "phase": "train"}}, {"job": "main_TLOB_ADAPTED_42_004000", "progress": {"epoch": 90, "completed_day_panels": 64, "phase": "train"}}]`.
 
 The finite global plan has153 unconditional full fits and up to4 conditional fixed-LR fits (157 maximum), plus explicit selection/reuse/analysis jobs. This owner never claims the other owner's models. A job succeeds only after result/prediction validation. Checkpoints remain task-local; hashes/relative names accompany each run. All selected compressed probabilities, histories, masks and scores are transferred through this result branch. Every LR trial and failure is recorded in selected_configs.json; performance never gates further valid work.
 
