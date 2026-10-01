@@ -2,7 +2,7 @@
 
 Run group: qf-august-overnight-20261001
 
-Phase: RUNNING
+Phase: LOCAL_TERMINAL_AWAITING_PEER
 
 READY SHA: e2212c40566e21c680a98186ebd8e984aa80d4fd; protocol SHA256: 3cfd389bbd05ec9201a41c0892e29bf8199198d1b216b9a8061370d4240aa583
 
@@ -14,7 +14,7 @@ Historical replay is separate; see historical_replay_reference.json. No performa
 
 Consolidated analysis status: partial; see consolidated/progress_report.md.
 
-Other owner result SHA: 54a10ea64ce815db430e6fd987d9ae9add5e5d12
+Other owner result SHA: 09b744a319e63ece4f1a7f13b00e341a17c2f53d
 
 Current blocker: None
 
