@@ -13,15 +13,15 @@
     },
     {
       "path": "metrics.csv",
-      "sha256": "7095c28f8d97efd27f97d89cf696bfc73b6bbb8bfd35fe768d73e1bb56a08b37"
+      "sha256": "9885632a14627478c2cfeda00f89c5041b32ee1419998b8eae83d389c9807e91"
     },
     {
       "path": "paired_differences.csv",
-      "sha256": "aed1b46803e8e4131030bfa5f0377f23c16089b118e9cd611c9c934cfab55cab"
+      "sha256": "c94d2788b888cba5646ee865268d64ae75cac5a84edf93a6782499a0fbfe2bd5"
     },
     {
       "path": "rolling_metrics.csv",
-      "sha256": "e78fc199b62f9dcefbaf769f438b6f323695f7372e52ee242f860ece6ab37e83"
+      "sha256": "74c1916b24da938b7084711d2892f3a12fb1a12c3f605e577349d5db3a6a5781"
     }
   ],
   "complete_pair_rows": 456,
@@ -33,8 +33,8 @@
   "limitations": "Daily sums and key/label digests originate in owner-validated saved-prediction exports. No probability ensemble; no inference or selection here. Intervals retrospective/conditional on selection. Missing results are not zero.",
   "namespace": "new_p3_training",
   "source_result_shas": {
-    "a5000": "3a355b8fd9eb60f742207db29478bb5085e7449d",
-    "rtx3090": "90898e0bc4a2c59b0111f19ef0acfb1f048b9049"
+    "a5000": "f8af150012a05f43cae2c5fdb5c5b08d6d0cfaec",
+    "rtx3090": "b2e041ff65cd011501bc57d783bd17a96db47351"
   },
   "status": "partial",
   "validated_metric_rows": 488
