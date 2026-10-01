@@ -9,8 +9,10 @@
     "missing_exports_remain_missing": true
   },
   "historical_replay_tests": 6,
-  "scientific_training_smokes": "pending shared implementation; no fake PASS",
+  "scientific_training_smokes": "PASS:9 common families, real-data2epoch fits/inference; canonical arrays and saved reload checked",
   "cuda_environment": "existing Python3.9.13 torch2.7.1+cu118; tiny CUDA tensor multiply passed; no environment installation",
   "allocated_gpu_count": 4,
-  "running_scientific_jobs": 0
+  "main_training_launched": true,
+  "checkpoint_resume_fields_verified": true,
+  "running_scientific_jobs_at_receipt": 4
 }

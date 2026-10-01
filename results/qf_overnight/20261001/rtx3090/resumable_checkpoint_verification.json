@@ -1,0 +1,32 @@
+{
+  "verified_at": "2026-10-01T16:11:27.672284+00:00",
+  "job_id": "main_UA_42_000500",
+  "checkpoint_name": "last_checkpoint.pt",
+  "sha256": "452550231da7beee32f0dddd350a6c841afe55485b109a4783472a640d660760",
+  "bytes": 9784359,
+  "epoch": 195,
+  "run_id": "c1ecd1f21f55799e1f0f8dfe87625ddfad38403eab27d6d9b310312df61e295e",
+  "required_resume_fields_present": [
+    "run_id",
+    "model",
+    "optimizer",
+    "epoch",
+    "best",
+    "best_epoch",
+    "best_model",
+    "bad",
+    "history",
+    "rng",
+    "data_order",
+    "microbatch"
+  ],
+  "rng_fields": [
+    "python",
+    "numpy",
+    "torch",
+    "cuda"
+  ],
+  "next_epoch": 196,
+  "effective_window_days": 32,
+  "verification": "Read one trusted checkpoint produced by this task into CPU memory; no inference or RNG restore; only metadata exported"
+}

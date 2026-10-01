@@ -2,7 +2,7 @@
   "schema_version": 1,
   "run_group": "qf-august-overnight-20261001",
   "owner": "rtx3090",
-  "state": "durable receiver installed; producer branch not advertised at 2026-10-01T15:36:43.977689+00:00",
+  "state": "A5000 native bridge adopted at e2212c40566e21c680a98186ebd8e984aa80d4fd; four allocated GPU workers launched; source/transport hashes separate",
   "data_handoff_sha": "e85a89fd56584b513be940e6259c637369bd830b",
   "required_ready_path": "coordination/qf_overnight/20261001/ready.json",
   "receiver_source": "receiver/qf_overnight/20261001/receiver.py",

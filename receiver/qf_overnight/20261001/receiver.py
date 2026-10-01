@@ -264,12 +264,26 @@ class Receiver:
         out=self.root/'result_snapshots'/owner/commit
         if (out/'_receipt.json').exists(): return out
         out.mkdir(parents=True,exist_ok=True); copied=[]
+        # Batch only missing task metadata blobs. Listing local object headers never
+        # lazily downloads absent historic objects, unlike repeated cat-file -s.
+        local=self.git('cat-file','--batch-all-objects','--batch-check=%(objectname) %(objectsize)',timeout=120).stdout
+        sizes={line.split()[0]:int(line.split()[1]) for line in local.splitlines()}
+        wanted=[]
+        for line in tree.splitlines():
+            meta,path=line.split('\t');mode,kind,oid=meta.split()
+            if path.startswith(prefix) and kind=='blob' and mode!='120000':
+                rel=relative_path(path[len(prefix):])
+                if rel.parts[0] not in ('consolidated','issues') and rel.suffix in ('.json','.csv','.md') and oid not in sizes:wanted.append(oid)
+        if wanted:
+            result=subprocess.run(['git','-C',str(self.bridge),'-c','fetch.negotiationAlgorithm=noop','fetch','origin','--no-tags','--no-write-fetch-head','--recurse-submodules=no','--filter=blob:none','--no-auto-gc','--stdin'],
+                                  input='\n'.join(sorted(set(wanted)))+'\n',env=self.env,capture_output=True,text=True,timeout=180)
+            if result.returncode:raise RuntimeError('Scoped metadata blob fetch failed: '+result.stderr[-1000:])
         for line in tree.splitlines():
             meta,path=line.split('\t'); mode,kind,oid=meta.split()
             if not path.startswith(prefix) or kind!='blob' or mode=='120000': continue
             rel=relative_path(path[len(prefix):])
             if rel.parts[0] in ('consolidated','issues') or rel.suffix not in ('.json','.csv','.md'): continue
-            size=int(self.git('cat-file','-s',oid).stdout)
+            size=sizes[oid] if oid in sizes else int(self.git('cat-file','-s',oid).stdout)
             if size>20_000_000: continue
             payload=self.git('cat-file','blob',oid).stdout
             dest=out/rel;dest.parent.mkdir(parents=True,exist_ok=True);dest.write_text(payload)

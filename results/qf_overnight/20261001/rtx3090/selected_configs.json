@@ -33,42 +33,50 @@
       "job_id": "main_UA_42_000500",
       "lr": 5e-05,
       "model": "UA",
-      "state": "PENDING",
-      "validation_p3_nll": null
+      "run_id": "c1ecd1f21f55799e1f0f8dfe87625ddfad38403eab27d6d9b310312df61e295e",
+      "selected_epoch": 199,
+      "state": "SUCCEEDED",
+      "validation_p3_nll": 0.9150287698872387
     },
     {
       "job_id": "main_UA_42_001000",
       "lr": 0.0001,
       "model": "UA",
-      "state": "PENDING",
-      "validation_p3_nll": null
+      "run_id": "b30bc0a0d98f4d2cfde524a70a463c6bb9943b6b9ef3248caecd12cb9bb29a0a",
+      "selected_epoch": 199,
+      "state": "SUCCEEDED",
+      "validation_p3_nll": 0.9114175109871834
     },
     {
       "job_id": "main_UA_42_002000",
       "lr": 0.0002,
       "model": "UA",
-      "state": "PENDING",
-      "validation_p3_nll": null
+      "run_id": "8dae7a6c3f981ee643e5ccbc7f48262180a97f738bc78f72b538336ae2a69976",
+      "selected_epoch": 196,
+      "state": "SUCCEEDED",
+      "validation_p3_nll": 0.9078627893531214
     },
     {
       "job_id": "main_UA_42_004000",
       "lr": 0.0004,
       "model": "UA",
-      "state": "PENDING",
-      "validation_p3_nll": null
+      "run_id": "2b83e064869226d82354188323bb9ccf2d6088f228dd3ca34e0860eb962f83b3",
+      "selected_epoch": 127,
+      "state": "SUCCEEDED",
+      "validation_p3_nll": 0.9061664881728742
     },
     {
       "job_id": "main_UC_42_000500",
       "lr": 5e-05,
       "model": "UC",
-      "state": "PENDING",
+      "state": "RUNNING",
       "validation_p3_nll": null
     },
     {
       "job_id": "main_UC_42_001000",
       "lr": 0.0001,
       "model": "UC",
-      "state": "PENDING",
+      "state": "RUNNING",
       "validation_p3_nll": null
     },
     {
@@ -86,5 +94,64 @@
       "validation_p3_nll": null
     }
   ],
-  "selected": {}
+  "selected": {
+    "UA": {
+      "completed_at": "2026-10-01T16:11:48.215941+00:00",
+      "criterion": "selected-checkpoint validation P3 NLL, tie<=1e-8 smaller LR",
+      "job_id": "select_UA",
+      "lr": 0.0004,
+      "model": "UA",
+      "owner": "rtx3090",
+      "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+      "selected_job": "main_UA_42_004000",
+      "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+      "trials": [
+        {
+          "job_id": "main_UA_42_000500",
+          "lr": 5e-05,
+          "model": "UA",
+          "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+          "run_id": "c1ecd1f21f55799e1f0f8dfe87625ddfad38403eab27d6d9b310312df61e295e",
+          "seed": 42,
+          "selected_epoch": 199,
+          "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+          "validation_p3_nll": 0.9150287698872387
+        },
+        {
+          "job_id": "main_UA_42_001000",
+          "lr": 0.0001,
+          "model": "UA",
+          "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+          "run_id": "b30bc0a0d98f4d2cfde524a70a463c6bb9943b6b9ef3248caecd12cb9bb29a0a",
+          "seed": 42,
+          "selected_epoch": 199,
+          "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+          "validation_p3_nll": 0.9114175109871834
+        },
+        {
+          "job_id": "main_UA_42_002000",
+          "lr": 0.0002,
+          "model": "UA",
+          "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+          "run_id": "8dae7a6c3f981ee643e5ccbc7f48262180a97f738bc78f72b538336ae2a69976",
+          "seed": 42,
+          "selected_epoch": 196,
+          "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+          "validation_p3_nll": 0.9078627893531214
+        },
+        {
+          "job_id": "main_UA_42_004000",
+          "lr": 0.0004,
+          "model": "UA",
+          "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+          "run_id": "2b83e064869226d82354188323bb9ccf2d6088f228dd3ca34e0860eb962f83b3",
+          "seed": 42,
+          "selected_epoch": 127,
+          "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+          "validation_p3_nll": 0.9061664881728742
+        }
+      ],
+      "validated": true
+    }
+  }
 }

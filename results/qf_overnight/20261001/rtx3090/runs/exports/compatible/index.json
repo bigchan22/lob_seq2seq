@@ -1,0 +1,16 @@
+{
+  "entries": [
+    {
+      "job": "R1_UA_42",
+      "path": "R1_UA_42__16b6b39278b4270d",
+      "complete_sha256": "69ee7d8386b62b0dc2460a097c10632af6bd5ce472ce0f4b4eb56fed7a641d05"
+    },
+    {
+      "job": "analyze_UA_42",
+      "path": "analyze_UA_42__981f1d11b94aa2db",
+      "complete_sha256": "bb122c0f9afb32190bff3fd0a6264ce73fa7dbe14c8c285187aca9ddff73c988"
+    }
+  ],
+  "protocol_hash": "3cfd389bbd05ec9201a41c0892e29bf8199198d1b216b9a8061370d4240aa583",
+  "canonical_protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1"
+}

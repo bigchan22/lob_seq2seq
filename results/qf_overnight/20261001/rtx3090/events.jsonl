@@ -1,1 +1,23 @@
 {"detail": "{\"result\": \"runs/historical_replay/attempt_0000/result.json\"}", "event": "succeeded", "job": "historical_replay", "seq": 1, "time": "2026-10-01T16:05:10.829166+00:00"}
+{"detail": "{\"resource\": \"cpu\", \"attempt\": 1}", "event": "claimed", "job": "gate_rtx3090", "seq": 2, "time": "2026-10-01T16:07:05.133219+00:00"}
+{"detail": "{\"result\": \"runs/gate_rtx3090/attempt_0001/result.json\"}", "event": "succeeded", "job": "gate_rtx3090", "seq": 3, "time": "2026-10-01T16:07:07.515433+00:00"}
+{"detail": "{\"resource\": \"gpu\", \"attempt\": 1}", "event": "claimed", "job": "main_UA_42_000500", "seq": 4, "time": "2026-10-01T16:07:10.167841+00:00"}
+{"detail": "{\"resource\": \"gpu\", \"attempt\": 1}", "event": "claimed", "job": "main_UA_42_001000", "seq": 5, "time": "2026-10-01T16:07:10.194308+00:00"}
+{"detail": "{\"resource\": \"gpu\", \"attempt\": 1}", "event": "claimed", "job": "main_UA_42_002000", "seq": 6, "time": "2026-10-01T16:07:10.215779+00:00"}
+{"detail": "{\"resource\": \"gpu\", \"attempt\": 1}", "event": "claimed", "job": "main_UA_42_004000", "seq": 7, "time": "2026-10-01T16:07:10.227242+00:00"}
+{"detail": "{\"result\": \"runs/main_UA_42_001000/attempt_0001/result.json\"}", "event": "succeeded", "job": "main_UA_42_001000", "seq": 8, "time": "2026-10-01T16:11:09.268747+00:00"}
+{"detail": "{\"result\": \"runs/main_UA_42_004000/attempt_0001/result.json\"}", "event": "succeeded", "job": "main_UA_42_004000", "seq": 9, "time": "2026-10-01T16:11:13.950621+00:00"}
+{"detail": "{\"resource\": \"gpu\", \"attempt\": 1}", "event": "claimed", "job": "main_UC_42_000500", "seq": 10, "time": "2026-10-01T16:11:20.414598+00:00"}
+{"detail": "{\"resource\": \"gpu\", \"attempt\": 1}", "event": "claimed", "job": "main_UC_42_001000", "seq": 11, "time": "2026-10-01T16:11:20.484986+00:00"}
+{"detail": "{\"result\": \"runs/main_UA_42_002000/attempt_0001/result.json\"}", "event": "succeeded", "job": "main_UA_42_002000", "seq": 12, "time": "2026-10-01T16:11:40.606773+00:00"}
+{"detail": "{\"result\": \"runs/main_UA_42_000500/attempt_0001/result.json\"}", "event": "succeeded", "job": "main_UA_42_000500", "seq": 13, "time": "2026-10-01T16:11:43.212447+00:00"}
+{"detail": "{\"resource\": \"cpu\", \"attempt\": 1}", "event": "claimed", "job": "select_UA", "seq": 14, "time": "2026-10-01T16:11:45.808106+00:00"}
+{"detail": "{\"result\": \"runs/select_UA/attempt_0001/result.json\"}", "event": "succeeded", "job": "select_UA", "seq": 15, "time": "2026-10-01T16:11:48.219496+00:00"}
+{"detail": "{\"resource\": \"gpu\", \"attempt\": 1}", "event": "claimed", "job": "main_UA_123_selected", "seq": 16, "time": "2026-10-01T16:11:50.471835+00:00"}
+{"detail": "{\"resource\": \"gpu\", \"attempt\": 1}", "event": "claimed", "job": "main_UA_7_selected", "seq": 17, "time": "2026-10-01T16:11:50.510752+00:00"}
+{"detail": "{\"resource\": \"cpu\", \"attempt\": 1}", "event": "claimed", "job": "selected_UA_42", "seq": 18, "time": "2026-10-01T16:11:55.828840+00:00"}
+{"detail": "{\"result\": \"runs/selected_UA_42/attempt_0001/result.json\"}", "event": "succeeded", "job": "selected_UA_42", "seq": 19, "time": "2026-10-01T16:11:58.205729+00:00"}
+{"detail": "{\"resource\": \"cpu\", \"attempt\": 1}", "event": "claimed", "job": "analyze_UA_42", "seq": 20, "time": "2026-10-01T16:12:05.852884+00:00"}
+{"detail": "{\"result\": \"runs/analyze_UA_42/attempt_0001/result.json\"}", "event": "succeeded", "job": "analyze_UA_42", "seq": 21, "time": "2026-10-01T16:12:15.746245+00:00"}
+{"detail": "{\"resource\": \"cpu\", \"attempt\": 1}", "event": "claimed", "job": "R1_UA_42", "seq": 22, "time": "2026-10-01T16:12:25.889520+00:00"}
+{"detail": "{\"result\": \"runs/R1_UA_42/attempt_0001/result.json\"}", "event": "succeeded", "job": "R1_UA_42", "seq": 23, "time": "2026-10-01T16:12:35.053417+00:00"}

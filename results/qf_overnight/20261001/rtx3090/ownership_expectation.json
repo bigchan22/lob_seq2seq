@@ -1,7 +1,7 @@
 {
   "run_group": "qf-august-overnight-20261001",
   "owner": "rtx3090",
-  "state": "ownership expectation only; executable global DAG must come from pinned producer READY",
+  "state": "Materialized shared DAG:247 global nodes,69 owned nodes,30 owned full training fits",
   "source_of_authorization": "user frozen scientific contract",
   "new_full_training_fits": 30,
   "main_shared_fits": 18,
@@ -37,10 +37,11 @@
     123
   ],
   "R1_main_selected_fit_reuses": 6,
-  "inference_intervention_jobs": 6,
+  "inference_intervention_jobs": 3,
   "global_upper_training_fit_count": [
     153,
     157
   ],
-  "not_actual_queue_status": true
+  "not_actual_queue_status": false,
+  "inference_intervention_condition_outputs": 6
 }
