@@ -2,12 +2,12 @@
   "run_group": "qf-august-overnight-20261001",
   "owner": "a5000",
   "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
-  "updated_at": "2026-10-01T15:44:42.645943+00:00",
+  "updated_at": "2026-10-01T15:45:03.805346+00:00",
   "counts": {
-    "BLOCKED": 20,
-    "PENDING": 110,
-    "RUNNING": 3,
-    "SUCCEEDED": 44,
+    "BLOCKED": 21,
+    "PENDING": 105,
+    "RUNNING": 4,
+    "SUCCEEDED": 47,
     "WAITING_ADAPTER": 1
   },
   "paused": false,
@@ -169,21 +169,22 @@
     },
     {
       "id": "R3_UM_V2_DEPTH_7_selected",
-      "state": "RUNNING",
+      "state": "SUCCEEDED",
       "attempt": 1,
       "retries": 0,
       "oom": 0,
       "pid": 2171338,
       "start": "1102393601",
-      "heartbeat": 1790869482.6401963,
-      "progress": 1790869482.6401966,
+      "heartbeat": 1790869487.4930005,
+      "progress": 1790869483.8519537,
       "kind": "fit",
       "model": "UM_V2_DEPTH",
       "priority": 30,
       "detail": {
-        "epoch": 179,
-        "completed_day_panels": 192,
-        "phase": "train"
+        "epoch": 183,
+        "phase": "checkpoint",
+        "epoch_seconds": 0.2398395650088787,
+        "checkpoint_time": 1790869483.8503065
       }
     },
     {
@@ -347,18 +348,21 @@
     },
     {
       "id": "analyze_R3_UM_V2_DEPTH_7_selected",
-      "state": "PENDING",
-      "attempt": 0,
+      "state": "BLOCKED",
+      "attempt": 1,
       "retries": 0,
       "oom": 0,
-      "pid": null,
-      "start": null,
-      "heartbeat": null,
-      "progress": null,
+      "pid": 2171868,
+      "start": "1102399633",
+      "heartbeat": 1790869491.9340816,
+      "progress": 1790869490.2998736,
       "kind": "analysis",
       "model": "UM_V2_DEPTH",
       "priority": 31,
-      "detail": {}
+      "detail": {
+        "category": "scientific",
+        "error": ""
+      }
     },
     {
       "id": "analyze_TLOB_ADAPTED_123",
@@ -709,13 +713,13 @@
     },
     {
       "id": "fixed_U1_7",
-      "state": "RUNNING",
+      "state": "SUCCEEDED",
       "attempt": 1,
       "retries": 0,
       "oom": 0,
       "pid": 2171571,
       "start": "1102394602",
-      "heartbeat": 1790869480.0337143,
+      "heartbeat": 1790869483.1016166,
       "progress": 1790869476.6820195,
       "kind": "fixed_or_alias",
       "model": "U1",
@@ -864,82 +868,99 @@
     },
     {
       "id": "main_S_123_001000_KR7000030007_t",
-      "state": "RUNNING",
+      "state": "SUCCEEDED",
       "attempt": 1,
       "retries": 0,
       "oom": 0,
       "pid": 2171727,
       "start": "1102397608",
-      "heartbeat": 1790869482.625703,
-      "progress": 1790869482.6257033,
+      "heartbeat": 1790869496.8564231,
+      "progress": 1790869496.2602324,
       "kind": "fit",
       "model": "S",
       "priority": 50,
       "detail": {
-        "epoch": 45,
-        "completed_day_panels": 345,
-        "phase": "train"
+        "epoch": 112,
+        "phase": "checkpoint",
+        "epoch_seconds": 0.19144433178007603,
+        "checkpoint_time": 1790869496.2585902
       }
     },
     {
       "id": "main_S_123_001000_KR7000100008_t",
-      "state": "PENDING",
-      "attempt": 0,
+      "state": "RUNNING",
+      "attempt": 1,
       "retries": 0,
       "oom": 0,
-      "pid": null,
-      "start": null,
-      "heartbeat": null,
-      "progress": null,
+      "pid": 2171859,
+      "start": "1102399607",
+      "heartbeat": 1790869503.7928097,
+      "progress": 1790869503.7928097,
       "kind": "fit",
       "model": "S",
       "priority": 50,
-      "detail": {}
+      "detail": {
+        "epoch": 65,
+        "completed_day_panels": 128,
+        "phase": "train"
+      }
     },
     {
       "id": "main_S_123_001000_KR7000120006_t",
-      "state": "PENDING",
-      "attempt": 0,
+      "state": "RUNNING",
+      "attempt": 1,
       "retries": 0,
       "oom": 0,
-      "pid": null,
-      "start": null,
-      "heartbeat": null,
-      "progress": null,
+      "pid": 2171860,
+      "start": "1102399608",
+      "heartbeat": 1790869503.7917528,
+      "progress": 1790869503.791753,
       "kind": "fit",
       "model": "S",
       "priority": 50,
-      "detail": {}
+      "detail": {
+        "epoch": 63,
+        "completed_day_panels": 96,
+        "phase": "train"
+      }
     },
     {
       "id": "main_S_123_001000_KR7000150003_t",
-      "state": "PENDING",
-      "attempt": 0,
+      "state": "RUNNING",
+      "attempt": 1,
       "retries": 0,
       "oom": 0,
-      "pid": null,
-      "start": null,
-      "heartbeat": null,
-      "progress": null,
+      "pid": 2171861,
+      "start": "1102399609",
+      "heartbeat": 1790869503.790602,
+      "progress": 1790869503.7906022,
       "kind": "fit",
       "model": "S",
       "priority": 50,
-      "detail": {}
+      "detail": {
+        "epoch": 60,
+        "completed_day_panels": 192,
+        "phase": "train"
+      }
     },
     {
       "id": "main_S_123_001000_KR7000270009_t",
-      "state": "PENDING",
-      "attempt": 0,
+      "state": "RUNNING",
+      "attempt": 1,
       "retries": 0,
       "oom": 0,
-      "pid": null,
-      "start": null,
-      "heartbeat": null,
-      "progress": null,
+      "pid": 2172129,
+      "start": "1102400611",
+      "heartbeat": 1790869503.7974603,
+      "progress": 1790869503.7974606,
       "kind": "fit",
       "model": "S",
       "priority": 50,
-      "detail": {}
+      "detail": {
+        "epoch": 2,
+        "completed_day_panels": 288,
+        "phase": "train"
+      }
     },
     {
       "id": "main_S_123_001000_KR7000660001_t",

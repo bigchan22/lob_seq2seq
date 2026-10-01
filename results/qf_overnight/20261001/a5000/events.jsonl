@@ -129,3 +129,12 @@
 {"seq": 129, "time": "2026-10-01T15:44:30.263064+00:00", "job": "analyze_R3_UM_V2_DEPTH_42_selected", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 1}"}
 {"seq": 130, "time": "2026-10-01T15:44:32.224451+00:00", "job": "analyze_R3_UM_V2_DEPTH_42_selected", "event": "attempt_failed", "detail": "{\"category\": \"scientific\", \"error\": \"\"}"}
 {"seq": 131, "time": "2026-10-01T15:44:41.998065+00:00", "job": "fixed_U1_123", "event": "succeeded", "detail": "{\"result\": \"runs/fixed_U1_123/attempt_0001/result.json\"}"}
+{"seq": 132, "time": "2026-10-01T15:44:43.101891+00:00", "job": "fixed_U1_7", "event": "succeeded", "detail": "{\"result\": \"runs/fixed_U1_7/attempt_0001/result.json\"}"}
+{"seq": 133, "time": "2026-10-01T15:44:47.493147+00:00", "job": "R3_UM_V2_DEPTH_7_selected", "event": "succeeded", "detail": "{\"result\": \"runs/R3_UM_V2_DEPTH_7_selected/attempt_0001/result.json\"}"}
+{"seq": 134, "time": "2026-10-01T15:44:50.043488+00:00", "job": "main_S_123_001000_KR7000100008_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 135, "time": "2026-10-01T15:44:50.051238+00:00", "job": "main_S_123_001000_KR7000120006_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 136, "time": "2026-10-01T15:44:50.062492+00:00", "job": "main_S_123_001000_KR7000150003_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 137, "time": "2026-10-01T15:44:50.299934+00:00", "job": "analyze_R3_UM_V2_DEPTH_7_selected", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 1}"}
+{"seq": 138, "time": "2026-10-01T15:44:51.934168+00:00", "job": "analyze_R3_UM_V2_DEPTH_7_selected", "event": "attempt_failed", "detail": "{\"category\": \"scientific\", \"error\": \"\"}"}
+{"seq": 139, "time": "2026-10-01T15:44:56.856628+00:00", "job": "main_S_123_001000_KR7000030007_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_123_001000_KR7000030007_t/attempt_0001/result.json\"}"}
+{"seq": 140, "time": "2026-10-01T15:45:00.081742+00:00", "job": "main_S_123_001000_KR7000270009_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}

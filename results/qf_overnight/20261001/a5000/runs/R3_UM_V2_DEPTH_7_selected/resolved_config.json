@@ -1,0 +1,132 @@
+{
+  "d_model": 128,
+  "nhead": 8,
+  "temporal_layers": 2,
+  "cross_asset_layers": 1,
+  "dropout": 0.1,
+  "weight_decay": 0.0001,
+  "max_epochs": 200,
+  "min_epochs": 20,
+  "patience": 30,
+  "min_delta": 0.0001,
+  "effective_days": 32,
+  "microbatch": 8,
+  "gradient_clip_norm": 1.0,
+  "precision": "float32_tf32_disabled",
+  "scheduler": null,
+  "model": "UM_V2_DEPTH",
+  "seed": 7,
+  "select_from": "select_UM_V2_DEPTH",
+  "fold": "R3",
+  "family": "rolling",
+  "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+  "lr": 0.0004,
+  "run_id": "bb66838ce52b14ace5cf0d5199ad5172ab371aeec772981e4971077ad60b30b7",
+  "identity": {
+    "config": {
+      "d_model": 128,
+      "nhead": 8,
+      "temporal_layers": 2,
+      "cross_asset_layers": 1,
+      "dropout": 0.1,
+      "weight_decay": 0.0001,
+      "max_epochs": 200,
+      "min_epochs": 20,
+      "patience": 30,
+      "min_delta": 0.0001,
+      "effective_days": 32,
+      "microbatch": 8,
+      "gradient_clip_norm": 1.0,
+      "precision": "float32",
+      "scheduler": null,
+      "model": "UM_V2_DEPTH",
+      "seed": 7,
+      "fold": "R3",
+      "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+      "lr": 0.0004
+    },
+    "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+    "smoke": false,
+    "executable_source_digest": "b9974a8f8c017bb8dcd4b62d614209421269020760d78e9d860a074b8cc9561f",
+    "input_hash": "9cb89005693b1b70c102178849b740fde00b50c9ba5f3b5530d0e5749ea59837",
+    "feature_hash": "75a5f6207eb3743927c97ac8361af405a4b3a890490e5a705ec07f5f255d5518",
+    "split_hash": "c40aaf80f5be3be16016d797963cb563e35b93083df451f9827f99cfadc3c898",
+    "transform_hash": "e260c2d27d314e41c4072889708260a124d0e9170bbe22b7bb26636028aac0ad"
+  },
+  "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+  "source_files": {
+    "lob_forecasting/data/transforms.py": "76973eb252a6bd0bffb8ab859342db1208ec5ec8cd6b1f2d5a391d9c4d156cac",
+    "lob_forecasting/experiments/discrimination_factors.py": "d9c8009edb68b82721e1c6a65033693274b7e0d8013e46fcece15a85fb6ab5af",
+    "lob_forecasting/models/qf_variants.py": "d4857ddc7c8537211b3cf0c3f22349eb2a94767dbc25f42e8c39d5f6625ede9a",
+    "scripts/qf_data_review/build_data_review.py": "8f7b3a8d8df38e70860a7c9dfc8aa34db62f8535ca53b1904ed3563a831c3284",
+    "scripts/qf_overnight/common.py": "df24d02fb455e063d10d7b1be4eb239cdfaf33a0dcaac7ba7a29d07444eb4d1f",
+    "scripts/qf_overnight/consolidate.py": "e52cef5ab6b60b4a697f324c64a24af04cc0ec4f513dbe1efe0962b65be1757a",
+    "scripts/qf_overnight/data.py": "0503d4414c37b5f3ce79fc96186fe0ad25b8b76f8ad53e56f852514f85ad8ab3",
+    "scripts/qf_overnight/freeze.py": "b03a8c0c6e4af9ce078acf41c0e5106f4c2088cac20ee4440e847ba1c76e4ed7",
+    "scripts/qf_overnight/gates.py": "6f7dcfde139ffe2d45d695ff879646ca79727c54a731e1a97a0a132e10e30b6b",
+    "scripts/qf_overnight/jobs.py": "261065e132b7260b73850b10097e0099ca073a9ee18270f9897d6783b8f8ae31",
+    "scripts/qf_overnight/models.py": "e25f033d662a4a0eabf7f6932bf8a9b02e2419277321cfaa5ade33fbbdd98b94",
+    "scripts/qf_overnight/plan.py": "173c81fd60ecd30070252591e5861ff02e8ec4a688b90512f5b4a135ee2b35aa",
+    "scripts/qf_overnight/publisher.py": "59598184b10b0af904c2ed1c414fdf72f6b07eb3f9406a58fe4adb84d89ffe10",
+    "scripts/qf_overnight/queue_store.py": "521e30fb66a189b9e9b7281cbdaa5b892ba368323a97fd9c538758a72660eee0",
+    "scripts/qf_overnight/runtime.py": "691d50b85db39cc92997e705dc3b5e24d59005177a37e758974ba8abe472d9e3",
+    "scripts/qf_overnight/scoring.py": "471361f2821b448c8efbe10b1cbd18c7561984c8463d19450e66a0a306188a68",
+    "scripts/qf_overnight/trainer.py": "4c241bbd661b839aa051c0df50a293e4390ca28900d7ad41d37cdcdb0a516229"
+  },
+  "parameters": 424463,
+  "training_hash": "0076c62fc2e103f0c8ea90d066fe0f6c5c9d1d891ad4fa0c15bbccbeaef7d382",
+  "scaler": {
+    "low": [
+      -1.197077989578247,
+      -0.07661818712949753,
+      -0.41866614058613777,
+      -0.386222675293684,
+      0.0,
+      0.0
+    ],
+    "high": [
+      1.1911934953927994,
+      0.07763122767210007,
+      0.45850222289562226,
+      0.47118208482861523,
+      0.8461538553237915,
+      10.318419213294984
+    ],
+    "mean": [
+      -0.0006067310055467508,
+      0.002078412575425639,
+      -0.01577223214828717,
+      0.040044692002064466,
+      0.2736542270099799,
+      9.383359375484936
+    ],
+    "std": [
+      0.06500908252802239,
+      0.005890806598167746,
+      0.12052673223279778,
+      0.13661845304542847,
+      0.1511246972055254,
+      0.9160163247253089
+    ]
+  },
+  "analysis_bins": {
+    "relative_spread": [
+      0.0014760147601476014,
+      0.0020942408376963353
+    ],
+    "l5_depth": [
+      6775.0,
+      27753.0
+    ]
+  },
+  "versions": {
+    "torch": "1.12.1",
+    "numpy": "1.22.3"
+  },
+  "source_dirty": false,
+  "accumulation_steps": 4,
+  "smoke": false,
+  "observations_per_fit": 360935,
+  "train_days": 411,
+  "resume_semantics": "exact saved epoch boundary; interrupted epoch recomputed from saved RNG/order"
+}
