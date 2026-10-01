@@ -61,6 +61,11 @@
       "complete_sha256": "ce7101001ffef5892d1ae5c37a0b93a9735295e4e3c34bad7b189d368eee220f"
     },
     {
+      "job": "analyze_U0_42",
+      "path": "analyze_U0_42__7ad1ea844b8014d8",
+      "complete_sha256": "0fb41cae283d677ea4fdd8c78d34cae87bbd0e356af165877faed3dd40b93033"
+    },
+    {
       "job": "analyze_U1_123",
       "path": "analyze_U1_123__84ead72696a197eb",
       "complete_sha256": "f2c01584149f18bcbc9bd439ba3354e08aebdb432a1f036f014c655cc789ba6d"
@@ -106,6 +111,11 @@
       "complete_sha256": "9062bb47d501db020a42e7ac95d418cf2bf0e99af539d53db8b370ea03969b7b"
     },
     {
+      "job": "fixed_U0_42",
+      "path": "fixed_U0_42__7a8e0251d309dc92",
+      "complete_sha256": "19c71561556bb4bcb1d59e091323a27517b2c5ad8f998aa2c608583241e90972"
+    },
+    {
       "job": "fixed_U1_123",
       "path": "fixed_U1_123__043e7e9b8c124012",
       "complete_sha256": "05d4392933b1bc887d3648e236837479d0713a18eb99124d17bab2b71f554aa2"
@@ -119,6 +129,11 @@
       "job": "fixed_U1_7",
       "path": "fixed_U1_7__0f16dd2f11a237ca",
       "complete_sha256": "d0fd78e65804ba9624256cda815c6e675b71c62eea9d2866074f0ab439f535e8"
+    },
+    {
+      "job": "pool_S_42",
+      "path": "pool_S_42__c5826c2686481047",
+      "complete_sha256": "3572aff1a9f36bfab1b8c02547517a3d9687ea676fb1c42664bc6a2b2eaac592"
     }
   ],
   "protocol_hash": "3cfd389bbd05ec9201a41c0892e29bf8199198d1b216b9a8061370d4240aa583",
