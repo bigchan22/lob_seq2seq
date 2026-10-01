@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "actual_csv_rows_checked": 151848,
+  "actual_R1_rows_checked": 84132,
+  "changed_label_rejected": true,
+  "changes": [
+    "scripts/qf_overnight/consolidate.py",
+    "scripts/qf_overnight/jobs.py",
+    "scripts/qf_overnight/publisher.py",
+    "scripts/qf_overnight/queue_store.py",
+    "scripts/qf_overnight/scoring.py"
+  ],
+  "training_semantics_changed": false,
+  "invalidation": "none for fits; retry only failed CSV roundtrip analysis/reuse/intervention nodes",
+  "original_source": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+  "tested_at": "2026-10-01T15:47:36.913235+00:00"
+}

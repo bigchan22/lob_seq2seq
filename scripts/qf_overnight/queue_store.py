@@ -106,4 +106,6 @@ CREATE TABLE IF NOT EXISTS events(seq INTEGER PRIMARY KEY AUTOINCREMENT,time TEX
             item.update(kind=job['kind'],model=job['config'].get('model'),priority=job['priority'],detail=json.loads(row['detail'] or '{}'))
             output.append(item)
         return {'run_group':'qf-august-overnight-20261001','owner':self.meta('owner'),'protocol_hash':self.meta('protocol_hash'),'updated_at':utc(),
-                'counts':counts,'paused':self.meta('paused',False),'stop':self.meta('stop',False),'jobs':output}
+                'counts':counts,'paused':self.meta('paused',False),'stop':self.meta('stop',False),'jobs':output,
+                'all_terminal':all(r['state'] in TERMINAL for r in rows),
+                'all_required_validated':all(r['state']=='SUCCEEDED' for r in rows)}

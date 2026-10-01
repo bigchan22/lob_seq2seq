@@ -5,28 +5,28 @@
   "TLOB_ADAPTER_READY": false,
   "TLOB_status": "PENDING_BOUNDED_ADAPTER",
   "TLOB_reason": "Optional adapter effort pending; core is independent.",
-  "prior_code_commit": "e85a89fd56584b513be940e6259c637369bd830b",
-  "published_at": "2026-10-01T15:36:25.370917+00:00",
+  "prior_code_commit": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+  "published_at": "2026-10-01T15:50:04.288025+00:00",
   "core_source_files": {
     "lob_forecasting/data/transforms.py": "76973eb252a6bd0bffb8ab859342db1208ec5ec8cd6b1f2d5a391d9c4d156cac",
     "lob_forecasting/experiments/discrimination_factors.py": "d9c8009edb68b82721e1c6a65033693274b7e0d8013e46fcece15a85fb6ab5af",
     "lob_forecasting/models/qf_variants.py": "d4857ddc7c8537211b3cf0c3f22349eb2a94767dbc25f42e8c39d5f6625ede9a",
     "scripts/qf_data_review/build_data_review.py": "8f7b3a8d8df38e70860a7c9dfc8aa34db62f8535ca53b1904ed3563a831c3284",
     "scripts/qf_overnight/common.py": "df24d02fb455e063d10d7b1be4eb239cdfaf33a0dcaac7ba7a29d07444eb4d1f",
-    "scripts/qf_overnight/consolidate.py": "e52cef5ab6b60b4a697f324c64a24af04cc0ec4f513dbe1efe0962b65be1757a",
+    "scripts/qf_overnight/consolidate.py": "326998080471be4107592ffec292d0540aae7b14e67d6aaf43dceea80e3dbb5c",
     "scripts/qf_overnight/data.py": "0503d4414c37b5f3ce79fc96186fe0ad25b8b76f8ad53e56f852514f85ad8ab3",
     "scripts/qf_overnight/freeze.py": "b03a8c0c6e4af9ce078acf41c0e5106f4c2088cac20ee4440e847ba1c76e4ed7",
     "scripts/qf_overnight/gates.py": "6f7dcfde139ffe2d45d695ff879646ca79727c54a731e1a97a0a132e10e30b6b",
-    "scripts/qf_overnight/jobs.py": "261065e132b7260b73850b10097e0099ca073a9ee18270f9897d6783b8f8ae31",
+    "scripts/qf_overnight/jobs.py": "73d6a0ceb9859457ed9aad16d9702c79db211ab368f4506a61ed679d49954a9f",
     "scripts/qf_overnight/models.py": "e25f033d662a4a0eabf7f6932bf8a9b02e2419277321cfaa5ade33fbbdd98b94",
     "scripts/qf_overnight/plan.py": "173c81fd60ecd30070252591e5861ff02e8ec4a688b90512f5b4a135ee2b35aa",
-    "scripts/qf_overnight/publisher.py": "59598184b10b0af904c2ed1c414fdf72f6b07eb3f9406a58fe4adb84d89ffe10",
-    "scripts/qf_overnight/queue_store.py": "521e30fb66a189b9e9b7281cbdaa5b892ba368323a97fd9c538758a72660eee0",
+    "scripts/qf_overnight/publisher.py": "42b70e7c015e164b7ed930f13f1c8257f6edf027f9f6acd8340081ae80ef0942",
+    "scripts/qf_overnight/queue_store.py": "8fab242f081023b95b58d7cea5ef27ef6d484d93075ff4e7a5b90448e0d67521",
     "scripts/qf_overnight/runtime.py": "691d50b85db39cc92997e705dc3b5e24d59005177a37e758974ba8abe472d9e3",
-    "scripts/qf_overnight/scoring.py": "471361f2821b448c8efbe10b1cbd18c7561984c8463d19450e66a0a306188a68",
+    "scripts/qf_overnight/scoring.py": "cac9296b79ab9a7d28e31fcb9964f8b0e8f43d5c834d37671376ab5d4e2bcfa0",
     "scripts/qf_overnight/trainer.py": "4c241bbd661b839aa051c0df50a293e4390ca28900d7ad41d37cdcdb0a516229"
   },
-  "core_executable_digest": "b9974a8f8c017bb8dcd4b62d614209421269020760d78e9d860a074b8cc9561f",
+  "core_executable_digest": "4d4ad03b827958468b1a231e360c7ad1aa68035c25af068059838ceae6dfa6d6",
   "optional_source_files": {},
   "prepared_data_hashes": {
     "covariates.npy": "03b29c2ddb87a2530380a0a78f14b2faff6c419813268ec282c9237e636d274b",
@@ -37,7 +37,7 @@
   },
   "prepared_identity_sha256": "255199b39c32eba4d6aced8c3e45d7e84accfbfd35b487d873bba12a5e5974e0",
   "input_manifest_sha256": "9cb89005693b1b70c102178849b740fde00b50c9ba5f3b5530d0e5749ea59837",
-  "core_gates_sha256": "7a5836031e576e9bb15c650c39b6a520e44c33d52d0d73450cf64744db6d2232",
+  "core_gates_sha256": "ea00de71850ba9006dbbb8528a6ba560973b275c59a86fe844971a6cda8bf6c2",
   "manifest_sha256": "571be2a41f21ed73673c74550747d8e4738ce66207b3c7da007b6737d1c3e909",
   "split_manifest_sha256": "8a5d918ca5a156cb125c954443800c8cdab233092ccbdc2fa0d9e383f5648d65",
   "smoke_parameters": {
@@ -64,5 +64,240 @@
     }
   },
   "data_handoff_sha": "e85a89fd56584b513be940e6259c637369bd830b",
-  "consumer_rule": "Obtain READY_SHA from advertised Git ref externally. Execute only a clean immutable worktree; verify runtime_gate before claims."
+  "consumer_rule": "Obtain READY_SHA from advertised Git ref externally. Execute only a clean immutable worktree; verify runtime_gate before claims.",
+  "source_compatibility": {
+    "retained_training_commit": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+    "semantics_changed": false,
+    "validation_report": "docs/qf_overnight/20261001/transport_fix_validation.json"
+  },
+  "protocol_path": "docs/qf_overnight/20261001/receiver_protocol.json",
+  "protocol_sha256": "3cfd389bbd05ec9201a41c0892e29bf8199198d1b216b9a8061370d4240aa583",
+  "input_sha": "073cd89b556224eeae22413c3c05188a947e990a",
+  "owner_models": {
+    "rtx3090": [
+      "UA",
+      "UC",
+      "SHARED_QUERY"
+    ],
+    "a5000": [
+      "U1",
+      "UM_V2_DEPTH",
+      "UX",
+      "GRU_U1",
+      "U0",
+      "TLOB_ADAPTED",
+      "S"
+    ]
+  },
+  "split_manifest_path": "configs/qf_overnight/20261001/splits.json",
+  "job_manifest_path": "configs/qf_overnight/20261001/queue_manifest.json",
+  "comparison_contract_files": {
+    "lob_forecasting/data/transforms.py": "76973eb252a6bd0bffb8ab859342db1208ec5ec8cd6b1f2d5a391d9c4d156cac",
+    "lob_forecasting/experiments/discrimination_factors.py": "d9c8009edb68b82721e1c6a65033693274b7e0d8013e46fcece15a85fb6ab5af",
+    "lob_forecasting/models/qf_variants.py": "d4857ddc7c8537211b3cf0c3f22349eb2a94767dbc25f42e8c39d5f6625ede9a",
+    "scripts/qf_data_review/build_data_review.py": "8f7b3a8d8df38e70860a7c9dfc8aa34db62f8535ca53b1904ed3563a831c3284",
+    "scripts/qf_overnight/common.py": "df24d02fb455e063d10d7b1be4eb239cdfaf33a0dcaac7ba7a29d07444eb4d1f",
+    "scripts/qf_overnight/data.py": "0503d4414c37b5f3ce79fc96186fe0ad25b8b76f8ad53e56f852514f85ad8ab3",
+    "scripts/qf_overnight/models.py": "e25f033d662a4a0eabf7f6932bf8a9b02e2419277321cfaa5ade33fbbdd98b94",
+    "scripts/qf_overnight/trainer.py": "4c241bbd661b839aa051c0df50a293e4390ca28900d7ad41d37cdcdb0a516229",
+    "scoring_metric_functions_ast": "e4e3ed6e09e30001b5afab7f60f953df9f70b7c78c7435b4e4f1932b816b5219"
+  },
+  "comparison_contract_digest": "6031dc4ee08b61c58b35b1efd7d764739d5c7c54dc7cbe9e9a72a1e4a7098596",
+  "receiver": {
+    "verification_gates": [
+      "labels_masks_splits",
+      "causality",
+      "masked_loss_gradient",
+      "own_only_invariance",
+      "parameter_counts",
+      "masked_accumulation_partial_window",
+      "train_only_scaling",
+      "r1_reuse_identity",
+      "restart_idempotency_stale_lease",
+      "real_data_smoke"
+    ],
+    "commands": {
+      "verify": [
+        "{python}",
+        "scripts/qf_overnight/receiver_bridge/bridge.py",
+        "verify",
+        "--input-root",
+        "{input_root}",
+        "--data-root",
+        "{data_root}",
+        "--run-root",
+        "{run_root}",
+        "--owner",
+        "{owner}"
+      ],
+      "smoke": [
+        "{python}",
+        "scripts/qf_overnight/receiver_bridge/bridge.py",
+        "smoke",
+        "--run-root",
+        "{run_root}",
+        "--owner",
+        "{owner}"
+      ],
+      "launch": [
+        "{python}",
+        "scripts/qf_overnight/receiver_bridge/bridge.py",
+        "run",
+        "--run-root",
+        "{run_root}",
+        "--owner",
+        "{owner}",
+        "--workers",
+        "{workers}",
+        "--control-path",
+        "{control_path}"
+      ],
+      "pause": [
+        "{python}",
+        "scripts/qf_overnight/receiver_bridge/bridge.py",
+        "pause",
+        "--run-root",
+        "{run_root}"
+      ],
+      "resume": [
+        "{python}",
+        "scripts/qf_overnight/receiver_bridge/bridge.py",
+        "resume",
+        "--run-root",
+        "{run_root}"
+      ],
+      "retry": [
+        "{python}",
+        "scripts/qf_overnight/receiver_bridge/bridge.py",
+        "retry",
+        "--run-root",
+        "{run_root}",
+        "--job",
+        "{job_id}"
+      ]
+    }
+  },
+  "files": [
+    {
+      "path": "configs/qf_overnight/20261001/queue_manifest.csv",
+      "sha256": "45bbfd1b7f1ab8d4e85ffb79f6bc88d7eef91c9ca44d1f7576198a1e3e641103"
+    },
+    {
+      "path": "configs/qf_overnight/20261001/queue_manifest.json",
+      "sha256": "571be2a41f21ed73673c74550747d8e4738ce66207b3c7da007b6737d1c3e909"
+    },
+    {
+      "path": "configs/qf_overnight/20261001/split_dates.csv",
+      "sha256": "2abe098a6dc5566ebd4eab4cf7098ab36d586701d5e8550622f6cc199627310a"
+    },
+    {
+      "path": "configs/qf_overnight/20261001/splits.json",
+      "sha256": "8a5d918ca5a156cb125c954443800c8cdab233092ccbdc2fa0d9e383f5648d65"
+    },
+    {
+      "path": "docs/qf_overnight/20261001/README.md",
+      "sha256": "d39c8aa07d94772eceb4bff839a57d862d0c3ee12033e90d045ad48bdeb0d82e"
+    },
+    {
+      "path": "docs/qf_overnight/20261001/core_gates.json",
+      "sha256": "ea00de71850ba9006dbbb8528a6ba560973b275c59a86fe844971a6cda8bf6c2"
+    },
+    {
+      "path": "docs/qf_overnight/20261001/protocol.json",
+      "sha256": "ee41dd59d78159c7413e58b83abbde57ebe0c0639e20aaf8f40383c571313436"
+    },
+    {
+      "path": "docs/qf_overnight/20261001/receiver_protocol.json",
+      "sha256": "3cfd389bbd05ec9201a41c0892e29bf8199198d1b216b9a8061370d4240aa583"
+    },
+    {
+      "path": "docs/qf_overnight/20261001/receiver_transport.md",
+      "sha256": "fb3b4d2afd87291b1e8f40e0147ded543a5d0767430c6c96d24097da95eb3d39"
+    },
+    {
+      "path": "docs/qf_overnight/20261001/transport_fix_validation.json",
+      "sha256": "faf33298d5a41fb0833eaf13c74541af819b029036818aa3a8fe42db8a518f6e"
+    },
+    {
+      "path": "lob_forecasting/data/transforms.py",
+      "sha256": "76973eb252a6bd0bffb8ab859342db1208ec5ec8cd6b1f2d5a391d9c4d156cac"
+    },
+    {
+      "path": "lob_forecasting/experiments/discrimination_factors.py",
+      "sha256": "d9c8009edb68b82721e1c6a65033693274b7e0d8013e46fcece15a85fb6ab5af"
+    },
+    {
+      "path": "lob_forecasting/models/qf_variants.py",
+      "sha256": "d4857ddc7c8537211b3cf0c3f22349eb2a94767dbc25f42e8c39d5f6625ede9a"
+    },
+    {
+      "path": "scripts/qf_data_review/build_data_review.py",
+      "sha256": "8f7b3a8d8df38e70860a7c9dfc8aa34db62f8535ca53b1904ed3563a831c3284"
+    },
+    {
+      "path": "scripts/qf_overnight/common.py",
+      "sha256": "df24d02fb455e063d10d7b1be4eb239cdfaf33a0dcaac7ba7a29d07444eb4d1f"
+    },
+    {
+      "path": "scripts/qf_overnight/consolidate.py",
+      "sha256": "326998080471be4107592ffec292d0540aae7b14e67d6aaf43dceea80e3dbb5c"
+    },
+    {
+      "path": "scripts/qf_overnight/data.py",
+      "sha256": "0503d4414c37b5f3ce79fc96186fe0ad25b8b76f8ad53e56f852514f85ad8ab3"
+    },
+    {
+      "path": "scripts/qf_overnight/freeze.py",
+      "sha256": "b03a8c0c6e4af9ce078acf41c0e5106f4c2088cac20ee4440e847ba1c76e4ed7"
+    },
+    {
+      "path": "scripts/qf_overnight/gates.py",
+      "sha256": "6f7dcfde139ffe2d45d695ff879646ca79727c54a731e1a97a0a132e10e30b6b"
+    },
+    {
+      "path": "scripts/qf_overnight/jobs.py",
+      "sha256": "73d6a0ceb9859457ed9aad16d9702c79db211ab368f4506a61ed679d49954a9f"
+    },
+    {
+      "path": "scripts/qf_overnight/models.py",
+      "sha256": "e25f033d662a4a0eabf7f6932bf8a9b02e2419277321cfaa5ade33fbbdd98b94"
+    },
+    {
+      "path": "scripts/qf_overnight/plan.py",
+      "sha256": "173c81fd60ecd30070252591e5861ff02e8ec4a688b90512f5b4a135ee2b35aa"
+    },
+    {
+      "path": "scripts/qf_overnight/publisher.py",
+      "sha256": "42b70e7c015e164b7ed930f13f1c8257f6edf027f9f6acd8340081ae80ef0942"
+    },
+    {
+      "path": "scripts/qf_overnight/queue_store.py",
+      "sha256": "8fab242f081023b95b58d7cea5ef27ef6d484d93075ff4e7a5b90448e0d67521"
+    },
+    {
+      "path": "scripts/qf_overnight/receiver_bridge/bridge.py",
+      "sha256": "f7a3ca57d7f6687a493990b5362cfac3cfa92b8efe41be62348419c1f637c894"
+    },
+    {
+      "path": "scripts/qf_overnight/receiver_bridge/export.py",
+      "sha256": "6319048e00cc1696649c9de6a9bf189b6ad5d55c126c397a4a213e31c5372867"
+    },
+    {
+      "path": "scripts/qf_overnight/receiver_bridge/ready_transport.py",
+      "sha256": "a2b7e07a332327551d94def7c2a3a4386a81532d7d2b2260bcbf9746e797fc88"
+    },
+    {
+      "path": "scripts/qf_overnight/runtime.py",
+      "sha256": "691d50b85db39cc92997e705dc3b5e24d59005177a37e758974ba8abe472d9e3"
+    },
+    {
+      "path": "scripts/qf_overnight/scoring.py",
+      "sha256": "cac9296b79ab9a7d28e31fcb9964f8b0e8f43d5c834d37671376ab5d4e2bcfa0"
+    },
+    {
+      "path": "scripts/qf_overnight/trainer.py",
+      "sha256": "4c241bbd661b839aa051c0df50a293e4390ca28900d7ad41d37cdcdb0a516229"
+    }
+  ],
+  "transport_adapter_digest": "6214d775b413d77b6f1181a8749f4c36d35bae70292e0874d3acc8bc5a64581b"
 }

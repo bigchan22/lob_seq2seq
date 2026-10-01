@@ -56,7 +56,14 @@ def export(root):
         for path in source.rglob('*'):
             if not path.is_file() or path.suffix not in ALLOWED or path.name=='process.log':continue
             if path.suffix=='.gz' and not include_prediction:continue
-            relative=path.relative_to(source);copy_file(path,target/relative)
+            relative=path.relative_to(source)
+            if relative.name=='metrics.csv':relative=relative.with_name('diagnostic_metrics.csv')
+            copy_file(path,target/relative)
+        # Earlier snapshots used this name for the non-interchange schema.
+        # Remove only this redundant task-generated export, never run artifacts.
+        for stale in target.rglob('metrics.csv'):
+            assert stale.with_name('diagnostic_metrics.csv').exists()
+            stale.unlink()
         if (source/'process.log').exists():
             text=(source/'process.log').read_text(errors='replace');(target/'log_tail.txt').write_text(sanitized('\n'.join(text.splitlines()[-60:])+'\n',runtime,root))
         exported.append({'job_id':row['id'],'kind':job['kind'],'relative_directory':rel,'result_hash':sha(source/'result.json'),'result':result,
@@ -72,6 +79,8 @@ def export(root):
     (dest/'events.jsonl').write_text(''.join(sanitized(json.dumps(x),runtime,root)+'\n' for x in events))
     from consolidate import run
     run(dest,root/'peer_snapshot',owner)
+    from receiver_bridge.export import export_compatible
+    export_compatible(root,dest/'compatible')
     elapsed=(time.time()-q.meta('started_at'))/3600;counts=snapshot['counts'];terminal=all(r['state'] in TERMINAL for r in rows)
     completed=sum(r['state']=='SUCCEEDED' and json.loads(r['payload'])['kind'] in ['fit','fixed_or_alias'] and r['result'] and not read(r['result']).get('reused_from') for r in rows)
     running=[r for r in snapshot['jobs'] if r['state']=='RUNNING']
@@ -158,7 +167,9 @@ def loop(root):
         if stop and not any(r['state']=='RUNNING' for r in rows):break
         if terminal and elapsed>=8*3600 and (root/'publication_status.json').exists() and read(root/'publication_status.json').get('synced'):
             peer_status=root/'peer_snapshot/queue_status.json'
-            peer_done=peer_status.exists() and all(j['state'] in TERMINAL for j in read(peer_status)['jobs'])
+            peer_value=read(peer_status) if peer_status.exists() else {}
+            peer_value=peer_value.get('shared_queue_status',peer_value)
+            peer_done=peer_value.get('all_terminal',False) or bool(peer_value.get('jobs')) and all(j['state'] in TERMINAL for j in peer_value['jobs'])
             peer_absent_timeout=not peer_status.exists() and time.time()-terminal_since>=24*3600
             if owner=='a5000' or peer_done or peer_absent_timeout:
                 q=Queue(root);q.setmeta('publisher_finished',True);q.close();break

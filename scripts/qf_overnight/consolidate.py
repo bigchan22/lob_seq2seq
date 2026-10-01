@@ -31,12 +31,13 @@ def run(local,peer,owner):
         for record in index['runs']:
             if record['kind'] not in ['analysis','rolling_reuse','pool','prior','historical','intervention']:continue
             directory=root/record['relative_directory']
-            for name,output in [('metrics.csv',metric_frames),('per_asset.csv',asset_frames),('subgroup_metrics.csv',subgroup_frames),('calibration.csv',calibration_frames)]:
+            for name,output in [('diagnostic_metrics.csv',metric_frames),('per_asset.csv',asset_frames),('subgroup_metrics.csv',subgroup_frames),('calibration.csv',calibration_frames)]:
                 for path in directory.rglob(name):
                     frame=pd.read_csv(path);frame['owner']=index['owner'];frame['source_job']=record['job_id'];output.append(frame)
     for name,frames in [('metrics.csv',metric_frames),('per_asset.csv',asset_frames),('subgroup_metrics.csv',subgroup_frames),('calibration.csv',calibration_frames)]:
         if frames:
-            combined=pd.concat(frames,ignore_index=True);combined.to_csv(out/name,index=False)
+            combined=pd.concat(frames,ignore_index=True);combined.to_csv(out/('diagnostic_metrics.csv' if name=='metrics.csv' else name),index=False)
+            if name=='metrics.csv' and (out/'metrics.csv').exists():(out/'metrics.csv').unlink()
             if name=='metrics.csv':
                 combined[combined.fold.ne('main')].to_csv(out/'rolling_metrics.csv',index=False)
                 # Every 3-seed estimate is explicitly complete; never silently

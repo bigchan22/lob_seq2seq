@@ -31,7 +31,10 @@ def save_predictions(frame,path):
 def validate_predictions(frame,expected):
     assert len(frame)==len(expected) and not frame.duplicated(KEYS).any()
     a=frame.sort_values(KEYS).reset_index(drop=True);b=expected.sort_values(KEYS).reset_index(drop=True)
-    assert a[KEYS+['endpoint_time','legacy_label']].equals(b[KEYS+['endpoint_time','legacy_label']])
+    # CSV promotes the int8 label column to int64. Check exact values, not
+    # pandas storage dtypes; keys remain strings and no tolerance is allowed.
+    for column in KEYS+['endpoint_time','legacy_label']:
+        assert np.array_equal(a[column].to_numpy(),b[column].to_numpy()),column
     for pop in POPS:assert np.array_equal(a[pop].to_numpy(),b[pop].to_numpy())
     normalized(a);return True
 def analyze(frame,out,identity):

@@ -139,7 +139,8 @@ def execute(q,row,out,device):
         for condition in ['self_only','peer_lag1']:
             frame=prediction_frame(model,'UA',data,device,4,cfg['seed'],condition)
             frame=frame[frame.P3_intersection.eq(1)&frame.origin_time.gt('09:00:00')].sort_values(KEYS).reset_index(drop=True)
-            assert original[KEYS+['legacy_label']].equals(frame[KEYS+['legacy_label']])
+            for column in KEYS+['legacy_label']:
+                assert np.array_equal(original[column].to_numpy(),frame[column].to_numpy()),column
             save_predictions(frame,out/(condition+'.csv.gz'));analyze(frame,out/condition,dict(model='UA',seed=cfg['seed'],family='distribution_shift_sensitivity',condition=condition))
             delta=losses(frame)[0]-losses(original)[0]
             for split,g in frame.assign(delta=delta).groupby('split'):

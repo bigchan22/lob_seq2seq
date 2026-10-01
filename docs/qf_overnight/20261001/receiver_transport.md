@@ -1,0 +1,11 @@
+# Receiver transport and operational correction
+
+The original core READY commit is `675a3086cd6c4f2abd63c7d3acd419ca12dbc861`. The canonical scientific protocol remains `bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1`.
+
+The first saved-CSV analysis attempts rejected equal labels because pandas `DataFrame.equals` compares int8 and int64 storage types. The exact-value validator now compares each key/endpoint/label column without tolerance. A deliberately changed label is rejected. Training, labels, masks, architectures, optimization and checkpoint selection are unchanged. Existing successful fits are retained; only affected analysis/reuse/intervention nodes need new attempts. Original attempts and their tracebacks remain preserved. See transport_fix_validation.json and refreshed core_gates.json.
+
+The receiver_protocol.json is a schema projection of the entire canonical protocol with explicit aliases required by the RTX3090 receiver. Its SHA256 is a transport identity, distinct from the canonical JSON protocol hash. Neither changes the scientific population. Every compact interchange row contains both hashes. comparison_contract_digest covers the unchanged model/data/trainer/label/factor implementations plus metric-function ASTs. It is for comparing scientifically compatible source revisions; actual full executable-source digests and source commits remain recorded independently. Transport adapters have a separate digest in READY.
+
+The foreground receiver adapter delegates checks and jobs to this common implementation. It does not write the RTX3090 Git branch: the existing receiver remains its only publisher. Local SQLite/checkpoints are excluded. Exported probabilities are original selected-fit bytes; compact daily sums and sorted key/label digests support independent date-panel bootstrap. Rolling evaluation split names are projected to development_holdout with fold retained; the source prediction files keep rolling_evaluation. No support is silently intersected or dropped.
+
+The A5000 publisher uses the same interchange exporter. Older diagnostic tables are named diagnostic_metrics.csv so they cannot be mistaken for selected interchange records. Additional source commits only replace completed/queued execution paths; live source trees and successful result directories are immutable.
