@@ -2,11 +2,11 @@
   "run_group": "qf-august-overnight-20261001",
   "owner": "a5000",
   "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
-  "updated_at": "2026-10-01T18:15:35.073835+00:00",
+  "updated_at": "2026-10-01T18:21:31.688831+00:00",
   "counts": {
-    "PENDING": 3,
-    "RUNNING": 2,
-    "SUCCEEDED": 173
+    "PENDING": 2,
+    "RUNNING": 1,
+    "SUCCEEDED": 175
   },
   "paused": false,
   "stop": false,
@@ -396,14 +396,14 @@
     },
     {
       "id": "analyze_TLOB_ADAPTED_7",
-      "state": "PENDING",
-      "attempt": 0,
+      "state": "SUCCEEDED",
+      "attempt": 1,
       "retries": 0,
       "oom": 0,
-      "pid": null,
-      "start": null,
-      "heartbeat": null,
-      "progress": null,
+      "pid": 2204748,
+      "start": "1103334029",
+      "heartbeat": 1790878838.996913,
+      "progress": 1790878834.2596626,
       "kind": "analysis",
       "model": "TLOB_ADAPTED",
       "priority": 41,
@@ -2504,14 +2504,14 @@
       "oom": 0,
       "pid": 2194369,
       "start": "1102997613",
-      "heartbeat": 1790878533.2355518,
-      "progress": 1790878533.1464157,
+      "heartbeat": 1790878891.5984616,
+      "progress": 1790878891.5984616,
       "kind": "fit",
       "model": "TLOB_ADAPTED",
       "priority": 40,
       "detail": {
-        "epoch": 71,
-        "completed_day_panels": 320,
+        "epoch": 80,
+        "completed_day_panels": 64,
         "phase": "train"
       }
     },
@@ -2597,21 +2597,22 @@
     },
     {
       "id": "main_TLOB_ADAPTED_7_selected",
-      "state": "RUNNING",
+      "state": "SUCCEEDED",
       "attempt": 1,
       "retries": 0,
       "oom": 0,
       "pid": 2194372,
       "start": "1102997689",
-      "heartbeat": 1790878533.9866831,
-      "progress": 1790878531.9581895,
+      "heartbeat": 1790878832.2032204,
+      "progress": 1790878822.8834841,
       "kind": "fit",
       "model": "TLOB_ADAPTED",
       "priority": 40,
       "detail": {
-        "epoch": 79,
-        "completed_day_panels": 192,
-        "phase": "train"
+        "epoch": 86,
+        "phase": "checkpoint",
+        "epoch_seconds": 38.95155645161867,
+        "checkpoint_time": 1790878822.8812888
       }
     },
     {
