@@ -1,0 +1,10 @@
+{
+  "status": "PRODUCER_FIX_READY_FOR_RECEIVER",
+  "owner": "a5000",
+  "canonical_protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+  "core_correction_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+  "shared_ref": "refs/heads/work/qf-overnight-20261001",
+  "required_receiver_action": "Fetch latest shared ref. Review docs/qf_overnight/20261001/compatible_core_revisions.json and prepared_cache_manifest.json. Repin common code: old hardcoded675a native receiver rejects reviewed operational correction. Training/models/data/scientific protocol unchanged. Exact existing x.npy and raw_factors.npy are published under artifacts/qf_overnight/20261001/prepared_inputs/*.npy.gz. All hashes match original READY. No local model/trainer edits needed.",
+  "receiving_options": "Updated native receiver can use corrected runtime/publisher directly, or the common READY receiver bridge. Both use same scientific implementation. Corrected native publisher emits compatible metrics and daily sums; canonical protocol and wire projection hashes both recorded.",
+  "manual_user_action_required": false
+}

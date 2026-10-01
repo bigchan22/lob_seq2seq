@@ -1,0 +1,38 @@
+{
+  "run_id": "853621a0c30efa5f4d80bdadff2cf958aa00d0117f65e8d3189f9d2cd3e8fd40",
+  "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+  "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+  "executable_source_digest": "b9974a8f8c017bb8dcd4b62d614209421269020760d78e9d860a074b8cc9561f",
+  "input_hash": "9cb89005693b1b70c102178849b740fde00b50c9ba5f3b5530d0e5749ea59837",
+  "split_hash": "490eeb15970ef077ee050323b551cd9c3c5534c257f1febddca9af74ed1cf0a4",
+  "transform_hash": "7c046856fb93caadaba00219d440e28b84a542bcec20f13640d962cb8ad3d89f",
+  "training_hash": "223278c5c320dd2fd9a015e99abbe21e25e9eb36b6e4be6ea87cf10e93b3775e",
+  "config_hash": "a54de0a0556bcacdeff3fc717119b73c28b6fa0f45ab4183f3eb52e5899b5665",
+  "model": "UM_V2_DEPTH",
+  "seed": 7,
+  "lr": 0.0004,
+  "fold": "R1",
+  "asset": null,
+  "family": "selected",
+  "parameters": 424463,
+  "selected_epoch": 110,
+  "validation_p3_nll": 0.9068971939121221,
+  "epochs_completed": 140,
+  "prediction_rows": 84132,
+  "validated": true,
+  "files": {
+    "predictions.csv.gz": "8d1f5ffb9f26054666b5b725a8b6680ec582c6fb02c6a120e48e21625b9db4c8"
+  },
+  "local_checkpoints": {
+    "best_checkpoint.pt": "5c13ba328519fa95e52593e2bc011be9f014f8f6bcd27da09a3c9dd3268157c2",
+    "last_checkpoint.pt": "907265ac67c59e2da31d91db39c99f167b811b08b38bc5e28a2150ed0c0d0bfb"
+  },
+  "completed_at": "2026-10-01T15:42:32.766980+00:00",
+  "smoke": false,
+  "resume_checkpoint_used": null,
+  "attempt": 1,
+  "job_id": "R1_UM_V2_DEPTH_7",
+  "owner": "a5000",
+  "reused_main_job": "main_UM_V2_DEPTH_7_selected",
+  "reuse_reason": "same train/val, LR, seed, configuration, scaler; eval subset only"
+}

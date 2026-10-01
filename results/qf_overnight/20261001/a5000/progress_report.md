@@ -1,9 +1,9 @@
 # qf-august-overnight-20261001: a5000 progress
 
-Updated 2026-10-01T15:55:29.293173+00:00; elapsed 0.29 hours. Exact source commit `e2212c40566e21c680a98186ebd8e984aa80d4fd`; protocol `bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1`.
-Queue states: `{"PENDING": 48, "RUNNING": 3, "SUCCEEDED": 126, "WAITING_ADAPTER": 1}`. Completed distinct full training jobs on this owner: 99; aliases and smokes are not counted as training. Local terminal: False.
+Updated 2026-10-01T15:56:04.354796+00:00; elapsed 0.30 hours. Exact source commit `e2212c40566e21c680a98186ebd8e984aa80d4fd`; protocol `bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1`.
+Queue states: `{"PENDING": 38, "RUNNING": 1, "SUCCEEDED": 138, "WAITING_ADAPTER": 1}`. Completed distinct full training jobs on this owner: 105; aliases and smokes are not counted as training. Local terminal: False.
 
-Currently running: `[{"job": "R1_UM_V2_DEPTH_42", "progress": {"category": "scientific", "error": ""}}, {"job": "main_S_7_001000_KR7003550001_t", "progress": {"epoch": 65, "completed_day_panels": 256, "phase": "train"}}, {"job": "main_S_7_001000_KR7004020004_t", "progress": {}}]`.
+Currently running: `[{"job": "main_S_7_001000_KR7005490008_t", "progress": {"epoch": 109, "completed_day_panels": 288, "phase": "train"}}]`.
 
 The finite global plan has153 unconditional full fits and up to4 conditional fixed-LR fits (157 maximum), plus explicit selection/reuse/analysis jobs. This owner never claims the other owner's models. A job succeeds only after result/prediction validation. Checkpoints remain task-local; hashes/relative names accompany each run. All selected compressed probabilities, histories, masks and scores are transferred through this result branch. Every LR trial and failure is recorded in selected_configs.json; performance never gates further valid work.
 

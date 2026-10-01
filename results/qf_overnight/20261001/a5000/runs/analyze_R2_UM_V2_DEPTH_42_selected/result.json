@@ -1,0 +1,10 @@
+{
+  "validated": true,
+  "source_job": "R2_UM_V2_DEPTH_42_selected",
+  "prediction_sha256": "4b0d55554b1a3e77ba25c72fb9812b2cd4b7a14a8be8d2c048eb8069830d5fc6",
+  "job_id": "analyze_R2_UM_V2_DEPTH_42_selected",
+  "owner": "a5000",
+  "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+  "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+  "completed_at": "2026-10-01T15:55:25.897068+00:00"
+}
