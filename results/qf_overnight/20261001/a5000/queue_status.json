@@ -2,7 +2,7 @@
   "run_group": "qf-august-overnight-20261001",
   "owner": "a5000",
   "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
-  "updated_at": "2026-10-01T17:40:48.397726+00:00",
+  "updated_at": "2026-10-01T17:46:44.302076+00:00",
   "counts": {
     "PENDING": 3,
     "RUNNING": 2,
@@ -2504,14 +2504,14 @@
       "oom": 0,
       "pid": 2194369,
       "start": "1102997613",
-      "heartbeat": 1790876445.9197376,
-      "progress": 1790876445.9197378,
+      "heartbeat": 1790876801.4565408,
+      "progress": 1790876801.4521308,
       "kind": "fit",
       "model": "TLOB_ADAPTED",
       "priority": 40,
       "detail": {
-        "epoch": 23,
-        "completed_day_panels": 160,
+        "epoch": 31,
+        "completed_day_panels": 256,
         "phase": "train"
       }
     },
@@ -2603,16 +2603,15 @@
       "oom": 0,
       "pid": 2194372,
       "start": "1102997689",
-      "heartbeat": 1790876445.1662676,
-      "progress": 1790876445.1662676,
+      "heartbeat": 1790876802.2316453,
+      "progress": 1790876801.801748,
       "kind": "fit",
       "model": "TLOB_ADAPTED",
       "priority": 40,
       "detail": {
-        "epoch": 25,
-        "phase": "checkpoint",
-        "epoch_seconds": 39.4539620578289,
-        "checkpoint_time": 1790876445.1642337
+        "epoch": 35,
+        "completed_day_panels": 64,
+        "phase": "train"
       }
     },
     {
