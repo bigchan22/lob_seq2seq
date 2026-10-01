@@ -2,11 +2,10 @@
   "run_group": "qf-august-overnight-20261001",
   "owner": "a5000",
   "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
-  "updated_at": "2026-10-01T15:56:35.530581+00:00",
+  "updated_at": "2026-10-01T15:56:59.463577+00:00",
   "counts": {
     "PENDING": 29,
-    "RUNNING": 3,
-    "SUCCEEDED": 146
+    "SUCCEEDED": 149
   },
   "paused": false,
   "stop": true,
@@ -2428,60 +2427,62 @@
     },
     {
       "id": "main_S_7_001000_KR7007070006_t",
-      "state": "RUNNING",
+      "state": "SUCCEEDED",
       "attempt": 1,
       "retries": 0,
       "oom": 0,
       "pid": 2179725,
       "start": "1102468791",
-      "heartbeat": 1790870195.5233197,
-      "progress": 1790870195.5233197,
+      "heartbeat": 1790870196.3125608,
+      "progress": 1790870195.6514466,
       "kind": "fit",
       "model": "S",
       "priority": 50,
       "detail": {
         "epoch": 62,
-        "completed_day_panels": 96,
-        "phase": "train"
+        "phase": "checkpoint",
+        "epoch_seconds": 0.15274306945502758,
+        "checkpoint_time": 1790870195.64985
       }
     },
     {
       "id": "main_S_7_001000_KR7008770000_t",
-      "state": "RUNNING",
+      "state": "SUCCEEDED",
       "attempt": 1,
       "retries": 0,
       "oom": 0,
       "pid": 2179883,
       "start": "1102469791",
-      "heartbeat": 1790870195.5136526,
-      "progress": 1790870195.5136528,
+      "heartbeat": 1790870214.8745646,
+      "progress": 1790870214.2258244,
       "kind": "fit",
       "model": "S",
       "priority": 50,
       "detail": {
-        "epoch": 2,
-        "completed_day_panels": 64,
-        "phase": "train"
+        "epoch": 106,
+        "phase": "checkpoint",
+        "epoch_seconds": 0.1575851682573557,
+        "checkpoint_time": 1790870214.2244582
       }
     },
     {
       "id": "main_S_7_001000_KR7009150004_t",
-      "state": "RUNNING",
+      "state": "SUCCEEDED",
       "attempt": 1,
       "retries": 0,
       "oom": 0,
       "pid": 2179884,
       "start": "1102469791",
-      "heartbeat": 1790870195.515139,
-      "progress": 1790870195.5151393,
+      "heartbeat": 1790870214.309476,
+      "progress": 1790870213.6978998,
       "kind": "fit",
       "model": "S",
       "priority": 50,
       "detail": {
-        "epoch": 1,
+        "epoch": 114,
         "phase": "checkpoint",
-        "epoch_seconds": 0.9074658714234829,
-        "checkpoint_time": 1790870195.5112805
+        "epoch_seconds": 0.1267012394964695,
+        "checkpoint_time": 1790870213.696469
       }
     },
     {

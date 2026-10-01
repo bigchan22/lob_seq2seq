@@ -412,3 +412,6 @@
 {"seq": 412, "time": "2026-10-01T15:56:31.876639+00:00", "job": "main_S_7_001000_KR7008770000_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
 {"seq": 413, "time": "2026-10-01T15:56:31.882390+00:00", "job": "main_S_7_001000_KR7009150004_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
 {"seq": 414, "time": "2026-10-01T15:56:33.759625+00:00", "job": "adapter_TLOB_ADAPTED", "event": "adapter_ready", "detail": "{\"source\": \"/home/chanhomin/hosung/overnight/qf-august-overnight-20261001/execution-tlob\"}"}
+{"seq": 415, "time": "2026-10-01T15:56:36.312742+00:00", "job": "main_S_7_001000_KR7007070006_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7007070006_t/attempt_0001/result.json\"}"}
+{"seq": 416, "time": "2026-10-01T15:56:54.309713+00:00", "job": "main_S_7_001000_KR7009150004_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7009150004_t/attempt_0001/result.json\"}"}
+{"seq": 417, "time": "2026-10-01T15:56:54.874789+00:00", "job": "main_S_7_001000_KR7008770000_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7008770000_t/attempt_0001/result.json\"}"}
