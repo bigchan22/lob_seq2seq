@@ -18,12 +18,29 @@ def verify(a):
     from data import prepare
     from gates import runtime_gate
     root=a.run_root;root.mkdir(parents=True,exist_ok=True);cache=root/'prepared'
-    prepare(a.input_root,cache);runtime_gate(cache,ROOT)
+    prepare(a.input_root,cache)
+    ready=read(READY);identity=read(cache/'identity.json')
+    if identity['files']!=ready['prepared_data_hashes']:
+        import gzip,shutil
+        canonical=root/'prepared_canonical';canonical.mkdir(exist_ok=True)
+        manifest=read(DOCS/'prepared_cache_manifest.json')
+        by={e['name']:e for e in manifest['files']}
+        for name,expected in ready['prepared_data_hashes'].items():
+            target=canonical/name
+            if target.exists():assert sha(target)==expected;continue
+            if sha(cache/name)==expected:shutil.copyfile(cache/name,target)
+            else:
+                record=by[name];packed=ROOT/record['path'];assert sha(packed)==record['compressed_sha256']
+                with gzip.open(packed,'rb') as source,target.open('xb') as dest:shutil.copyfileobj(source,dest)
+            assert sha(target)==expected,name
+        identity['files']=ready['prepared_data_hashes'];write(canonical/'identity.json',identity)
+        cache=canonical
+    runtime_gate(cache,ROOT)
     write(root/'receiver_verified.json',{'source_sha':code_sha(),'time':utc(),'cache':str(cache)})
 
 def smoke(a):
     from gates import run,runtime_gate
-    root=a.run_root;cache=root/'prepared';runtime_gate(cache,ROOT)
+    root=a.run_root;cache=Path(read(root/'receiver_verified.json')['cache']);runtime_gate(cache,ROOT)
     # GPU0 is scoped to the receiver's explicitly allocated visible UUID list.
     device='cuda:0' if os.environ.get('CUDA_VISIBLE_DEVICES') else 'cpu'
     result=run(cache,root/'gates',device)
@@ -43,7 +60,7 @@ def run(a):
     gpu=os.environ.get('CUDA_VISIBLE_DEVICES','').split(',');assert len(gpu)==a.workers and all(x.startswith('GPU-') for x in gpu)
     q=Queue(root)
     if not (root/'runtime.json').exists():
-        write(root/'runtime.json',{'owner':a.owner,'source':str(ROOT),'source_sha':code_sha(),'cache':str(root/'prepared'),
+        write(root/'runtime.json',{'owner':a.owner,'source':str(ROOT),'source_sha':code_sha(),'cache':read(root/'receiver_verified.json')['cache'],
               'gpu_uuids':gpu,'created_at':utc(),'publication':'outer_receiver_owned','python':sys.executable})
     q.initialize(read(CONFIG/'queue_manifest.json'),a.owner,ROOT)
     q.setmeta('stop',False);children={};handles=[];stopping=False

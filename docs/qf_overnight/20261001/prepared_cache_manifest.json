@@ -1,0 +1,25 @@
+{
+  "source_ready_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+  "canonical_protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+  "purpose": "Exact existing frozen feature/factor bytes across Torch versions; not rebuilt or scientifically altered",
+  "producer_torch": "1.12.1",
+  "files": [
+    {
+      "name": "x.npy",
+      "path": "artifacts/qf_overnight/20261001/prepared_inputs/x.npy.gz",
+      "uncompressed_bytes": 26302664,
+      "uncompressed_sha256": "75a5f6207eb3743927c97ac8361af405a4b3a890490e5a705ec07f5f255d5518",
+      "compressed_bytes": 15257761,
+      "compressed_sha256": "32032a51c08509b25afa658588b95f4bbcfa15439dbd54837d2ed383b293d39f"
+    },
+    {
+      "name": "raw_factors.npy",
+      "path": "artifacts/qf_overnight/20261001/prepared_inputs/raw_factors.npy.gz",
+      "uncompressed_bytes": 12139760,
+      "uncompressed_sha256": "442aee93ad0745400f087f7ff3b2c67a669cd05b8fa2e637926298472dc028dd",
+      "compressed_bytes": 9142637,
+      "compressed_sha256": "c5e9e52b3d1a1875a832c36c198398c025c46ad6f10623cac6aa21d9003c0af3"
+    }
+  ],
+  "recovery": "gzip-decompress into NEW prepared destination, retain existing mismatched files, verify each decompressed SHA256 against READY before runtime_gate. Copy unchanged covariates/masks/y and write identity.files from READY."
+}

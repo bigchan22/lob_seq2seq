@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "upstream_same_parameter_forward_max_error": 0.0,
+  "upstream_comparison_domain": "same dimensions, positive BiN gates, nondegenerate variance; exact original class ASTs, ignored event embedding",
+  "own_asset_invariance": true,
+  "negative_BiN_and_zero_input_finite": true,
+  "time": "2026-10-01T15:54:51.250042+00:00"
+}
