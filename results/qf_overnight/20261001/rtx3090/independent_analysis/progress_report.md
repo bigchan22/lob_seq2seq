@@ -2,7 +2,7 @@
 
 Status: complete
 
-Exact advertised source result commits: {"a5000": "e7b47341ce1fbe8526de35d6d928890f584620da", "rtx3090": "e06a610d1f411f2d2121132f12923d9eb82c5a78"}
+Exact advertised source result commits: {"a5000": "8883f095b3c015d442b318f5dbfbddb57237be29", "rtx3090": "2ed6c533cb1fe8fe949615a8c3fd7811c93ebb39"}
 
 Verified selected saved files: 54. Every loaded file passed its Git/result digest, full expected support, labels, masks, class order and probability checks.
 
