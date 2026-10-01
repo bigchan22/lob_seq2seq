@@ -2,9 +2,9 @@
 
 Status: partial
 
-Source result commits: {"a5000": "99ce58961e401b8ef77f6cb712ecc620f983b1ae", "rtx3090": "8001ee16c7f8cf5ec1051f47bdf9391bbb3ef38a"}
+Source result commits: {"a5000": "dd84fdcbab6e6ff1faed18039418a82c1a553c1c", "rtx3090": "15439f7c48c5ae28ec809857a6453c37e1b13d56"}
 
-Validated selected metric rows: 480; complete paired rows: 448; incomplete seed comparisons: 24.
+Validated selected metric rows: 488; complete paired rows: 456; incomplete seed comparisons: 16.
 
 No missing models/assets/seeds are inner-joined away or recorded as zero. Historical replay is separate. Table exports must match pinned per-date key/label digests, population counts and scientific hashes before pairing.
 
