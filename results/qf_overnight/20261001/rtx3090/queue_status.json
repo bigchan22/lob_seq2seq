@@ -3,7 +3,7 @@
   "consolidation_status": "partial",
   "deadline_epoch": 1790910849.7916808,
   "last_error": "Cache export changed frozen core/protocol; needs versioned review",
-  "last_published_result_sha": "ccbeb768301e21b3c5959a4950b0239a21452e47",
+  "last_published_result_sha": "23b1008e33e63ce60adec26eed3d9c04cf54e6a8",
   "last_rejected_ready_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
   "local_runtime_alias": "RECEIVER_RUNTIME",
   "native_receiver": true,
@@ -20,5 +20,5 @@
     "reason": "Common queue not launched yet"
   },
   "started_at": "2026-10-01T15:14:09.791661+00:00",
-  "updated_at": "2026-10-01T16:00:49.613052+00:00"
+  "updated_at": "2026-10-01T16:03:00.452279+00:00"
 }
