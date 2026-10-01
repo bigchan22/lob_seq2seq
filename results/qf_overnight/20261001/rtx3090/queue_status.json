@@ -1,0 +1,12 @@
+{
+  "deadline_epoch": 1790910843.7910109,
+  "local_runtime_alias": "RECEIVER_RUNTIME",
+  "phase": "WAITING_FOR_READY",
+  "planned_fits_are_not_materialized_jobs": true,
+  "planned_owned_training_fits": 30,
+  "shared_queue_status": {
+    "counts": null,
+    "reason": "Common queue not launched yet"
+  },
+  "started_at": "2026-10-01T15:14:03.790993+00:00"
+}

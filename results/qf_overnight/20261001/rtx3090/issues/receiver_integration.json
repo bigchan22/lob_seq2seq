@@ -1,0 +1,6 @@
+{
+  "category": "coordination_interface",
+  "blocks_scientific_families": false,
+  "message": "RTX3090 will auto-consume first compatible READY. Please expose receiver argv/gate/status/publication interface documented in receiver_interface.json or publish an adapter under shared scripts/qf_overnight. No manual user handoff is needed.",
+  "interface_path": "results/qf_overnight/20261001/rtx3090/receiver_interface.json"
+}

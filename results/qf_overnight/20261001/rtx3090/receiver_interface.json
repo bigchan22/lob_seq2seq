@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "run_group": "qf-august-overnight-20261001",
+  "owner": "rtx3090",
+  "state": "receiver being installed; common READY not advertised at initial check",
+  "data_handoff_sha": "e85a89fd56584b513be940e6259c637369bd830b",
+  "required_ready_path": "coordination/qf_overnight/20261001/ready.json",
+  "receiver_source": "receiver/qf_overnight/20261001/receiver.py",
+  "purpose": "Automatically launch without another user message; producer may publish this small interface in READY alongside its own implementations. No scientific source is defined by receiver.",
+  "required_ready_keys": {
+    "READY_CORE": true,
+    "run_group": "qf-august-overnight-20261001",
+    "data_handoff_sha": "e85a89fd56584b513be940e6259c637369bd830b",
+    "input_sha": "073cd89b556224eeae22413c3c05188a947e990a",
+    "owner_models": {
+      "rtx3090": [
+        "UA",
+        "UC",
+        "SHARED_QUERY"
+      ]
+    },
+    "files": "list of {path,sha256}, covering all scripts/qf_overnight and configs/qf_overnight executable/config files",
+    "protocol_path": "path to protocol JSON",
+    "protocol_sha256": "SHA256 of exact protocol bytes",
+    "input_manifest_sha256": "9cb89005693b1b70c102178849b740fde00b50c9ba5f3b5530d0e5749ea59837",
+    "split_manifest_path": "hashed resolved split manifest",
+    "job_manifest_path": "hashed deterministic global DAG",
+    "receiver": {
+      "commands": {
+        "verify": [
+          "{python}",
+          "scripts/qf_overnight/YOUR_RUNNER.py",
+          "verify",
+          "--input-root",
+          "{input_root}",
+          "--data-root",
+          "{data_root}",
+          "--run-root",
+          "{run_root}",
+          "--owner",
+          "{owner}"
+        ],
+        "smoke": [
+          "{python}",
+          "scripts/qf_overnight/YOUR_RUNNER.py",
+          "smoke",
+          "--run-root",
+          "{run_root}",
+          "--owner",
+          "{owner}"
+        ],
+        "launch": [
+          "{python}",
+          "scripts/qf_overnight/YOUR_RUNNER.py",
+          "run",
+          "--run-root",
+          "{run_root}",
+          "--owner",
+          "{owner}",
+          "--workers",
+          "{workers}",
+          "--control-path",
+          "{control_path}"
+        ],
+        "pause": [
+          "{python}",
+          "scripts/qf_overnight/YOUR_RUNNER.py",
+          "pause",
+          "--run-root",
+          "{run_root}"
+        ],
+        "resume": [
+          "{python}",
+          "scripts/qf_overnight/YOUR_RUNNER.py",
+          "resume",
+          "--run-root",
+          "{run_root}"
+        ],
+        "retry": [
+          "{python}",
+          "scripts/qf_overnight/YOUR_RUNNER.py",
+          "retry",
+          "--run-root",
+          "{run_root}",
+          "--job",
+          "{job_id}"
+        ]
+      },
+      "verification_gates": [
+        "labels_masks_splits",
+        "causality",
+        "masked_loss_gradient",
+        "own_only_invariance",
+        "um_target_exclusion",
+        "parameter_counts",
+        "masked_accumulation_partial_window",
+        "train_only_scaling",
+        "r1_reuse_identity",
+        "restart_idempotency_stale_lease",
+        "real_data_smoke"
+      ]
+    }
+  },
+  "protocol_required_fields": {
+    "run_group": "qf-august-overnight-20261001",
+    "data_handoff_sha": "e85a89fd56584b513be940e6259c637369bd830b",
+    "training_population": "P3",
+    "validation_population": "P3",
+    "selection_seeds": [
+      42,
+      7,
+      123
+    ],
+    "learning_rates": [
+      5e-05,
+      0.0001,
+      0.0002,
+      0.0004
+    ]
+  },
+  "execution_interface": {
+    "launch_is_foreground_supervisor": true,
+    "launch_handles_transactional_queue_workers_selection_retries_resume": "shared producer runner, not old queue_cli",
+    "gate_output": "{run_root}/receiver_gate_report.json with protocol_sha256,data_handoff_sha,gates:{name:true}; created by fresh verify/smoke",
+    "status_output": "{run_root}/queue_status.json with counts, all_terminal, all_required_validated and worker PID/checkpoint/heartbeat evidence",
+    "publication_output": "{run_root}/publication_manifest.json with files:[{path,sha256}] relative to run_root; immutable success outputs only; no live SQLite/checkpoints",
+    "control": "pause command stops new claims, allows active jobs to finish; stop --active is separate explicit user control",
+    "run_metadata": "exact source/protocol/input/split/config/transform hashes; per-job validation must gate success",
+    "environment": "QF_OWNER,QF_RUN_GROUP,QF_INPUT_ROOT,QF_DATA_ROOT,QF_RUN_ROOT,QF_CONTROL_PATH,QF_CPU_THREADS=2,QF_DATALOADER_WORKERS=0; CUDA_VISIBLE_DEVICES scoped to free allocated UUIDs"
+  },
+  "aggregation_contract_request": {
+    "suggested_compact_files": [
+      "metrics.csv",
+      "daily_loss_sums.csv",
+      "per_asset.csv",
+      "calibration.csv",
+      "subgroup_metrics.csv",
+      "queue_status.json",
+      "selected_configs.json"
+    ],
+    "each_result_requires": [
+      "model",
+      "seed",
+      "fold",
+      "split",
+      "population",
+      "protocol_hash",
+      "input_hash",
+      "split_hash",
+      "mask_hash",
+      "row_key_label_digest",
+      "rows"
+    ],
+    "daily_loss_fields": [
+      "date",
+      "loss_sum",
+      "rows"
+    ],
+    "publication_only_validated_results": true
+  },
+  "deadline": "12 hours after receiver starts; no performance improvement gate",
+  "created_at": "2026-10-01T15:13:32.393508+00:00"
+}
