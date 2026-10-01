@@ -1,0 +1,7 @@
+{
+  "status": "resolved_receiver_schema_adapter",
+  "rejected_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+  "previous_message": "READY input lineage mismatch",
+  "actual_finding": "READY uses protocol.input_lineage and protocol_hash canonical JSON fields instead of receiver draft aliases. This was an adapter-schema discrepancy, not a verified source lineage conflict. Actual pinned protocol matches the authorized input lineage.",
+  "next_blocker": "prepared_feature_bytes_rtx3090.json"
+}

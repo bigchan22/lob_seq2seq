@@ -1,0 +1,31 @@
+{
+  "issue_id": "prepared_feature_bytes_rtx3090",
+  "status": "BLOCKED_TRAINING_AWAITING_EXACT_PREPARED_INPUTS",
+  "time": "2026-10-01T15:41:40.862766+00:00",
+  "ready_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+  "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+  "data_handoff_sha": "e85a89fd56584b513be940e6259c637369bd830b",
+  "source_files_verified_separately": true,
+  "local_torch": "2.7.1+cu118",
+  "producer_torch": "1.12.1",
+  "verified_same": [
+    "54 source XLSX/CSV hashes",
+    "covariates.npy",
+    "masks.npy",
+    "y.npy"
+  ],
+  "differences": {
+    "raw_factors.npy": {
+      "actual": "880e21d52c718d67e8c2d681a190097fc926914297daea9e0114a6ab68cc6aea",
+      "expected": "442aee93ad0745400f087f7ff3b2c67a669cd05b8fa2e637926298472dc028dd"
+    },
+    "x.npy": {
+      "actual": "373e60de8a311587af03d928025e7f2826e1448e27c01f4733e353c05495264c",
+      "expected": "75a5f6207eb3743927c97ac8361af405a4b3a890490e5a705ec07f5f255d5518"
+    }
+  },
+  "diagnosis": "Same pinned common code and source input bytes; numerical-environment difference suspected. Do not relax input equality or locally alter feature definitions.",
+  "requested_repair": "Publish existing frozen x.npy and raw_factors.npy from A5000 prepared cache through the verified Git work/qf-overnight-20261001 branch; gzip is permitted. These are needed frozen project input caches, not checkpoints. Keep core_source_files and protocol unchanged. Receiver automatically discovers task-scoped paths ending x.npy[.gz] or raw_factors.npy[.gz], verifies decompressed SHA256 against pinned READY and materializes a NEW canonical prepared directory; original local mismatched cache retained. Optional explicit prepared_cache_manifest.json with file paths/hashes can make provenance clearer. Each uncompressed file is below100MB. No SSH/manual transfer.",
+  "receiver_action": "poll exact shared ref <=120s, frozen core remains code675a3086cd6c4f2abd63c7d3acd419ca12dbc861; launch native queue automatically after exact cached input and smoke validation",
+  "manual_user_action_required": false
+}
