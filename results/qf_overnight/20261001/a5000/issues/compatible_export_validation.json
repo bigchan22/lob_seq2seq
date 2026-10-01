@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "metric_rows_verified": 192,
+  "distinct_frozen_supports": 32,
+  "source": "direct frozen forecast_rows.csv.gz rather than task-prepared keys",
+  "daily_loss_sum_nll_absolute_tolerance": 1e-12,
+  "handoff_key_digest_match": true,
+  "checked_at": "2026-10-01T16:01:36.653014+00:00"
+}

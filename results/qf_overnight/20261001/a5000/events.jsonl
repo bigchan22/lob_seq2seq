@@ -420,3 +420,4 @@
 {"seq": 420, "time": "2026-10-01T15:57:19.114895+00:00", "job": "main_TLOB_ADAPTED_42_001000", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
 {"seq": 421, "time": "2026-10-01T15:57:19.121242+00:00", "job": "main_TLOB_ADAPTED_42_002000", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
 {"seq": 422, "time": "2026-10-01T15:57:19.127707+00:00", "job": "main_TLOB_ADAPTED_42_004000", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 423, "time": "2026-10-01T16:00:45.806695+00:00", "job": null, "event": "aggregation_compatibility_revision", "detail": "{\"source_sha\": \"19b9b56ff865cec3a24f500727015b33a201e93b\", \"running_jobs_untouched\": true, \"pending_only\": true}"}

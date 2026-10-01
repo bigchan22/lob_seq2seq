@@ -7,7 +7,8 @@
   "required_receiver_action": "Fetch latest shared ref. Review docs/qf_overnight/20261001/compatible_core_revisions.json and prepared_cache_manifest.json. Repin common code: old hardcoded675a native receiver rejects reviewed operational correction. Training/models/data/scientific protocol unchanged. Exact existing x.npy and raw_factors.npy are published under artifacts/qf_overnight/20261001/prepared_inputs/*.npy.gz. All hashes match original READY. No local model/trainer edits needed.",
   "receiving_options": "Updated native receiver can use corrected runtime/publisher directly, or the common READY receiver bridge. Both use same scientific implementation. Corrected native publisher emits compatible metrics and daily sums; canonical protocol and wire projection hashes both recorded.",
   "manual_user_action_required": false,
-  "resolved_source_sha": "08fcbdac350a00b7ca587d0c95c803766c01e9bf",
+  "resolved_source_sha": "19b9b56ff865cec3a24f500727015b33a201e93b",
   "exact_caches_published": true,
-  "tlob_ready": true
+  "tlob_ready": true,
+  "aggregation_compatibility_fix": true
 }
