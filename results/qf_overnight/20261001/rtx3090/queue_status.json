@@ -1,12 +1,16 @@
 {
-  "deadline_epoch": 1790910843.7910109,
+  "deadline_epoch": 1790910849.7916808,
   "local_runtime_alias": "RECEIVER_RUNTIME",
+  "owner": "rtx3090",
+  "paused": false,
   "phase": "WAITING_FOR_READY",
   "planned_fits_are_not_materialized_jobs": true,
   "planned_owned_training_fits": 30,
+  "run_group": "qf-august-overnight-20261001",
   "shared_queue_status": {
     "counts": null,
     "reason": "Common queue not launched yet"
   },
-  "started_at": "2026-10-01T15:14:03.790993+00:00"
+  "started_at": "2026-10-01T15:14:09.791661+00:00",
+  "updated_at": "2026-10-01T15:14:14.944721+00:00"
 }
