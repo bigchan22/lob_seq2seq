@@ -1,0 +1,58 @@
+{
+  "validated": true,
+  "selected_job": "main_UX_42_004000",
+  "lr": 0.0004,
+  "model": "UX",
+  "criterion": "selected-checkpoint validation P3 NLL, tie<=1e-8 smaller LR",
+  "trials": [
+    {
+      "model": "UX",
+      "seed": 42,
+      "lr": 5e-05,
+      "validation_p3_nll": 0.915022875633621,
+      "selected_epoch": 195,
+      "run_id": "5b2b4024b72029852368556dc48ce22e823d26829abca338dd858a397640aee9",
+      "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+      "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+      "job_id": "main_UX_42_000500"
+    },
+    {
+      "model": "UX",
+      "seed": 42,
+      "lr": 0.0001,
+      "validation_p3_nll": 0.9100451226671497,
+      "selected_epoch": 190,
+      "run_id": "edcc4fa0f3466644864a7920b820a944f74b4c10325d2f941987e91b33bb6320",
+      "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+      "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+      "job_id": "main_UX_42_001000"
+    },
+    {
+      "model": "UX",
+      "seed": 42,
+      "lr": 0.0002,
+      "validation_p3_nll": 0.907832730201542,
+      "selected_epoch": 198,
+      "run_id": "f7e5b8be13c252b84a1dc5b1af3c45b60393aaf1ef0a0bae18ae9ca432bc40b2",
+      "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+      "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+      "job_id": "main_UX_42_002000"
+    },
+    {
+      "model": "UX",
+      "seed": 42,
+      "lr": 0.0004,
+      "validation_p3_nll": 0.9072005465188121,
+      "selected_epoch": 160,
+      "run_id": "0271958a2aa695fd838dbb470b3b481c5ad5d0b8927879e6b8571452f924be60",
+      "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+      "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+      "job_id": "main_UX_42_004000"
+    }
+  ],
+  "job_id": "select_UX",
+  "owner": "a5000",
+  "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+  "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+  "completed_at": "2026-10-01T15:42:56.027707+00:00"
+}

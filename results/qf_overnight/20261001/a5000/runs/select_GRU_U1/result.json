@@ -1,0 +1,58 @@
+{
+  "validated": true,
+  "selected_job": "main_GRU_U1_42_004000",
+  "lr": 0.0004,
+  "model": "GRU_U1",
+  "criterion": "selected-checkpoint validation P3 NLL, tie<=1e-8 smaller LR",
+  "trials": [
+    {
+      "model": "GRU_U1",
+      "seed": 42,
+      "lr": 5e-05,
+      "validation_p3_nll": 0.914520736856118,
+      "selected_epoch": 198,
+      "run_id": "bd2c4877aa198e10500ccfabe9dfa300dc90498ff059c17d6749a3acdd09e4a2",
+      "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+      "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+      "job_id": "main_GRU_U1_42_000500"
+    },
+    {
+      "model": "GRU_U1",
+      "seed": 42,
+      "lr": 0.0001,
+      "validation_p3_nll": 0.9086900324438577,
+      "selected_epoch": 177,
+      "run_id": "7f0aa8f8542c654cfa768c1d41f06baac30c640cbcaf2c237ddf04413572bb0a",
+      "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+      "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+      "job_id": "main_GRU_U1_42_001000"
+    },
+    {
+      "model": "GRU_U1",
+      "seed": 42,
+      "lr": 0.0002,
+      "validation_p3_nll": 0.9055592465370481,
+      "selected_epoch": 146,
+      "run_id": "4d2c9995012009f4dc1fc6c83e39de5fafbeb94442772febc717c8f7a5b52d1b",
+      "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+      "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+      "job_id": "main_GRU_U1_42_002000"
+    },
+    {
+      "model": "GRU_U1",
+      "seed": 42,
+      "lr": 0.0004,
+      "validation_p3_nll": 0.9039634840198628,
+      "selected_epoch": 102,
+      "run_id": "d9e8d9314da4652f4eb657733357a26e121d25dd02e01dd2495d3a2f05f05114",
+      "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+      "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+      "job_id": "main_GRU_U1_42_004000"
+    }
+  ],
+  "job_id": "select_GRU_U1",
+  "owner": "a5000",
+  "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+  "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+  "completed_at": "2026-10-01T15:39:05.709391+00:00"
+}

@@ -1,9 +1,9 @@
 # qf-august-overnight-20261001: a5000 progress
 
-Updated 2026-10-01T15:38:59.792302+00:00; elapsed 0.02 hours. Exact source commit `675a3086cd6c4f2abd63c7d3acd419ca12dbc861`; protocol `bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1`.
-Queue states: `{"PENDING": 164, "RUNNING": 4, "SUCCEEDED": 9, "WAITING_ADAPTER": 1}`. Completed distinct full training jobs on this owner: 4; aliases and smokes are not counted as training. Local terminal: False.
+Updated 2026-10-01T15:43:56.459755+00:00; elapsed 0.10 hours. Exact source commit `675a3086cd6c4f2abd63c7d3acd419ca12dbc861`; protocol `bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1`.
+Queue states: `{"BLOCKED": 16, "PENDING": 115, "RUNNING": 4, "SUCCEEDED": 42, "WAITING_ADAPTER": 1}`. Completed distinct full training jobs on this owner: 28; aliases and smokes are not counted as training. Local terminal: False.
 
-Currently running: `[{"job": "main_U1_42_000500", "progress": {"epoch": 78, "completed_day_panels": 288, "phase": "train"}}, {"job": "main_U1_42_001000", "progress": {"epoch": 30, "completed_day_panels": 128, "phase": "train"}}, {"job": "main_U1_42_002000", "progress": {"epoch": 28, "completed_day_panels": 345, "phase": "train"}}, {"job": "main_U1_42_004000", "progress": {"epoch": 28, "completed_day_panels": 160, "phase": "train"}}]`.
+Currently running: `[{"job": "R3_UM_V2_DEPTH_42_selected", "progress": {"epoch": 82, "completed_day_panels": 64, "phase": "train"}}, {"job": "R3_UM_V2_DEPTH_7_selected", "progress": {"epoch": 10, "completed_day_panels": 411, "phase": "train"}}, {"job": "analyze_UX_7", "progress": {}}, {"job": "fixed_U1_123", "progress": {"epoch": 12, "completed_day_panels": 320, "phase": "train"}}]`.
 
 The finite global plan has153 unconditional full fits and up to4 conditional fixed-LR fits (157 maximum), plus explicit selection/reuse/analysis jobs. This owner never claims the other owner's models. A job succeeds only after result/prediction validation. Checkpoints remain task-local; hashes/relative names accompany each run. All selected compressed probabilities, histories, masks and scores are transferred through this result branch. Every LR trial and failure is recorded in selected_configs.json; performance never gates further valid work.
 
