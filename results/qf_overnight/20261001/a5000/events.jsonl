@@ -458,3 +458,12 @@
 {"seq": 458, "time": "2026-10-01T17:06:17.709074+00:00", "job": "main_TLOB_ADAPTED_42_002000", "event": "succeeded", "detail": "{\"result\": \"runs/main_TLOB_ADAPTED_42_002000/attempt_0001/result.json\"}"}
 {"seq": 459, "time": "2026-10-01T17:06:17.716813+00:00", "job": "pool_S_7", "event": "succeeded", "detail": "{\"result\": \"runs/pool_S_7/attempt_0001/result.json\"}"}
 {"seq": 460, "time": "2026-10-01T17:15:56.781236+00:00", "job": "main_TLOB_ADAPTED_42_000500", "event": "succeeded", "detail": "{\"result\": \"runs/main_TLOB_ADAPTED_42_000500/attempt_0001/result.json\"}"}
+{"seq": 461, "time": "2026-10-01T17:24:26.111304+00:00", "job": "main_TLOB_ADAPTED_42_001000", "event": "succeeded", "detail": "{\"result\": \"runs/main_TLOB_ADAPTED_42_001000/attempt_0001/result.json\"}"}
+{"seq": 462, "time": "2026-10-01T17:24:26.325383+00:00", "job": "select_TLOB_ADAPTED", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 1}"}
+{"seq": 463, "time": "2026-10-01T17:24:27.274144+00:00", "job": "select_TLOB_ADAPTED", "event": "succeeded", "detail": "{\"result\": \"runs/select_TLOB_ADAPTED/attempt_0001/result.json\"}"}
+{"seq": 464, "time": "2026-10-01T17:24:30.102503+00:00", "job": "main_TLOB_ADAPTED_123_selected", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 465, "time": "2026-10-01T17:24:30.859723+00:00", "job": "main_TLOB_ADAPTED_7_selected", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 466, "time": "2026-10-01T17:24:36.344517+00:00", "job": "selected_TLOB_ADAPTED_42", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 1}"}
+{"seq": 467, "time": "2026-10-01T17:24:37.264805+00:00", "job": "selected_TLOB_ADAPTED_42", "event": "succeeded", "detail": "{\"result\": \"runs/selected_TLOB_ADAPTED_42/attempt_0001/result.json\"}"}
+{"seq": 468, "time": "2026-10-01T17:24:46.362610+00:00", "job": "analyze_TLOB_ADAPTED_42", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 1}"}
+{"seq": 469, "time": "2026-10-01T17:24:50.945389+00:00", "job": "analyze_TLOB_ADAPTED_42", "event": "succeeded", "detail": "{\"result\": \"runs/analyze_TLOB_ADAPTED_42/attempt_0001/result.json\"}"}
