@@ -323,3 +323,53 @@
 {"seq": 323, "time": "2026-10-01T15:52:48.233475+00:00", "job": "analyze_GRU_U1_123", "event": "succeeded", "detail": "{\"result\": \"runs/analyze_GRU_U1_123/attempt_0002/result.json\"}"}
 {"seq": 324, "time": "2026-10-01T15:52:51.573135+00:00", "job": "analyze_GRU_U1_42", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 2}"}
 {"seq": 325, "time": "2026-10-01T15:52:56.913257+00:00", "job": "analyze_GRU_U1_42", "event": "succeeded", "detail": "{\"result\": \"runs/analyze_GRU_U1_42/attempt_0002/result.json\"}"}
+{"seq": 326, "time": "2026-10-01T15:53:00.091954+00:00", "job": "main_S_7_001000_KR7000100008_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7000100008_t/attempt_0001/result.json\"}"}
+{"seq": 327, "time": "2026-10-01T15:53:01.591409+00:00", "job": "analyze_GRU_U1_7", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 2}"}
+{"seq": 328, "time": "2026-10-01T15:53:01.615718+00:00", "job": "main_S_7_001000_KR7000120006_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 329, "time": "2026-10-01T15:53:06.764188+00:00", "job": "main_S_7_001000_KR7000030007_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7000030007_t/attempt_0001/result.json\"}"}
+{"seq": 330, "time": "2026-10-01T15:53:07.066595+00:00", "job": "analyze_GRU_U1_7", "event": "succeeded", "detail": "{\"result\": \"runs/analyze_GRU_U1_7/attempt_0002/result.json\"}"}
+{"seq": 331, "time": "2026-10-01T15:53:07.733891+00:00", "job": "main_S_42_001000_KR7009150004_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_42_001000_KR7009150004_t/attempt_0001/result.json\"}"}
+{"seq": 332, "time": "2026-10-01T15:53:11.604300+00:00", "job": "main_S_7_001000_KR7000150003_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 333, "time": "2026-10-01T15:53:11.610556+00:00", "job": "analyze_U1_123", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 2}"}
+{"seq": 334, "time": "2026-10-01T15:53:11.613966+00:00", "job": "main_S_7_001000_KR7000270009_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 335, "time": "2026-10-01T15:53:17.000899+00:00", "job": "analyze_U1_123", "event": "succeeded", "detail": "{\"result\": \"runs/analyze_U1_123/attempt_0002/result.json\"}"}
+{"seq": 336, "time": "2026-10-01T15:53:21.399121+00:00", "job": "main_S_7_001000_KR7000120006_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7000120006_t/attempt_0001/result.json\"}"}
+{"seq": 337, "time": "2026-10-01T15:53:21.631283+00:00", "job": "analyze_U1_42", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 2}"}
+{"seq": 338, "time": "2026-10-01T15:53:26.506488+00:00", "job": "analyze_U1_42", "event": "succeeded", "detail": "{\"result\": \"runs/analyze_U1_42/attempt_0002/result.json\"}"}
+{"seq": 339, "time": "2026-10-01T15:53:30.083001+00:00", "job": "main_S_7_001000_KR7000150003_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7000150003_t/attempt_0001/result.json\"}"}
+{"seq": 340, "time": "2026-10-01T15:53:31.631872+00:00", "job": "main_S_7_001000_KR7000660001_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 341, "time": "2026-10-01T15:53:31.647955+00:00", "job": "analyze_U1_7", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 2}"}
+{"seq": 342, "time": "2026-10-01T15:53:31.654330+00:00", "job": "main_S_7_001000_KR7000720003_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 343, "time": "2026-10-01T15:53:31.804056+00:00", "job": "main_S_7_001000_KR7000270009_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7000270009_t/attempt_0001/result.json\"}"}
+{"seq": 344, "time": "2026-10-01T15:53:36.758308+00:00", "job": "analyze_U1_7", "event": "succeeded", "detail": "{\"result\": \"runs/analyze_U1_7/attempt_0002/result.json\"}"}
+{"seq": 345, "time": "2026-10-01T15:53:41.653855+00:00", "job": "main_S_7_001000_KR7000810002_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 346, "time": "2026-10-01T15:53:41.666137+00:00", "job": "analyze_UM_V2_DEPTH_123", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 2}"}
+{"seq": 347, "time": "2026-10-01T15:53:46.734677+00:00", "job": "analyze_UM_V2_DEPTH_123", "event": "succeeded", "detail": "{\"result\": \"runs/analyze_UM_V2_DEPTH_123/attempt_0002/result.json\"}"}
+{"seq": 348, "time": "2026-10-01T15:53:47.068571+00:00", "job": "main_S_7_001000_KR7000720003_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7000720003_t/attempt_0001/result.json\"}"}
+{"seq": 349, "time": "2026-10-01T15:53:51.686087+00:00", "job": "main_S_7_001000_KR7001040005_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 350, "time": "2026-10-01T15:53:51.694177+00:00", "job": "analyze_UM_V2_DEPTH_42", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 2}"}
+{"seq": 351, "time": "2026-10-01T15:53:55.348425+00:00", "job": "main_S_7_001000_KR7000660001_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7000660001_t/attempt_0001/result.json\"}"}
+{"seq": 352, "time": "2026-10-01T15:53:56.807739+00:00", "job": "analyze_UM_V2_DEPTH_42", "event": "succeeded", "detail": "{\"result\": \"runs/analyze_UM_V2_DEPTH_42/attempt_0002/result.json\"}"}
+{"seq": 353, "time": "2026-10-01T15:54:01.673855+00:00", "job": "main_S_7_001000_KR7001450006_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 354, "time": "2026-10-01T15:54:01.713534+00:00", "job": "analyze_UM_V2_DEPTH_7", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 2}"}
+{"seq": 355, "time": "2026-10-01T15:54:06.881935+00:00", "job": "analyze_UM_V2_DEPTH_7", "event": "succeeded", "detail": "{\"result\": \"runs/analyze_UM_V2_DEPTH_7/attempt_0002/result.json\"}"}
+{"seq": 356, "time": "2026-10-01T15:54:10.977892+00:00", "job": "main_S_7_001000_KR7000810002_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7000810002_t/attempt_0001/result.json\"}"}
+{"seq": 357, "time": "2026-10-01T15:54:11.692001+00:00", "job": "main_S_7_001000_KR7002380004_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 358, "time": "2026-10-01T15:54:11.732703+00:00", "job": "analyze_UX_123", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 2}"}
+{"seq": 359, "time": "2026-10-01T15:54:16.918006+00:00", "job": "analyze_UX_123", "event": "succeeded", "detail": "{\"result\": \"runs/analyze_UX_123/attempt_0002/result.json\"}"}
+{"seq": 360, "time": "2026-10-01T15:54:21.752685+00:00", "job": "analyze_UX_42", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 2}"}
+{"seq": 361, "time": "2026-10-01T15:54:21.945693+00:00", "job": "main_S_7_001000_KR7001450006_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7001450006_t/attempt_0001/result.json\"}"}
+{"seq": 362, "time": "2026-10-01T15:54:22.450668+00:00", "job": "main_S_7_001000_KR7001040005_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7001040005_t/attempt_0001/result.json\"}"}
+{"seq": 363, "time": "2026-10-01T15:54:27.315665+00:00", "job": "analyze_UX_42", "event": "succeeded", "detail": "{\"result\": \"runs/analyze_UX_42/attempt_0002/result.json\"}"}
+{"seq": 364, "time": "2026-10-01T15:54:31.712343+00:00", "job": "main_S_7_001000_KR7002550002_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 365, "time": "2026-10-01T15:54:31.735492+00:00", "job": "main_S_7_001000_KR7002790004_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 366, "time": "2026-10-01T15:54:31.769994+00:00", "job": "analyze_UX_7", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 2}"}
+{"seq": 367, "time": "2026-10-01T15:54:37.232717+00:00", "job": "analyze_UX_7", "event": "succeeded", "detail": "{\"result\": \"runs/analyze_UX_7/attempt_0002/result.json\"}"}
+{"seq": 368, "time": "2026-10-01T15:54:40.229143+00:00", "job": "main_S_7_001000_KR7002380004_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7002380004_t/attempt_0001/result.json\"}"}
+{"seq": 369, "time": "2026-10-01T15:54:41.731249+00:00", "job": "main_S_7_001000_KR7003550001_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 370, "time": "2026-10-01T15:54:41.787829+00:00", "job": "R1_UM_V2_DEPTH_123", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 2}"}
+{"seq": 371, "time": "2026-10-01T15:54:47.285362+00:00", "job": "R1_UM_V2_DEPTH_123", "event": "succeeded", "detail": "{\"result\": \"runs/R1_UM_V2_DEPTH_123/attempt_0002/result.json\"}"}
+{"seq": 372, "time": "2026-10-01T15:54:50.767923+00:00", "job": "main_S_7_001000_KR7002790004_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7002790004_t/attempt_0001/result.json\"}"}
+{"seq": 373, "time": "2026-10-01T15:54:51.765777+00:00", "job": "main_S_7_001000_KR7004020004_t", "event": "claimed", "detail": "{\"resource\": \"gpu\", \"attempt\": 1}"}
+{"seq": 374, "time": "2026-10-01T15:54:51.804448+00:00", "job": "R1_UM_V2_DEPTH_42", "event": "claimed", "detail": "{\"resource\": \"cpu\", \"attempt\": 2}"}
+{"seq": 375, "time": "2026-10-01T15:54:54.293621+00:00", "job": "main_S_7_001000_KR7002550002_t", "event": "succeeded", "detail": "{\"result\": \"runs/main_S_7_001000_KR7002550002_t/attempt_0001/result.json\"}"}

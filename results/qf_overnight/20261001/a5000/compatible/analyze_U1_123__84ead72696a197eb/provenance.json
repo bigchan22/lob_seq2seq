@@ -1,0 +1,21 @@
+{
+  "namespace": "new_p3_training",
+  "selected": true,
+  "panel": "tuned",
+  "model": "U1",
+  "seed": 123,
+  "fold": "main",
+  "protocol_hash": "3cfd389bbd05ec9201a41c0892e29bf8199198d1b216b9a8061370d4240aa583",
+  "canonical_protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+  "input_hash": "9cb89005693b1b70c102178849b740fde00b50c9ba5f3b5530d0e5749ea59837",
+  "mask_hash": "eca954c21da074c545cb7858315ea39fee0a6f54b19e06474b4f2f91f1666847",
+  "split_hash": "490eeb15970ef077ee050323b551cd9c3c5534c257f1febddca9af74ed1cf0a4",
+  "core_source_digest": "6031dc4ee08b61c58b35b1efd7d764739d5c7c54dc7cbe9e9a72a1e4a7098596",
+  "source_sha": "675a3086cd6c4f2abd63c7d3acd419ca12dbc861",
+  "source_digest": "b9974a8f8c017bb8dcd4b62d614209421269020760d78e9d860a074b8cc9561f",
+  "config_hash": "b08b19c64260bcf7c42d19661850dbdf879d8195c0422f72cb0ca558b6130c90",
+  "source_job": "main_U1_123_selected",
+  "prediction_sha256": "f764a4b71a4c2eab493c0f619d0cd4c2f80c8880763e0a5be658f4b673f7ed0c",
+  "selected_epoch": 79,
+  "transport_note": "Byte-hashed protocol projection contains unchanged canonical protocol. Comparison digest covers model/data/trainer/label/factor implementations; exact executable digests retained separately."
+}

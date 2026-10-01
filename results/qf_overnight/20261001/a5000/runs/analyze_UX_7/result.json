@@ -1,0 +1,10 @@
+{
+  "validated": true,
+  "source_job": "main_UX_7_selected",
+  "prediction_sha256": "ddb9800d1459fc9c29d95bc55749c1253b11dc76524fe09af2b8385a702e64e9",
+  "job_id": "analyze_UX_7",
+  "owner": "a5000",
+  "protocol_hash": "bd1488a2d411295d7a2118c50ddcc0b158786123613af1676062e2270d1637d1",
+  "source_sha": "e2212c40566e21c680a98186ebd8e984aa80d4fd",
+  "completed_at": "2026-10-01T15:54:37.231191+00:00"
+}
